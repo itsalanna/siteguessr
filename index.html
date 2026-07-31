@@ -82,6 +82,7 @@
   .yearGuess input[type=range]{flex:1}
   .yearGuess b{min-width:44px;text-align:right;font-size:16px}
   .guessRow{display:flex;gap:8px;margin-bottom:10px}
+  .guessRow input[type=text].invalid{border-color:#b03030;background:#fff0f0}
   .guessRow input[type=text]{
     flex:1;font-family:inherit;font-size:14px;padding:6px 8px;
     border-top:2px solid var(--chrome-dark);border-left:2px solid var(--chrome-dark);
@@ -157,9 +158,17 @@
     .yearGuess input[type=range]{height:32px}
     .guessRow input[type=text]{font-size:16px;padding:10px}
     button{font-size:15px;padding:10px 16px}
-    .controls{justify-content:stretch}
-    .controls button{flex:1}
     #submitBtn{width:100%}
+
+    .body{padding-bottom:80px} /* reserve space behind the sticky controls bar */
+    .controls{
+      position:fixed;left:0;right:0;bottom:0;z-index:50;
+      justify-content:stretch;margin:0;gap:8px;padding:10px;
+      background:var(--chrome);
+      border-top:2px solid var(--chrome-dark);
+      box-shadow:0 -2px 6px rgba(0,0,0,.2);
+    }
+    .controls button{flex:1}
 
     .statusbar{flex-wrap:wrap}
     .statusbar .cell{flex:1 1 100%;white-space:normal}
@@ -205,6 +214,11 @@
     </div>
 
     <div id="game" class="hidden">
+      <div class="statusbar">
+        <div class="cell" id="progress"></div>
+        <div class="cell" id="totalScore"></div>
+      </div>
+
       <div class="exhibit-row" id="exhibitRow">
         <div class="exhibitCol">
           <div class="exhibitLabel hidden" id="beforeLabel"></div>
@@ -227,7 +241,6 @@
             <input type="text" id="companyInput" placeholder="Type the company or site name..." autocomplete="off" onkeydown="if(event.key==='Enter')submitGuess()">
           </div>
           <button class="primary" id="submitBtn" onclick="submitGuess()">Make Guess</button>
-          <button id="skipBtn" onclick="skipGuess()">Skip (0 pts)</button>
         </div>
 
         <div class="card hidden" id="resultCard">
@@ -236,13 +249,8 @@
         </div>
       </div>
 
-      <div class="statusbar">
-        <div class="cell" id="progress"></div>
-        <div class="cell" id="status"></div>
-        <div class="cell" id="totalScore"></div>
-      </div>
-
       <div class="controls">
+        <button id="skipBtn" onclick="skipGuess()">Skip (0 pts)</button>
         <button id="nextBtn" disabled onclick="nextRound()">Next Round</button>
       </div>
     </div>
@@ -335,8 +343,8 @@ function render(){
   $('submitBtn').disabled = false;
   $('skipBtn').disabled = false;
   $('nextBtn').disabled = true;
+  $('nextBtn').textContent = 'Next Round';
   $('progress').textContent = 'Round ' + (i+1) + ' of ' + rounds.length;
-  $('status').textContent = 'Guess the year and the company...';
   $('totalScore').textContent = 'Total: ' + totalScore.toLocaleString() + ' / ' + (rounds.length*10000);
   $('companyInput').focus();
 }
@@ -382,14 +390,18 @@ function revealRound(yearGuess, typed, skipped){
   $('skipBtn').disabled = true;
   $('companyInput').disabled = true;
   $('nextBtn').disabled = false;
-  $('status').textContent = 'Round complete. Hit Next.';
+  $('nextBtn').textContent = (i === rounds.length - 1) ? 'Finish Game' : 'Next Round';
   $('totalScore').textContent = 'Total: ' + totalScore.toLocaleString() + ' / ' + (rounds.length*10000);
 }
 
 function submitGuess(){
   const typed = $('companyInput').value;
   if(!typed.trim()){
-    $('status').textContent = 'Type a company name first!';
+    const input = $('companyInput');
+    input.classList.add('invalid');
+    input.placeholder = 'Type a company name first!';
+    input.focus();
+    setTimeout(() => input.classList.remove('invalid'), 1500);
     return;
   }
   const yearGuess = +$('yearSlider').value;
