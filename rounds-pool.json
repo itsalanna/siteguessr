@@ -10,7 +10,7 @@
       "the facebook"
     ],
     "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
-    "beforeUrl": "https://web.archive.org/web/2007/http://www.facebook.com",
+    "beforeUrl": "https://web.archive.org/web/2007if_/http://www.facebook.com",
     "afterUrl": "https://www.facebook.com"
   },
   {
@@ -23,7 +23,7 @@
       "yt"
     ],
     "fact": "Star ratings lasted until 2010. They were retired because almost everyone rated either 5 stars or 1, so the site switched to thumbs up/down.",
-    "beforeUrl": "https://web.archive.org/web/2008/http://www.youtube.com",
+    "beforeUrl": "https://web.archive.org/web/2008if_/http://www.youtube.com",
     "afterUrl": "https://www.youtube.com"
   },
   {
@@ -36,7 +36,7 @@
       "insta"
     ],
     "fact": "Instagram launched iPhone-only in late 2010 and hit 25,000 users on day one. Its web presence stayed minimal for years while the app itself was the whole product.",
-    "beforeUrl": "https://web.archive.org/web/2012/http://instagram.com",
+    "beforeUrl": "https://web.archive.org/web/2012if_/http://instagram.com",
     "afterUrl": "https://www.instagram.com"
   },
   {
@@ -47,7 +47,7 @@
       "slack"
     ],
     "fact": "Slack was built from the internal chat tool of Glitch, a whimsical MMO that shut down in 2012. The aubergine sidebar became so iconic that its 2019 rebrand made headlines.",
-    "beforeUrl": "https://web.archive.org/web/2015/http://slack.com",
+    "beforeUrl": "https://web.archive.org/web/2015if_/http://slack.com",
     "afterUrl": "https://slack.com"
   },
   {
@@ -60,7 +60,7 @@
       "googlecom"
     ],
     "fact": "The famously sparse homepage was reportedly a side effect of the founders not knowing HTML well enough to make anything more complex. An early advantage the world mistook for minimalist genius.",
-    "beforeUrl": "https://web.archive.org/web/1998/http://www.google.com",
+    "beforeUrl": "https://web.archive.org/web/1998if_/http://www.google.com",
     "afterUrl": "https://www.google.com"
   },
   {
@@ -72,7 +72,7 @@
       "amazoncom"
     ],
     "fact": "Amazon started as an online bookstore in 1994. By 1999 the homepage was already a dense grid of categories and personalized recommendations, a layout philosophy it never really abandoned.",
-    "beforeUrl": "https://web.archive.org/web/1999/http://www.amazon.com",
+    "beforeUrl": "https://web.archive.org/web/1999if_/http://www.amazon.com",
     "afterUrl": "https://www.amazon.com"
   },
   {
@@ -84,7 +84,7 @@
       "applecom"
     ],
     "fact": "This was the candy-colored iMac era. Apple's site leaned hard into translucent plastic and drop shadows, years before the brushed-aluminum minimalism it's known for today.",
-    "beforeUrl": "https://web.archive.org/web/1999/http://www.apple.com",
+    "beforeUrl": "https://web.archive.org/web/1999if_/http://www.apple.com",
     "afterUrl": "https://www.apple.com"
   },
   {
@@ -96,7 +96,7 @@
       "twttr"
     ],
     "fact": "Twitter launched in 2006 and the 140-character limit came directly from SMS constraints, since early tweets were literally sent and received as text messages.",
-    "beforeUrl": "https://web.archive.org/web/2007/http://www.twitter.com",
+    "beforeUrl": "https://web.archive.org/web/2007if_/http://www.twitter.com",
     "afterUrl": "https://www.twitter.com"
   },
   {
@@ -108,7 +108,7 @@
       "my space"
     ],
     "fact": "MySpace let anyone inject custom HTML and CSS into their profile, which meant autoplaying music, glittery backgrounds, and profiles that could crash your browser. It was the peak of user-generated web chaos.",
-    "beforeUrl": "https://web.archive.org/web/2005/http://www.myspace.com",
+    "beforeUrl": "https://web.archive.org/web/2005if_/http://www.myspace.com",
     "afterUrl": "https://myspace.com"
   },
   {
@@ -120,7 +120,7 @@
       "yahoocom"
     ],
     "fact": "Yahoo started as a hand-curated web directory. By 1998 its homepage was one of the busiest link farms on the internet, a portal trying to be everyone's front door to the web.",
-    "beforeUrl": "https://web.archive.org/web/1998/http://www.yahoo.com",
+    "beforeUrl": "https://web.archive.org/web/1998if_/http://www.yahoo.com",
     "afterUrl": "https://www.yahoo.com"
   },
   {
@@ -131,7 +131,7 @@
       "netflix"
     ],
     "fact": "2007 was the year Netflix quietly added streaming as a bonus feature for DVD subscribers. Almost nobody noticed at the time that it would eventually replace the DVDs entirely.",
-    "beforeUrl": "https://web.archive.org/web/2007/http://www.netflix.com",
+    "beforeUrl": "https://web.archive.org/web/2007if_/http://www.netflix.com",
     "afterUrl": "https://www.netflix.com"
   },
   {
@@ -143,7 +143,7 @@
       "wiki"
     ],
     "fact": "Wikipedia's interface has stayed remarkably close to its original look for two decades. The visual restraint was intentional, to keep the focus on editing and content rather than design.",
-    "beforeUrl": "https://web.archive.org/web/2005/http://www.wikipedia.org",
+    "beforeUrl": "https://web.archive.org/web/2005if_/http://www.wikipedia.org",
     "afterUrl": "https://www.wikipedia.org"
   },
   {
@@ -154,7 +154,7 @@
       "reddit"
     ],
     "fact": "Reddit's original logo was a simple line drawing, and the site launched with fake accounts posting fake content just to make it look active on day one.",
-    "beforeUrl": "https://web.archive.org/web/2006/http://www.reddit.com",
+    "beforeUrl": "https://web.archive.org/web/2006if_/http://www.reddit.com",
     "afterUrl": "https://www.reddit.com"
   },
   {
@@ -165,7 +165,7 @@
       "linkedin"
     ],
     "fact": "LinkedIn launched in 2003 out of a founder's living room. By 2005 it was already leaning into the dense, spreadsheet-like profile layout that professional networking sites still use.",
-    "beforeUrl": "https://web.archive.org/web/2005/http://www.linkedin.com",
+    "beforeUrl": "https://web.archive.org/web/2005if_/http://www.linkedin.com",
     "afterUrl": "https://www.linkedin.com"
   },
   {
@@ -176,7 +176,7 @@
       "ebay"
     ],
     "fact": "eBay started in 1995 as AuctionWeb, reportedly built to help the founder's fiancee trade Pez dispensers. By 1999 it was already a sprawling grid of category links and live auctions.",
-    "beforeUrl": "https://web.archive.org/web/1999/http://www.ebay.com",
+    "beforeUrl": "https://web.archive.org/web/1999if_/http://www.ebay.com",
     "afterUrl": "https://www.ebay.com"
   },
   {
@@ -187,7 +187,7 @@
       "pinterest"
     ],
     "fact": "Pinterest launched by invite-only in 2010, and its signature masonry grid of pins was one of the first mainstream uses of that layout style on the web.",
-    "beforeUrl": "https://web.archive.org/web/2011/http://pinterest.com",
+    "beforeUrl": "https://web.archive.org/web/2011if_/http://pinterest.com",
     "afterUrl": "https://www.pinterest.com"
   },
   {
@@ -198,7 +198,7 @@
       "spotify"
     ],
     "fact": "Spotify launched in Sweden in 2008 and didn't arrive in the US until 2011. The early web presence was mostly a pitch to convince people streaming was better than owning MP3s.",
-    "beforeUrl": "https://web.archive.org/web/2011/http://www.spotify.com",
+    "beforeUrl": "https://web.archive.org/web/2011if_/http://www.spotify.com",
     "afterUrl": "https://www.spotify.com"
   },
   {
@@ -209,7 +209,7 @@
       "craigslist"
     ],
     "fact": "Craigslist's design has barely changed since the 1990s, on purpose. The founder has said repeatedly that plain text links serve the function better than a redesign would.",
-    "beforeUrl": "https://web.archive.org/web/2004/http://www.craigslist.org",
+    "beforeUrl": "https://web.archive.org/web/2004if_/http://www.craigslist.org",
     "afterUrl": "https://www.craigslist.org"
   },
   {
@@ -220,7 +220,7 @@
       "hotmail"
     ],
     "fact": "Hotmail was one of the first free webmail services, launched in 1996, and grew largely because every outgoing email carried a tagline advertising the service itself.",
-    "beforeUrl": "https://web.archive.org/web/1999/http://www.hotmail.com",
+    "beforeUrl": "https://web.archive.org/web/1999if_/http://www.hotmail.com",
     "afterUrl": "https://outlook.live.com"
   },
   {
@@ -232,7 +232,7 @@
       "air bnb"
     ],
     "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
-    "beforeUrl": "https://web.archive.org/web/2011/http://www.airbnb.com",
+    "beforeUrl": "https://web.archive.org/web/2011if_/http://www.airbnb.com",
     "afterUrl": "https://www.airbnb.com"
   }
 ]
