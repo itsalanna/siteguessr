@@ -88,8 +88,8 @@ async function main() {
     // "Then" screenshot: crop off the top strip to remove Wayback's toolbar.
     try {
       console.log(`Capturing ${beforeFile} from ${beforeUrl} ...`);
-      await page.goto(beforeUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-      await page.waitForTimeout(3000);
+      await page.goto(beforeUrl, { waitUntil: 'load', timeout: 60000 });
+      await page.waitForTimeout(5000);
       await page.screenshot({
         path: path.join(outDir, beforeFile),
         clip: { x: 0, y: WAYBACK_TOOLBAR_HEIGHT, width: SHOT_WIDTH, height: SHOT_HEIGHT }
@@ -102,8 +102,8 @@ async function main() {
     // "Now" screenshot: no toolbar to crop, just take the top SHOT_HEIGHT.
     try {
       console.log(`Capturing ${afterFile} from ${r.afterUrl} ...`);
-      await page.goto(r.afterUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-      await page.waitForTimeout(3000);
+      await page.goto(r.afterUrl, { waitUntil: 'load', timeout: 60000 });
+      await page.waitForTimeout(5000);
       await page.screenshot({
         path: path.join(outDir, afterFile),
         clip: { x: 0, y: 0, width: SHOT_WIDTH, height: SHOT_HEIGHT }
