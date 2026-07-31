@@ -50,19 +50,20 @@
   .hidden{display:none !important}
 
   .exhibit-row{display:flex;gap:10px}
+  .exhibitCol{flex:1;display:flex;flex-direction:column;min-width:0}
+  .exhibitLabel{
+    font-family:'Courier New',monospace;font-size:11px;letter-spacing:.05em;
+    background:#000;color:#fff;padding:3px 8px;display:inline-block;
+    align-self:flex-start;margin-bottom:4px;
+  }
+  .exhibitLabel.now{background:var(--title-a)}
   .exhibit{
-    flex:1;height:380px;overflow:hidden;position:relative;
+    width:100%;height:380px;overflow:hidden;position:relative;
     border-top:2px solid var(--chrome-dark);border-left:2px solid var(--chrome-dark);
     border-right:2px solid var(--chrome-light);border-bottom:2px solid var(--chrome-light);
     background:#e8e8e8;
   }
   .exhibit img{width:100%;height:100%;object-fit:contain;object-position:top center;background:#fff;display:block}
-  .exhibit .tag{
-    position:absolute;top:6px;left:6px;z-index:5;
-    background:#000;color:#fff;font-family:'Courier New',monospace;
-    font-size:11px;padding:2px 8px;letter-spacing:.05em;
-  }
-  .exhibit .tag.now{background:var(--title-a)}
   .exhibit .missing{
     width:100%;height:100%;display:flex;align-items:center;justify-content:center;
     text-align:center;font-size:12px;color:#666;padding:20px;font-family:'Courier New',monospace;
@@ -147,6 +148,7 @@
     .titlebar span:not(.dot):not(.spacer){font-size:12px}
 
     .exhibit-row{flex-direction:column}
+    .exhibitCol{width:100%}
     .exhibit{height:220px}
 
     .plaque{flex-direction:column}
@@ -204,8 +206,14 @@
 
     <div id="game" class="hidden">
       <div class="exhibit-row" id="exhibitRow">
-        <div class="exhibit" id="exhibitBefore"></div>
-        <div class="exhibit hidden" id="exhibitAfter"></div>
+        <div class="exhibitCol">
+          <div class="exhibitLabel hidden" id="beforeLabel"></div>
+          <div class="exhibit" id="exhibitBefore"></div>
+        </div>
+        <div class="exhibitCol">
+          <div class="exhibitLabel now hidden" id="afterLabel">NOW</div>
+          <div class="exhibit hidden" id="exhibitAfter"></div>
+        </div>
       </div>
 
       <div class="plaque">
@@ -219,6 +227,7 @@
             <input type="text" id="companyInput" placeholder="Type the company or site name..." autocomplete="off" onkeydown="if(event.key==='Enter')submitGuess()">
           </div>
           <button class="primary" id="submitBtn" onclick="submitGuess()">Make Guess</button>
+          <button id="skipBtn" onclick="skipGuess()">Skip (0 pts)</button>
         </div>
 
         <div class="card hidden" id="resultCard">
@@ -313,6 +322,8 @@ function render(){
   $('exhibitBefore').innerHTML = imgTag(r.beforeImg, 'Archived screenshot');
   $('exhibitAfter').innerHTML = '';
   $('exhibitAfter').classList.add('hidden');
+  $('beforeLabel').classList.add('hidden');
+  $('afterLabel').classList.add('hidden');
 
   $('yearSlider').value = 2010;
   updateYearLabel();
@@ -322,6 +333,7 @@ function render(){
   $('guessCard').classList.remove('hidden');
   $('resultCard').classList.add('hidden');
   $('submitBtn').disabled = false;
+  $('skipBtn').disabled = false;
   $('nextBtn').disabled = true;
   $('progress').textContent = 'Round ' + (i+1) + ' of ' + rounds.length;
   $('status').textContent = 'Guess the year and the company...';
@@ -331,44 +343,62 @@ function render(){
 
 function updateYearLabel(){ $('yearLabel').textContent = $('yearSlider').value; }
 
+function revealRound(yearGuess, typed, skipped){
+  const r = rounds[i];
+  const yearDiff = Math.abs(yearGuess - r.year);
+  const yearPts = skipped ? 0 : Math.max(0, Math.round(5000 - yearDiff * 500));
+  const companyCorrect = skipped ? false : isMatch(typed, r.accept);
+  const companyPts = skipped ? 0 : (companyCorrect ? 5000 : 0);
+  const roundPts = yearPts + companyPts;
+  totalScore += roundPts;
+  roundResults.push({answer:r.answer, year:r.year, yearGuess, yearDiff, yearPts, typed, companyCorrect, companyPts, roundPts});
+
+  $('exhibitBefore').innerHTML = imgTag(r.beforeImg, 'Archived screenshot');
+  $('exhibitAfter').innerHTML = imgTag(r.afterImg, 'Current screenshot');
+  $('exhibitAfter').classList.remove('hidden');
+  $('beforeLabel').textContent = 'THEN \u00b7 ' + r.year;
+  $('beforeLabel').classList.remove('hidden');
+  $('afterLabel').classList.remove('hidden');
+
+  let verdictHtml;
+  if(skipped){
+    verdictHtml = '<div class="verdict wrong">Skipped, it was ' + r.answer + '</div>';
+  } else {
+    verdictHtml = companyCorrect
+      ? '<div class="verdict correct">&#10003; Correct, it was ' + r.answer + '</div>'
+      : '<div class="verdict wrong">&#10007; Not quite, it was ' + r.answer + '</div>';
+  }
+
+  $('resultText').innerHTML =
+    verdictHtml +
+    '<div>' + r.fact + '</div>' +
+    '<div class="scoreLine"><span>Year guess: ' + (skipped ? '\u2014' : yearGuess + ' (off by ' + yearDiff + ')') + '</span><b>' + yearPts.toLocaleString() + ' pts</b></div>' +
+    '<div class="scoreLine"><span>' + (skipped ? 'Skipped' : 'You typed: &ldquo;' + typed + '&rdquo;') + '</span><b>' + companyPts.toLocaleString() + ' pts</b></div>' +
+    '<div class="roundTotal">Round score: ' + roundPts.toLocaleString() + ' / 10,000</div>';
+
+  $('guessCard').classList.add('hidden');
+  $('resultCard').classList.remove('hidden');
+  $('submitBtn').disabled = true;
+  $('skipBtn').disabled = true;
+  $('companyInput').disabled = true;
+  $('nextBtn').disabled = false;
+  $('status').textContent = 'Round complete. Hit Next.';
+  $('totalScore').textContent = 'Total: ' + totalScore.toLocaleString() + ' / ' + (rounds.length*10000);
+}
+
 function submitGuess(){
   const typed = $('companyInput').value;
   if(!typed.trim()){
     $('status').textContent = 'Type a company name first!';
     return;
   }
-  const r = rounds[i];
   const yearGuess = +$('yearSlider').value;
-  const yearDiff = Math.abs(yearGuess - r.year);
-  const yearPts = Math.max(0, Math.round(5000 - yearDiff * 500));
-  const companyCorrect = isMatch(typed, r.accept);
-  const companyPts = companyCorrect ? 5000 : 0;
-  const roundPts = yearPts + companyPts;
-  totalScore += roundPts;
-  roundResults.push({answer:r.answer, year:r.year, yearGuess, yearDiff, yearPts, typed, companyCorrect, companyPts, roundPts});
+  revealRound(yearGuess, typed, false);
+}
 
-  $('exhibitBefore').innerHTML = '<div class="tag">THEN &middot; ' + r.year + '</div>' + imgTag(r.beforeImg, 'Archived screenshot');
-  $('exhibitAfter').innerHTML = '<div class="tag now">NOW</div>' + imgTag(r.afterImg, 'Current screenshot');
-  $('exhibitAfter').classList.remove('hidden');
-
-  const verdictHtml = companyCorrect
-    ? '<div class="verdict correct">&#10003; Correct, it was ' + r.answer + '</div>'
-    : '<div class="verdict wrong">&#10007; Not quite, it was ' + r.answer + '</div>';
-
-  $('resultText').innerHTML =
-    verdictHtml +
-    '<div>' + r.fact + '</div>' +
-    '<div class="scoreLine"><span>Year guess: ' + yearGuess + ' (off by ' + yearDiff + ')</span><b>' + yearPts.toLocaleString() + ' pts</b></div>' +
-    '<div class="scoreLine"><span>You typed: &ldquo;' + typed + '&rdquo;</span><b>' + companyPts.toLocaleString() + ' pts</b></div>' +
-    '<div class="roundTotal">Round score: ' + roundPts.toLocaleString() + ' / 10,000</div>';
-
-  $('guessCard').classList.add('hidden');
-  $('resultCard').classList.remove('hidden');
-  $('submitBtn').disabled = true;
-  $('companyInput').disabled = true;
-  $('nextBtn').disabled = false;
-  $('status').textContent = 'Round complete. Hit Next.';
-  $('totalScore').textContent = 'Total: ' + totalScore.toLocaleString() + ' / ' + (rounds.length*10000);
+function skipGuess(){
+  const yearGuess = +$('yearSlider').value;
+  revealRound(yearGuess, '', true);
 }
 
 function nextRound(){
