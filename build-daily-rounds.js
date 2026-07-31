@@ -10,13 +10,16 @@
 // rounds-pool.json grows on its own over time (see grow-pool.js and
 // .github/workflows/grow-pool.yml), so this file never needs manual edits.
 //
-// Wayback Machine pages come with the archive.org toolbar baked into the
-// page itself. Rather than depend on Wayback's `if_` URL modifier (which
-// needs an exact 14-digit timestamp and is unreliable to resolve from a
-// CI runner, since archive.org's lookup API intermittently rate-limits
-// requests from cloud IPs), we just capture a taller screenshot and crop
-// the toolbar strip off afterward. This has no external dependency and
-// can't fail the way the API lookup could.
+// Two things Wayback Machine pages need handling for:
+//  1. The archive.org toolbar is baked into the page itself, so we
+//     capture a taller screenshot and crop that strip off.
+//  2. The shorthand year URL (web.archive.org/web/1999/http://...)
+//     redirects to whatever snapshot Wayback considers "closest," which
+//     can land on a genuinely broken/incomplete capture (some old
+//     snapshots never saved their images). We verify the page actually
+//     has visible content before accepting it, and try alternate
+//     snapshots from that same year via the CDX API if the first one
+//     turns out blank.
 //
 // LOCAL RUN (macOS with an older OS version that Playwright's bundled
 // Chromium doesn't support):
@@ -33,6 +36,7 @@ const ROUNDS_PER_DAY = 5;
 const SHOT_WIDTH = 1200;
 const SHOT_HEIGHT = 800;
 const WAYBACK_TOOLBAR_HEIGHT = 100; // px cropped off the top of archived pages
+const MAX_SNAPSHOT_ATTEMPTS = 4;
 
 // Deterministic seeded PRNG (mulberry32-ish) so the same date always
 // produces the same shuffle, but different dates produce different ones.
@@ -59,6 +63,97 @@ function seededShuffle(arr, seedStr) {
   return a;
 }
 
+// Lists candidate snapshot timestamps for a domain within a given year,
+// via Wayback's CDX API. Returns them spread across the year (not just
+// the first few crawled) so retries actually try meaningfully different
+// captures rather than near-duplicates from the same week.
+async function getSnapshotTimestamps(domain, year) {
+  const url = `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(domain)}&from=${year}0101&to=${year}1231&output=json&filter=statuscode:200&collapse=timestamp:6&limit=30`;
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
+    const text = await res.text();
+    const rows = JSON.parse(text);
+    if (!Array.isArray(rows) || rows.length < 2) return [];
+    const timestamps = rows.slice(1).map(row => row[1]);
+    // Spread picks across the list instead of just taking the first few.
+    const picks = [];
+    const step = Math.max(1, Math.floor(timestamps.length / MAX_SNAPSHOT_ATTEMPTS));
+    for (let i = 0; i < timestamps.length && picks.length < MAX_SNAPSHOT_ATTEMPTS; i += step) {
+      picks.push(timestamps[i]);
+    }
+    return picks;
+  } catch (err) {
+    console.error(`  CDX lookup failed for ${domain}: ${err.message}`);
+    return [];
+  }
+}
+
+async function isUsableSnapshot(page) {
+  try {
+    const text = await page.evaluate(() => (document.body ? document.body.innerText : ''));
+    const trimmed = text.trim();
+    if (trimmed.length <= 40) return false;
+    const lower = trimmed.toLowerCase();
+    // Wayback's own "still loading, redirecting to..." interstitial has
+    // plenty of text on it, but it isn't the archived page itself.
+    if (lower.includes('got an http') && lower.includes('redirecting to')) return false;
+    if (lower.includes('wayback machine has not archived')) return false;
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function captureBefore(page, domain, year, outPath) {
+  let candidates = await getSnapshotTimestamps(domain, year);
+  if (candidates.length === 0) candidates = [`${year}0601000000`]; // last-resort guess
+
+  for (const ts of candidates) {
+    const url = `https://web.archive.org/web/${ts}/http://${domain}`;
+    try {
+      console.log(`  trying snapshot ${ts} ...`);
+      await page.goto(url, { waitUntil: 'load', timeout: 60000 });
+      await page.waitForTimeout(4000);
+      if (await isUsableSnapshot(page)) {
+        await page.screenshot({
+          path: outPath,
+          clip: { x: 0, y: WAYBACK_TOOLBAR_HEIGHT, width: SHOT_WIDTH, height: SHOT_HEIGHT }
+        });
+        console.log(`  snapshot ${ts} looked good, saved.`);
+        return true;
+      }
+      console.log(`  snapshot ${ts} appears blank/broken, trying next...`);
+    } catch (err) {
+      console.log(`  snapshot ${ts} failed to load: ${err.message}`);
+    }
+  }
+
+  console.error(`  No usable snapshot found for ${domain} in ${year} after ${candidates.length} attempts.`);
+  return false;
+}
+
+async function captureAfter(page, url, outPath) {
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      await page.goto(url, { waitUntil: 'load', timeout: 60000 });
+      await page.waitForTimeout(attempt === 1 ? 5000 : 9000);
+      const usable = await isUsableSnapshot(page);
+      if (usable || attempt === 2) {
+        await page.screenshot({
+          path: outPath,
+          clip: { x: 0, y: 0, width: SHOT_WIDTH, height: SHOT_HEIGHT }
+        });
+        if (!usable) console.log(`  ${url} still looked sparse after retry, saved anyway.`);
+        return true;
+      }
+      console.log(`  ${url} looked blank on attempt ${attempt}, retrying with a longer wait...`);
+    } catch (err) {
+      console.error(`  FAILED attempt ${attempt} for ${url}: ${err.message}`);
+    }
+  }
+  return false;
+}
+
 async function main() {
   const today = new Date().toISOString().slice(0, 10); // e.g. "2026-08-01" (UTC)
   const shuffled = seededShuffle(pool, today);
@@ -72,8 +167,6 @@ async function main() {
     ? { channel: process.env.PLAYWRIGHT_CHANNEL }
     : {};
   const browser = await chromium.launch(launchOptions);
-  // Extra height so there's room to crop the Wayback toolbar off and still
-  // end up with a full SHOT_HEIGHT image.
   const page = await browser.newPage({
     viewport: { width: SHOT_WIDTH, height: SHOT_HEIGHT + WAYBACK_TOOLBAR_HEIGHT }
   });
@@ -83,35 +176,12 @@ async function main() {
   for (const r of todays) {
     const beforeFile = `images/${r.slug}-then.png`;
     const afterFile = `images/${r.slug}-now.png`;
-    const beforeUrl = `https://web.archive.org/web/${r.year}/http://${r.beforeDomain}`;
 
-    // "Then" screenshot: crop off the top strip to remove Wayback's toolbar.
-    try {
-      console.log(`Capturing ${beforeFile} from ${beforeUrl} ...`);
-      await page.goto(beforeUrl, { waitUntil: 'load', timeout: 60000 });
-      await page.waitForTimeout(5000);
-      await page.screenshot({
-        path: path.join(outDir, beforeFile),
-        clip: { x: 0, y: WAYBACK_TOOLBAR_HEIGHT, width: SHOT_WIDTH, height: SHOT_HEIGHT }
-      });
-      console.log(`  saved -> ${beforeFile}`);
-    } catch (err) {
-      console.error(`  FAILED ${beforeFile}: ${err.message}`);
-    }
+    console.log(`Capturing ${beforeFile} (${r.beforeDomain}, ~${r.year}) ...`);
+    await captureBefore(page, r.beforeDomain, r.year, path.join(outDir, beforeFile));
 
-    // "Now" screenshot: no toolbar to crop, just take the top SHOT_HEIGHT.
-    try {
-      console.log(`Capturing ${afterFile} from ${r.afterUrl} ...`);
-      await page.goto(r.afterUrl, { waitUntil: 'load', timeout: 60000 });
-      await page.waitForTimeout(5000);
-      await page.screenshot({
-        path: path.join(outDir, afterFile),
-        clip: { x: 0, y: 0, width: SHOT_WIDTH, height: SHOT_HEIGHT }
-      });
-      console.log(`  saved -> ${afterFile}`);
-    } catch (err) {
-      console.error(`  FAILED ${afterFile}: ${err.message}`);
-    }
+    console.log(`Capturing ${afterFile} from ${r.afterUrl} ...`);
+    await captureAfter(page, r.afterUrl, path.join(outDir, afterFile));
 
     roundsOut.push({
       answer: r.answer,
