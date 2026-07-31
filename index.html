@@ -46,6 +46,7 @@
   .titlebar .spacer{flex:1}
   .menubar{font-size:12px;padding:3px 8px;border-bottom:1px solid var(--chrome-dark);display:flex;gap:14px;color:#222}
   .menubar u{text-decoration:underline}
+  .menubar #progress,.menubar #totalScore{font-weight:bold}
   .body{padding:12px;display:flex;flex-direction:column;gap:12px;overflow:auto}
   .hidden{display:none !important}
 
@@ -111,14 +112,6 @@
   button:focus-visible{outline:2px dotted #000;outline-offset:-5px}
   button.primary{font-weight:bold}
 
-  .statusbar{display:flex;gap:6px;font-size:12px}
-  .statusbar .cell{
-    flex:1;padding:3px 8px;
-    border-top:1px solid var(--chrome-dark);border-left:1px solid var(--chrome-dark);
-    border-right:1px solid var(--chrome-light);border-bottom:1px solid var(--chrome-light);
-    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-  }
-
   .intro{padding:26px 22px;text-align:center}
   .intro h1{font-size:30px;letter-spacing:1px;margin-bottom:6px}
   .intro h1 .flip{display:inline-block;transform:scaleX(-1)}
@@ -170,8 +163,7 @@
     }
     .controls button{flex:1}
 
-    .statusbar{flex-wrap:wrap}
-    .statusbar .cell{flex:1 1 100%;white-space:normal}
+    .menubar{flex-wrap:wrap;font-size:11px}
 
     .intro{padding:18px 14px}
     .intro h1{font-size:22px}
@@ -196,7 +188,7 @@
     <span class="spacer"></span>
     <span class="dot">_</span><span class="dot">X</span>
   </div>
-  <div class="menubar"><span><u>F</u>ile</span><span><u>P</u>lay</span><span><u>H</u>elp</span></div>
+  <div class="menubar"><span id="progress">Ready</span><span id="totalScore"></span><span><u>H</u>elp</span></div>
 
   <div class="body">
     <div id="intro" class="intro">
@@ -214,11 +206,6 @@
     </div>
 
     <div id="game" class="hidden">
-      <div class="statusbar">
-        <div class="cell" id="progress"></div>
-        <div class="cell" id="totalScore"></div>
-      </div>
-
       <div class="exhibit-row" id="exhibitRow">
         <div class="exhibitCol">
           <div class="exhibitLabel hidden" id="beforeLabel"></div>
@@ -432,6 +419,8 @@ function scoreEmoji(pts){
 
 function finishGame(){
   const max = rounds.length * 10000;
+  $('progress').textContent = 'Game Complete';
+  $('totalScore').textContent = 'Total: ' + totalScore.toLocaleString() + ' / ' + max.toLocaleString();
   $('finalBig').textContent = totalScore.toLocaleString() + ' / ' + max.toLocaleString();
   $('emojiRow').textContent = roundResults.map(r => scoreEmoji(r.roundPts)).join(' ');
 
