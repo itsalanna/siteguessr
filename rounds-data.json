@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-31",
+  "rounds": [
+    {
+      "answer": "Apple",
+      "year": 1999,
+      "accept": [
+        "apple",
+        "applecom"
+      ],
+      "fact": "This was the candy-colored iMac era. Apple's site leaned hard into translucent plastic and drop shadows, years before the brushed-aluminum minimalism it's known for today.",
+      "beforeImg": "images/apple-then.png",
+      "afterImg": "images/apple-now.png"
+    },
+    {
+      "answer": "Google",
+      "year": 1998,
+      "accept": [
+        "google",
+        "googl",
+        "googlecom"
+      ],
+      "fact": "The famously sparse homepage was reportedly a side effect of the founders not knowing HTML well enough to make anything more complex. An early advantage the world mistook for minimalist genius.",
+      "beforeImg": "images/google-then.png",
+      "afterImg": "images/google-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/airbnb-then.png",
+      "afterImg": "images/airbnb-now.png"
+    },
+    {
+      "answer": "Spotify",
+      "year": 2011,
+      "accept": [
+        "spotify"
+      ],
+      "fact": "Spotify launched in Sweden in 2008 and didn't arrive in the US until 2011. The early web presence was mostly a pitch to convince people streaming was better than owning MP3s.",
+      "beforeImg": "images/spotify-then.png",
+      "afterImg": "images/spotify-now.png"
+    },
+    {
+      "answer": "MySpace",
+      "year": 2005,
+      "accept": [
+        "myspace",
+        "my space"
+      ],
+      "fact": "MySpace let anyone inject custom HTML and CSS into their profile, which meant autoplaying music, glittery backgrounds, and profiles that could crash your browser. It was the peak of user-generated web chaos.",
+      "beforeImg": "images/myspace-then.png",
+      "afterImg": "images/myspace-now.png"
+    }
+  ]
+}
