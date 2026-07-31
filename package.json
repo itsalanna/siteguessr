@@ -1,0 +1,9 @@
+{
+  "name": "guess-the-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daily guess-the-redesign game with automated screenshot updates",
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}

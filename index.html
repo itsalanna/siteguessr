@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Redesign</title>
+<style>
+  :root{
+    --desktop:#008080;
+    --chrome:#d4d0c8;
+    --chrome-dark:#808080;
+    --chrome-darker:#404040;
+    --chrome-light:#ffffff;
+    --title-a:#000080;
+    --title-b:#1084d0;
+    --ink:#111111;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--desktop);
+    background-image:radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size:4px 4px;
+    font-family:Tahoma,Verdana,'Segoe UI',sans-serif;
+    color:var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    padding:20px;
+  }
+  .window{
+    width:min(920px,100%);
+    display:flex;flex-direction:column;
+    max-height:100%;
+    background:var(--chrome);
+    border-top:2px solid var(--chrome-light);
+    border-left:2px solid var(--chrome-light);
+    border-right:2px solid var(--chrome-darker);
+    border-bottom:2px solid var(--chrome-darker);
+    box-shadow:1px 1px 0 1px var(--chrome-dark);
+  }
+  .titlebar{
+    background:linear-gradient(90deg,var(--title-a),var(--title-b));
+    color:#fff;padding:4px 6px;display:flex;align-items:center;gap:8px;
+    font-weight:bold;font-size:13px;user-select:none;
+  }
+  .titlebar .dot{width:14px;height:14px;background:var(--chrome);border:1px solid #000;display:inline-block;font-size:9px;line-height:12px;text-align:center;color:#000}
+  .titlebar .spacer{flex:1}
+  .menubar{font-size:12px;padding:3px 8px;border-bottom:1px solid var(--chrome-dark);display:flex;gap:14px;color:#222}
+  .menubar u{text-decoration:underline}
+  .body{padding:12px;display:flex;flex-direction:column;gap:12px;overflow:auto}
+  .hidden{display:none !important}
+
+  .exhibit-row{display:flex;gap:10px}
+  .exhibit{
+    flex:1;height:380px;overflow:hidden;position:relative;
+    border-top:2px solid var(--chrome-dark);border-left:2px solid var(--chrome-dark);
+    border-right:2px solid var(--chrome-light);border-bottom:2px solid var(--chrome-light);
+    background:#e8e8e8;
+  }
+  .exhibit img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .exhibit .tag{
+    position:absolute;top:6px;left:6px;z-index:5;
+    background:#000;color:#fff;font-family:'Courier New',monospace;
+    font-size:11px;padding:2px 8px;letter-spacing:.05em;
+  }
+  .exhibit .tag.now{background:var(--title-a)}
+  .exhibit .missing{
+    width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+    text-align:center;font-size:12px;color:#666;padding:20px;font-family:'Courier New',monospace;
+  }
+
+  .plaque{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}
+  .plaque .card{
+    flex:1;min-width:280px;padding:10px 12px;
+    background:#ffffe1;border:1px solid #000;font-size:13px;line-height:1.5;
+  }
+  .plaque .card .label{
+    font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;color:#555;
+    text-transform:uppercase;display:block;margin-bottom:6px;
+  }
+  .yearGuess{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .yearGuess input[type=range]{flex:1}
+  .yearGuess b{min-width:44px;text-align:right;font-size:16px}
+  .guessRow{display:flex;gap:8px;margin-bottom:10px}
+  .guessRow input[type=text]{
+    flex:1;font-family:inherit;font-size:14px;padding:6px 8px;
+    border-top:2px solid var(--chrome-dark);border-left:2px solid var(--chrome-dark);
+    border-right:2px solid var(--chrome-light);border-bottom:2px solid var(--chrome-light);
+  }
+  .resultText b{font-size:14px}
+  .verdict{font-weight:bold;padding:4px 8px;display:inline-block;margin:6px 0;font-family:'Courier New',monospace}
+  .verdict.correct{background:#cdeecd;color:#1a5c1a}
+  .verdict.wrong{background:#f3cfcf;color:#7a1a1a}
+  .scoreLine{display:flex;justify-content:space-between;margin-top:6px;font-family:'Courier New',monospace;font-size:12px}
+  .scoreLine b{font-family:Tahoma,Verdana,sans-serif}
+  .roundTotal{margin-top:8px;padding-top:6px;border-top:1px dashed #999;font-weight:bold;text-align:right}
+
+  .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:flex-end}
+  button{
+    font-family:inherit;font-size:13px;padding:6px 18px;cursor:pointer;
+    background:var(--chrome);
+    border-top:2px solid var(--chrome-light);border-left:2px solid var(--chrome-light);
+    border-right:2px solid var(--chrome-darker);border-bottom:2px solid var(--chrome-darker);
+  }
+  button:active{
+    border-top:2px solid var(--chrome-darker);border-left:2px solid var(--chrome-darker);
+    border-right:2px solid var(--chrome-light);border-bottom:2px solid var(--chrome-light);
+  }
+  button:disabled{color:#888;cursor:default}
+  button:focus-visible{outline:2px dotted #000;outline-offset:-5px}
+  button.primary{font-weight:bold}
+
+  .statusbar{display:flex;gap:6px;font-size:12px}
+  .statusbar .cell{
+    flex:1;padding:3px 8px;
+    border-top:1px solid var(--chrome-dark);border-left:1px solid var(--chrome-dark);
+    border-right:1px solid var(--chrome-light);border-bottom:1px solid var(--chrome-light);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+
+  .intro{padding:26px 22px;text-align:center}
+  .intro h1{font-size:30px;letter-spacing:1px;margin-bottom:6px}
+  .intro h1 .flip{display:inline-block;transform:scaleX(-1)}
+  .intro p{font-size:13px;line-height:1.6;max-width:560px;margin:0 auto 10px}
+  .intro ol{text-align:left;max-width:460px;margin:14px auto;font-size:13px;line-height:1.7}
+  .bigscore{font-size:36px;font-weight:bold;margin:8px 0}
+  .roundTable{margin:16px auto;max-width:560px;text-align:left;font-size:12px;border-collapse:collapse;width:100%}
+  .roundTable th,.roundTable td{border:1px solid var(--chrome-dark);padding:5px 8px}
+  .roundTable th{background:var(--chrome);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+  .emojiRow{font-size:20px;letter-spacing:4px;margin:10px 0}
+  .shareBox{
+    font-family:'Courier New',monospace;font-size:12px;background:#fff;border:1px solid #000;
+    padding:10px;max-width:420px;margin:12px auto;text-align:left;white-space:pre-line;
+  }
+  .nextup{
+    margin-top:16px;padding:12px;background:#000080;color:#fff;
+    font-family:'Courier New',monospace;font-size:13px;max-width:420px;margin-left:auto;margin-right:auto;
+  }
+  .nextup .countdown{font-size:20px;font-weight:bold;margin-top:6px;letter-spacing:.05em}
+  .endBtns{display:flex;gap:8px;justify-content:center;margin-top:6px}
+  .loadErr{color:#7a1a1a;font-size:12px;margin-top:10px}
+
+  /* ---- Mobile ---- */
+  @media (max-width: 640px){
+    body{padding:8px}
+    .window{width:100%}
+    .body{padding:8px;gap:8px}
+    .titlebar span:not(.dot):not(.spacer){font-size:12px}
+
+    .exhibit-row{flex-direction:column}
+    .exhibit{height:220px}
+
+    .plaque{flex-direction:column}
+    .plaque .card{min-width:0;width:100%}
+
+    .yearGuess input[type=range]{height:32px}
+    .guessRow input[type=text]{font-size:16px;padding:10px}
+    button{font-size:15px;padding:10px 16px}
+    .controls{justify-content:stretch}
+    .controls button{flex:1}
+    #submitBtn{width:100%}
+
+    .statusbar{flex-wrap:wrap}
+    .statusbar .cell{flex:1 1 100%;white-space:normal}
+
+    .intro{padding:18px 14px}
+    .intro h1{font-size:22px}
+    .intro p{font-size:12px;max-width:100%}
+    .intro ol{font-size:12px;max-width:100%}
+    .endBtns{flex-direction:column}
+    .endBtns button{width:100%}
+
+    .roundTable{font-size:10px}
+    .roundTable th,.roundTable td{padding:4px 5px}
+    .nextup{max-width:100%}
+  }
+  @media (max-width: 400px){
+    .exhibit{height:180px}
+  }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="titlebar">
+    <span>Guess the Redesign: Daily Edition</span>
+    <span class="spacer"></span>
+    <span class="dot">_</span><span class="dot">X</span>
+  </div>
+  <div class="menubar"><span><u>F</u>ile</span><span><u>P</u>lay</span><span><u>H</u>elp</span></div>
+
+  <div class="body">
+    <div id="intro" class="intro">
+      <h1>GUESS THE <span class="flip">REDESIGN</span></h1>
+      <p id="introText">Five real products. Real screenshots of what they looked like years ago, refreshed every day. Type the company, guess the year, and see how close you get.</p>
+      <ol>
+        <li>Each round shows a real archived screenshot of a site's old design.</li>
+        <li>Drag the slider to guess the year, type the company name, then hit "Make Guess."</li>
+        <li>Score up to 10,000 points a round. Closer year guesses and a correct company score higher.</li>
+        <li>See if you were right, then view today's screenshot side-by-side with the old one.</li>
+        <li>5 rounds. Max score: 50,000.</li>
+      </ol>
+      <button class="primary" id="startBtn" onclick="startGame()" disabled>Loading today's game...</button>
+      <div class="loadErr hidden" id="loadErr"></div>
+    </div>
+
+    <div id="game" class="hidden">
+      <div class="exhibit-row" id="exhibitRow">
+        <div class="exhibit" id="exhibitBefore"></div>
+        <div class="exhibit hidden" id="exhibitAfter"></div>
+      </div>
+
+      <div class="plaque">
+        <div class="card" id="guessCard">
+          <span class="label">Your guess</span>
+          <div class="yearGuess">
+            <input type="range" id="yearSlider" min="1994" max="2026" value="2010" oninput="updateYearLabel()">
+            <b id="yearLabel">2010</b>
+          </div>
+          <div class="guessRow">
+            <input type="text" id="companyInput" placeholder="Type the company or site name..." autocomplete="off" onkeydown="if(event.key==='Enter')submitGuess()">
+          </div>
+          <button class="primary" id="submitBtn" onclick="submitGuess()">Make Guess</button>
+        </div>
+
+        <div class="card hidden" id="resultCard">
+          <span class="label">Result</span>
+          <div class="resultText" id="resultText"></div>
+        </div>
+      </div>
+
+      <div class="statusbar">
+        <div class="cell" id="progress"></div>
+        <div class="cell" id="status"></div>
+        <div class="cell" id="totalScore"></div>
+      </div>
+
+      <div class="controls">
+        <button id="nextBtn" disabled onclick="nextRound()">Next Round</button>
+      </div>
+    </div>
+
+    <div id="end" class="hidden intro">
+      <h1>FINAL SCORE</h1>
+      <div class="bigscore" id="finalBig"></div>
+      <div class="emojiRow" id="emojiRow"></div>
+      <table class="roundTable" id="roundTable"></table>
+      <div class="shareBox" id="shareBox"></div>
+      <div class="endBtns">
+        <button class="primary" onclick="location.reload()">Play Again</button>
+        <button onclick="copyShare()">Copy Results</button>
+      </div>
+      <div class="nextup">
+        Tomorrow's 5 rounds, with fresh screenshots, unlock at 6:00 AM EST.
+        <div class="countdown" id="countdown">--:--:--</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let rounds = [];
+let i = 0, totalScore = 0, roundResults = [];
+const $ = id => document.getElementById(id);
+
+function imgTag(path, alt){
+  return '<img src="' + path + '" alt="' + alt + '" loading="lazy" ' +
+    'onerror="this.outerHTML=\'<div class=&quot;missing&quot;>Image not found: ' + path + '</div>\'">';
+}
+
+// Load today's rounds. rounds-data.json is written daily by
+// build-daily-rounds.js (run automatically by GitHub Actions).
+fetch('rounds-data.json?_=' + Date.now())
+  .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(data => {
+    rounds = data.rounds || [];
+    if(rounds.length === 0) throw new Error('No rounds in rounds-data.json');
+    $('startBtn').disabled = false;
+    $('startBtn').textContent = "Start Today's Game";
+  })
+  .catch(err => {
+    $('loadErr').textContent = "Couldn't load today's rounds (" + err.message + "). Make sure rounds-data.json exists next to this page.";
+    $('loadErr').classList.remove('hidden');
+  });
+
+function normalize(s){ return s.toLowerCase().trim().replace(/[^a-z0-9]/g,''); }
+function levenshtein(a,b){
+  const m=a.length,n=b.length;
+  const d=Array.from({length:m+1},(_,i)=>[i,...Array(n).fill(0)]);
+  for(let j=0;j<=n;j++) d[0][j]=j;
+  for(let i2=1;i2<=m;i2++) for(let j=1;j<=n;j++){
+    d[i2][j]=Math.min(d[i2-1][j]+1,d[i2][j-1]+1,d[i2-1][j-1]+(a[i2-1]===b[j-1]?0:1));
+  }
+  return d[m][n];
+}
+function isMatch(input, accept){
+  const ni = normalize(input);
+  if(!ni) return false;
+  return accept.some(a=>{
+    const na = normalize(a);
+    if(na===ni || ni.includes(na) || na.includes(ni)) return true;
+    const tol = na.length>6?2:1;
+    return levenshtein(na,ni)<=tol;
+  });
+}
+
+function startGame(){
+  $('intro').classList.add('hidden');
+  $('game').classList.remove('hidden');
+  render();
+}
+
+function render(){
+  const r = rounds[i];
+  $('exhibitBefore').innerHTML = imgTag(r.beforeImg, 'Archived screenshot');
+  $('exhibitAfter').innerHTML = '';
+  $('exhibitAfter').classList.add('hidden');
+
+  $('yearSlider').value = 2010;
+  updateYearLabel();
+  $('companyInput').value = '';
+  $('companyInput').disabled = false;
+
+  $('guessCard').classList.remove('hidden');
+  $('resultCard').classList.add('hidden');
+  $('submitBtn').disabled = false;
+  $('nextBtn').disabled = true;
+  $('progress').textContent = 'Round ' + (i+1) + ' of ' + rounds.length;
+  $('status').textContent = 'Guess the year and the company...';
+  $('totalScore').textContent = 'Total: ' + totalScore.toLocaleString() + ' / ' + (rounds.length*10000);
+  $('companyInput').focus();
+}
+
+function updateYearLabel(){ $('yearLabel').textContent = $('yearSlider').value; }
+
+function submitGuess(){
+  const typed = $('companyInput').value;
+  if(!typed.trim()){
+    $('status').textContent = 'Type a company name first!';
+    return;
+  }
+  const r = rounds[i];
+  const yearGuess = +$('yearSlider').value;
+  const yearDiff = Math.abs(yearGuess - r.year);
+  const yearPts = Math.max(0, Math.round(5000 - yearDiff * 500));
+  const companyCorrect = isMatch(typed, r.accept);
+  const companyPts = companyCorrect ? 5000 : 0;
+  const roundPts = yearPts + companyPts;
+  totalScore += roundPts;
+  roundResults.push({answer:r.answer, year:r.year, yearGuess, yearDiff, yearPts, typed, companyCorrect, companyPts, roundPts});
+
+  $('exhibitBefore').innerHTML = '<div class="tag">THEN &middot; ' + r.year + '</div>' + imgTag(r.beforeImg, 'Archived screenshot');
+  $('exhibitAfter').innerHTML = '<div class="tag now">NOW</div>' + imgTag(r.afterImg, 'Current screenshot');
+  $('exhibitAfter').classList.remove('hidden');
+
+  const verdictHtml = companyCorrect
+    ? '<div class="verdict correct">&#10003; Correct, it was ' + r.answer + '</div>'
+    : '<div class="verdict wrong">&#10007; Not quite, it was ' + r.answer + '</div>';
+
+  $('resultText').innerHTML =
+    verdictHtml +
+    '<div>' + r.fact + '</div>' +
+    '<div class="scoreLine"><span>Year guess: ' + yearGuess + ' (off by ' + yearDiff + ')</span><b>' + yearPts.toLocaleString() + ' pts</b></div>' +
+    '<div class="scoreLine"><span>You typed: &ldquo;' + typed + '&rdquo;</span><b>' + companyPts.toLocaleString() + ' pts</b></div>' +
+    '<div class="roundTotal">Round score: ' + roundPts.toLocaleString() + ' / 10,000</div>';
+
+  $('guessCard').classList.add('hidden');
+  $('resultCard').classList.remove('hidden');
+  $('submitBtn').disabled = true;
+  $('companyInput').disabled = true;
+  $('nextBtn').disabled = false;
+  $('status').textContent = 'Round complete. Hit Next.';
+  $('totalScore').textContent = 'Total: ' + totalScore.toLocaleString() + ' / ' + (rounds.length*10000);
+}
+
+function nextRound(){
+  if(i < rounds.length - 1){
+    i++;
+    render();
+  } else {
+    $('game').classList.add('hidden');
+    $('end').classList.remove('hidden');
+    finishGame();
+  }
+}
+
+function scoreEmoji(pts){
+  if(pts >= 8000) return '\u{1F7E9}';
+  if(pts >= 4000) return '\u{1F7E8}';
+  return '\u{1F7E5}';
+}
+
+function finishGame(){
+  const max = rounds.length * 10000;
+  $('finalBig').textContent = totalScore.toLocaleString() + ' / ' + max.toLocaleString();
+  $('emojiRow').textContent = roundResults.map(r => scoreEmoji(r.roundPts)).join(' ');
+
+  const rows = roundResults.map((r, idx) =>
+    '<tr><td>' + (idx+1) + '</td><td>' + r.answer + '</td><td>' + r.year + '</td>' +
+    '<td>' + r.yearGuess + ' (&plusmn;' + r.yearDiff + ')</td>' +
+    '<td>' + (r.companyCorrect ? '&#10003;' : '&#10007;') + '</td>' +
+    '<td>' + r.roundPts.toLocaleString() + '</td></tr>'
+  ).join('');
+  $('roundTable').innerHTML =
+    '<tr><th>#</th><th>Answer</th><th>Year</th><th>Your Guess</th><th>Company</th><th>Score</th></tr>' + rows;
+
+  $('shareBox').textContent =
+    'Guess the Redesign\n' +
+    totalScore.toLocaleString() + ' / ' + max.toLocaleString() + '\n' +
+    roundResults.map(r => scoreEmoji(r.roundPts)).join(' ');
+
+  startCountdown();
+}
+
+function copyShare(){
+  const text = $('shareBox').textContent;
+  if(navigator.clipboard){ navigator.clipboard.writeText(text); }
+}
+
+function startCountdown(){
+  function tick(){
+    const now = new Date();
+    const nowUTC = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+    let target = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 11, 0, 0);
+    if(nowUTC >= target) target += 24*60*60*1000;
+    let diff = Math.max(0, target - nowUTC);
+    const h = String(Math.floor(diff/3600000)).padStart(2,'0');
+    const m = String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
+    const s = String(Math.floor((diff%60000)/1000)).padStart(2,'0');
+    $('countdown').textContent = h+':'+m+':'+s;
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+</script>
+</body>
+</html>
