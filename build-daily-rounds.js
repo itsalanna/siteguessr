@@ -10,16 +10,20 @@
 // rounds-pool.json grows on its own over time (see grow-pool.js and
 // .github/workflows/grow-pool.yml), so this file never needs manual edits.
 //
-// Two things Wayback Machine pages need handling for:
-//  1. The archive.org toolbar is baked into the page itself, so we
-//     capture a taller screenshot and crop that strip off.
+// Handling for Wayback Machine quirks:
+//  1. The archive.org toolbar is baked into the page itself. Its height
+//     varies from page to page (extra banners, notices, etc.), so we
+//     measure the actual toolbar element and crop exactly that much,
+//     rather than guessing a fixed pixel count.
 //  2. The shorthand year URL (web.archive.org/web/1999/http://...)
 //     redirects to whatever snapshot Wayback considers "closest," which
-//     can land on a genuinely broken/incomplete capture (some old
-//     snapshots never saved their images). We verify the page actually
-//     has visible content before accepting it, and try alternate
-//     snapshots from that same year via the CDX API if the first one
-//     turns out blank.
+//     can land on a broken/incomplete capture, or on Wayback's own
+//     "redirecting..." interstitial page. We verify the page has real
+//     content (and isn't that interstitial) before accepting it, trying
+//     alternate snapshots from the CDX API if needed.
+//  3. The site's own name/logo is usually the biggest giveaway in a
+//     "guess the company" screenshot, so on the "then" shot we find and
+//     cover any on-page text or image alt text that matches the answer.
 //
 // LOCAL RUN (macOS with an older OS version that Playwright's bundled
 // Chromium doesn't support):
@@ -35,7 +39,8 @@ const pool = JSON.parse(fs.readFileSync(path.join(__dirname, 'rounds-pool.json')
 const ROUNDS_PER_DAY = 5;
 const SHOT_WIDTH = 1200;
 const SHOT_HEIGHT = 800;
-const WAYBACK_TOOLBAR_HEIGHT = 100; // px cropped off the top of archived pages
+const DEFAULT_TOOLBAR_HEIGHT = 100; // fallback if the toolbar element can't be measured
+const VIEWPORT_HEADROOM = 300;      // extra height so cropping never runs out of room
 const MAX_SNAPSHOT_ATTEMPTS = 4;
 
 // Deterministic seeded PRNG (mulberry32-ish) so the same date always
@@ -64,9 +69,8 @@ function seededShuffle(arr, seedStr) {
 }
 
 // Lists candidate snapshot timestamps for a domain within a given year,
-// via Wayback's CDX API. Returns them spread across the year (not just
-// the first few crawled) so retries actually try meaningfully different
-// captures rather than near-duplicates from the same week.
+// via Wayback's CDX API, spread across the year so retries try
+// meaningfully different captures rather than near-duplicates.
 async function getSnapshotTimestamps(domain, year) {
   const url = `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(domain)}&from=${year}0101&to=${year}1231&output=json&filter=statuscode:200&collapse=timestamp:6&limit=30`;
   try {
@@ -75,7 +79,6 @@ async function getSnapshotTimestamps(domain, year) {
     const rows = JSON.parse(text);
     if (!Array.isArray(rows) || rows.length < 2) return [];
     const timestamps = rows.slice(1).map(row => row[1]);
-    // Spread picks across the list instead of just taking the first few.
     const picks = [];
     const step = Math.max(1, Math.floor(timestamps.length / MAX_SNAPSHOT_ATTEMPTS));
     for (let i = 0; i < timestamps.length && picks.length < MAX_SNAPSHOT_ATTEMPTS; i += step) {
@@ -94,8 +97,6 @@ async function isUsableSnapshot(page) {
     const trimmed = text.trim();
     if (trimmed.length <= 40) return false;
     const lower = trimmed.toLowerCase();
-    // Wayback's own "still loading, redirecting to..." interstitial has
-    // plenty of text on it, but it isn't the archived page itself.
     if (lower.includes('got an http') && lower.includes('redirecting to')) return false;
     if (lower.includes('wayback machine has not archived')) return false;
     return true;
@@ -104,7 +105,70 @@ async function isUsableSnapshot(page) {
   }
 }
 
-async function captureBefore(page, domain, year, outPath) {
+// Measures the actual height of Wayback's injected toolbar so we crop
+// exactly the right amount instead of guessing a fixed pixel count.
+async function getToolbarHeight(page) {
+  try {
+    const height = await page.evaluate(() => {
+      const el = document.querySelector('#wm-ipp-base') || document.querySelector('#wm-ipp');
+      return el ? Math.ceil(el.getBoundingClientRect().height) : null;
+    });
+    if (height && height > 20 && height < 250) return height;
+  } catch {
+    // fall through to default
+  }
+  return DEFAULT_TOOLBAR_HEIGHT;
+}
+
+// Finds on-page text or image alt/title text matching the answer or any
+// of its accepted aliases, and covers those regions with a solid box so
+// the archived page doesn't just hand the player the answer.
+async function coverBrandMentions(page, names) {
+  const patterns = names.filter(Boolean).map(n => n.toLowerCase().trim()).filter(n => n.length > 0);
+  if (patterns.length === 0) return;
+  try {
+    await page.evaluate((patterns) => {
+      function isMatch(text) {
+        if (!text) return false;
+        const t = text.trim().toLowerCase();
+        if (!t) return false;
+        return patterns.some(p => t === p || (p.length > 2 && t.includes(p)));
+      }
+      function cover(rect) {
+        const div = document.createElement('div');
+        div.style.position = 'fixed';
+        div.style.left = rect.left + 'px';
+        div.style.top = rect.top + 'px';
+        div.style.width = rect.width + 'px';
+        div.style.height = rect.height + 'px';
+        div.style.background = '#c8c8c8';
+        div.style.zIndex = '2147483647';
+        div.style.borderRadius = '3px';
+        document.body.appendChild(div);
+      }
+      document.querySelectorAll('body *').forEach(el => {
+        if (el.childElementCount > 0) return; // leaf elements only
+        const text = el.textContent;
+        if (isMatch(text) && text.trim().length < 40) {
+          const rect = el.getBoundingClientRect();
+          if (rect.width > 0 && rect.height > 0 && rect.width < 500 && rect.height < 150) {
+            cover(rect);
+          }
+        }
+      });
+      document.querySelectorAll('img').forEach(img => {
+        if (isMatch(img.alt) || isMatch(img.title)) {
+          const rect = img.getBoundingClientRect();
+          if (rect.width > 0 && rect.height > 0) cover(rect);
+        }
+      });
+    }, patterns);
+  } catch (err) {
+    console.error(`  Brand-covering step failed (non-fatal): ${err.message}`);
+  }
+}
+
+async function captureBefore(page, domain, year, outPath, brandNames) {
   let candidates = await getSnapshotTimestamps(domain, year);
   if (candidates.length === 0) candidates = [`${year}0601000000`]; // last-resort guess
 
@@ -115,11 +179,13 @@ async function captureBefore(page, domain, year, outPath) {
       await page.goto(url, { waitUntil: 'load', timeout: 60000 });
       await page.waitForTimeout(4000);
       if (await isUsableSnapshot(page)) {
+        const toolbarHeight = await getToolbarHeight(page);
+        await coverBrandMentions(page, brandNames);
         await page.screenshot({
           path: outPath,
-          clip: { x: 0, y: WAYBACK_TOOLBAR_HEIGHT, width: SHOT_WIDTH, height: SHOT_HEIGHT }
+          clip: { x: 0, y: toolbarHeight, width: SHOT_WIDTH, height: SHOT_HEIGHT }
         });
-        console.log(`  snapshot ${ts} looked good, saved.`);
+        console.log(`  snapshot ${ts} looked good (toolbar height ${toolbarHeight}px), saved.`);
         return true;
       }
       console.log(`  snapshot ${ts} appears blank/broken, trying next...`);
@@ -168,7 +234,7 @@ async function main() {
     : {};
   const browser = await chromium.launch(launchOptions);
   const page = await browser.newPage({
-    viewport: { width: SHOT_WIDTH, height: SHOT_HEIGHT + WAYBACK_TOOLBAR_HEIGHT }
+    viewport: { width: SHOT_WIDTH, height: SHOT_HEIGHT + VIEWPORT_HEADROOM }
   });
 
   const roundsOut = [];
@@ -176,9 +242,10 @@ async function main() {
   for (const r of todays) {
     const beforeFile = `images/${r.slug}-then.png`;
     const afterFile = `images/${r.slug}-now.png`;
+    const brandNames = [r.answer, ...(r.accept || [])];
 
     console.log(`Capturing ${beforeFile} (${r.beforeDomain}, ~${r.year}) ...`);
-    await captureBefore(page, r.beforeDomain, r.year, path.join(outDir, beforeFile));
+    await captureBefore(page, r.beforeDomain, r.year, path.join(outDir, beforeFile), brandNames);
 
     console.log(`Capturing ${afterFile} from ${r.afterUrl} ...`);
     await captureAfter(page, r.afterUrl, path.join(outDir, afterFile));
