@@ -117,7 +117,7 @@ async function main() {
       year: snap.snapshotYear,
       accept: Array.isArray(c.accept) && c.accept.length ? c.accept : [c.answer.toLowerCase()],
       fact: c.fact || '',
-      beforeUrl: `https://web.archive.org/web/${snap.snapshotYear}/http://${c.domain}`,
+      beforeUrl: `https://web.archive.org/web/${snap.snapshotYear}if_/http://${c.domain}`,
       afterUrl: `https://${c.domain}`
     });
     existingSlugs.add(c.slug);
