@@ -48,6 +48,30 @@ function seededShuffle(arr, seedStr) {
   return a;
 }
 
+// The `if_` URL modifier (which hides Wayback's own toolbar) only works
+// reliably when attached to the FULL 14-digit snapshot timestamp, not a
+// shorthand year. So instead of guessing a shorthand URL, look up the
+// exact timestamp via Wayback's availability API right before capturing.
+async function resolveWaybackUrl(domain, year) {
+  const timestamp = `${year}0601`;
+  const apiUrl = `https://archive.org/wayback/available?url=${encodeURIComponent(domain)}&timestamp=${timestamp}`;
+  try {
+    const res = await fetch(apiUrl, { signal: AbortSignal.timeout(15000) });
+    const data = await res.json();
+    const closest = data.archived_snapshots && data.archived_snapshots.closest;
+    if (closest && closest.available && closest.timestamp) {
+      return `https://web.archive.org/web/${closest.timestamp}if_/http://${domain}`;
+    }
+  } catch (err) {
+    console.error(`  Wayback lookup failed for ${domain}: ${err.message}`);
+  }
+  // Fallback: shorthand year URL without the if_ modifier. Not ideal
+  // (the toolbar will show), but keeps the round playable if the
+  // availability API has a hiccup.
+  console.error(`  Falling back to shorthand URL for ${domain} (toolbar will be visible)`);
+  return `https://web.archive.org/web/${year}/http://${domain}`;
+}
+
 async function main() {
   const today = new Date().toISOString().slice(0, 10); // e.g. "2026-08-01" (UTC)
   const shuffled = seededShuffle(pool, today);
@@ -69,7 +93,10 @@ async function main() {
     const beforeFile = `images/${r.slug}-then.png`;
     const afterFile = `images/${r.slug}-now.png`;
 
-    for (const [url, file] of [[r.beforeUrl, beforeFile], [r.afterUrl, afterFile]]) {
+    console.log(`Resolving exact Wayback timestamp for ${r.beforeDomain} (~${r.year})...`);
+    const beforeUrl = await resolveWaybackUrl(r.beforeDomain, r.year);
+
+    for (const [url, file] of [[beforeUrl, beforeFile], [r.afterUrl, afterFile]]) {
       const outPath = path.join(outDir, file);
       try {
         console.log(`Capturing ${file} from ${url} ...`);
