@@ -196,6 +196,7 @@
     .desktopIconGlyph{width:48px;height:42px}
     .startBtn{width:150px;height:46px}
     .titlebar span:not(.dot):not(.spacer){font-size:12px}
+    .windowHeader{position:sticky;top:0;z-index:70;box-shadow:0 2px 4px rgba(0,0,0,.25)}
 
     .exhibit-row{flex-direction:column}
     .exhibitCol{width:100%}
@@ -301,12 +302,14 @@
 </div>
 
 <div class="window hidden" id="gameWindow">
-  <div class="titlebar">
-    <span>SiteGuessr</span>
-    <span class="spacer"></span>
-    <span class="dot">_</span><span class="dot" onclick="goToLanding()" title="Close">X</span>
+  <div class="windowHeader">
+    <div class="titlebar">
+      <span>SiteGuessr</span>
+      <span class="spacer"></span>
+      <span class="dot">_</span><span class="dot" onclick="goToLanding()" title="Close">X</span>
+    </div>
+    <div class="menubar"><span id="progress"></span><span id="totalScore"></span><span><u>H</u>elp</span></div>
   </div>
-  <div class="menubar"><span id="progress"></span><span id="totalScore"></span><span><u>H</u>elp</span></div>
 
   <div class="body">
     <div id="intro" class="intro">
@@ -357,6 +360,7 @@
       <div class="controls">
         <button id="skipBtn" onclick="skipGuess()">Skip (0 pts)</button>
         <button id="nextBtn" disabled onclick="nextRound()">Next Round</button>
+        <button onclick="goToLanding()">Exit Game</button>
       </div>
     </div>
 
@@ -555,7 +559,9 @@ function render(){
   $('nextBtn').textContent = 'Next Round';
   $('progress').textContent = 'Round ' + (i+1) + ' of ' + rounds.length;
   $('totalScore').textContent = 'Total: ' + totalScore.toLocaleString() + ' / ' + (rounds.length*10000);
-  $('companyInput').focus();
+  if(!window.matchMedia('(max-width: 640px)').matches){
+    $('companyInput').focus();
+  }
 }
 
 function updateYearLabel(){ $('yearLabel').textContent = $('yearSlider').value; }
