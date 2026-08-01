@@ -1,16 +1,16 @@
-name: Grow Round Pool
+name: Daily Redesign Update
 
 on:
   schedule:
-    # Mondays at 10:00 UTC, an hour before the daily build runs
-    - cron: '0 10 * * 1'
+    # 11:00 UTC = 6:00 AM EST (fixed, doesn't shift for daylight saving)
+    - cron: '0 11 * * *'
   workflow_dispatch: {}   # lets you trigger this manually from the Actions tab
 
 permissions:
   contents: write
 
 jobs:
-  grow:
+  update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -21,15 +21,20 @@ jobs:
         with:
           node-version: 20
 
-      - name: Grow the pool
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node grow-pool.js
+      - name: Install dependencies
+        run: npm install playwright
 
-      - name: Commit and push updated pool
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Build today's rounds and screenshots
+        run: node build-daily-rounds.js
+
+      - name: Commit and push updated files
         run: |
           git config user.name "guess-the-redesign-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add rounds-pool.json
-          git diff --staged --quiet || git commit -m "Grow round pool"
+          git add -A
+          git diff --staged --quiet || git commit -m "Daily rounds update"
+          git pull --rebase origin main
           git push
