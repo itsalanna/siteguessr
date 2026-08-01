@@ -3,7 +3,10 @@
 // Run this once a day (GitHub Actions does this automatically, see
 // .github/workflows/daily.yml). It:
 //   1. Picks 5 rounds from rounds-pool.json, seeded by today's UTC date,
-//      so everyone playing on a given day sees the same 5 rounds.
+//      so everyone playing on a given day sees the same 5 rounds. If a
+//      round's screenshots genuinely can't be captured, it's swapped
+//      for the next candidate in the shuffled pool rather than shipping
+//      a broken round.
 //   2. Captures a fresh "then" and "now" screenshot for each.
 //   3. Writes archive/{date}.json (that day's rounds) and updates
 //      archive/index.json (the list of all playable dates), so past
@@ -19,24 +22,18 @@
 //
 // Handling for Wayback Machine quirks:
 //  1. The archive.org toolbar is baked into the page itself. Its height
-//     varies from page to page (extra banners, notices, etc.), so we
-//     measure the actual toolbar element and crop exactly that much,
-//     rather than guessing a fixed pixel count.
-//  2. The shorthand year URL (web.archive.org/web/1999/http://...)
-//     redirects to whatever snapshot Wayback considers "closest," which
-//     can land on a broken/incomplete capture, or on Wayback's own
-//     "redirecting..." interstitial page. We verify the page has real
-//     content (and isn't that interstitial) before accepting it, trying
-//     alternate snapshots from the CDX API if needed.
+//     varies from page to page, so we measure the actual toolbar
+//     element and crop exactly that much.
+//  2. The shorthand year URL redirects to whatever snapshot Wayback
+//     considers "closest," which can land on a broken/incomplete
+//     capture or Wayback's own "redirecting..." interstitial. We check
+//     for real content (not just the interstitial, and not just a
+//     sparse nav-only page) before accepting a snapshot, trying
+//     alternates from the CDX API if needed.
 //  3. The site's own name/logo is usually the biggest giveaway in a
-//     "guess the company" screenshot, so on the "then" shot we find and
-//     cover any on-page text or image alt text that matches the answer.
-//
-// LOCAL RUN (macOS with an older OS version that Playwright's bundled
-// Chromium doesn't support):
-//   PLAYWRIGHT_CHANNEL=chrome node build-daily-rounds.js
-// LOCAL RUN (everything else) / CI:
-//   node build-daily-rounds.js
+//     "guess the company" screenshot, so on the "then" shot we look for
+//     and cover on-page text, image alt text, id/class hints, and
+//     header-zone images/backgrounds that match the answer.
 
 const { chromium } = require('playwright');
 const fs = require('fs');
@@ -46,12 +43,10 @@ const pool = JSON.parse(fs.readFileSync(path.join(__dirname, 'rounds-pool.json')
 const ROUNDS_PER_DAY = 5;
 const SHOT_WIDTH = 1200;
 const SHOT_HEIGHT = 800;
-const DEFAULT_TOOLBAR_HEIGHT = 100; // fallback if the toolbar element can't be measured
-const VIEWPORT_HEADROOM = 300;      // extra height so cropping never runs out of room
+const DEFAULT_TOOLBAR_HEIGHT = 100;
+const VIEWPORT_HEADROOM = 300;
 const MAX_SNAPSHOT_ATTEMPTS = 4;
 
-// Deterministic seeded PRNG (mulberry32-ish) so the same date always
-// produces the same shuffle, but different dates produce different ones.
 function makeRng(seedStr) {
   let h = 1779033703 ^ seedStr.length;
   for (let i = 0; i < seedStr.length; i++) {
@@ -75,9 +70,6 @@ function seededShuffle(arr, seedStr) {
   return a;
 }
 
-// Lists candidate snapshot timestamps for a domain within a given year,
-// via Wayback's CDX API, spread across the year so retries try
-// meaningfully different captures rather than near-duplicates.
 async function getSnapshotTimestamps(domain, year) {
   const url = `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(domain)}&from=${year}0101&to=${year}1231&output=json&filter=statuscode:200&collapse=timestamp:6&limit=30`;
   try {
@@ -98,22 +90,31 @@ async function getSnapshotTimestamps(domain, year) {
   }
 }
 
+// A page is "usable" if it has substantial text AND isn't Wayback's own
+// interstitial page. The higher text threshold (vs. the old 40 chars)
+// avoids accepting a nearly-blank page that just happens to have a nav
+// bar with enough characters in it.
 async function isUsableSnapshot(page) {
   try {
-    const text = await page.evaluate(() => (document.body ? document.body.innerText : ''));
-    const trimmed = text.trim();
-    if (trimmed.length <= 40) return false;
-    const lower = trimmed.toLowerCase();
-    if (lower.includes('got an http') && lower.includes('redirecting to')) return false;
-    if (lower.includes('wayback machine has not archived')) return false;
-    return true;
+    const result = await page.evaluate(() => {
+      const text = document.body ? document.body.innerText.trim() : '';
+      const loadedImages = Array.from(document.querySelectorAll('img'))
+        .filter(img => img.naturalWidth > 20 && img.naturalHeight > 20).length;
+      return { textLength: text.length, lower: text.toLowerCase(), loadedImages };
+    });
+    if (result.lower.includes('got an http') && result.lower.includes('redirecting to')) return false;
+    if (result.lower.includes('wayback machine has not archived')) return false;
+    // Accept if there's a solid amount of text, OR a decent amount of
+    // text plus at least one real loaded image (covers image-heavy
+    // homepages with comparatively little text).
+    if (result.textLength > 150) return true;
+    if (result.textLength > 40 && result.loadedImages >= 1) return true;
+    return false;
   } catch {
     return false;
   }
 }
 
-// Measures the actual height of Wayback's injected toolbar so we crop
-// exactly the right amount instead of guessing a fixed pixel count.
 async function getToolbarHeight(page) {
   try {
     const height = await page.evaluate(() => {
@@ -127,9 +128,9 @@ async function getToolbarHeight(page) {
   return DEFAULT_TOOLBAR_HEIGHT;
 }
 
-// Finds on-page text or image alt/title text matching the answer or any
-// of its accepted aliases, and covers those regions with a solid box so
-// the archived page doesn't just hand the player the answer.
+// Finds on-page text, image alt/title text, id/class hints, and
+// header-zone images or CSS background-images that match the answer or
+// its aliases, and covers those regions with a solid box.
 async function coverBrandMentions(page, names, toolbarHeight) {
   const patterns = names.filter(Boolean).map(n => n.toLowerCase().trim()).filter(n => n.length > 0);
   try {
@@ -154,44 +155,54 @@ async function coverBrandMentions(page, names, toolbarHeight) {
         document.body.appendChild(div);
       }
 
-      // 1. Any visible text that matches the answer or an accepted alias.
+      // 1. Visible text matching the answer or an alias.
       document.querySelectorAll('body *').forEach(el => {
-        if (el.childElementCount > 0) return; // leaf elements only
+        if (el.childElementCount > 0) return;
         const text = el.textContent;
-        if (isMatch(text) && text.trim().length < 40) {
+        if (isMatch(text) && text.trim().length < 60) {
           const rect = el.getBoundingClientRect();
-          if (rect.width < 500 && rect.height < 150) cover(rect);
+          if (rect.width < 700 && rect.height < 220) cover(rect);
         }
       });
 
-      // 2. Images whose alt/title happens to match.
+      // 2. Images whose alt/title matches.
       document.querySelectorAll('img').forEach(img => {
         if (isMatch(img.alt) || isMatch(img.title)) cover(img.getBoundingClientRect());
       });
 
-      // 3. Anything whose id/class literally says "logo" or "brand" -
-      // catches the common case of an unlabeled logo image or a
-      // CSS-background-image logo, regardless of whether the site name
-      // appears anywhere as plain text.
+      // 3. Anything whose id/class hints at being a logo/brand element -
+      // catches unlabeled logo images and CSS-background logos. Sized
+      // generously since a legitimate logo/masthead container can
+      // reasonably span a good chunk of the header.
       document.querySelectorAll('*').forEach(el => {
         const idcls = ((el.id || '') + ' ' + (el.className || '')).toLowerCase();
-        if (/logo|brand|masthead|sitename/.test(idcls)) {
+        if (/logo|brand|masthead|sitename|wordmark|identity/.test(idcls)) {
           const rect = el.getBoundingClientRect();
-          if (rect.width < 600 && rect.height < 220) cover(rect);
+          if (rect.width < 900 && rect.height < 300) cover(rect);
         }
       });
 
-      // 4. Any reasonably-sized image sitting in the page's header zone
-      // (just below Wayback's own toolbar) - the overwhelming majority
-      // of homepage logos live here, image-based or not, labeled or not.
+      // 4. Any reasonably-sized image in the header zone, image-based
+      // logo or not, labeled or not - most homepage logos live here.
       document.querySelectorAll('img').forEach(img => {
         const rect = img.getBoundingClientRect();
         const topInContent = rect.top - toolbarHeight;
-        if (topInContent >= -10 && topInContent < 130 &&
-            rect.width >= 30 && rect.width <= 420 &&
-            rect.height >= 12 && rect.height <= 140) {
+        if (topInContent >= -10 && topInContent < 160 &&
+            rect.width >= 20 && rect.width <= 500 &&
+            rect.height >= 10 && rect.height <= 180) {
           cover(rect);
         }
+      });
+
+      // 5. Any element in the header zone with a CSS background-image -
+      // catches sprite/background-image logos regardless of id/class.
+      document.querySelectorAll('body *').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const topInContent = rect.top - toolbarHeight;
+        if (topInContent < -10 || topInContent > 160) return;
+        if (rect.width < 15 || rect.width > 500 || rect.height < 10 || rect.height > 180) return;
+        const bg = getComputedStyle(el).backgroundImage;
+        if (bg && bg !== 'none') cover(rect);
       });
     }, { patterns, toolbarHeight });
   } catch (err) {
@@ -201,16 +212,21 @@ async function coverBrandMentions(page, names, toolbarHeight) {
 
 async function captureBefore(page, domain, year, outPath, brandNames) {
   let candidates = await getSnapshotTimestamps(domain, year);
-  if (candidates.length === 0) candidates = [`${year}0601000000`]; // last-resort guess
+  if (candidates.length === 0) candidates = [`${year}0601000000`];
 
   for (const ts of candidates) {
     const url = `https://web.archive.org/web/${ts}/http://${domain}`;
     try {
       console.log(`  trying snapshot ${ts} ...`);
       await page.goto(url, { waitUntil: 'load', timeout: 60000 });
-      await page.waitForTimeout(4000);
+      await page.waitForTimeout(6000); // give slow-loading images time to settle
       if (await isUsableSnapshot(page)) {
         const toolbarHeight = await getToolbarHeight(page);
+        await coverBrandMentions(page, brandNames, toolbarHeight);
+        // Cover again immediately before the shot - catches anything
+        // that only finished loading/resizing between the first pass
+        // and now.
+        await page.waitForTimeout(300);
         await coverBrandMentions(page, brandNames, toolbarHeight);
         await page.screenshot({
           path: outPath,
@@ -251,10 +267,42 @@ async function captureAfter(page, url, outPath) {
   return false;
 }
 
+// Tries to capture a full round (both screenshots). Returns the round
+// data on success, or null if either shot genuinely never worked out -
+// callers should skip a null and try a different pool entry instead of
+// shipping a broken round to players.
+async function tryCaptureRound(page, r, today, outDir) {
+  const beforeFile = `images/${today}/${r.slug}-then.png`;
+  const afterFile = `images/${today}/${r.slug}-now.png`;
+  const brandNames = [r.answer, ...(r.accept || [])];
+
+  console.log(`Capturing ${beforeFile} (${r.beforeDomain}, ~${r.year}) ...`);
+  const beforeOk = await captureBefore(page, r.beforeDomain, r.year, path.join(outDir, beforeFile), brandNames);
+  if (!beforeOk) {
+    console.error(`  Skipping ${r.slug}: no usable "then" screenshot.`);
+    return null;
+  }
+
+  console.log(`Capturing ${afterFile} from ${r.afterUrl} ...`);
+  const afterOk = await captureAfter(page, r.afterUrl, path.join(outDir, afterFile));
+  if (!afterOk) {
+    console.error(`  Skipping ${r.slug}: no usable "now" screenshot.`);
+    return null;
+  }
+
+  return {
+    answer: r.answer,
+    year: r.year,
+    accept: r.accept,
+    fact: r.fact,
+    beforeImg: beforeFile,
+    afterImg: afterFile
+  };
+}
+
 async function main() {
-  const today = new Date().toISOString().slice(0, 10); // e.g. "2026-08-01" (UTC)
+  const today = new Date().toISOString().slice(0, 10);
   const shuffled = seededShuffle(pool, today);
-  const todays = shuffled.slice(0, Math.min(ROUNDS_PER_DAY, pool.length));
 
   const outDir = __dirname;
   const dateImagesDir = path.join(outDir, 'images', today);
@@ -271,35 +319,30 @@ async function main() {
   });
 
   const roundsOut = [];
+  let poolIndex = 0;
 
-  for (const r of todays) {
-    const beforeFile = `images/${today}/${r.slug}-then.png`;
-    const afterFile = `images/${today}/${r.slug}-now.png`;
-    const brandNames = [r.answer, ...(r.accept || [])];
-
-    console.log(`Capturing ${beforeFile} (${r.beforeDomain}, ~${r.year}) ...`);
-    await captureBefore(page, r.beforeDomain, r.year, path.join(outDir, beforeFile), brandNames);
-
-    console.log(`Capturing ${afterFile} from ${r.afterUrl} ...`);
-    await captureAfter(page, r.afterUrl, path.join(outDir, afterFile));
-
-    roundsOut.push({
-      answer: r.answer,
-      year: r.year,
-      accept: r.accept,
-      fact: r.fact,
-      beforeImg: beforeFile,
-      afterImg: afterFile
-    });
+  while (roundsOut.length < Math.min(ROUNDS_PER_DAY, pool.length) && poolIndex < shuffled.length) {
+    const candidate = shuffled[poolIndex];
+    poolIndex++;
+    const round = await tryCaptureRound(page, candidate, today, outDir);
+    if (round) {
+      roundsOut.push(round);
+    } else {
+      console.error(`  Trying a replacement for the pool slot ${candidate.slug} filled...`);
+    }
   }
 
   await browser.close();
+
+  if (roundsOut.length === 0) {
+    console.error('No rounds were successfully captured today. Not writing an archive file.');
+    process.exit(1);
+  }
 
   const data = { date: today, rounds: roundsOut };
   fs.writeFileSync(path.join(archiveDir, `${today}.json`), JSON.stringify(data, null, 2));
   console.log(`Wrote archive/${today}.json with ${roundsOut.length} rounds.`);
 
-  // Update the archive index (list of all playable dates, newest first).
   const indexPath = path.join(archiveDir, 'index.json');
   let dates = [];
   if (fs.existsSync(indexPath)) {
