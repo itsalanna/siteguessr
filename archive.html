@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SiteGuessr — Archive</title>
+<style>
+  :root{
+    --desktop:#008080;
+    --chrome:#d4d0c8;
+    --chrome-dark:#808080;
+    --chrome-darker:#404040;
+    --chrome-light:#ffffff;
+    --title-a:#000080;
+    --title-b:#1084d0;
+    --ink:#111111;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background-color:#5da6e6;
+    background-image:
+      radial-gradient(60px 28px at 15% 15%, rgba(255,255,255,.9), rgba(255,255,255,0) 70%),
+      radial-gradient(90px 34px at 68% 10%, rgba(255,255,255,.85), rgba(255,255,255,0) 70%),
+      radial-gradient(55px 24px at 42% 24%, rgba(255,255,255,.8), rgba(255,255,255,0) 70%),
+      radial-gradient(140% 65% at 50% 112%, #6ec24c 55%, rgba(110,194,76,0) 56%),
+      linear-gradient(to bottom, #2f7fdb 0%, #5da6e6 42%, #bfe4fb 68%);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    font-family:Tahoma,Verdana,'Segoe UI',sans-serif;
+    color:var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    padding:20px;
+  }
+  .window{
+    width:min(760px,100%);
+    display:flex;flex-direction:column;
+    max-height:90vh;
+    background:var(--chrome);
+    border-top:2px solid var(--chrome-light);
+    border-left:2px solid var(--chrome-light);
+    border-right:2px solid var(--chrome-darker);
+    border-bottom:2px solid var(--chrome-darker);
+    box-shadow:1px 1px 0 1px var(--chrome-dark);
+  }
+  .titlebar{
+    background:linear-gradient(90deg,var(--title-a),var(--title-b));
+    color:#fff;padding:4px 6px;display:flex;align-items:center;gap:8px;
+    font-weight:bold;font-size:13px;user-select:none;
+  }
+  .titlebar .dot{width:14px;height:14px;background:var(--chrome);border:1px solid #000;display:inline-block;font-size:9px;line-height:12px;text-align:center;color:#000;cursor:pointer}
+  .titlebar .spacer{flex:1}
+  .menubar{font-size:12px;padding:3px 8px;border-bottom:1px solid var(--chrome-dark);display:flex;gap:14px;color:#222}
+  .menubar u{text-decoration:underline}
+
+  .toolbar{
+    display:flex;align-items:center;gap:8px;padding:5px 8px;
+    border-bottom:1px solid var(--chrome-dark);background:var(--chrome);
+  }
+  .toolbar button{
+    font-size:12px;padding:3px 10px;cursor:pointer;background:var(--chrome);
+    border-top:1px solid var(--chrome-light);border-left:1px solid var(--chrome-light);
+    border-right:1px solid var(--chrome-darker);border-bottom:1px solid var(--chrome-darker);
+  }
+  .toolbar button:active{
+    border-top:1px solid var(--chrome-darker);border-left:1px solid var(--chrome-darker);
+    border-right:1px solid var(--chrome-light);border-bottom:1px solid var(--chrome-light);
+  }
+  .addressBar{
+    flex:1;display:flex;align-items:center;gap:6px;font-size:12px;
+    background:#fff;border-top:1px solid var(--chrome-darker);border-left:1px solid var(--chrome-darker);
+    border-right:1px solid var(--chrome-light);border-bottom:1px solid var(--chrome-light);
+    padding:3px 8px;color:#444;
+  }
+
+  .body{padding:0;overflow:auto;display:flex;flex-direction:column}
+  .hidden{display:none !important}
+
+  .listHeader{
+    display:flex;font-size:12px;font-weight:bold;background:var(--chrome);
+    border-bottom:1px solid var(--chrome-dark);position:sticky;top:0;
+  }
+  .listHeader .col{
+    padding:5px 8px;border-right:1px solid var(--chrome-dark);
+    border-top:1px solid var(--chrome-light);border-left:1px solid var(--chrome-light);
+  }
+  .colName{flex:2.4}
+  .colDate{flex:1.5}
+  .colType{flex:1.3}
+  .colSize{flex:0.9;text-align:right}
+
+  .listBody{background:#fff;overflow:auto}
+  .row{
+    display:flex;align-items:center;font-size:12px;cursor:pointer;
+    border-bottom:1px solid #eee;
+  }
+  .row:nth-child(even){background:#f4f7fb}
+  .row:hover, .row:focus-visible{background:#316ac5;color:#fff}
+  .row .col{padding:5px 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rowIcon{width:18px;height:14px;flex:0 0 auto;display:inline-block;vertical-align:middle;margin-right:6px}
+  .rowIcon svg{width:100%;height:100%;display:block}
+  .rowName{display:flex;align-items:center}
+  .todayBadge{
+    font-size:9px;background:var(--title-a);color:#fff;padding:1px 5px;
+    border-radius:2px;margin-left:8px;flex:0 0 auto;
+  }
+
+  .emptyMsg, .loadErr{
+    text-align:center;font-size:13px;color:#333;padding:30px 10px;font-family:'Courier New',monospace;
+  }
+  .loadErr{color:#7a1a1a}
+  .statusbar{
+    font-size:11px;padding:3px 8px;border-top:1px solid var(--chrome-dark);
+    background:var(--chrome);color:#333;
+  }
+
+  @media (max-width:640px){
+    body{padding:0;align-items:stretch}
+    .window{width:100%;max-height:100vh;min-height:100vh;border:none;box-shadow:none}
+    .colDate{display:none}
+    .colType{flex:1}
+    .addressBar{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="titlebar">
+    <span>SiteGuessr: Archive</span>
+    <span class="spacer"></span>
+    <span class="dot">_</span><span class="dot" onclick="location.href='index.html'" title="Close">X</span>
+  </div>
+  <div class="menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span><span><u>H</u>elp</span></div>
+  <div class="toolbar">
+    <button onclick="location.href='index.html'">&lsaquo; Back</button>
+    <div class="addressBar">Address: C:\SiteGuessr\Archive</div>
+  </div>
+
+  <div class="body">
+    <div class="listHeader">
+      <div class="col colName">Name</div>
+      <div class="col colDate">Date Modified</div>
+      <div class="col colType">Type</div>
+      <div class="col colSize">Size</div>
+    </div>
+    <div id="listBody" class="listBody"></div>
+    <div id="emptyMsg" class="emptyMsg hidden">No archived games yet, check back after the first daily run.</div>
+    <div id="loadErr" class="loadErr hidden"></div>
+  </div>
+  <div class="statusbar" id="statusbar"></div>
+</div>
+
+<script>
+const folderIconSvg = `
+<svg viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0.5 3 h6 l1.4 1.8 h9.1 a0.5 0.5 0 0 1 0.5 0.5 v7.2 a0.5 0.5 0 0 1 -0.5 0.5 h-16 a0.5 0.5 0 0 1 -0.5 -0.5 v-9 a0.5 0.5 0 0 1 0.5 -0.5 z" fill="#ffce54" stroke="#b9791a" stroke-width="0.6"/>
+</svg>`;
+
+function formatDate(dateStr){
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const dt = new Date(Date.UTC(y, m-1, d));
+  return dt.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric', timeZone: 'UTC' }) + ' 6:00 AM';
+}
+
+function todayDateStr(){ return new Date().toISOString().slice(0, 10); }
+
+function openDate(d){ location.href = 'index.html?date=' + d; }
+
+fetch('archive/index.json?_=' + Date.now())
+  .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(dates => {
+    if(!Array.isArray(dates) || dates.length === 0){
+      document.getElementById('emptyMsg').classList.remove('hidden');
+      document.getElementById('statusbar').textContent = '0 objects';
+      return;
+    }
+    const today = todayDateStr();
+    const listBody = document.getElementById('listBody');
+    listBody.innerHTML = dates.map(d => `
+      <div class="row" tabindex="0" onclick="openDate('${d}')" onkeydown="if(event.key==='Enter')openDate('${d}')">
+        <div class="col colName rowName">
+          <span class="rowIcon">${folderIconSvg}</span>
+          <span>Puzzle ${d}</span>
+          ${d === today ? '<span class="todayBadge">TODAY</span>' : ''}
+        </div>
+        <div class="col colDate">${formatDate(d)}</div>
+        <div class="col colType">File folder</div>
+        <div class="col colSize">5 rounds</div>
+      </div>
+    `).join('');
+    document.getElementById('statusbar').textContent = dates.length + ' object' + (dates.length === 1 ? '' : 's');
+  })
+  .catch(err => {
+    const el = document.getElementById('loadErr');
+    el.textContent = "Couldn't load the archive list (" + err.message + ").";
+    el.classList.remove('hidden');
+  });
+</script>
+</body>
+</html>
