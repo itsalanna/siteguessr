@@ -59,7 +59,7 @@
     border-bottom:1px solid var(--chrome-dark);background:var(--chrome);
   }
   .toolbar button{
-    font-size:12px;padding:3px 10px;cursor:pointer;background:var(--chrome);
+    font-size:14px;padding:6px 16px;cursor:pointer;background:var(--chrome);
     border-top:1px solid var(--chrome-light);border-left:1px solid var(--chrome-light);
     border-right:1px solid var(--chrome-darker);border-bottom:1px solid var(--chrome-darker);
   }
@@ -85,10 +85,9 @@
     padding:5px 8px;border-right:1px solid var(--chrome-dark);
     border-top:1px solid var(--chrome-light);border-left:1px solid var(--chrome-light);
   }
-  .colName{flex:2.4}
+  .colName{flex:2.8}
   .colDate{flex:1.5}
-  .colType{flex:1.3}
-  .colSize{flex:0.9;text-align:right}
+  .colRounds{flex:0.9;text-align:right}
 
   .listBody{background:#fff;overflow:auto}
   .row{
@@ -97,7 +96,7 @@
   }
   .row:nth-child(even){background:#f4f7fb}
   .row:hover, .row:focus-visible{background:#316ac5;color:#fff}
-  .row .col{padding:5px 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .col{padding:14px 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .rowIcon{width:18px;height:14px;flex:0 0 auto;display:inline-block;vertical-align:middle;margin-right:6px}
   .rowIcon svg{width:100%;height:100%;display:block}
   .rowName{display:flex;align-items:center}
@@ -120,7 +119,6 @@
     .window{width:100%;max-height:100vh;min-height:100vh;border:none;box-shadow:none}
     .titlebar{position:sticky;top:0;z-index:70}
     .colDate{display:none}
-    .colType{flex:1}
     .addressBar{display:none}
   }
 </style>
@@ -134,7 +132,7 @@
   </div>
   <div class="menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span><span><u>H</u>elp</span></div>
   <div class="toolbar">
-    <button onclick="location.href='index.html'">&lsaquo; Back</button>
+    <button onclick="location.href='index.html'">&lsaquo; Exit Archive</button>
     <div class="addressBar">Address: C:\SiteGuessr\Archive</div>
   </div>
 
@@ -142,8 +140,7 @@
     <div class="listHeader">
       <div class="col colName">Name</div>
       <div class="col colDate">Date Modified</div>
-      <div class="col colType">Type</div>
-      <div class="col colSize">Size</div>
+      <div class="col colRounds">Rounds</div>
     </div>
     <div id="listBody" class="listBody"></div>
     <div id="emptyMsg" class="emptyMsg hidden">No archived games yet, check back after the first daily run.</div>
@@ -186,8 +183,7 @@ fetch('archive/index.json?_=' + Date.now())
           ${d === today ? '<span class="todayBadge">TODAY</span>' : ''}
         </div>
         <div class="col colDate">${formatDate(d)}</div>
-        <div class="col colType">File folder</div>
-        <div class="col colSize">5 rounds</div>
+        <div class="col colRounds">5</div>
       </div>
     `).join('');
     document.getElementById('statusbar').textContent = dates.length + ' object' + (dates.length === 1 ? '' : 's');
