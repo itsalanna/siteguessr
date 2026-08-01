@@ -412,7 +412,7 @@ function loadRoundsForDate(dateStr){
       if(rounds.length === 0) throw new Error('No rounds for ' + dateStr);
       currentDate = dateStr;
       $('startBtn').disabled = false;
-      $('startBtn').textContent = (dateStr === todayDateStr()) ? "Start Today's Game" : 'Start This Game';
+      $('startBtn').textContent = (dateStr === todayDateStr()) ? "Start Today's Game" : 'Start ' + formatDate(dateStr) + ' Game';
     })
     .catch(err => {
       $('startBtn').textContent = 'Unavailable';
