@@ -83,6 +83,7 @@
       position:fixed;
       top:50%;left:50%;
       transform:translate(-50%,-50%);
+      z-index:100;
     }
   }
   .titlebar{
@@ -92,11 +93,12 @@
   }
   .titlebar .dot{width:14px;height:14px;background:var(--chrome);border:1px solid #000;display:inline-block;font-size:9px;line-height:12px;text-align:center;color:#000;cursor:pointer}
   .titlebar .spacer{flex:1}
-  .menubar{font-size:12px;padding:3px 8px;border-bottom:1px solid var(--chrome-dark);display:flex;gap:14px;color:#222}
+  .menubar{font-size:12px;padding:3px 8px;border-bottom:1px solid var(--chrome-dark);display:flex;gap:14px;color:#222;background:var(--chrome)}
   .menubar u{text-decoration:underline}
   .menubar #progress,.menubar #totalScore{font-weight:bold}
   .body{padding:12px;display:flex;flex-direction:column;gap:12px;overflow:auto}
   .hidden{display:none !important}
+  html.lock-scroll, html.lock-scroll body{overflow:hidden;height:100%}
 
   .exhibit-row{display:flex;gap:10px}
   .exhibitCol{flex:1;display:flex;flex-direction:column;min-width:0}
@@ -196,7 +198,7 @@
     .desktopIconGlyph{width:48px;height:42px}
     .startBtn{width:150px;height:46px}
     .titlebar span:not(.dot):not(.spacer){font-size:12px}
-    .windowHeader{position:sticky;top:0;z-index:70;box-shadow:0 2px 4px rgba(0,0,0,.25)}
+    .windowHeader{position:sticky;top:0;z-index:70;box-shadow:0 2px 4px rgba(0,0,0,.25);background:var(--chrome)}
 
     .exhibit-row{flex-direction:column}
     .exhibitCol{width:100%}
@@ -218,7 +220,10 @@
       border-top:2px solid var(--chrome-dark);
       box-shadow:0 -2px 6px rgba(0,0,0,.2);
     }
-    .controls button{flex:1}
+    .controls button{
+      flex:1;height:44px;display:flex;align-items:center;justify-content:center;
+      white-space:nowrap;font-size:12px;padding:0 6px;
+    }
 
     .menubar{flex-wrap:wrap;font-size:11px}
 
@@ -278,6 +283,25 @@
         </g>
         <text x="48" y="34" font-family="Tahoma, Verdana, sans-serif" font-size="23" font-style="italic" font-weight="bold" fill="#ffffff" stroke="#1e5b10" stroke-width="0.5">start</text>
       </svg>
+    </button>
+    <button class="desktopIcon" onclick="choosePlayToday()">
+      <span class="desktopIconGlyph">
+        <svg viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="folderBack3" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f6c352"/><stop offset="100%" stop-color="#e8a521"/>
+            </linearGradient>
+            <linearGradient id="folderFront3" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffe38a"/><stop offset="55%" stop-color="#ffc94d"/><stop offset="100%" stop-color="#f5a920"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="32" cy="52" rx="24" ry="3.2" fill="rgba(0,0,0,.28)"/>
+          <path d="M4 14 h20 l5 6 h27 a2 2 0 0 1 2 2 v24 a2 2 0 0 1 -2 2 h-52 a2 2 0 0 1 -2 -2 v-30 a2 2 0 0 1 2 -2 z" fill="url(#folderBack3)" stroke="#b9791a" stroke-width="1"/>
+          <path d="M3 21 h58 a2 2 0 0 1 2 2 v24 a2 2 0 0 1 -2 2 h-58 a2 2 0 0 1 -2 -2 v-24 a2 2 0 0 1 2 -2 z" fill="url(#folderFront3)" stroke="#b9791a" stroke-width="1"/>
+          <path d="M4 23 h56 v4.5 h-56 z" fill="rgba(255,255,255,.45)"/>
+        </svg>
+      </span>
+      <span class="desktopIconLabel">Today's Game</span>
     </button>
     <button class="desktopIcon" onclick="location.href='archive.html'">
       <span class="desktopIconGlyph">
@@ -436,8 +460,21 @@ function showIntroFor(dateStr, isToday){
   loadRoundsForDate(dateStr);
 }
 
+function isMobileViewport(){
+  return window.matchMedia('(max-width: 640px)').matches;
+}
+
+// The desktop/landing screen is a fixed one-page view on mobile - lock
+// page scrolling while it's showing so there's nothing to accidentally
+// scroll into. Unlocked as soon as the game window opens, since that
+// content is taller than one screen and needs to scroll normally.
+function setDesktopScrollLock(locked){
+  document.documentElement.classList.toggle('lock-scroll', locked && isMobileViewport());
+}
+
 function choosePlayToday(){
-  $('desktop').classList.add('hidden');
+  if(isMobileViewport()) $('desktop').classList.add('hidden');
+  setDesktopScrollLock(false);
   $('gameWindow').classList.remove('hidden');
   showIntroFor(todayDateStr(), true);
 }
@@ -445,6 +482,7 @@ function choosePlayToday(){
 function goToLanding(){
   $('gameWindow').classList.add('hidden');
   $('desktop').classList.remove('hidden');
+  setDesktopScrollLock(true);
   // Reset everything so the next time the window opens, it starts clean
   // rather than resuming whatever screen/score was showing before close.
   i = 0;
@@ -468,47 +506,100 @@ function goToLanding(){
   const params = new URLSearchParams(location.search);
   const dateParam = params.get('date');
   if(dateParam){
-    $('desktop').classList.add('hidden');
+    if(isMobileViewport()) $('desktop').classList.add('hidden');
     $('gameWindow').classList.remove('hidden');
     showIntroFor(dateParam, dateParam === todayDateStr());
+  } else {
+    setDesktopScrollLock(true);
   }
 })();
 
-// Let the game window be dragged by its titlebar, like a real desktop
-// window. Skipped on mobile, where the window is intentionally fullscreen.
-(function enableWindowDragging(){
-  if(window.innerWidth <= 640) return;
-  const win = $('gameWindow');
-  const bar = win.querySelector('.titlebar');
-  let dragging = false, offsetX = 0, offsetY = 0;
+// Generic drag-to-move support, used for the game window, the little
+// desktop title window, and the desktop icons - like real OS desktop
+// items. `handle` is what you grab (a titlebar for windows, the whole
+// element for icons). `opts.ignoreSelector` skips starting a drag when
+// the mousedown/touchstart target is inside e.g. the close button.
+// `opts.suppressClickAfterDrag` stops a real drag from also firing the
+// element's own click handler (so dragging an icon doesn't also open it).
+function makeDraggable(el, handle, opts){
+  opts = opts || {};
+  let dragging = false, moved = false;
+  let offsetX = 0, offsetY = 0, startX = 0, startY = 0;
+  const THRESHOLD = 4;
 
-  function beginDrag(clientX, clientY){
-    const rect = win.getBoundingClientRect();
-    win.style.left = rect.left + 'px';
-    win.style.top = rect.top + 'px';
-    win.style.transform = 'none';
+  function anchorToCurrentPosition(){
+    const rect = el.getBoundingClientRect();
+    el.style.position = 'fixed';
+    el.style.left = rect.left + 'px';
+    el.style.top = rect.top + 'px';
+    el.style.right = 'auto';
+    el.style.bottom = 'auto';
+    el.style.margin = '0';
+    el.style.transform = 'none';
+    return rect;
+  }
+
+  function begin(clientX, clientY, target){
+    if(opts.ignoreSelector && target.closest && target.closest(opts.ignoreSelector)) return false;
+    const rect = anchorToCurrentPosition();
     offsetX = clientX - rect.left;
     offsetY = clientY - rect.top;
-    dragging = true;
+    startX = clientX; startY = clientY;
+    dragging = true; moved = false;
+    el.style.zIndex = opts.zIndex || 200;
+    return true;
   }
-  function moveDrag(clientX, clientY){
+  function move(clientX, clientY){
     if(!dragging) return;
-    const maxLeft = window.innerWidth - 60;
-    const maxTop = window.innerHeight - 30;
-    const newLeft = Math.min(Math.max(clientX - offsetX, -win.offsetWidth + 80), maxLeft);
+    if(Math.abs(clientX - startX) > THRESHOLD || Math.abs(clientY - startY) > THRESHOLD) moved = true;
+    const maxLeft = window.innerWidth - 40;
+    const maxTop = window.innerHeight - 24;
+    const newLeft = Math.min(Math.max(clientX - offsetX, -(el.offsetWidth) + 60), maxLeft);
     const newTop = Math.min(Math.max(clientY - offsetY, 0), maxTop);
-    win.style.left = newLeft + 'px';
-    win.style.top = newTop + 'px';
+    el.style.left = newLeft + 'px';
+    el.style.top = newTop + 'px';
   }
-  function endDrag(){ dragging = false; }
+  function end(){ dragging = false; }
 
-  bar.addEventListener('mousedown', function(e){
-    if(e.target.classList.contains('dot')) return; // don't drag when clicking Back/_/X
-    beginDrag(e.clientX, e.clientY);
-    e.preventDefault();
+  handle.addEventListener('mousedown', e => {
+    if(begin(e.clientX, e.clientY, e.target)) e.preventDefault();
   });
-  window.addEventListener('mousemove', function(e){ moveDrag(e.clientX, e.clientY); });
-  window.addEventListener('mouseup', endDrag);
+  window.addEventListener('mousemove', e => move(e.clientX, e.clientY));
+  window.addEventListener('mouseup', end);
+
+  handle.addEventListener('touchstart', e => {
+    const t = e.touches[0];
+    begin(t.clientX, t.clientY, e.target);
+  }, {passive:true});
+  window.addEventListener('touchmove', e => {
+    if(dragging){ const t = e.touches[0]; move(t.clientX, t.clientY); }
+  }, {passive:true});
+  window.addEventListener('touchend', end);
+
+  if(opts.suppressClickAfterDrag){
+    el.addEventListener('click', e => {
+      if(moved){ e.preventDefault(); e.stopPropagation(); }
+      moved = false;
+    }, true);
+  }
+}
+
+(function enableDragging(){
+  // The game window only floats/drags on desktop; on mobile it's
+  // intentionally fullscreen, so dragging it would do nothing useful.
+  if(!isMobileViewport()){
+    const win = $('gameWindow');
+    makeDraggable(win, win.querySelector('.titlebar'), { ignoreSelector: '.dot', zIndex: 100 });
+  }
+
+  const miniWin = document.querySelector('.desktopTitleWindow');
+  if(miniWin){
+    makeDraggable(miniWin, miniWin.querySelector('.titlebar'), { ignoreSelector: '.dot', zIndex: 50 });
+  }
+
+  document.querySelectorAll('.desktopIcon').forEach(icon => {
+    makeDraggable(icon, icon, { suppressClickAfterDrag: true, zIndex: 40 });
+  });
 })();
 
 function normalize(s){ return s.toLowerCase().trim().replace(/[^a-z0-9]/g,''); }
