@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-01",
+  "rounds": [
+    {
+      "answer": "Wikipedia",
+      "year": 2005,
+      "accept": [
+        "wikipedia",
+        "wiki"
+      ],
+      "fact": "Wikipedia's interface has stayed remarkably close to its original look for two decades. The visual restraint was intentional, to keep the focus on editing and content rather than design.",
+      "beforeImg": "images/2026-08-01/wikipedia-then.png",
+      "afterImg": "images/2026-08-01/wikipedia-now.png"
+    },
+    {
+      "answer": "YouTube",
+      "year": 2008,
+      "accept": [
+        "youtube",
+        "you tube",
+        "yt"
+      ],
+      "fact": "Star ratings lasted until 2010. They were retired because almost everyone rated either 5 stars or 1, so the site switched to thumbs up/down.",
+      "beforeImg": "images/2026-08-01/youtube-then.png",
+      "afterImg": "images/2026-08-01/youtube-now.png"
+    },
+    {
+      "answer": "Pinterest",
+      "year": 2011,
+      "accept": [
+        "pinterest"
+      ],
+      "fact": "Pinterest launched by invite-only in 2010, and its signature masonry grid of pins was one of the first mainstream uses of that layout style on the web.",
+      "beforeImg": "images/2026-08-01/pinterest-then.png",
+      "afterImg": "images/2026-08-01/pinterest-now.png"
+    },
+    {
+      "answer": "Slack",
+      "year": 2015,
+      "accept": [
+        "slack"
+      ],
+      "fact": "Slack was built from the internal chat tool of Glitch, a whimsical MMO that shut down in 2012. The aubergine sidebar became so iconic that its 2019 rebrand made headlines.",
+      "beforeImg": "images/2026-08-01/slack-then.png",
+      "afterImg": "images/2026-08-01/slack-now.png"
+    },
+    {
+      "answer": "Amazon",
+      "year": 1999,
+      "accept": [
+        "amazon",
+        "amazoncom"
+      ],
+      "fact": "Amazon started as an online bookstore in 1994. By 1999 the homepage was already a dense grid of categories and personalized recommendations, a layout philosophy it never really abandoned.",
+      "beforeImg": "images/2026-08-01/amazon-then.png",
+      "afterImg": "images/2026-08-01/amazon-now.png"
+    }
+  ]
+}
