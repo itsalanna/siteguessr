@@ -5,7 +5,14 @@
 //   1. Picks 5 rounds from rounds-pool.json, seeded by today's UTC date,
 //      so everyone playing on a given day sees the same 5 rounds.
 //   2. Captures a fresh "then" and "now" screenshot for each.
-//   3. Writes rounds-data.json, which index.html loads at runtime.
+//   3. Writes archive/{date}.json (that day's rounds) and updates
+//      archive/index.json (the list of all playable dates), so past
+//      days stay permanently playable instead of being overwritten.
+//
+// Each day's screenshots live in their own folder (images/{date}/...)
+// rather than a shared images/ folder, specifically so a new day's
+// build never overwrites a previous day's images out from under the
+// archive.
 //
 // rounds-pool.json grows on its own over time (see grow-pool.js and
 // .github/workflows/grow-pool.yml), so this file never needs manual edits.
@@ -123,11 +130,10 @@ async function getToolbarHeight(page) {
 // Finds on-page text or image alt/title text matching the answer or any
 // of its accepted aliases, and covers those regions with a solid box so
 // the archived page doesn't just hand the player the answer.
-async function coverBrandMentions(page, names) {
+async function coverBrandMentions(page, names, toolbarHeight) {
   const patterns = names.filter(Boolean).map(n => n.toLowerCase().trim()).filter(n => n.length > 0);
-  if (patterns.length === 0) return;
   try {
-    await page.evaluate((patterns) => {
+    await page.evaluate(({ patterns, toolbarHeight }) => {
       function isMatch(text) {
         if (!text) return false;
         const t = text.trim().toLowerCase();
@@ -135,6 +141,7 @@ async function coverBrandMentions(page, names) {
         return patterns.some(p => t === p || (p.length > 2 && t.includes(p)));
       }
       function cover(rect) {
+        if (rect.width <= 0 || rect.height <= 0) return;
         const div = document.createElement('div');
         div.style.position = 'fixed';
         div.style.left = rect.left + 'px';
@@ -146,23 +153,47 @@ async function coverBrandMentions(page, names) {
         div.style.borderRadius = '3px';
         document.body.appendChild(div);
       }
+
+      // 1. Any visible text that matches the answer or an accepted alias.
       document.querySelectorAll('body *').forEach(el => {
         if (el.childElementCount > 0) return; // leaf elements only
         const text = el.textContent;
         if (isMatch(text) && text.trim().length < 40) {
           const rect = el.getBoundingClientRect();
-          if (rect.width > 0 && rect.height > 0 && rect.width < 500 && rect.height < 150) {
-            cover(rect);
-          }
+          if (rect.width < 500 && rect.height < 150) cover(rect);
         }
       });
+
+      // 2. Images whose alt/title happens to match.
       document.querySelectorAll('img').forEach(img => {
-        if (isMatch(img.alt) || isMatch(img.title)) {
-          const rect = img.getBoundingClientRect();
-          if (rect.width > 0 && rect.height > 0) cover(rect);
+        if (isMatch(img.alt) || isMatch(img.title)) cover(img.getBoundingClientRect());
+      });
+
+      // 3. Anything whose id/class literally says "logo" or "brand" -
+      // catches the common case of an unlabeled logo image or a
+      // CSS-background-image logo, regardless of whether the site name
+      // appears anywhere as plain text.
+      document.querySelectorAll('*').forEach(el => {
+        const idcls = ((el.id || '') + ' ' + (el.className || '')).toLowerCase();
+        if (/logo|brand|masthead|sitename/.test(idcls)) {
+          const rect = el.getBoundingClientRect();
+          if (rect.width < 600 && rect.height < 220) cover(rect);
         }
       });
-    }, patterns);
+
+      // 4. Any reasonably-sized image sitting in the page's header zone
+      // (just below Wayback's own toolbar) - the overwhelming majority
+      // of homepage logos live here, image-based or not, labeled or not.
+      document.querySelectorAll('img').forEach(img => {
+        const rect = img.getBoundingClientRect();
+        const topInContent = rect.top - toolbarHeight;
+        if (topInContent >= -10 && topInContent < 130 &&
+            rect.width >= 30 && rect.width <= 420 &&
+            rect.height >= 12 && rect.height <= 140) {
+          cover(rect);
+        }
+      });
+    }, { patterns, toolbarHeight });
   } catch (err) {
     console.error(`  Brand-covering step failed (non-fatal): ${err.message}`);
   }
@@ -180,7 +211,7 @@ async function captureBefore(page, domain, year, outPath, brandNames) {
       await page.waitForTimeout(4000);
       if (await isUsableSnapshot(page)) {
         const toolbarHeight = await getToolbarHeight(page);
-        await coverBrandMentions(page, brandNames);
+        await coverBrandMentions(page, brandNames, toolbarHeight);
         await page.screenshot({
           path: outPath,
           clip: { x: 0, y: toolbarHeight, width: SHOT_WIDTH, height: SHOT_HEIGHT }
@@ -226,8 +257,10 @@ async function main() {
   const todays = shuffled.slice(0, Math.min(ROUNDS_PER_DAY, pool.length));
 
   const outDir = __dirname;
-  const imagesDir = path.join(outDir, 'images');
-  fs.mkdirSync(imagesDir, { recursive: true });
+  const dateImagesDir = path.join(outDir, 'images', today);
+  const archiveDir = path.join(outDir, 'archive');
+  fs.mkdirSync(dateImagesDir, { recursive: true });
+  fs.mkdirSync(archiveDir, { recursive: true });
 
   const launchOptions = process.env.PLAYWRIGHT_CHANNEL
     ? { channel: process.env.PLAYWRIGHT_CHANNEL }
@@ -240,8 +273,8 @@ async function main() {
   const roundsOut = [];
 
   for (const r of todays) {
-    const beforeFile = `images/${r.slug}-then.png`;
-    const afterFile = `images/${r.slug}-now.png`;
+    const beforeFile = `images/${today}/${r.slug}-then.png`;
+    const afterFile = `images/${today}/${r.slug}-now.png`;
     const brandNames = [r.answer, ...(r.accept || [])];
 
     console.log(`Capturing ${beforeFile} (${r.beforeDomain}, ~${r.year}) ...`);
@@ -263,8 +296,24 @@ async function main() {
   await browser.close();
 
   const data = { date: today, rounds: roundsOut };
-  fs.writeFileSync(path.join(outDir, 'rounds-data.json'), JSON.stringify(data, null, 2));
-  console.log(`Wrote rounds-data.json for ${today} with ${roundsOut.length} rounds.`);
+  fs.writeFileSync(path.join(archiveDir, `${today}.json`), JSON.stringify(data, null, 2));
+  console.log(`Wrote archive/${today}.json with ${roundsOut.length} rounds.`);
+
+  // Update the archive index (list of all playable dates, newest first).
+  const indexPath = path.join(archiveDir, 'index.json');
+  let dates = [];
+  if (fs.existsSync(indexPath)) {
+    try {
+      dates = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+      if (!Array.isArray(dates)) dates = [];
+    } catch {
+      dates = [];
+    }
+  }
+  if (!dates.includes(today)) dates.push(today);
+  dates.sort().reverse();
+  fs.writeFileSync(indexPath, JSON.stringify(dates, null, 2));
+  console.log(`Updated archive/index.json (${dates.length} date(s) total).`);
 }
 
 main();
