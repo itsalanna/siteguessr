@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-02",
+  "rounds": [
+    {
+      "answer": "Twitter",
+      "year": 2007,
+      "accept": [
+        "twitter",
+        "twttr"
+      ],
+      "fact": "Twitter launched in 2006 and the 140-character limit came directly from SMS constraints, since early tweets were literally sent and received as text messages.",
+      "beforeImg": "images/2026-08-02/twitter-then.png",
+      "afterImg": "images/2026-08-02/twitter-now.png"
+    },
+    {
+      "answer": "LinkedIn",
+      "year": 2005,
+      "accept": [
+        "linkedin"
+      ],
+      "fact": "LinkedIn launched in 2003 out of a founder's living room. By 2005 it was already leaning into the dense, spreadsheet-like profile layout that professional networking sites still use.",
+      "beforeImg": "images/2026-08-02/linkedin-then.png",
+      "afterImg": "images/2026-08-02/linkedin-now.png"
+    },
+    {
+      "answer": "Craigslist",
+      "year": 2004,
+      "accept": [
+        "craigslist"
+      ],
+      "fact": "Craigslist's design has barely changed since the 1990s, on purpose. The founder has said repeatedly that plain text links serve the function better than a redesign would.",
+      "beforeImg": "images/2026-08-02/craigslist-then.png",
+      "afterImg": "images/2026-08-02/craigslist-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/2026-08-02/airbnb-then.png",
+      "afterImg": "images/2026-08-02/airbnb-now.png"
+    },
+    {
+      "answer": "Instagram",
+      "year": 2012,
+      "accept": [
+        "instagram",
+        "ig",
+        "insta"
+      ],
+      "fact": "Instagram launched iPhone-only in late 2010 and hit 25,000 users on day one. Its web presence stayed minimal for years while the app itself was the whole product.",
+      "beforeImg": "images/2026-08-02/instagram-then.png",
+      "afterImg": "images/2026-08-02/instagram-now.png"
+    }
+  ]
+}
