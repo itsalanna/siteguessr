@@ -184,12 +184,14 @@ async function coverBrandMentions(page, names, toolbarHeight) {
 
       // 4. Any reasonably-sized image in the header zone, image-based
       // logo or not, labeled or not - most homepage logos live here.
+      // Window is generous since real headers vary a lot (Wikipedia's
+      // title sits wider/lower than a typical top-left logo, etc).
       document.querySelectorAll('img').forEach(img => {
         const rect = img.getBoundingClientRect();
         const topInContent = rect.top - toolbarHeight;
-        if (topInContent >= -10 && topInContent < 160 &&
-            rect.width >= 20 && rect.width <= 500 &&
-            rect.height >= 10 && rect.height <= 180) {
+        if (topInContent >= -10 && topInContent < 260 &&
+            rect.width >= 15 && rect.width <= 700 &&
+            rect.height >= 8 && rect.height <= 220) {
           cover(rect);
         }
       });
@@ -199,10 +201,27 @@ async function coverBrandMentions(page, names, toolbarHeight) {
       document.querySelectorAll('body *').forEach(el => {
         const rect = el.getBoundingClientRect();
         const topInContent = rect.top - toolbarHeight;
-        if (topInContent < -10 || topInContent > 160) return;
-        if (rect.width < 15 || rect.width > 500 || rect.height < 10 || rect.height > 180) return;
+        if (topInContent < -10 || topInContent > 260) return;
+        if (rect.width < 15 || rect.width > 700 || rect.height < 8 || rect.height > 220) return;
         const bg = getComputedStyle(el).backgroundImage;
         if (bg && bg !== 'none') cover(rect);
+      });
+
+      // 6. Any large-font text sitting in the header zone, regardless
+      // of whether its exact wording matched our known aliases. A big,
+      // prominent heading near the top of a homepage is almost always
+      // the site's name or tagline - this catches cases where the real
+      // name is stylized, abbreviated, or rendered in a way the
+      // pattern match missed (e.g. Wikipedia's large title heading).
+      document.querySelectorAll('body *').forEach(el => {
+        if (el.childElementCount > 0) return;
+        const text = el.textContent.trim();
+        if (!text || text.length > 80) return;
+        const rect = el.getBoundingClientRect();
+        const topInContent = rect.top - toolbarHeight;
+        if (topInContent < -10 || topInContent > 260) return;
+        const fontSize = parseFloat(getComputedStyle(el).fontSize) || 0;
+        if (fontSize >= 20 && rect.width < 700 && rect.height < 220) cover(rect);
       });
     }, { patterns, toolbarHeight });
   } catch (err) {

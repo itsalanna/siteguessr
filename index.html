@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SiteGuessr</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 56'%3E%3Cpath d='M4 14 h20 l5 6 h27 a2 2 0 0 1 2 2 v24 a2 2 0 0 1 -2 2 h-52 a2 2 0 0 1 -2 -2 v-30 a2 2 0 0 1 2 -2 z' fill='%23e8a521'/%3E%3Cpath d='M3 21 h58 a2 2 0 0 1 2 2 v24 a2 2 0 0 1 -2 2 h-58 a2 2 0 0 1 -2 -2 v-24 a2 2 0 0 1 2 -2 z' fill='%23ffc94d'/%3E%3Cpath d='M4 23 h56 v4.5 h-56 z' fill='%23ffffff' fill-opacity='.45'/%3E%3C/svg%3E">
 <style>
   :root{
     --desktop:#008080;
@@ -18,16 +19,7 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
   body{
-    background-color:#5da6e6;
-    background-image:
-      radial-gradient(60px 28px at 15% 15%, rgba(255,255,255,.9), rgba(255,255,255,0) 70%),
-      radial-gradient(90px 34px at 68% 10%, rgba(255,255,255,.85), rgba(255,255,255,0) 70%),
-      radial-gradient(55px 24px at 42% 24%, rgba(255,255,255,.8), rgba(255,255,255,0) 70%),
-      radial-gradient(140% 65% at 50% 112%, #6ec24c 55%, rgba(110,194,76,0) 56%),
-      linear-gradient(to bottom, #2f7fdb 0%, #5da6e6 42%, #bfe4fb 68%);
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-size:cover;
+    background-color:#008080;
     font-family:Tahoma,Verdana,'Segoe UI',sans-serif;
     color:var(--ink);
     display:flex;align-items:center;justify-content:center;
@@ -48,13 +40,38 @@
   }
   .desktopTitleBody{padding:14px 16px;font-size:13px;line-height:1.5;color:#111;text-align:center}
   .desktopIcons{display:flex;gap:56px;align-items:center}
-  .startBtn{
-    background:none;border:none;cursor:pointer;padding:0;
-    width:172px;height:52px;
-    position:fixed;left:14px;bottom:14px;z-index:20;
+  .taskbar{
+    position:fixed;left:0;right:0;bottom:0;height:40px;z-index:900;
+    background:var(--chrome);
+    border-top:2px solid var(--chrome-light);
+    display:flex;align-items:center;gap:10px;padding:0 6px;
   }
-  .startBtn svg{width:100%;height:100%;display:block}
-  .startBtn:hover,.startBtn:focus-visible{filter:brightness(1.08)}
+  .taskbarClock{
+    margin-left:auto;font-family:Tahoma,Verdana,sans-serif;font-size:13px;color:#000;
+    padding:4px 12px;
+    border-top:1px solid var(--chrome-darker);border-left:1px solid var(--chrome-darker);
+    border-right:1px solid var(--chrome-light);border-bottom:1px solid var(--chrome-light);
+    background:var(--chrome);
+  }
+  @media (max-width:640px){
+    .taskbar{height:46px}
+    .startFlag{width:24px;height:24px}
+    .startBtn{font-size:15px;padding:4px 14px 4px 10px}
+    .taskbarClock{font-size:12px;padding:3px 9px}
+  }
+  .startBtn{
+    display:flex;align-items:center;gap:10px;
+    padding:5px 18px 5px 12px;cursor:pointer;
+    font-family:Tahoma,Verdana,sans-serif;font-weight:bold;font-size:17px;color:#000;
+    background:var(--chrome);
+    border-top:2px solid var(--chrome-light);border-left:2px solid var(--chrome-light);
+    border-right:2px solid var(--chrome-darker);border-bottom:2px solid var(--chrome-darker);
+  }
+  .startBtn:active{
+    border-top:2px solid var(--chrome-darker);border-left:2px solid var(--chrome-darker);
+    border-right:2px solid var(--chrome-light);border-bottom:2px solid var(--chrome-light);
+  }
+  .startFlag{width:26px;height:26px;flex:0 0 auto;display:block}
   .desktopIcon{
     background:none;border:none;cursor:pointer;font-family:inherit;
     display:flex;flex-direction:column;align-items:center;gap:6px;
@@ -81,9 +98,10 @@
   @media (min-width: 641px){
     #gameWindow{
       position:fixed;
-      top:50%;left:50%;
+      top:calc(50% - 22px);left:50%;
       transform:translate(-50%,-50%);
       z-index:100;
+      max-height:calc(100vh - 64px);
     }
   }
   .titlebar{
@@ -114,7 +132,7 @@
     border-right:2px solid var(--chrome-light);border-bottom:2px solid var(--chrome-light);
     background:#e8e8e8;
   }
-  .exhibit img{width:100%;height:100%;object-fit:contain;object-position:top center;background:#fff;display:block}
+  .exhibit img{width:100%;height:100%;object-fit:contain;object-position:top center;background:#fff;display:block;cursor:zoom-in}
   .exhibit .missing{
     width:100%;height:100%;display:flex;align-items:center;justify-content:center;
     text-align:center;font-size:12px;color:#666;padding:20px;font-family:'Courier New',monospace;
@@ -181,6 +199,16 @@
   }
   .modalBody{padding:18px 16px;text-align:center;font-size:13px}
   .modalBtns{display:flex;gap:10px;justify-content:center;margin-top:14px}
+  .lightbox{
+    position:fixed;inset:0;background:rgba(0,0,0,.85);
+    display:flex;align-items:center;justify-content:center;
+    z-index:2000;padding:30px;cursor:zoom-out;
+  }
+  .lightbox img{max-width:100%;max-height:100%;object-fit:contain;cursor:default;box-shadow:0 4px 24px rgba(0,0,0,.6)}
+  .lightboxClose{
+    position:absolute;top:14px;right:20px;color:#fff;font-size:32px;
+    cursor:pointer;line-height:1;user-select:none;
+  }
   .bigscore{font-size:36px;font-weight:bold;margin:8px 0}
   .roundTable{margin:16px auto;max-width:560px;text-align:left;font-size:12px;border-collapse:collapse;width:100%}
   .roundTable th,.roundTable td{border:1px solid var(--chrome-dark);padding:5px 8px}
@@ -207,7 +235,6 @@
     .desktopTitleBody{font-size:12px;padding:12px}
     .desktopIcons{gap:36px}
     .desktopIconGlyph{width:48px;height:42px}
-    .startBtn{width:150px;height:46px}
     .titlebar span:not(.dot):not(.spacer){font-size:12px}
     .windowHeader{position:sticky;top:0;z-index:70;box-shadow:0 2px 4px rgba(0,0,0,.25);background:var(--chrome)}
 
@@ -256,6 +283,14 @@
 </head>
 <body>
 
+<div class="taskbar" id="taskbar">
+  <button class="startBtn" onclick="choosePlayToday()" aria-label="Play Today's Game">
+      <svg class="startFlag" viewBox="0 0 16 16" shape-rendering="crispEdges"><rect x="0" y="1" width="1" height="1" fill="#000080"/><rect x="1" y="1" width="1" height="1" fill="#000080"/><rect x="2" y="1" width="1" height="1" fill="#000080"/><rect x="3" y="1" width="1" height="1" fill="#000080"/><rect x="4" y="1" width="1" height="1" fill="#000080"/><rect x="5" y="1" width="1" height="1" fill="#000080"/><rect x="6" y="1" width="1" height="1" fill="#000080"/><rect x="7" y="1" width="1" height="1" fill="#000080"/><rect x="8" y="1" width="1" height="1" fill="#000080"/><rect x="9" y="1" width="1" height="1" fill="#000080"/><rect x="10" y="1" width="1" height="1" fill="#000080"/><rect x="0" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="2" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="3" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="4" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="5" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="6" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="7" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="8" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="9" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="10" y="2" width="1" height="1" fill="#6b6b6b"/><rect x="0" y="3" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="3" width="1" height="1" fill="#ffffff"/><rect x="2" y="3" width="1" height="1" fill="#ffffff"/><rect x="3" y="3" width="1" height="1" fill="#ffffff"/><rect x="4" y="3" width="1" height="1" fill="#ffffff"/><rect x="5" y="3" width="1" height="1" fill="#ffffff"/><rect x="6" y="3" width="1" height="1" fill="#ffffff"/><rect x="7" y="3" width="1" height="1" fill="#ffffff"/><rect x="8" y="3" width="1" height="1" fill="#ffffff"/><rect x="9" y="3" width="1" height="1" fill="#ffffff"/><rect x="10" y="3" width="1" height="1" fill="#6b6b6b"/><rect x="0" y="4" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="4" width="1" height="1" fill="#ffffff"/><rect x="2" y="4" width="1" height="1" fill="#9aa5b1"/><rect x="3" y="4" width="1" height="1" fill="#9aa5b1"/><rect x="4" y="4" width="1" height="1" fill="#9aa5b1"/><rect x="5" y="4" width="1" height="1" fill="#9aa5b1"/><rect x="6" y="4" width="1" height="1" fill="#ffffff"/><rect x="7" y="4" width="1" height="1" fill="#ffffff"/><rect x="8" y="4" width="1" height="1" fill="#ffffff"/><rect x="9" y="4" width="1" height="1" fill="#ffffff"/><rect x="10" y="4" width="1" height="1" fill="#6b6b6b"/><rect x="0" y="5" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="5" width="1" height="1" fill="#ffffff"/><rect x="2" y="5" width="1" height="1" fill="#ffffff"/><rect x="3" y="5" width="1" height="1" fill="#ffffff"/><rect x="4" y="5" width="1" height="1" fill="#ffffff"/><rect x="5" y="5" width="1" height="1" fill="#ffffff"/><rect x="6" y="5" width="1" height="1" fill="#ffffff"/><rect x="7" y="5" width="1" height="1" fill="#ffffff"/><rect x="8" y="5" width="1" height="1" fill="#ffffff"/><rect x="9" y="5" width="1" height="1" fill="#ffffff"/><rect x="10" y="5" width="1" height="1" fill="#6b6b6b"/><rect x="0" y="6" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="6" width="1" height="1" fill="#ffffff"/><rect x="2" y="6" width="1" height="1" fill="#9aa5b1"/><rect x="3" y="6" width="1" height="1" fill="#9aa5b1"/><rect x="4" y="6" width="1" height="1" fill="#9aa5b1"/><rect x="5" y="6" width="1" height="1" fill="#ffffff"/><rect x="6" y="6" width="1" height="1" fill="#ffffff"/><rect x="7" y="6" width="1" height="1" fill="#ffffff"/><rect x="8" y="6" width="1" height="1" fill="#ffffff"/><rect x="9" y="6" width="1" height="1" fill="#ffffff"/><rect x="10" y="6" width="1" height="1" fill="#6b6b6b"/><rect x="0" y="7" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="7" width="1" height="1" fill="#ffffff"/><rect x="2" y="7" width="1" height="1" fill="#ffffff"/><rect x="3" y="7" width="1" height="1" fill="#ffffff"/><rect x="4" y="7" width="1" height="1" fill="#ffffff"/><rect x="5" y="7" width="1" height="1" fill="#ffffff"/><rect x="6" y="7" width="1" height="1" fill="#ffffff"/><rect x="7" y="7" width="1" height="1" fill="#ffffff"/><rect x="8" y="7" width="1" height="1" fill="#ffffff"/><rect x="9" y="7" width="1" height="1" fill="#1a1a1a"/><rect x="10" y="7" width="1" height="1" fill="#1a1a1a"/><rect x="11" y="7" width="1" height="1" fill="#1a1a1a"/><rect x="12" y="7" width="1" height="1" fill="#1a1a1a"/><rect x="0" y="8" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="8" width="1" height="1" fill="#ffffff"/><rect x="2" y="8" width="1" height="1" fill="#9aa5b1"/><rect x="3" y="8" width="1" height="1" fill="#9aa5b1"/><rect x="4" y="8" width="1" height="1" fill="#9aa5b1"/><rect x="5" y="8" width="1" height="1" fill="#9aa5b1"/><rect x="6" y="8" width="1" height="1" fill="#9aa5b1"/><rect x="7" y="8" width="1" height="1" fill="#ffffff"/><rect x="8" y="8" width="1" height="1" fill="#1a1a1a"/><rect x="9" y="8" width="1" height="1" fill="#d5f1fa"/><rect x="10" y="8" width="1" height="1" fill="#d5f1fa"/><rect x="11" y="8" width="1" height="1" fill="#d5f1fa"/><rect x="12" y="8" width="1" height="1" fill="#d5f1fa"/><rect x="13" y="8" width="1" height="1" fill="#1a1a1a"/><rect x="0" y="9" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="9" width="1" height="1" fill="#ffffff"/><rect x="2" y="9" width="1" height="1" fill="#ffffff"/><rect x="3" y="9" width="1" height="1" fill="#ffffff"/><rect x="4" y="9" width="1" height="1" fill="#ffffff"/><rect x="5" y="9" width="1" height="1" fill="#ffffff"/><rect x="6" y="9" width="1" height="1" fill="#ffffff"/><rect x="7" y="9" width="1" height="1" fill="#1a1a1a"/><rect x="8" y="9" width="1" height="1" fill="#d5f1fa"/><rect x="9" y="9" width="1" height="1" fill="#d5f1fa"/><rect x="10" y="9" width="1" height="1" fill="#d5f1fa"/><rect x="11" y="9" width="1" height="1" fill="#d5f1fa"/><rect x="12" y="9" width="1" height="1" fill="#d5f1fa"/><rect x="13" y="9" width="1" height="1" fill="#d5f1fa"/><rect x="14" y="9" width="1" height="1" fill="#1a1a1a"/><rect x="0" y="10" width="1" height="1" fill="#6b6b6b"/><rect x="1" y="10" width="1" height="1" fill="#6b6b6b"/><rect x="2" y="10" width="1" height="1" fill="#6b6b6b"/><rect x="3" y="10" width="1" height="1" fill="#6b6b6b"/><rect x="4" y="10" width="1" height="1" fill="#6b6b6b"/><rect x="5" y="10" width="1" height="1" fill="#6b6b6b"/><rect x="6" y="10" width="1" height="1" fill="#6b6b6b"/><rect x="7" y="10" width="1" height="1" fill="#1a1a1a"/><rect x="8" y="10" width="1" height="1" fill="#d5f1fa"/><rect x="9" y="10" width="1" height="1" fill="#d5f1fa"/><rect x="10" y="10" width="1" height="1" fill="#d5f1fa"/><rect x="11" y="10" width="1" height="1" fill="#d5f1fa"/><rect x="12" y="10" width="1" height="1" fill="#d5f1fa"/><rect x="13" y="10" width="1" height="1" fill="#d5f1fa"/><rect x="14" y="10" width="1" height="1" fill="#1a1a1a"/><rect x="7" y="11" width="1" height="1" fill="#1a1a1a"/><rect x="8" y="11" width="1" height="1" fill="#d5f1fa"/><rect x="9" y="11" width="1" height="1" fill="#d5f1fa"/><rect x="10" y="11" width="1" height="1" fill="#d5f1fa"/><rect x="11" y="11" width="1" height="1" fill="#d5f1fa"/><rect x="12" y="11" width="1" height="1" fill="#d5f1fa"/><rect x="13" y="11" width="1" height="1" fill="#d5f1fa"/><rect x="14" y="11" width="1" height="1" fill="#1a1a1a"/><rect x="7" y="12" width="1" height="1" fill="#1a1a1a"/><rect x="8" y="12" width="1" height="1" fill="#1a1a1a"/><rect x="9" y="12" width="1" height="1" fill="#d5f1fa"/><rect x="10" y="12" width="1" height="1" fill="#d5f1fa"/><rect x="11" y="12" width="1" height="1" fill="#d5f1fa"/><rect x="12" y="12" width="1" height="1" fill="#d5f1fa"/><rect x="13" y="12" width="1" height="1" fill="#d5f1fa"/><rect x="14" y="12" width="1" height="1" fill="#1a1a1a"/><rect x="8" y="13" width="1" height="1" fill="#1a1a1a"/><rect x="9" y="13" width="1" height="1" fill="#1a1a1a"/><rect x="10" y="13" width="1" height="1" fill="#d5f1fa"/><rect x="11" y="13" width="1" height="1" fill="#d5f1fa"/><rect x="12" y="13" width="1" height="1" fill="#d5f1fa"/><rect x="13" y="13" width="1" height="1" fill="#5a3a20"/><rect x="14" y="13" width="1" height="1" fill="#5a3a20"/><rect x="9" y="14" width="1" height="1" fill="#1a1a1a"/><rect x="10" y="14" width="1" height="1" fill="#1a1a1a"/><rect x="11" y="14" width="1" height="1" fill="#1a1a1a"/><rect x="12" y="14" width="1" height="1" fill="#1a1a1a"/><rect x="13" y="14" width="1" height="1" fill="#5a3a20"/><rect x="14" y="14" width="1" height="1" fill="#5a3a20"/><rect x="15" y="14" width="1" height="1" fill="#5a3a20"/><rect x="14" y="15" width="1" height="1" fill="#5a3a20"/><rect x="15" y="15" width="1" height="1" fill="#5a3a20"/></svg>
+      <span>Start</span>
+    </button>
+  <div class="taskbarClock" id="taskbarClock">--:--</div>
+</div>
+
 <div id="desktop">
   <div class="desktopTitleWindow">
     <div class="titlebar">
@@ -268,33 +303,6 @@
     </div>
   </div>
   <div class="desktopIcons">
-    <button class="startBtn" onclick="choosePlayToday()" aria-label="Play Today's Game">
-      <svg viewBox="0 0 172 52" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="startGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#8fdc6a"/>
-            <stop offset="45%" stop-color="#4caf2e"/>
-            <stop offset="100%" stop-color="#2f7a1a"/>
-          </linearGradient>
-          <linearGradient id="startGloss" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="rgba(255,255,255,.65)"/>
-            <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
-          </linearGradient>
-          <clipPath id="startClip">
-            <rect x="1" y="1" width="170" height="50" rx="25"/>
-          </clipPath>
-        </defs>
-        <rect x="1" y="1" width="170" height="50" rx="25" fill="url(#startGrad)" stroke="#1e5b10" stroke-width="1.5"/>
-        <ellipse cx="86" cy="4" rx="95" ry="16" fill="url(#startGloss)" clip-path="url(#startClip)"/>
-        <g transform="translate(16,15)">
-          <rect x="0" y="0" width="10" height="10" rx="2" fill="#e14b3a"/>
-          <rect x="12" y="0" width="10" height="10" rx="2" fill="#7bbd3a"/>
-          <rect x="0" y="12" width="10" height="10" rx="2" fill="#3a8fe1"/>
-          <rect x="12" y="12" width="10" height="10" rx="2" fill="#f2c12e"/>
-        </g>
-        <text x="48" y="34" font-family="Tahoma, Verdana, sans-serif" font-size="23" font-style="italic" font-weight="bold" fill="#ffffff" stroke="#1e5b10" stroke-width="0.5">start</text>
-      </svg>
-    </button>
     <button class="desktopIcon" onclick="choosePlayToday()">
       <span class="desktopIconGlyph">
         <svg viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg">
@@ -339,7 +347,7 @@
 <div class="window hidden" id="gameWindow">
   <div class="windowHeader">
     <div class="titlebar">
-      <span>SiteGuessr</span>
+      <span id="windowTitle">SiteGuessr</span>
       <span class="spacer"></span>
       <span class="dot">_</span><span class="dot" onclick="confirmExitGame()" title="Close">X</span>
     </div>
@@ -437,6 +445,11 @@
   </div>
 </div>
 
+<div class="lightbox hidden" id="lightbox" onclick="closeLightbox()">
+  <span class="lightboxClose" onclick="closeLightbox()">&times;</span>
+  <img id="lightboxImg" src="" alt="Expanded screenshot" onclick="event.stopPropagation()">
+</div>
+
 <script>
 let rounds = [];
 let currentDate = null;
@@ -445,7 +458,17 @@ const $ = id => document.getElementById(id);
 
 function imgTag(path, alt){
   return '<img src="' + path + '" alt="' + alt + '" loading="lazy" ' +
+    'onclick="expandImage(this.src)" ' +
     'onerror="this.outerHTML=\'<div class=&quot;missing&quot;>Image not found: ' + path + '</div>\'">';
+}
+
+function expandImage(src){
+  $('lightboxImg').src = src;
+  $('lightbox').classList.remove('hidden');
+}
+function closeLightbox(){
+  $('lightbox').classList.add('hidden');
+  $('lightboxImg').src = '';
 }
 
 function todayDateStr(){ return new Date().toISOString().slice(0, 10); }
@@ -483,9 +506,11 @@ function showIntroFor(dateStr, isToday){
   $('intro').classList.remove('hidden');
   if(isToday){
     $('introSubtitle').classList.add('hidden');
+    $('windowTitle').textContent = 'SiteGuessr';
   } else {
     $('introSubtitle').textContent = 'Playing the archived game from ' + formatDate(dateStr) + '.';
     $('introSubtitle').classList.remove('hidden');
+    $('windowTitle').textContent = 'SiteGuessr \u2014 ' + formatDate(dateStr);
   }
   loadRoundsForDate(dateStr);
 }
@@ -493,6 +518,19 @@ function showIntroFor(dateStr, isToday){
 function isMobileViewport(){
   return window.matchMedia('(max-width: 640px)').matches;
 }
+
+function updateTaskbarClock(){
+  const el = document.getElementById('taskbarClock');
+  if(!el) return;
+  const now = new Date();
+  let h = now.getHours();
+  const m = String(now.getMinutes()).padStart(2, '0');
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12; if(h === 0) h = 12;
+  el.textContent = h + ':' + m + ' ' + ampm;
+}
+updateTaskbarClock();
+setInterval(updateTaskbarClock, 1000);
 
 // The desktop/landing screen is a fixed one-page view on mobile - lock
 // page scrolling while it's showing so there's nothing to accidentally
@@ -503,7 +541,10 @@ function setDesktopScrollLock(locked){
 }
 
 function choosePlayToday(){
-  if(isMobileViewport()) $('desktop').classList.add('hidden');
+  if(isMobileViewport()){
+    $('desktop').classList.add('hidden');
+    $('taskbar').classList.add('hidden');
+  }
   setDesktopScrollLock(false);
   $('gameWindow').classList.remove('hidden');
   showIntroFor(todayDateStr(), true);
@@ -512,6 +553,7 @@ function choosePlayToday(){
 function goToLanding(){
   $('gameWindow').classList.add('hidden');
   $('desktop').classList.remove('hidden');
+  $('taskbar').classList.remove('hidden');
   setDesktopScrollLock(true);
   // Reset everything so the next time the window opens, it starts clean
   // rather than resuming whatever screen/score was showing before close.
@@ -527,6 +569,7 @@ function goToLanding(){
   $('startBtn').disabled = true;
   $('startBtn').textContent = 'Loading...';
   $('loadErr').classList.add('hidden');
+  $('windowTitle').textContent = 'SiteGuessr';
 }
 
 function confirmExitGame(){
@@ -558,7 +601,10 @@ function playAgain(){
   const params = new URLSearchParams(location.search);
   const dateParam = params.get('date');
   if(dateParam){
-    if(isMobileViewport()) $('desktop').classList.add('hidden');
+    if(isMobileViewport()){
+      $('desktop').classList.add('hidden');
+      $('taskbar').classList.add('hidden');
+    }
     $('gameWindow').classList.remove('hidden');
     showIntroFor(dateParam, dateParam === todayDateStr());
   } else {
