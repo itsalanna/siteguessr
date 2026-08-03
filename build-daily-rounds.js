@@ -134,7 +134,7 @@ async function getToolbarHeight(page) {
 async function coverBrandMentions(page, names, toolbarHeight) {
   const patterns = names.filter(Boolean).map(n => n.toLowerCase().trim()).filter(n => n.length > 0);
   try {
-    await page.evaluate(({ patterns, toolbarHeight }) => {
+    await page.evaluate(({ patterns, toolbarHeight, shotHeight }) => {
       function isMatch(text) {
         if (!text) return false;
         const t = text.trim().toLowerCase();
@@ -154,8 +154,16 @@ async function coverBrandMentions(page, names, toolbarHeight) {
         div.style.borderRadius = '3px';
         document.body.appendChild(div);
       }
+      function inHeaderOrFooterZone(rect) {
+        const topInContent = rect.top - toolbarHeight;
+        const inHeader = topInContent >= -10 && topInContent < 260;
+        const inFooter = topInContent > (shotHeight - 220) && topInContent < (shotHeight + 300);
+        return inHeader || inFooter;
+      }
 
-      // 1. Visible text matching the answer or an alias.
+      // 1. Visible text matching the answer or an alias - checked across
+      // the whole page, not just header/footer, since brand mentions in
+      // body copy or promo banners can appear anywhere.
       document.querySelectorAll('body *').forEach(el => {
         if (el.childElementCount > 0) return;
         const text = el.textContent;
@@ -165,15 +173,14 @@ async function coverBrandMentions(page, names, toolbarHeight) {
         }
       });
 
-      // 2. Images whose alt/title matches.
+      // 2. Images whose alt/title matches - page-wide.
       document.querySelectorAll('img').forEach(img => {
         if (isMatch(img.alt) || isMatch(img.title)) cover(img.getBoundingClientRect());
       });
 
       // 3. Anything whose id/class hints at being a logo/brand element -
-      // catches unlabeled logo images and CSS-background logos. Sized
-      // generously since a legitimate logo/masthead container can
-      // reasonably span a good chunk of the header.
+      // page-wide, catches unlabeled logo images and CSS-background logos
+      // wherever they sit (header, footer, sidebar promos, etc).
       document.querySelectorAll('*').forEach(el => {
         const idcls = ((el.id || '') + ' ' + (el.className || '')).toLowerCase();
         if (/logo|brand|masthead|sitename|wordmark|identity/.test(idcls)) {
@@ -182,32 +189,44 @@ async function coverBrandMentions(page, names, toolbarHeight) {
         }
       });
 
-      // 4. Any reasonably-sized image in the header zone, image-based
-      // logo or not, labeled or not - most homepage logos live here.
-      // Window is generous since real headers vary a lot (Wikipedia's
-      // title sits wider/lower than a typical top-left logo, etc).
+      // 4. Images whose filename (src) mentions the brand or the word
+      // logo/brand - catches unlabeled logo images by their asset name,
+      // which old sites usually got right even when alt text was empty.
+      // Page-wide, since this is a strong signal regardless of position.
+      document.querySelectorAll('img').forEach(img => {
+        const src = (img.currentSrc || img.src || '').toLowerCase();
+        if (!src) return;
+        if (patterns.some(p => p.length > 2 && src.includes(p)) || /logo|brand/.test(src)) {
+          const rect = img.getBoundingClientRect();
+          if (rect.width < 900 && rect.height < 300) cover(rect);
+        }
+      });
+
+      // 5. Any reasonably-sized image in the header OR footer zone,
+      // image-based logo or not, labeled or not - most homepage logos
+      // live in one of these two spots (many old sites repeat the logo
+      // in the footer too).
       document.querySelectorAll('img').forEach(img => {
         const rect = img.getBoundingClientRect();
-        const topInContent = rect.top - toolbarHeight;
-        if (topInContent >= -10 && topInContent < 260 &&
+        if (inHeaderOrFooterZone(rect) &&
             rect.width >= 15 && rect.width <= 700 &&
             rect.height >= 8 && rect.height <= 220) {
           cover(rect);
         }
       });
 
-      // 5. Any element in the header zone with a CSS background-image -
-      // catches sprite/background-image logos regardless of id/class.
+      // 6. Any element in the header or footer zone with a CSS
+      // background-image - catches sprite/background-image logos
+      // regardless of id/class.
       document.querySelectorAll('body *').forEach(el => {
         const rect = el.getBoundingClientRect();
-        const topInContent = rect.top - toolbarHeight;
-        if (topInContent < -10 || topInContent > 260) return;
+        if (!inHeaderOrFooterZone(rect)) return;
         if (rect.width < 15 || rect.width > 700 || rect.height < 8 || rect.height > 220) return;
         const bg = getComputedStyle(el).backgroundImage;
         if (bg && bg !== 'none') cover(rect);
       });
 
-      // 6. Any large-font text sitting in the header zone, regardless
+      // 7. Any large-font text sitting in the header zone, regardless
       // of whether its exact wording matched our known aliases. A big,
       // prominent heading near the top of a homepage is almost always
       // the site's name or tagline - this catches cases where the real
@@ -223,7 +242,7 @@ async function coverBrandMentions(page, names, toolbarHeight) {
         const fontSize = parseFloat(getComputedStyle(el).fontSize) || 0;
         if (fontSize >= 20 && rect.width < 700 && rect.height < 220) cover(rect);
       });
-    }, { patterns, toolbarHeight });
+    }, { patterns, toolbarHeight, shotHeight: SHOT_HEIGHT });
   } catch (err) {
     console.error(`  Brand-covering step failed (non-fatal): ${err.message}`);
   }
