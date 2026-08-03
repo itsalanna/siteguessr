@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-03",
+  "rounds": [
+    {
+      "answer": "YouTube",
+      "year": 2008,
+      "accept": [
+        "youtube",
+        "you tube",
+        "yt"
+      ],
+      "fact": "Star ratings lasted until 2010. They were retired because almost everyone rated either 5 stars or 1, so the site switched to thumbs up/down.",
+      "beforeImg": "images/2026-08-03/youtube-then.png",
+      "afterImg": "images/2026-08-03/youtube-now.png"
+    },
+    {
+      "answer": "Craigslist",
+      "year": 2004,
+      "accept": [
+        "craigslist"
+      ],
+      "fact": "Craigslist's design has barely changed since the 1990s, on purpose. The founder has said repeatedly that plain text links serve the function better than a redesign would.",
+      "beforeImg": "images/2026-08-03/craigslist-then.png",
+      "afterImg": "images/2026-08-03/craigslist-now.png"
+    },
+    {
+      "answer": "Wikipedia",
+      "year": 2005,
+      "accept": [
+        "wikipedia",
+        "wiki"
+      ],
+      "fact": "Wikipedia's interface has stayed remarkably close to its original look for two decades. The visual restraint was intentional, to keep the focus on editing and content rather than design.",
+      "beforeImg": "images/2026-08-03/wikipedia-then.png",
+      "afterImg": "images/2026-08-03/wikipedia-now.png"
+    },
+    {
+      "answer": "LinkedIn",
+      "year": 2005,
+      "accept": [
+        "linkedin"
+      ],
+      "fact": "LinkedIn launched in 2003 out of a founder's living room. By 2005 it was already leaning into the dense, spreadsheet-like profile layout that professional networking sites still use.",
+      "beforeImg": "images/2026-08-03/linkedin-then.png",
+      "afterImg": "images/2026-08-03/linkedin-now.png"
+    },
+    {
+      "answer": "eBay",
+      "year": 1999,
+      "accept": [
+        "ebay"
+      ],
+      "fact": "eBay started in 1995 as AuctionWeb, reportedly built to help the founder's fiancee trade Pez dispensers. By 1999 it was already a sprawling grid of category links and live auctions.",
+      "beforeImg": "images/2026-08-03/ebay-then.png",
+      "afterImg": "images/2026-08-03/ebay-now.png"
+    }
+  ]
+}
