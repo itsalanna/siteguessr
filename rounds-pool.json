@@ -234,5 +234,1866 @@
     "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
     "afterUrl": "https://www.airbnb.com",
     "beforeDomain": "www.airbnb.com"
+  },
+  {
+    "slug": "microsoft",
+    "answer": "Microsoft",
+    "year": 1998,
+    "accept": [
+      "microsoft",
+      "msft"
+    ],
+    "fact": "Microsoft's homepage in the late 90s was essentially a portal to its own products, years before it settled into the cleaner corporate design language it uses today.",
+    "beforeDomain": "www.microsoft.com",
+    "afterUrl": "https://www.microsoft.com"
+  },
+  {
+    "slug": "cnn",
+    "answer": "CNN",
+    "year": 2000,
+    "accept": [
+      "cnn",
+      "cable news network"
+    ],
+    "fact": "CNN.com's early design crammed dozens of headlines onto one dense page, a layout style that dominated news sites for years before cleaner, story-focused redesigns took over.",
+    "beforeDomain": "www.cnn.com",
+    "afterUrl": "https://www.cnn.com"
+  },
+  {
+    "slug": "disney",
+    "answer": "Disney",
+    "year": 1999,
+    "accept": [
+      "disney",
+      "walt disney"
+    ],
+    "fact": "Disney's late-90s site leaned hard into flashy animated banners and bright primary colors, very much a product of the early web's obsession with movement over usability.",
+    "beforeDomain": "www.disney.com",
+    "afterUrl": "https://www.disney.com"
+  },
+  {
+    "slug": "espn",
+    "answer": "ESPN",
+    "year": 2000,
+    "accept": [
+      "espn"
+    ],
+    "fact": "ESPN.com launched in 1995 and quickly became one of the most-visited sites on the early web, built around a dense grid of scores and headlines that's still recognizable in sports sites today.",
+    "beforeDomain": "www.espn.com",
+    "afterUrl": "https://www.espn.com"
+  },
+  {
+    "slug": "target",
+    "answer": "Target",
+    "year": 2001,
+    "accept": [
+      "target"
+    ],
+    "fact": "Target's early e-commerce site was famously slow to launch compared to competitors, relying on Amazon to actually run its online store's backend for several years.",
+    "beforeDomain": "www.target.com",
+    "afterUrl": "https://www.target.com"
+  },
+  {
+    "slug": "walmart",
+    "answer": "Walmart",
+    "year": 2000,
+    "accept": [
+      "walmart",
+      "wal-mart"
+    ],
+    "fact": "Walmart's first e-commerce attempt in 2000 struggled so badly with web traffic that the company briefly shut the site down and rebuilt it before relaunching.",
+    "beforeDomain": "www.walmart.com",
+    "afterUrl": "https://www.walmart.com"
+  },
+  {
+    "slug": "bestbuy",
+    "answer": "Best Buy",
+    "year": 2001,
+    "accept": [
+      "best buy",
+      "bestbuy"
+    ],
+    "fact": "Best Buy's early site design mimicked its in-store layout, organizing products into departments the same way shoppers would encounter them walking through the physical stores.",
+    "beforeDomain": "www.bestbuy.com",
+    "afterUrl": "https://www.bestbuy.com"
+  },
+  {
+    "slug": "geocities",
+    "answer": "GeoCities",
+    "year": 1999,
+    "accept": [
+      "geocities"
+    ],
+    "fact": "GeoCities organized user pages into themed 'neighborhoods' like Hollywood and SiliconValley, and at its peak was one of the most-visited sites on the entire web before Yahoo shut it down in 2009.",
+    "beforeDomain": "www.geocities.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Yahoo!_GeoCities"
+  },
+  {
+    "slug": "napster",
+    "answer": "Napster",
+    "year": 2000,
+    "accept": [
+      "napster"
+    ],
+    "fact": "Napster's original file-sharing service was sued into shutting down in 2001, but the brand survived and was later relaunched as a legal paid streaming service.",
+    "beforeDomain": "www.napster.com",
+    "afterUrl": "https://www.napster.com"
+  },
+  {
+    "slug": "altavista",
+    "answer": "AltaVista",
+    "year": 1998,
+    "accept": [
+      "altavista",
+      "alta vista"
+    ],
+    "fact": "AltaVista was one of the dominant search engines before Google, and was actually first to offer a translation tool (Babel Fish) that became hugely popular in its own right.",
+    "beforeDomain": "www.altavista.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/AltaVista"
+  },
+  {
+    "slug": "friendster",
+    "answer": "Friendster",
+    "year": 2004,
+    "accept": [
+      "friendster"
+    ],
+    "fact": "Friendster launched in 2002 and is widely credited as one of the first mainstream social networks, predating both MySpace and Facebook, before its own popularity overwhelmed its servers.",
+    "beforeDomain": "www.friendster.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Friendster"
+  },
+  {
+    "slug": "digg",
+    "answer": "Digg",
+    "year": 2006,
+    "accept": [
+      "digg"
+    ],
+    "fact": "Digg pioneered the user-voted news-aggregation format years before Reddit took over that space, and a single controversial 2010 redesign is often cited as the reason it lost most of its audience.",
+    "beforeDomain": "www.digg.com",
+    "afterUrl": "https://digg.com"
+  },
+  {
+    "slug": "tumblr",
+    "answer": "Tumblr",
+    "year": 2010,
+    "accept": [
+      "tumblr"
+    ],
+    "fact": "Tumblr popularized the short-form 'microblogging' format, and grew so fast in its early years that it regularly had to fight off downtime from its own success.",
+    "beforeDomain": "www.tumblr.com",
+    "afterUrl": "https://www.tumblr.com"
+  },
+  {
+    "slug": "foursquare",
+    "answer": "Foursquare",
+    "year": 2011,
+    "accept": [
+      "foursquare",
+      "4square"
+    ],
+    "fact": "Foursquare's whole early identity was built around competitive check-ins and 'mayorships' of physical locations, a gamified feature that mostly disappeared as the app pivoted toward recommendations.",
+    "beforeDomain": "www.foursquare.com",
+    "afterUrl": "https://foursquare.com"
+  },
+  {
+    "slug": "vine",
+    "answer": "Vine",
+    "year": 2014,
+    "accept": [
+      "vine"
+    ],
+    "fact": "Vine's entire format was built around exactly 6-second looping videos, a constraint that produced its own distinct style of comedy before Twitter shut the app down in 2017.",
+    "beforeDomain": "vine.co",
+    "afterUrl": "https://en.wikipedia.org/wiki/Vine_(service)"
+  },
+  {
+    "slug": "yelp",
+    "answer": "Yelp",
+    "year": 2008,
+    "accept": [
+      "yelp"
+    ],
+    "fact": "Yelp started in 2004 as an email-based referral service before pivoting to the review-website format it's known for today, after users kept asking for a public place to post reviews.",
+    "beforeDomain": "www.yelp.com",
+    "afterUrl": "https://www.yelp.com"
+  },
+  {
+    "slug": "match",
+    "answer": "Match.com",
+    "year": 2000,
+    "accept": [
+      "match.com",
+      "match"
+    ],
+    "fact": "Match.com launched in 1995 and is one of the very first online dating sites, predating the smartphone-app dating era by almost two decades.",
+    "beforeDomain": "www.match.com",
+    "afterUrl": "https://www.match.com"
+  },
+  {
+    "slug": "monster",
+    "answer": "Monster",
+    "year": 2000,
+    "accept": [
+      "monster",
+      "monster.com"
+    ],
+    "fact": "Monster.com ran one of the most memorable ad campaigns of the dot-com era ('When I grow up, I want to...') and became synonymous with online job searching in the late 90s.",
+    "beforeDomain": "www.monster.com",
+    "afterUrl": "https://www.monster.com"
+  },
+  {
+    "slug": "weather",
+    "answer": "The Weather Channel",
+    "year": 2000,
+    "accept": [
+      "weather channel",
+      "weather.com"
+    ],
+    "fact": "Weather.com was one of the earliest sites to make hyper-local content practical on the web, letting visitors punch in a zip code long before that felt like a standard web feature.",
+    "beforeDomain": "www.weather.com",
+    "afterUrl": "https://www.weather.com"
+  },
+  {
+    "slug": "ask",
+    "answer": "Ask Jeeves",
+    "year": 2000,
+    "accept": [
+      "ask jeeves",
+      "ask.com",
+      "ask"
+    ],
+    "fact": "Ask Jeeves branded itself around a friendly butler mascot and the pitch of asking questions in plain English, a contrast to the keyword-heavy search engines of the era.",
+    "beforeDomain": "www.ask.com",
+    "afterUrl": "https://www.ask.com"
+  },
+  {
+    "slug": "expedia",
+    "answer": "Expedia",
+    "year": 2000,
+    "accept": [
+      "expedia"
+    ],
+    "fact": "Expedia started in 1996 as a project inside Microsoft before spinning off into its own company, part of the first wave of travel booking moving from agents onto the web.",
+    "beforeDomain": "www.expedia.com",
+    "afterUrl": "https://www.expedia.com"
+  },
+  {
+    "slug": "priceline",
+    "answer": "Priceline",
+    "year": 2000,
+    "accept": [
+      "priceline"
+    ],
+    "fact": "Priceline's original pitch was a 'name your own price' auction system for flights and hotels, an unusual model that made it one of the most talked-about dot-com startups of its era.",
+    "beforeDomain": "www.priceline.com",
+    "afterUrl": "https://www.priceline.com"
+  },
+  {
+    "slug": "tomshardware",
+    "answer": "Tom's Hardware",
+    "year": 2001,
+    "accept": [
+      "tom's hardware",
+      "toms hardware"
+    ],
+    "fact": "Tom's Hardware built its reputation on exhaustive PC component benchmarks, becoming one of the go-to sites for hardware enthusiasts well before mainstream tech blogs existed.",
+    "beforeDomain": "www.tomshardware.com",
+    "afterUrl": "https://www.tomshardware.com"
+  },
+  {
+    "slug": "bbc",
+    "answer": "BBC",
+    "year": 2000,
+    "accept": [
+      "bbc"
+    ],
+    "fact": "BBC Online launched in 1997 and was one of the first major broadcasters to build a genuinely large-scale news website, well ahead of most American networks doing the same.",
+    "beforeDomain": "www.bbc.co.uk",
+    "afterUrl": "https://www.bbc.co.uk"
+  },
+  {
+    "slug": "nytimes",
+    "answer": "The New York Times",
+    "year": 2000,
+    "accept": [
+      "new york times",
+      "nytimes",
+      "nyt"
+    ],
+    "fact": "The New York Times went online in 1996 and required free registration from the start, a controversial-at-the-time model that foreshadowed the paywalls most news sites use today.",
+    "beforeDomain": "www.nytimes.com",
+    "afterUrl": "https://www.nytimes.com"
+  },
+  {
+    "slug": "aol",
+    "answer": "AOL",
+    "year": 2000,
+    "accept": [
+      "aol",
+      "america online"
+    ],
+    "fact": "AOL mailed out so many free trial CDs in the late 90s that they briefly became one of the most common physical objects in American households, all to get people onto its dial-up service.",
+    "beforeDomain": "www.aol.com",
+    "afterUrl": "https://www.aol.com"
+  },
+  {
+    "slug": "excite",
+    "answer": "Excite",
+    "year": 1999,
+    "accept": [
+      "excite"
+    ],
+    "fact": "Excite was one of the 'big five' web portals of the late 90s, and famously turned down the chance to buy Google's search technology for under $1 million in 1999.",
+    "beforeDomain": "www.excite.com",
+    "afterUrl": "https://www.excite.com"
+  },
+  {
+    "slug": "lycos",
+    "answer": "Lycos",
+    "year": 1999,
+    "accept": [
+      "lycos"
+    ],
+    "fact": "Lycos was briefly the most-visited website on the internet in 1999, its search engine and portal combo making it a serious early rival to Yahoo.",
+    "beforeDomain": "www.lycos.com",
+    "afterUrl": "https://www.lycos.com"
+  },
+  {
+    "slug": "hotbot",
+    "answer": "HotBot",
+    "year": 1999,
+    "accept": [
+      "hotbot"
+    ],
+    "fact": "HotBot launched in 1996 with a distinctly loud, colorful interface, and was one of the first search engines to index the full text of pages rather than just titles and keywords.",
+    "beforeDomain": "www.hotbot.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/HotBot"
+  },
+  {
+    "slug": "webcrawler",
+    "answer": "WebCrawler",
+    "year": 1998,
+    "accept": [
+      "webcrawler",
+      "web crawler"
+    ],
+    "fact": "WebCrawler, launched in 1994, was the first search engine to provide full-text search of the web, a basic feature that wasn't yet standard among its competitors.",
+    "beforeDomain": "www.webcrawler.com",
+    "afterUrl": "https://www.webcrawler.com"
+  },
+  {
+    "slug": "msn",
+    "answer": "MSN",
+    "year": 2000,
+    "accept": [
+      "msn",
+      "microsoft network"
+    ],
+    "fact": "MSN launched alongside Windows 95 as Microsoft's answer to AOL, bundling a dial-up service with a portal homepage that shipped as the default for millions of new PCs.",
+    "beforeDomain": "www.msn.com",
+    "afterUrl": "https://www.msn.com"
+  },
+  {
+    "slug": "netscape",
+    "answer": "Netscape",
+    "year": 1999,
+    "accept": [
+      "netscape"
+    ],
+    "fact": "Netscape's browser dominated the early web so completely that Microsoft bundling Internet Explorer with Windows to compete became the center of a landmark antitrust case.",
+    "beforeDomain": "www.netscape.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Netscape"
+  },
+  {
+    "slug": "compuserve",
+    "answer": "CompuServe",
+    "year": 1998,
+    "accept": [
+      "compuserve"
+    ],
+    "fact": "CompuServe was one of the very first consumer online services, predating the web itself, and originally charged by the hour for dial-up access back in the late 1970s.",
+    "beforeDomain": "www.compuserve.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/CompuServe"
+  },
+  {
+    "slug": "slashdot",
+    "answer": "Slashdot",
+    "year": 2000,
+    "accept": [
+      "slashdot"
+    ],
+    "fact": "Slashdot popularized threaded, community-moderated comment sections years before that became standard, and getting linked from its front page could crash smaller sites entirely - a phenomenon known as 'the Slashdot effect.'",
+    "beforeDomain": "slashdot.org",
+    "afterUrl": "https://slashdot.org"
+  },
+  {
+    "slug": "fark",
+    "answer": "Fark",
+    "year": 2003,
+    "accept": [
+      "fark"
+    ],
+    "fact": "Fark built its entire identity around submitting and voting on weird, funny news links, a simple format that predated Reddit's rise by several years.",
+    "beforeDomain": "www.fark.com",
+    "afterUrl": "https://www.fark.com"
+  },
+  {
+    "slug": "livejournal",
+    "answer": "LiveJournal",
+    "year": 2004,
+    "accept": [
+      "livejournal",
+      "lj"
+    ],
+    "fact": "LiveJournal was one of the first blogging platforms to build in a real social layer, with friends lists and privacy settings, making it feel more like an early social network than a simple blog host.",
+    "beforeDomain": "www.livejournal.com",
+    "afterUrl": "https://www.livejournal.com"
+  },
+  {
+    "slug": "xanga",
+    "answer": "Xanga",
+    "year": 2005,
+    "accept": [
+      "xanga"
+    ],
+    "fact": "Xanga combined blogging with heavy profile customization and briefly rivaled MySpace in popularity among teens before losing ground in the mid-2000s.",
+    "beforeDomain": "www.xanga.com",
+    "afterUrl": "https://xanga.com"
+  },
+  {
+    "slug": "bebo",
+    "answer": "Bebo",
+    "year": 2007,
+    "accept": [
+      "bebo"
+    ],
+    "fact": "Bebo was massively popular in the UK and Ireland during the mid-2000s, at one point ranking as the third-most-visited social network in the US before AOL bought it for $850 million in 2008.",
+    "beforeDomain": "www.bebo.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Bebo"
+  },
+  {
+    "slug": "orkut",
+    "answer": "Orkut",
+    "year": 2006,
+    "accept": [
+      "orkut"
+    ],
+    "fact": "Orkut was Google's first real attempt at a social network, and became massively popular in Brazil and India specifically, years before Facebook expanded into those markets.",
+    "beforeDomain": "www.orkut.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Orkut"
+  },
+  {
+    "slug": "ign",
+    "answer": "IGN",
+    "year": 2001,
+    "accept": [
+      "ign"
+    ],
+    "fact": "IGN started in 1996 focused purely on Nintendo 64 coverage before expanding into the general gaming and entertainment site it is today.",
+    "beforeDomain": "www.ign.com",
+    "afterUrl": "https://www.ign.com"
+  },
+  {
+    "slug": "gamespot",
+    "answer": "GameSpot",
+    "year": 2000,
+    "accept": [
+      "gamespot"
+    ],
+    "fact": "GameSpot launched in 1996 and became known for its numerical review scores becoming a genuine influence on game sales, sometimes controversially so.",
+    "beforeDomain": "www.gamespot.com",
+    "afterUrl": "https://www.gamespot.com"
+  },
+  {
+    "slug": "ebaumsworld",
+    "answer": "eBaum's World",
+    "year": 2005,
+    "accept": [
+      "ebaum's world",
+      "ebaumsworld"
+    ],
+    "fact": "eBaum's World built its early traffic on hosting viral videos and flash animations, and was frequently accused of re-uploading other creators' content without credit.",
+    "beforeDomain": "www.ebaumsworld.com",
+    "afterUrl": "https://www.ebaumsworld.com"
+  },
+  {
+    "slug": "newgrounds",
+    "answer": "Newgrounds",
+    "year": 2003,
+    "accept": [
+      "newgrounds"
+    ],
+    "fact": "Newgrounds became the central hub for Flash animation and games in the early 2000s, launching the careers of several animators years before YouTube existed.",
+    "beforeDomain": "www.newgrounds.com",
+    "afterUrl": "https://www.newgrounds.com"
+  },
+  {
+    "slug": "paypal",
+    "answer": "PayPal",
+    "year": 2000,
+    "accept": [
+      "paypal"
+    ],
+    "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+    "beforeDomain": "www.paypal.com",
+    "afterUrl": "https://www.paypal.com"
+  },
+  {
+    "slug": "etrade",
+    "answer": "E*TRADE",
+    "year": 2000,
+    "accept": [
+      "e*trade",
+      "etrade"
+    ],
+    "fact": "E*TRADE was one of the first services to let ordinary people trade stocks online without a broker, and its Super Bowl ads became a fixture of dot-com era advertising.",
+    "beforeDomain": "www.etrade.com",
+    "afterUrl": "https://www.etrade.com"
+  },
+  {
+    "slug": "orbitz",
+    "answer": "Orbitz",
+    "year": 2002,
+    "accept": [
+      "orbitz"
+    ],
+    "fact": "Orbitz was launched in 2001 by a group of major airlines banding together to compete directly with Expedia and Travelocity for online bookings.",
+    "beforeDomain": "www.orbitz.com",
+    "afterUrl": "https://www.orbitz.com"
+  },
+  {
+    "slug": "travelocity",
+    "answer": "Travelocity",
+    "year": 2000,
+    "accept": [
+      "travelocity"
+    ],
+    "fact": "Travelocity launched in 1996 and was one of the first travel sites to let people book flights directly online, years before that became the default way to travel-plan.",
+    "beforeDomain": "www.travelocity.com",
+    "afterUrl": "https://www.travelocity.com"
+  },
+  {
+    "slug": "mtv",
+    "answer": "MTV",
+    "year": 2000,
+    "accept": [
+      "mtv"
+    ],
+    "fact": "MTV.com in its early years was less about video and more a promotional hub for the TV channel, since video streaming was still impractical for most home internet connections.",
+    "beforeDomain": "www.mtv.com",
+    "afterUrl": "https://www.mtv.com"
+  },
+  {
+    "slug": "rollingstone",
+    "answer": "Rolling Stone",
+    "year": 2000,
+    "accept": [
+      "rolling stone"
+    ],
+    "fact": "Rolling Stone's website launched years after the print magazine's decades-long run, and its early design mostly mirrored the print issue's contents online.",
+    "beforeDomain": "www.rollingstone.com",
+    "afterUrl": "https://www.rollingstone.com"
+  },
+  {
+    "slug": "ticketmaster",
+    "answer": "Ticketmaster",
+    "year": 2000,
+    "accept": [
+      "ticketmaster"
+    ],
+    "fact": "Ticketmaster moved a huge chunk of its ticket sales online in the late 90s, a shift that eventually made its service fees a much more visible (and criticized) part of buying tickets.",
+    "beforeDomain": "www.ticketmaster.com",
+    "afterUrl": "https://www.ticketmaster.com"
+  },
+  {
+    "slug": "dell",
+    "answer": "Dell",
+    "year": 1999,
+    "accept": [
+      "dell"
+    ],
+    "fact": "Dell was one of the first major PC makers to let customers configure and order machines directly online, a build-to-order model that became central to its whole business.",
+    "beforeDomain": "www.dell.com",
+    "afterUrl": "https://www.dell.com"
+  },
+  {
+    "slug": "ibm",
+    "answer": "IBM",
+    "year": 1999,
+    "accept": [
+      "ibm"
+    ],
+    "fact": "IBM's site in the late 90s served an enormous, sprawling company, and became a well-known case study in web usability for how it organized so many divisions under one roof.",
+    "beforeDomain": "www.ibm.com",
+    "afterUrl": "https://www.ibm.com"
+  },
+  {
+    "slug": "sun",
+    "answer": "Sun Microsystems",
+    "year": 1999,
+    "accept": [
+      "sun microsystems",
+      "sun"
+    ],
+    "fact": "Sun Microsystems coined the slogan 'The Network is the Computer' years before cloud computing existed, and its Java platform still underpins huge amounts of software today.",
+    "beforeDomain": "www.sun.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Sun_Microsystems"
+  },
+  {
+    "slug": "palm",
+    "answer": "Palm",
+    "year": 2000,
+    "accept": [
+      "palm",
+      "palmone"
+    ],
+    "fact": "Palm's PDAs were the dominant handheld computers of the late 90s, and its site sold both the devices and a marketplace of tiny downloadable apps years before smartphones existed.",
+    "beforeDomain": "www.palm.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Palm,_Inc."
+  },
+  {
+    "slug": "blockbuster",
+    "answer": "Blockbuster",
+    "year": 2004,
+    "accept": [
+      "blockbuster"
+    ],
+    "fact": "Blockbuster launched an online DVD-by-mail service in 2004 specifically to compete with Netflix, only a few years before streaming made the entire rental model obsolete.",
+    "beforeDomain": "www.blockbuster.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Blockbuster_LLC"
+  },
+  {
+    "slug": "netzero",
+    "answer": "NetZero",
+    "year": 2000,
+    "accept": [
+      "netzero"
+    ],
+    "fact": "NetZero pioneered the free, ad-supported dial-up internet model in 1998, plastering a banner ad across a strip of the screen at all times in exchange for no monthly fee.",
+    "beforeDomain": "www.netzero.com",
+    "afterUrl": "https://www.netzero.com"
+  },
+  {
+    "slug": "juno",
+    "answer": "Juno",
+    "year": 1999,
+    "accept": [
+      "juno"
+    ],
+    "fact": "Juno offered free dial-up internet paid for entirely by advertising, and later merged with rival NetZero to survive the end of the free-ISP era.",
+    "beforeDomain": "www.juno.com",
+    "afterUrl": "https://www.juno.com"
+  },
+  {
+    "slug": "prodigy",
+    "answer": "Prodigy",
+    "year": 1998,
+    "accept": [
+      "prodigy"
+    ],
+    "fact": "Prodigy was one of the earliest online services, launched in 1984 as a joint venture between IBM and Sears, years before most Americans had ever heard of the internet.",
+    "beforeDomain": "www.prodigy.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Prodigy_(online_service)"
+  },
+  {
+    "slug": "earthlink",
+    "answer": "EarthLink",
+    "year": 2000,
+    "accept": [
+      "earthlink"
+    ],
+    "fact": "EarthLink grew into one of the largest ISPs of the dial-up era by positioning itself as friendlier and more customer-focused than AOL, its biggest rival.",
+    "beforeDomain": "www.earthlink.net",
+    "afterUrl": "https://www.earthlink.net"
+  },
+  {
+    "slug": "icq",
+    "answer": "ICQ",
+    "year": 1999,
+    "accept": [
+      "icq"
+    ],
+    "fact": "ICQ (a pun on 'I seek you') launched in 1996 and is widely credited as the first mass-market instant messaging program, complete with its now-iconic 'uh-oh' message sound.",
+    "beforeDomain": "www.icq.com",
+    "afterUrl": "https://www.icq.com"
+  },
+  {
+    "slug": "aim",
+    "answer": "AOL Instant Messenger",
+    "year": 2001,
+    "accept": [
+      "aim",
+      "aol instant messenger"
+    ],
+    "fact": "AIM's door-slam and duck-quack sound effects became so recognizable that an entire generation associates them instantly with getting online after school.",
+    "beforeDomain": "www.aim.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/AIM_(software)"
+  },
+  {
+    "slug": "flickr",
+    "answer": "Flickr",
+    "year": 2006,
+    "accept": [
+      "flickr"
+    ],
+    "fact": "Flickr started in 2004 as a side feature of an online game before its photo-sharing tools became popular enough that the game was scrapped entirely.",
+    "beforeDomain": "www.flickr.com",
+    "afterUrl": "https://www.flickr.com"
+  },
+  {
+    "slug": "photobucket",
+    "answer": "Photobucket",
+    "year": 2007,
+    "accept": [
+      "photobucket"
+    ],
+    "fact": "Photobucket became the default way millions of MySpace users hosted images for their profiles, since MySpace itself didn't offer easy photo uploading in its early years.",
+    "beforeDomain": "www.photobucket.com",
+    "afterUrl": "https://photobucket.com"
+  },
+  {
+    "slug": "shutterfly",
+    "answer": "Shutterfly",
+    "year": 2005,
+    "accept": [
+      "shutterfly"
+    ],
+    "fact": "Shutterfly built its business on printing physical photo books from digital pictures, a bridge business between film photography and today's all-digital photo storage.",
+    "beforeDomain": "www.shutterfly.com",
+    "afterUrl": "https://www.shutterfly.com"
+  },
+  {
+    "slug": "metacafe",
+    "answer": "Metacafe",
+    "year": 2007,
+    "accept": [
+      "metacafe"
+    ],
+    "fact": "Metacafe was a serious early rival to YouTube, at one point drawing tens of millions of monthly viewers by paying creators for popular videos.",
+    "beforeDomain": "www.metacafe.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Metacafe"
+  },
+  {
+    "slug": "vimeo",
+    "answer": "Vimeo",
+    "year": 2008,
+    "accept": [
+      "vimeo"
+    ],
+    "fact": "Vimeo launched in 2004 and deliberately positioned itself as the artsier, higher-quality alternative to YouTube, banning gaming and vlog content in its early years to keep that focus.",
+    "beforeDomain": "vimeo.com",
+    "afterUrl": "https://vimeo.com"
+  },
+  {
+    "slug": "webshots",
+    "answer": "Webshots",
+    "year": 2004,
+    "accept": [
+      "webshots"
+    ],
+    "fact": "Webshots was one of the most popular photo-sharing communities of the early 2000s, and was also widely used as a source for desktop wallpaper downloads.",
+    "beforeDomain": "www.webshots.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Webshots"
+  },
+  {
+    "slug": "overstock",
+    "answer": "Overstock",
+    "year": 2002,
+    "accept": [
+      "overstock",
+      "overstock.com"
+    ],
+    "fact": "Overstock.com built its business selling excess and returned inventory at discount prices, essentially running an online liquidation warehouse.",
+    "beforeDomain": "www.overstock.com",
+    "afterUrl": "https://www.overstock.com"
+  },
+  {
+    "slug": "toysrus",
+    "answer": "Toys R Us",
+    "year": 2000,
+    "accept": [
+      "toys r us",
+      "toysrus"
+    ],
+    "fact": "Toys R Us's rocky early e-commerce launch was so troubled that it eventually partnered with Amazon to run its online store, similar to what Target did around the same time.",
+    "beforeDomain": "www.toysrus.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Toys_%22R%22_Us"
+  },
+  {
+    "slug": "circuitcity",
+    "answer": "Circuit City",
+    "year": 2003,
+    "accept": [
+      "circuit city"
+    ],
+    "fact": "Circuit City was one of the largest electronics retailers in the US before going bankrupt in 2008, a collapse often cited alongside the rise of Best Buy and online shopping.",
+    "beforeDomain": "www.circuitcity.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Circuit_City"
+  },
+  {
+    "slug": "radioshack",
+    "answer": "RadioShack",
+    "year": 2003,
+    "accept": [
+      "radioshack",
+      "radio shack"
+    ],
+    "fact": "RadioShack's website in the early 2000s tried to combine its parts-and-electronics heritage with early attempts at cell phone retail, a business mix that never quite gelled online.",
+    "beforeDomain": "www.radioshack.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/RadioShack"
+  },
+  {
+    "slug": "newegg",
+    "answer": "Newegg",
+    "year": 2005,
+    "accept": [
+      "newegg"
+    ],
+    "fact": "Newegg built a loyal following among PC builders by focusing almost entirely on computer parts, with a reputation for detailed listings and fast shipping that rivaled Amazon in that niche.",
+    "beforeDomain": "www.newegg.com",
+    "afterUrl": "https://www.newegg.com"
+  },
+  {
+    "slug": "zappos",
+    "answer": "Zappos",
+    "year": 2005,
+    "accept": [
+      "zappos"
+    ],
+    "fact": "Zappos grew by selling shoes online at a time when most people assumed nobody would buy shoes without trying them on, backed by a famously generous free-returns policy.",
+    "beforeDomain": "www.zappos.com",
+    "afterUrl": "https://www.zappos.com"
+  },
+  {
+    "slug": "woot",
+    "answer": "Woot",
+    "year": 2006,
+    "accept": [
+      "woot"
+    ],
+    "fact": "Woot's entire business model was selling exactly one product per day until it sold out, a simple gimmick that built a cult following before Amazon eventually bought the company.",
+    "beforeDomain": "www.woot.com",
+    "afterUrl": "https://www.woot.com"
+  },
+  {
+    "slug": "barnesandnoble",
+    "answer": "Barnes & Noble",
+    "year": 2000,
+    "accept": [
+      "barnes & noble",
+      "barnesandnoble",
+      "bn.com"
+    ],
+    "fact": "Barnes & Noble launched bn.com in 1997 specifically to compete with Amazon, one of the first major traditional retailers to take online bookselling seriously.",
+    "beforeDomain": "www.barnesandnoble.com",
+    "afterUrl": "https://www.barnesandnoble.com"
+  },
+  {
+    "slug": "britannica",
+    "answer": "Encyclopedia Britannica",
+    "year": 2000,
+    "accept": [
+      "britannica",
+      "encyclopedia britannica"
+    ],
+    "fact": "Encyclopedia Britannica put its entire encyclopedia online for free in 1999, a bold bet that ad revenue could replace its centuries-old subscription business, before pulling back a year later.",
+    "beforeDomain": "www.britannica.com",
+    "afterUrl": "https://www.britannica.com"
+  },
+  {
+    "slug": "about",
+    "answer": "About.com",
+    "year": 2001,
+    "accept": [
+      "about.com",
+      "about"
+    ],
+    "fact": "About.com organized the web using human 'guides' who curated links on specific topics, a labor-intensive model for making sense of the internet before search engines got good enough to do it automatically.",
+    "beforeDomain": "www.about.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Dotdash"
+  },
+  {
+    "slug": "answers",
+    "answer": "Answers.com",
+    "year": 2006,
+    "accept": [
+      "answers.com",
+      "answers"
+    ],
+    "fact": "Answers.com built its early traffic by aggregating dictionary, encyclopedia, and reference content into a single searchable site, well before crowdsourced Q&A sites took over that space.",
+    "beforeDomain": "www.answers.com",
+    "afterUrl": "https://www.answers.com"
+  },
+  {
+    "slug": "usatoday",
+    "answer": "USA Today",
+    "year": 2000,
+    "accept": [
+      "usa today",
+      "usatoday"
+    ],
+    "fact": "USA Today's website carried over the newspaper's signature colorful infographics and short-story format, designed for readers scanning quickly rather than reading in depth.",
+    "beforeDomain": "www.usatoday.com",
+    "afterUrl": "https://www.usatoday.com"
+  },
+  {
+    "slug": "washingtonpost",
+    "answer": "The Washington Post",
+    "year": 2000,
+    "accept": [
+      "washington post"
+    ],
+    "fact": "The Washington Post's website was one of the first major newspaper sites to invest heavily in original web-only journalism, not just reposting the print edition.",
+    "beforeDomain": "www.washingtonpost.com",
+    "afterUrl": "https://www.washingtonpost.com"
+  },
+  {
+    "slug": "foxnews",
+    "answer": "Fox News",
+    "year": 2001,
+    "accept": [
+      "fox news"
+    ],
+    "fact": "Fox News launched its website alongside the cable channel in the mid-90s, and its early design leaned heavily on the bold red-white-and-blue branding that still defines the network today.",
+    "beforeDomain": "www.foxnews.com",
+    "afterUrl": "https://www.foxnews.com"
+  },
+  {
+    "slug": "abcnews",
+    "answer": "ABC News",
+    "year": 2000,
+    "accept": [
+      "abc news"
+    ],
+    "fact": "ABC News's early website tried to translate its broadcast anchors' star power onto the web, with a design that prioritized video clips even when most users were still on dial-up.",
+    "beforeDomain": "abcnews.go.com",
+    "afterUrl": "https://abcnews.go.com"
+  },
+  {
+    "slug": "drudgereport",
+    "answer": "Drudge Report",
+    "year": 2002,
+    "accept": [
+      "drudge report",
+      "drudge"
+    ],
+    "fact": "The Drudge Report has used essentially the same barebones, all-links homepage design since the late 90s, a deliberate choice that's stayed almost untouched for over two decades.",
+    "beforeDomain": "www.drudgereport.com",
+    "afterUrl": "https://www.drudgereport.com"
+  },
+  {
+    "slug": "reuters",
+    "answer": "Reuters",
+    "year": 2000,
+    "accept": [
+      "reuters"
+    ],
+    "fact": "Reuters built its reputation over more than a century as a wire service supplying news to other outlets, and its website was one of the first to make that raw wire content available directly to the public.",
+    "beforeDomain": "www.reuters.com",
+    "afterUrl": "https://www.reuters.com"
+  },
+  {
+    "slug": "schwab",
+    "answer": "Charles Schwab",
+    "year": 2000,
+    "accept": [
+      "charles schwab",
+      "schwab"
+    ],
+    "fact": "Charles Schwab was one of the first traditional brokerages to fully embrace online trading, helping legitimize the idea for investors who didn't trust newer online-only upstarts.",
+    "beforeDomain": "www.schwab.com",
+    "afterUrl": "https://www.schwab.com"
+  },
+  {
+    "slug": "fidelity",
+    "answer": "Fidelity",
+    "year": 2000,
+    "accept": [
+      "fidelity"
+    ],
+    "fact": "Fidelity's website in the early 2000s had to serve both novice retail investors and serious traders at once, a balancing act that shaped a lot of early financial-site design.",
+    "beforeDomain": "www.fidelity.com",
+    "afterUrl": "https://www.fidelity.com"
+  },
+  {
+    "slug": "yahoofinance",
+    "answer": "Yahoo Finance",
+    "year": 2000,
+    "accept": [
+      "yahoo finance"
+    ],
+    "fact": "Yahoo Finance became one of the most-used sources for free stock quotes on the early web, at a time when real-time market data elsewhere often required a paid subscription.",
+    "beforeDomain": "finance.yahoo.com",
+    "afterUrl": "https://finance.yahoo.com"
+  },
+  {
+    "slug": "bloomberg",
+    "answer": "Bloomberg",
+    "year": 2001,
+    "accept": [
+      "bloomberg"
+    ],
+    "fact": "Bloomberg built its reputation on proprietary trading terminals used by Wall Street professionals long before its public website became a major source of financial news for everyone else.",
+    "beforeDomain": "www.bloomberg.com",
+    "afterUrl": "https://www.bloomberg.com"
+  },
+  {
+    "slug": "webmd",
+    "answer": "WebMD",
+    "year": 2001,
+    "accept": [
+      "webmd"
+    ],
+    "fact": "WebMD launched in 1996 and became so widely used for self-diagnosis that 'don't WebMD your symptoms' turned into a common joke about people convincing themselves they had rare diseases.",
+    "beforeDomain": "www.webmd.com",
+    "afterUrl": "https://www.webmd.com"
+  },
+  {
+    "slug": "zillow",
+    "answer": "Zillow",
+    "year": 2007,
+    "accept": [
+      "zillow"
+    ],
+    "fact": "Zillow launched in 2006 and was one of the first sites to give the public free access to home value estimates, a feature ('Zestimate') that unsettled a lot of real estate agents at the time.",
+    "beforeDomain": "www.zillow.com",
+    "afterUrl": "https://www.zillow.com"
+  },
+  {
+    "slug": "realtor",
+    "answer": "Realtor.com",
+    "year": 2000,
+    "accept": [
+      "realtor.com",
+      "realtor"
+    ],
+    "fact": "Realtor.com launched in 1996 as the official listing site backed by the National Association of Realtors, giving it access to a huge database of listings its early competitors lacked.",
+    "beforeDomain": "www.realtor.com",
+    "afterUrl": "https://www.realtor.com"
+  },
+  {
+    "slug": "cars",
+    "answer": "Cars.com",
+    "year": 2001,
+    "accept": [
+      "cars.com"
+    ],
+    "fact": "Cars.com launched in 1998 as a joint venture between several newspaper publishers trying to protect their classified-ad businesses from being disrupted by the web.",
+    "beforeDomain": "www.cars.com",
+    "afterUrl": "https://www.cars.com"
+  },
+  {
+    "slug": "autotrader",
+    "answer": "AutoTrader",
+    "year": 2001,
+    "accept": [
+      "autotrader",
+      "auto trader"
+    ],
+    "fact": "AutoTrader started as a print magazine of classified car ads in 1975 before moving online, eventually shutting down the print edition entirely as the website took over.",
+    "beforeDomain": "www.autotrader.com",
+    "afterUrl": "https://www.autotrader.com"
+  },
+  {
+    "slug": "edmunds",
+    "answer": "Edmunds",
+    "year": 2001,
+    "accept": [
+      "edmunds"
+    ],
+    "fact": "Edmunds built its reputation on detailed car reviews and true-cost-to-own data, becoming a trusted resource for buyers trying to negotiate against dealerships.",
+    "beforeDomain": "www.edmunds.com",
+    "afterUrl": "https://www.edmunds.com"
+  },
+  {
+    "slug": "allrecipes",
+    "answer": "Allrecipes",
+    "year": 2003,
+    "accept": [
+      "allrecipes"
+    ],
+    "fact": "Allrecipes built its entire catalog from user-submitted recipes rather than professional chefs, an early example of crowdsourced content outperforming edited, expert-driven sites.",
+    "beforeDomain": "www.allrecipes.com",
+    "afterUrl": "https://www.allrecipes.com"
+  },
+  {
+    "slug": "epicurious",
+    "answer": "Epicurious",
+    "year": 2002,
+    "accept": [
+      "epicurious"
+    ],
+    "fact": "Epicurious launched in 1995 as one of the first major recipe websites, built from the archives of Cond\u00e9 Nast's food magazines like Gourmet and Bon App\u00e9tit.",
+    "beforeDomain": "www.epicurious.com",
+    "afterUrl": "https://www.epicurious.com"
+  },
+  {
+    "slug": "nba",
+    "answer": "NBA",
+    "year": 2000,
+    "accept": [
+      "nba"
+    ],
+    "fact": "NBA.com launched in 1995 and was notable for how quickly it embraced streaming highlight clips, even though most fans at the time were still on connections far too slow to watch them smoothly.",
+    "beforeDomain": "www.nba.com",
+    "afterUrl": "https://www.nba.com"
+  },
+  {
+    "slug": "nfl",
+    "answer": "NFL",
+    "year": 2000,
+    "accept": [
+      "nfl"
+    ],
+    "fact": "NFL.com's early design centered heavily on the fantasy football tools that were just starting to become a mainstream hobby, well before fantasy sports turned into a billion-dollar industry.",
+    "beforeDomain": "www.nfl.com",
+    "afterUrl": "https://www.nfl.com"
+  },
+  {
+    "slug": "si",
+    "answer": "Sports Illustrated",
+    "year": 2000,
+    "accept": [
+      "sports illustrated",
+      "si.com"
+    ],
+    "fact": "Sports Illustrated's website leaned on the magazine's decades of photography archives, at a time when high-quality sports photos were much harder to find elsewhere online.",
+    "beforeDomain": "www.si.com",
+    "afterUrl": "https://www.si.com"
+  },
+  {
+    "slug": "itunes",
+    "answer": "iTunes",
+    "year": 2004,
+    "accept": [
+      "itunes"
+    ],
+    "fact": "The iTunes Store launched in 2003 selling songs for 99 cents each, a pricing model credited with convincing the music industry that people would actually pay for legal downloads.",
+    "beforeDomain": "www.apple.com/itunes",
+    "afterUrl": "https://www.apple.com/itunes"
+  },
+  {
+    "slug": "launch",
+    "answer": "LAUNCH",
+    "year": 2000,
+    "accept": [
+      "launch",
+      "launch.com"
+    ],
+    "fact": "LAUNCH (later LAUNCHcast) was one of Yahoo's earliest music properties, offering personalized internet radio years before Pandora or Spotify existed.",
+    "beforeDomain": "launch.yahoo.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Yahoo!_Music"
+  },
+  {
+    "slug": "mp3",
+    "answer": "MP3.com",
+    "year": 2000,
+    "accept": [
+      "mp3.com"
+    ],
+    "fact": "MP3.com let independent artists upload and sell music directly to fans in the late 90s, an early version of the direct-to-fan model that platforms like Bandcamp use today.",
+    "beforeDomain": "www.mp3.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/MP3.com"
+  },
+  {
+    "slug": "blogger",
+    "answer": "Blogger",
+    "year": 2003,
+    "accept": [
+      "blogger"
+    ],
+    "fact": "Blogger launched in 1999 and is one of the tools credited with popularizing the word 'blog' itself, before Google acquired it in 2003.",
+    "beforeDomain": "www.blogger.com",
+    "afterUrl": "https://www.blogger.com"
+  },
+  {
+    "slug": "typepad",
+    "answer": "TypePad",
+    "year": 2005,
+    "accept": [
+      "typepad"
+    ],
+    "fact": "TypePad positioned itself as a more polished, professional blogging platform than free competitors, aimed at users willing to pay for more design control.",
+    "beforeDomain": "www.typepad.com",
+    "afterUrl": "https://www.typepad.com"
+  },
+  {
+    "slug": "wordpress",
+    "answer": "WordPress",
+    "year": 2006,
+    "accept": [
+      "wordpress"
+    ],
+    "fact": "WordPress launched in 2003 as a small blogging tool and eventually grew to power a huge share of all websites on the internet, blogs and full businesses alike.",
+    "beforeDomain": "wordpress.org",
+    "afterUrl": "https://wordpress.org"
+  },
+  {
+    "slug": "eharmony",
+    "answer": "eHarmony",
+    "year": 2005,
+    "accept": [
+      "eharmony"
+    ],
+    "fact": "eHarmony launched in 2000 built entirely around a long compatibility questionnaire and matching algorithm, a more curated approach than the open-browsing model most dating sites used.",
+    "beforeDomain": "www.eharmony.com",
+    "afterUrl": "https://www.eharmony.com"
+  },
+  {
+    "slug": "pof",
+    "answer": "Plenty of Fish",
+    "year": 2007,
+    "accept": [
+      "plenty of fish",
+      "pof"
+    ],
+    "fact": "Plenty of Fish was famously built and run by a single person for years, supported entirely by ads, before eventually being sold for hundreds of millions of dollars.",
+    "beforeDomain": "www.pof.com",
+    "afterUrl": "https://www.pof.com"
+  },
+  {
+    "slug": "epinions",
+    "answer": "Epinions",
+    "year": 2001,
+    "accept": [
+      "epinions"
+    ],
+    "fact": "Epinions paid ordinary users for writing product reviews, an early attempt to build trust in user opinions before that became a standard feature on almost every shopping site.",
+    "beforeDomain": "www.epinions.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Epinions"
+  },
+  {
+    "slug": "rottentomatoes",
+    "answer": "Rotten Tomatoes",
+    "year": 2002,
+    "accept": [
+      "rotten tomatoes"
+    ],
+    "fact": "Rotten Tomatoes launched in 1998 with its now-famous Tomatometer, distilling dozens of critic reviews into a single percentage score that became shorthand for a movie's quality.",
+    "beforeDomain": "www.rottentomatoes.com",
+    "afterUrl": "https://www.rottentomatoes.com"
+  },
+  {
+    "slug": "imdb",
+    "answer": "IMDb",
+    "year": 2000,
+    "accept": [
+      "imdb"
+    ],
+    "fact": "IMDb started in 1990 as a hobbyist mailing list of movie trivia before becoming a website, and is still one of the oldest continuously running sites on the entire internet.",
+    "beforeDomain": "www.imdb.com",
+    "afterUrl": "https://www.imdb.com"
+  },
+  {
+    "slug": "dogpile",
+    "answer": "Dogpile",
+    "year": 2000,
+    "accept": [
+      "dogpile"
+    ],
+    "fact": "Dogpile was a 'metasearch' engine that combined results from multiple search engines at once, a workaround from an era when no single search engine indexed the whole web well.",
+    "beforeDomain": "www.dogpile.com",
+    "afterUrl": "https://www.dogpile.com"
+  },
+  {
+    "slug": "metacrawler",
+    "answer": "MetaCrawler",
+    "year": 1999,
+    "accept": [
+      "metacrawler"
+    ],
+    "fact": "MetaCrawler was one of the first metasearch engines, launched in 1995 by University of Washington students combining results from several search engines into one list.",
+    "beforeDomain": "www.metacrawler.com",
+    "afterUrl": "https://www.metacrawler.com"
+  },
+  {
+    "slug": "citysearch",
+    "answer": "CitySearch",
+    "year": 2000,
+    "accept": [
+      "citysearch"
+    ],
+    "fact": "CitySearch was one of the first sites to organize local business listings and reviews by city, years before Yelp or Google Maps made that kind of local search completely routine.",
+    "beforeDomain": "www.citysearch.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/CitySearch"
+  },
+  {
+    "slug": "kickstarter",
+    "answer": "Kickstarter",
+    "year": 2010,
+    "accept": [
+      "kickstarter"
+    ],
+    "fact": "Kickstarter launched in 2009 and popularized the all-or-nothing crowdfunding model, where projects only get funded if they hit their goal, a rule meant to protect backers.",
+    "beforeDomain": "www.kickstarter.com",
+    "afterUrl": "https://www.kickstarter.com"
+  },
+  {
+    "slug": "groupon",
+    "answer": "Groupon",
+    "year": 2010,
+    "accept": [
+      "groupon"
+    ],
+    "fact": "Groupon grew explosively fast off its daily-deal email format and turned down a reported $6 billion buyout offer from Google in 2010, a decision still debated years later.",
+    "beforeDomain": "www.groupon.com",
+    "afterUrl": "https://www.groupon.com"
+  },
+  {
+    "slug": "ancestry",
+    "answer": "Ancestry.com",
+    "year": 2002,
+    "accept": [
+      "ancestry.com",
+      "ancestry"
+    ],
+    "fact": "Ancestry.com digitized enormous volumes of census and historical records, turning genealogy from a hobby that required physical archive visits into something searchable from home.",
+    "beforeDomain": "www.ancestry.com",
+    "afterUrl": "https://www.ancestry.com"
+  },
+  {
+    "slug": "mapquest",
+    "answer": "MapQuest",
+    "year": 2000,
+    "accept": [
+      "mapquest"
+    ],
+    "fact": "MapQuest was the dominant way people got driving directions online throughout the late 90s and early 2000s, well before Google Maps existed.",
+    "beforeDomain": "www.mapquest.com",
+    "afterUrl": "https://www.mapquest.com"
+  },
+  {
+    "slug": "angelfire",
+    "answer": "Angelfire",
+    "year": 1999,
+    "accept": [
+      "angelfire"
+    ],
+    "fact": "Angelfire was one of the biggest free web-hosting services of the GeoCities era, letting anyone build a personal homepage without needing to know how to run a server.",
+    "beforeDomain": "www.angelfire.com",
+    "afterUrl": "https://www.angelfire.com"
+  },
+  {
+    "slug": "tripod",
+    "answer": "Tripod",
+    "year": 1999,
+    "accept": [
+      "tripod"
+    ],
+    "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+    "beforeDomain": "www.tripod.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Tripod.com"
+  },
+  {
+    "slug": "downloadcom",
+    "answer": "Download.com",
+    "year": 2001,
+    "accept": [
+      "download.com"
+    ],
+    "fact": "Download.com (run by CNET) was one of the main places people got shareware and freeware software in the pre-app-store era, complete with user ratings and virus scanning.",
+    "beforeDomain": "download.cnet.com",
+    "afterUrl": "https://download.cnet.com"
+  },
+  {
+    "slug": "tucows",
+    "answer": "Tucows",
+    "year": 1999,
+    "accept": [
+      "tucows"
+    ],
+    "fact": "Tucows started in 1993 as a curated shareware download library (the name stood for 'The Ultimate Collection of Winsock Software') before evolving into an internet services company.",
+    "beforeDomain": "www.tucows.com",
+    "afterUrl": "https://www.tucows.com"
+  },
+  {
+    "slug": "salesforce",
+    "answer": "Salesforce",
+    "year": 2003,
+    "accept": [
+      "salesforce"
+    ],
+    "fact": "Salesforce launched in 1999 and helped popularize the whole idea of software delivered entirely over the web rather than installed on a company's own computers.",
+    "beforeDomain": "www.salesforce.com",
+    "afterUrl": "https://www.salesforce.com"
+  },
+  {
+    "slug": "oracle",
+    "answer": "Oracle",
+    "year": 2000,
+    "accept": [
+      "oracle"
+    ],
+    "fact": "Oracle's database software quietly powered a huge share of the backend systems running the early commercial internet, even for companies whose own websites looked nothing alike.",
+    "beforeDomain": "www.oracle.com",
+    "afterUrl": "https://www.oracle.com"
+  },
+  {
+    "slug": "firefox",
+    "answer": "Firefox",
+    "year": 2005,
+    "accept": [
+      "firefox",
+      "mozilla firefox"
+    ],
+    "fact": "Firefox launched in 2004 as a leaner alternative to a bloated Netscape, and its 'Download Day' campaign set a Guinness World Record for most software downloads in 24 hours.",
+    "beforeDomain": "www.mozilla.org",
+    "afterUrl": "https://www.mozilla.org/firefox"
+  },
+  {
+    "slug": "opera",
+    "answer": "Opera",
+    "year": 2003,
+    "accept": [
+      "opera browser",
+      "opera"
+    ],
+    "fact": "Opera was one of the first browsers to introduce tabbed browsing and built-in mouse gestures, features that later became standard across every major browser.",
+    "beforeDomain": "www.opera.com",
+    "afterUrl": "https://www.opera.com"
+  },
+  {
+    "slug": "winamp",
+    "answer": "Winamp",
+    "year": 2000,
+    "accept": [
+      "winamp"
+    ],
+    "fact": "Winamp's slogan 'It really whips the llama's ass' became one of the most recognizable taglines of the early MP3 era, and its skinnable interface inspired an entire community of custom designs.",
+    "beforeDomain": "www.winamp.com",
+    "afterUrl": "https://www.winamp.com"
+  },
+  {
+    "slug": "realplayer",
+    "answer": "RealPlayer",
+    "year": 1999,
+    "accept": [
+      "realplayer",
+      "real player"
+    ],
+    "fact": "RealPlayer's streaming format was, for years, the primary way people watched video and listened to audio online, long before YouTube or Spotify existed.",
+    "beforeDomain": "www.real.com",
+    "afterUrl": "https://www.real.com"
+  },
+  {
+    "slug": "limewire",
+    "answer": "LimeWire",
+    "year": 2005,
+    "accept": [
+      "limewire"
+    ],
+    "fact": "LimeWire became one of the most popular peer-to-peer file-sharing programs after Napster's shutdown, before being forced offline itself by a 2010 court injunction.",
+    "beforeDomain": "www.limewire.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/LimeWire"
+  },
+  {
+    "slug": "kazaa",
+    "answer": "Kazaa",
+    "year": 2003,
+    "accept": [
+      "kazaa"
+    ],
+    "fact": "Kazaa became the most-downloaded software in the world at its peak in 2003, filling much of the file-sharing gap left after Napster was shut down.",
+    "beforeDomain": "www.kazaa.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Kazaa"
+  },
+  {
+    "slug": "stumbleupon",
+    "answer": "StumbleUpon",
+    "year": 2008,
+    "accept": [
+      "stumbleupon"
+    ],
+    "fact": "StumbleUpon's whole concept was a browser button that took you to a random, algorithm-picked website matching your interests, a discovery model that faded as social feeds took over that role.",
+    "beforeDomain": "www.stumbleupon.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/StumbleUpon"
+  },
+  {
+    "slug": "delicious",
+    "answer": "Delicious",
+    "year": 2006,
+    "accept": [
+      "delicious",
+      "del.icio.us"
+    ],
+    "fact": "Delicious (originally styled del.icio.us) popularized social bookmarking and the very concept of a 'tag,' letting users save and label links for themselves and everyone else to browse.",
+    "beforeDomain": "del.icio.us",
+    "afterUrl": "https://en.wikipedia.org/wiki/Delicious_(website)"
+  },
+  {
+    "slug": "technorati",
+    "answer": "Technorati",
+    "year": 2006,
+    "accept": [
+      "technorati"
+    ],
+    "fact": "Technorati was built specifically to search and rank blogs during the mid-2000s blogging boom, back when blogs were treated as a distinct category from the rest of the web.",
+    "beforeDomain": "technorati.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Technorati"
+  },
+  {
+    "slug": "secondlife",
+    "answer": "Second Life",
+    "year": 2007,
+    "accept": [
+      "second life"
+    ],
+    "fact": "Second Life let users build and sell virtual goods with real money, and by the mid-2000s several real companies had opened official virtual storefronts inside it as a marketing experiment.",
+    "beforeDomain": "secondlife.com",
+    "afterUrl": "https://secondlife.com"
+  },
+  {
+    "slug": "habbo",
+    "answer": "Habbo Hotel",
+    "year": 2005,
+    "accept": [
+      "habbo",
+      "habbo hotel"
+    ],
+    "fact": "Habbo Hotel was a pixel-art virtual hotel aimed at teens that became massively popular internationally, one of the earliest mainstream examples of a persistent social game world.",
+    "beforeDomain": "www.habbo.com",
+    "afterUrl": "https://www.habbo.com"
+  },
+  {
+    "slug": "runescape",
+    "answer": "RuneScape",
+    "year": 2006,
+    "accept": [
+      "runescape"
+    ],
+    "fact": "RuneScape ran entirely in a web browser using Java, at a time when most online games required a full separate install, making it one of the most accessible MMOs of its era.",
+    "beforeDomain": "www.runescape.com",
+    "afterUrl": "https://www.runescape.com"
+  },
+  {
+    "slug": "neopets",
+    "answer": "Neopets",
+    "year": 2003,
+    "accept": [
+      "neopets"
+    ],
+    "fact": "Neopets combined virtual pet care with a whole in-game economy, and its blending of ads directly into games and content drew scrutiny as advertising to kids became a bigger issue.",
+    "beforeDomain": "www.neopets.com",
+    "afterUrl": "https://www.neopets.com"
+  },
+  {
+    "slug": "miniclip",
+    "answer": "Miniclip",
+    "year": 2006,
+    "accept": [
+      "miniclip"
+    ],
+    "fact": "Miniclip built its whole library around free browser-based Flash games, becoming one of the biggest casual gaming destinations before Flash was phased out industry-wide.",
+    "beforeDomain": "www.miniclip.com",
+    "afterUrl": "https://www.miniclip.com"
+  },
+  {
+    "slug": "addictinggames",
+    "answer": "Addicting Games",
+    "year": 2005,
+    "accept": [
+      "addicting games",
+      "addictinggames"
+    ],
+    "fact": "Addicting Games grew rapidly during the mid-2000s Flash gaming boom, hosting thousands of free browser games at a time when installing a game usually still meant buying a physical disc.",
+    "beforeDomain": "www.addictinggames.com",
+    "afterUrl": "https://www.addictinggames.com"
+  },
+  {
+    "slug": "break",
+    "answer": "Break.com",
+    "year": 2007,
+    "accept": [
+      "break.com",
+      "break"
+    ],
+    "fact": "Break.com built its early audience around viral videos aimed specifically at young men, a more niche focus than general-purpose video sites like YouTube.",
+    "beforeDomain": "www.break.com",
+    "afterUrl": "https://www.break.com"
+  },
+  {
+    "slug": "collegehumor",
+    "answer": "CollegeHumor",
+    "year": 2006,
+    "accept": [
+      "collegehumor",
+      "college humor"
+    ],
+    "fact": "CollegeHumor grew from a college student's side project into a full comedy video studio, launching the careers of several writers and performers who later worked in mainstream TV and film.",
+    "beforeDomain": "www.collegehumor.com",
+    "afterUrl": "https://www.collegehumor.com"
+  },
+  {
+    "slug": "funnyordie",
+    "answer": "Funny or Die",
+    "year": 2008,
+    "accept": [
+      "funny or die"
+    ],
+    "fact": "Funny or Die launched in 2007 co-founded by Will Ferrell, and its debut video 'The Landlord' became one of the most-watched comedy videos of the early web-video era.",
+    "beforeDomain": "www.funnyordie.com",
+    "afterUrl": "https://www.funnyordie.com"
+  },
+  {
+    "slug": "perezhilton",
+    "answer": "PerezHilton.com",
+    "year": 2008,
+    "accept": [
+      "perez hilton",
+      "perezhilton"
+    ],
+    "fact": "PerezHilton.com became one of the first hugely popular celebrity gossip blogs, known for its crude photo scribbles added directly on top of paparazzi pictures.",
+    "beforeDomain": "perezhilton.com",
+    "afterUrl": "https://perezhilton.com"
+  },
+  {
+    "slug": "tmz",
+    "answer": "TMZ",
+    "year": 2007,
+    "accept": [
+      "tmz"
+    ],
+    "fact": "TMZ launched in 2005 and dramatically sped up the celebrity news cycle, frequently breaking major stories hours or days before traditional entertainment outlets.",
+    "beforeDomain": "www.tmz.com",
+    "afterUrl": "https://www.tmz.com"
+  },
+  {
+    "slug": "buzzfeed",
+    "answer": "BuzzFeed",
+    "year": 2009,
+    "accept": [
+      "buzzfeed"
+    ],
+    "fact": "BuzzFeed started in 2006 as an experiment in tracking what content spreads virally online, well before its listicle format became one of the most imitated web formats of the 2010s.",
+    "beforeDomain": "www.buzzfeed.com",
+    "afterUrl": "https://www.buzzfeed.com"
+  },
+  {
+    "slug": "cracked",
+    "answer": "Cracked.com",
+    "year": 2008,
+    "accept": [
+      "cracked",
+      "cracked.com"
+    ],
+    "fact": "Cracked was originally a print magazine positioned as Mad Magazine's competitor, before relaunching purely as a website built around list-style comedy articles in 2007.",
+    "beforeDomain": "www.cracked.com",
+    "afterUrl": "https://www.cracked.com"
+  },
+  {
+    "slug": "gawker",
+    "answer": "Gawker",
+    "year": 2007,
+    "accept": [
+      "gawker"
+    ],
+    "fact": "Gawker built its identity on gossipy, irreverent media and tech coverage, and its comment sections were an early influential experiment in giving readers real visibility on a media site.",
+    "beforeDomain": "gawker.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Gawker"
+  },
+  {
+    "slug": "engadget",
+    "answer": "Engadget",
+    "year": 2007,
+    "accept": [
+      "engadget"
+    ],
+    "fact": "Engadget launched in 2004 and quickly became one of the most-read gadget blogs, known for live-blogging tech keynotes years before that became a standard practice across tech media.",
+    "beforeDomain": "www.engadget.com",
+    "afterUrl": "https://www.engadget.com"
+  },
+  {
+    "slug": "gizmodo",
+    "answer": "Gizmodo",
+    "year": 2007,
+    "accept": [
+      "gizmodo"
+    ],
+    "fact": "Gizmodo's early scoops on unreleased Apple products, sometimes from leaked prototypes, made it one of the most closely watched (and occasionally legally threatened) tech blogs of the 2000s.",
+    "beforeDomain": "gizmodo.com",
+    "afterUrl": "https://gizmodo.com"
+  },
+  {
+    "slug": "techcrunch",
+    "answer": "TechCrunch",
+    "year": 2008,
+    "accept": [
+      "techcrunch"
+    ],
+    "fact": "TechCrunch launched in 2005 covering Silicon Valley startups specifically, and became so influential that a positive TechCrunch writeup could meaningfully affect a young company's funding prospects.",
+    "beforeDomain": "techcrunch.com",
+    "afterUrl": "https://techcrunch.com"
+  },
+  {
+    "slug": "digitaltrends",
+    "answer": "Digital Trends",
+    "year": 2008,
+    "accept": [
+      "digital trends"
+    ],
+    "fact": "Digital Trends grew as a general consumer-electronics review site during the mid-2000s, competing for readers alongside CNET and Engadget in a crowded gadget-blog era.",
+    "beforeDomain": "www.digitaltrends.com",
+    "afterUrl": "https://www.digitaltrends.com"
+  },
+  {
+    "slug": "cnet",
+    "answer": "CNET",
+    "year": 2000,
+    "accept": [
+      "cnet"
+    ],
+    "fact": "CNET launched in 1994 as one of the first tech-focused media companies built for the web, eventually growing to include Download.com and several other well-known tech properties.",
+    "beforeDomain": "www.cnet.com",
+    "afterUrl": "https://www.cnet.com"
+  },
+  {
+    "slug": "zdnet",
+    "answer": "ZDNet",
+    "year": 2000,
+    "accept": [
+      "zdnet"
+    ],
+    "fact": "ZDNet grew out of Ziff Davis's print computer magazines, translating decades of tech-publishing credibility into one of the earliest major tech news websites.",
+    "beforeDomain": "www.zdnet.com",
+    "afterUrl": "https://www.zdnet.com"
+  },
+  {
+    "slug": "wired",
+    "answer": "Wired",
+    "year": 2000,
+    "accept": [
+      "wired"
+    ],
+    "fact": "Wired magazine's website carried over its distinctive, colorful print design into the browser, standing out at a time when most news sites still looked like plain digital newspapers.",
+    "beforeDomain": "www.wired.com",
+    "afterUrl": "https://www.wired.com"
+  },
+  {
+    "slug": "salon",
+    "answer": "Salon",
+    "year": 2000,
+    "accept": [
+      "salon",
+      "salon.com"
+    ],
+    "fact": "Salon launched in 1995 as one of the first online-only magazines with no print edition at all, betting entirely on the web as a legitimate home for serious journalism.",
+    "beforeDomain": "www.salon.com",
+    "afterUrl": "https://www.salon.com"
+  },
+  {
+    "slug": "suck",
+    "answer": "Suck.com",
+    "year": 1998,
+    "accept": [
+      "suck.com",
+      "suck"
+    ],
+    "fact": "Suck.com pioneered a sarcastic, link-heavy, first-person writing style that influenced blog voice for years, despite the site itself shutting down back in 2001.",
+    "beforeDomain": "www.suck.com",
+    "afterUrl": "https://en.wikipedia.org/wiki/Suck.com"
+  },
+  {
+    "slug": "theonion",
+    "answer": "The Onion",
+    "year": 2001,
+    "accept": [
+      "the onion",
+      "onion"
+    ],
+    "fact": "The Onion started as a print satire paper in 1988 before its website became one of the first and most influential satirical news sources on the entire internet.",
+    "beforeDomain": "www.theonion.com",
+    "afterUrl": "https://www.theonion.com"
+  },
+  {
+    "slug": "snopes",
+    "answer": "Snopes",
+    "year": 2004,
+    "accept": [
+      "snopes"
+    ],
+    "fact": "Snopes started in 1994 as a husband-and-wife hobby project cataloging urban legends, long before 'fact-checking' became a major, sometimes controversial, category of website.",
+    "beforeDomain": "www.snopes.com",
+    "afterUrl": "https://www.snopes.com"
+  },
+  {
+    "slug": "wowwiki",
+    "answer": "World of Warcraft",
+    "year": 2006,
+    "accept": [
+      "world of warcraft",
+      "wow"
+    ],
+    "fact": "World of Warcraft's website in 2006 supported the biggest subscription-based online game in the world at the time, with millions of players logging in monthly during its peak years.",
+    "beforeDomain": "www.worldofwarcraft.com",
+    "afterUrl": "https://worldofwarcraft.com"
+  },
+  {
+    "slug": "xbox",
+    "answer": "Xbox",
+    "year": 2002,
+    "accept": [
+      "xbox"
+    ],
+    "fact": "Xbox.com launched alongside Microsoft's first console in 2001, marking the company's first serious entry into a gaming hardware market long dominated by Sony and Nintendo.",
+    "beforeDomain": "www.xbox.com",
+    "afterUrl": "https://www.xbox.com"
+  },
+  {
+    "slug": "playstation",
+    "answer": "PlayStation",
+    "year": 2002,
+    "accept": [
+      "playstation",
+      "sony playstation"
+    ],
+    "fact": "PlayStation's website in the early 2000s was promoting the PS2, which went on to become the best-selling game console of all time with over 150 million units sold.",
+    "beforeDomain": "www.playstation.com",
+    "afterUrl": "https://www.playstation.com"
+  },
+  {
+    "slug": "nintendo",
+    "answer": "Nintendo",
+    "year": 2001,
+    "accept": [
+      "nintendo"
+    ],
+    "fact": "Nintendo's site in the early 2000s was promoting both the GameCube and Game Boy Advance simultaneously, an unusually broad two-console push even by Nintendo's standards.",
+    "beforeDomain": "www.nintendo.com",
+    "afterUrl": "https://www.nintendo.com"
+  },
+  {
+    "slug": "segasite",
+    "answer": "Sega",
+    "year": 1999,
+    "accept": [
+      "sega"
+    ],
+    "fact": "Sega's website in 1999 was hyping the launch of the Dreamcast, the company's last home console before it exited the hardware business entirely to focus on making games.",
+    "beforeDomain": "www.sega.com",
+    "afterUrl": "https://www.sega.com"
+  },
+  {
+    "slug": "steam",
+    "answer": "Steam",
+    "year": 2004,
+    "accept": [
+      "steam"
+    ],
+    "fact": "Steam launched in 2003 primarily to distribute patches for Valve's own games, and only gradually grew into the dominant PC game storefront it is today.",
+    "beforeDomain": "store.steampowered.com",
+    "afterUrl": "https://store.steampowered.com"
+  },
+  {
+    "slug": "blizzard",
+    "answer": "Blizzard Entertainment",
+    "year": 2000,
+    "accept": [
+      "blizzard",
+      "blizzard entertainment"
+    ],
+    "fact": "Blizzard's late-90s site supported both Diablo and StarCraft, two games that helped define entire genres and whose online play features were unusually ambitious for their time.",
+    "beforeDomain": "www.blizzard.com",
+    "afterUrl": "https://www.blizzard.com"
   }
 ]
