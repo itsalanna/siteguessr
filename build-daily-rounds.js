@@ -321,11 +321,24 @@ async function tryCaptureRound(page, r, today, outDir) {
 
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
+  const outDir = __dirname;
+  const archiveDir = path.join(outDir, 'archive');
+  const todayArchiveFile = path.join(archiveDir, `${today}.json`);
+
+  // If today's rounds were already built (e.g. a manual run earlier today,
+  // followed by the scheduled run firing later the same day), skip
+  // entirely rather than regenerating screenshots. Re-running would
+  // produce slightly different binary PNGs for the same file paths
+  // (live pages differ a little on every capture), which git cannot
+  // auto-merge and would fail the commit/push step with a real conflict.
+  if (fs.existsSync(todayArchiveFile)) {
+    console.log(`archive/${today}.json already exists. Nothing to do today, skipping build.`);
+    return;
+  }
+
   const shuffled = seededShuffle(pool, today);
 
-  const outDir = __dirname;
   const dateImagesDir = path.join(outDir, 'images', today);
-  const archiveDir = path.join(outDir, 'archive');
   fs.mkdirSync(dateImagesDir, { recursive: true });
   fs.mkdirSync(archiveDir, { recursive: true });
 
