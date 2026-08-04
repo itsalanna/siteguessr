@@ -98,17 +98,37 @@ async function isUsableSnapshot(page) {
   try {
     const result = await page.evaluate(() => {
       const text = document.body ? document.body.innerText.trim() : '';
-      const loadedImages = Array.from(document.querySelectorAll('img'))
-        .filter(img => img.naturalWidth > 20 && img.naturalHeight > 20).length;
-      return { textLength: text.length, lower: text.toLowerCase(), loadedImages };
+      let loadedCount = 0, loadedArea = 0, brokenArea = 0;
+      document.querySelectorAll('img').forEach(img => {
+        const w = img.naturalWidth, h = img.naturalHeight;
+        if (w > 20 && h > 20) {
+          loadedCount++;
+          loadedArea += w * h;
+        } else {
+          // Image tag present but never actually loaded. Old pages often
+          // declared explicit width/height, so even a missing image
+          // still reserves visible space - a browser renders that as a
+          // plain gray placeholder box at the declared size, which is
+          // exactly what shows up as "unguessable" blank rectangles.
+          const dw = img.width, dh = img.height;
+          if (dw > 20 && dh > 20) brokenArea += dw * dh;
+        }
+      });
+      return { textLength: text.length, lower: text.toLowerCase(), loadedCount, loadedArea, brokenArea };
     });
     if (result.lower.includes('got an http') && result.lower.includes('redirecting to')) return false;
     if (result.lower.includes('wayback machine has not archived')) return false;
+
+    // If broken image placeholders dominate the visible area relative to
+    // what actually loaded, the page is likely a wall of gray boxes even
+    // if it technically has enough text - reject and try another snapshot.
+    if (result.brokenArea > 30000 && result.brokenArea > result.loadedArea * 1.5) return false;
+
     // Accept if there's a solid amount of text, OR a decent amount of
-    // text plus at least one real loaded image (covers image-heavy
-    // homepages with comparatively little text).
+    // text plus at least one real loaded image with meaningful size
+    // (covers image-heavy homepages with comparatively little text).
     if (result.textLength > 150) return true;
-    if (result.textLength > 40 && result.loadedImages >= 1) return true;
+    if (result.textLength > 40 && result.loadedCount >= 1 && result.loadedArea > 5000) return true;
     return false;
   } catch {
     return false;
