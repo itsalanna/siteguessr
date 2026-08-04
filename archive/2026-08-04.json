@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-04",
+  "rounds": [
+    {
+      "answer": "Dogpile",
+      "year": 2000,
+      "accept": [
+        "dogpile"
+      ],
+      "fact": "Dogpile was a 'metasearch' engine that combined results from multiple search engines at once, a workaround from an era when no single search engine indexed the whole web well.",
+      "beforeImg": "images/2026-08-04/dogpile-then.png",
+      "afterImg": "images/2026-08-04/dogpile-now.png"
+    },
+    {
+      "answer": "Salon",
+      "year": 2000,
+      "accept": [
+        "salon",
+        "salon.com"
+      ],
+      "fact": "Salon launched in 1995 as one of the first online-only magazines with no print edition at all, betting entirely on the web as a legitimate home for serious journalism.",
+      "beforeImg": "images/2026-08-04/salon-then.png",
+      "afterImg": "images/2026-08-04/salon-now.png"
+    },
+    {
+      "answer": "ICQ",
+      "year": 1999,
+      "accept": [
+        "icq"
+      ],
+      "fact": "ICQ (a pun on 'I seek you') launched in 1996 and is widely credited as the first mass-market instant messaging program, complete with its now-iconic 'uh-oh' message sound.",
+      "beforeImg": "images/2026-08-04/icq-then.png",
+      "afterImg": "images/2026-08-04/icq-now.png"
+    },
+    {
+      "answer": "Wikipedia",
+      "year": 2005,
+      "accept": [
+        "wikipedia",
+        "wiki"
+      ],
+      "fact": "Wikipedia's interface has stayed remarkably close to its original look for two decades. The visual restraint was intentional, to keep the focus on editing and content rather than design.",
+      "beforeImg": "images/2026-08-04/wikipedia-then.png",
+      "afterImg": "images/2026-08-04/wikipedia-now.png"
+    },
+    {
+      "answer": "Zillow",
+      "year": 2007,
+      "accept": [
+        "zillow"
+      ],
+      "fact": "Zillow launched in 2006 and was one of the first sites to give the public free access to home value estimates, a feature ('Zestimate') that unsettled a lot of real estate agents at the time.",
+      "beforeImg": "images/2026-08-04/zillow-then.png",
+      "afterImg": "images/2026-08-04/zillow-now.png"
+    }
+  ]
+}
