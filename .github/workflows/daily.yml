@@ -2,8 +2,15 @@ name: Daily Redesign Update
 
 on:
   schedule:
-    # 11:00 UTC = 6:00 AM EST (fixed, doesn't shift for daylight saving)
+    # 11:00 UTC = 6:00 AM EST. GitHub's own scheduler can delay or
+    # occasionally skip scheduled triggers by hours during high platform
+    # load - this is a documented GitHub limitation, not something a
+    # workflow config can fully control. A second backup trigger a few
+    # hours later catches the day's build if the first one was late or
+    # missed. It's safe to run twice: build-daily-rounds.js skips the
+    # whole build if today's archive file already exists.
     - cron: '0 11 * * *'
+    - cron: '0 15 * * *'
   workflow_dispatch: {}   # lets you trigger this manually from the Actions tab
 
 permissions:
