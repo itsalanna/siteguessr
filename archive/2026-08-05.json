@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-05",
+  "rounds": [
+    {
+      "answer": "Ticketmaster",
+      "year": 2000,
+      "accept": [
+        "ticketmaster"
+      ],
+      "fact": "Ticketmaster moved a huge chunk of its ticket sales online in the late 90s, a shift that eventually made its service fees a much more visible (and criticized) part of buying tickets.",
+      "beforeImg": "images/2026-08-05/ticketmaster-then.png",
+      "afterImg": "images/2026-08-05/ticketmaster-now.png"
+    },
+    {
+      "answer": "ABC News",
+      "year": 2000,
+      "accept": [
+        "abc news"
+      ],
+      "fact": "ABC News's early website tried to translate its broadcast anchors' star power onto the web, with a design that prioritized video clips even when most users were still on dial-up.",
+      "beforeImg": "images/2026-08-05/abcnews-then.png",
+      "afterImg": "images/2026-08-05/abcnews-now.png"
+    },
+    {
+      "answer": "Orbitz",
+      "year": 2002,
+      "accept": [
+        "orbitz"
+      ],
+      "fact": "Orbitz was launched in 2001 by a group of major airlines banding together to compete directly with Expedia and Travelocity for online bookings.",
+      "beforeImg": "images/2026-08-05/orbitz-then.png",
+      "afterImg": "images/2026-08-05/orbitz-now.png"
+    },
+    {
+      "answer": "Netscape",
+      "year": 1999,
+      "accept": [
+        "netscape"
+      ],
+      "fact": "Netscape's browser dominated the early web so completely that Microsoft bundling Internet Explorer with Windows to compete became the center of a landmark antitrust case.",
+      "beforeImg": "images/2026-08-05/netscape-then.png",
+      "afterImg": "images/2026-08-05/netscape-now.png"
+    },
+    {
+      "answer": "WordPress",
+      "year": 2006,
+      "accept": [
+        "wordpress"
+      ],
+      "fact": "WordPress launched in 2003 as a small blogging tool and eventually grew to power a huge share of all websites on the internet, blogs and full businesses alike.",
+      "beforeImg": "images/2026-08-05/wordpress-then.png",
+      "afterImg": "images/2026-08-05/wordpress-now.png"
+    }
+  ]
+}
