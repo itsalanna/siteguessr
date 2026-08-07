@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-07",
+  "rounds": [
+    {
+      "answer": "Vimeo",
+      "year": 2008,
+      "accept": [
+        "vimeo"
+      ],
+      "fact": "Vimeo launched in 2004 and deliberately positioned itself as the artsier, higher-quality alternative to YouTube, banning gaming and vlog content in its early years to keep that focus.",
+      "beforeImg": "images/2026-08-07/vimeo-then.png",
+      "afterImg": "images/2026-08-07/vimeo-now.png"
+    },
+    {
+      "answer": "Fark",
+      "year": 2003,
+      "accept": [
+        "fark"
+      ],
+      "fact": "Fark built its entire identity around submitting and voting on weird, funny news links, a simple format that predated Reddit's rise by several years.",
+      "beforeImg": "images/2026-08-07/fark-then.png",
+      "afterImg": "images/2026-08-07/fark-now.png"
+    },
+    {
+      "answer": "Winamp",
+      "year": 2000,
+      "accept": [
+        "winamp"
+      ],
+      "fact": "Winamp's slogan 'It really whips the llama's ass' became one of the most recognizable taglines of the early MP3 era, and its skinnable interface inspired an entire community of custom designs.",
+      "beforeImg": "images/2026-08-07/winamp-then.png",
+      "afterImg": "images/2026-08-07/winamp-now.png"
+    },
+    {
+      "answer": "Netscape",
+      "year": 1999,
+      "accept": [
+        "netscape"
+      ],
+      "fact": "Netscape's browser dominated the early web so completely that Microsoft bundling Internet Explorer with Windows to compete became the center of a landmark antitrust case.",
+      "beforeImg": "images/2026-08-07/netscape-then.png",
+      "afterImg": "images/2026-08-07/netscape-now.png"
+    },
+    {
+      "answer": "RadioShack",
+      "year": 2003,
+      "accept": [
+        "radioshack",
+        "radio shack"
+      ],
+      "fact": "RadioShack's website in the early 2000s tried to combine its parts-and-electronics heritage with early attempts at cell phone retail, a business mix that never quite gelled online.",
+      "beforeImg": "images/2026-08-07/radioshack-then.png",
+      "afterImg": "images/2026-08-07/radioshack-now.png"
+    }
+  ]
+}
