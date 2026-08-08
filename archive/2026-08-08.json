@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-08",
+  "rounds": [
+    {
+      "answer": "IGN",
+      "year": 2001,
+      "accept": [
+        "ign"
+      ],
+      "fact": "IGN started in 1996 focused purely on Nintendo 64 coverage before expanding into the general gaming and entertainment site it is today.",
+      "beforeImg": "images/2026-08-08/ign-then.png",
+      "afterImg": "images/2026-08-08/ign-now.png"
+    },
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-08-08/tripod-then.png",
+      "afterImg": "images/2026-08-08/tripod-now.png"
+    },
+    {
+      "answer": "Monster",
+      "year": 2000,
+      "accept": [
+        "monster",
+        "monster.com"
+      ],
+      "fact": "Monster.com ran one of the most memorable ad campaigns of the dot-com era ('When I grow up, I want to...') and became synonymous with online job searching in the late 90s.",
+      "beforeImg": "images/2026-08-08/monster-then.png",
+      "afterImg": "images/2026-08-08/monster-now.png"
+    },
+    {
+      "answer": "Digital Trends",
+      "year": 2008,
+      "accept": [
+        "digital trends"
+      ],
+      "fact": "Digital Trends grew as a general consumer-electronics review site during the mid-2000s, competing for readers alongside CNET and Engadget in a crowded gadget-blog era.",
+      "beforeImg": "images/2026-08-08/digitaltrends-then.png",
+      "afterImg": "images/2026-08-08/digitaltrends-now.png"
+    },
+    {
+      "answer": "LiveJournal",
+      "year": 2004,
+      "accept": [
+        "livejournal",
+        "lj"
+      ],
+      "fact": "LiveJournal was one of the first blogging platforms to build in a real social layer, with friends lists and privacy settings, making it feel more like an early social network than a simple blog host.",
+      "beforeImg": "images/2026-08-08/livejournal-then.png",
+      "afterImg": "images/2026-08-08/livejournal-now.png"
+    }
+  ]
+}
