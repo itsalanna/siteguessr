@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-09",
+  "rounds": [
+    {
+      "answer": "iTunes",
+      "year": 2004,
+      "accept": [
+        "itunes"
+      ],
+      "fact": "The iTunes Store launched in 2003 selling songs for 99 cents each, a pricing model credited with convincing the music industry that people would actually pay for legal downloads.",
+      "beforeImg": "images/2026-08-09/itunes-then.png",
+      "afterImg": "images/2026-08-09/itunes-now.png"
+    },
+    {
+      "answer": "GeoCities",
+      "year": 1999,
+      "accept": [
+        "geocities"
+      ],
+      "fact": "GeoCities organized user pages into themed 'neighborhoods' like Hollywood and SiliconValley, and at its peak was one of the most-visited sites on the entire web before Yahoo shut it down in 2009.",
+      "beforeImg": "images/2026-08-09/geocities-then.png",
+      "afterImg": "images/2026-08-09/geocities-now.png"
+    },
+    {
+      "answer": "LimeWire",
+      "year": 2005,
+      "accept": [
+        "limewire"
+      ],
+      "fact": "LimeWire became one of the most popular peer-to-peer file-sharing programs after Napster's shutdown, before being forced offline itself by a 2010 court injunction.",
+      "beforeImg": "images/2026-08-09/limewire-then.png",
+      "afterImg": "images/2026-08-09/limewire-now.png"
+    },
+    {
+      "answer": "Newgrounds",
+      "year": 2003,
+      "accept": [
+        "newgrounds"
+      ],
+      "fact": "Newgrounds became the central hub for Flash animation and games in the early 2000s, launching the careers of several animators years before YouTube existed.",
+      "beforeImg": "images/2026-08-09/newgrounds-then.png",
+      "afterImg": "images/2026-08-09/newgrounds-now.png"
+    },
+    {
+      "answer": "Orbitz",
+      "year": 2002,
+      "accept": [
+        "orbitz"
+      ],
+      "fact": "Orbitz was launched in 2001 by a group of major airlines banding together to compete directly with Expedia and Travelocity for online bookings.",
+      "beforeImg": "images/2026-08-09/orbitz-then.png",
+      "afterImg": "images/2026-08-09/orbitz-now.png"
+    }
+  ]
+}
