@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-10",
+  "rounds": [
+    {
+      "answer": "eBay",
+      "year": 1999,
+      "accept": [
+        "ebay"
+      ],
+      "fact": "eBay started in 1995 as AuctionWeb, reportedly built to help the founder's fiancee trade Pez dispensers. By 1999 it was already a sprawling grid of category links and live auctions.",
+      "beforeImg": "images/2026-08-10/ebay-then.png",
+      "afterImg": "images/2026-08-10/ebay-now.png"
+    },
+    {
+      "answer": "Epicurious",
+      "year": 2002,
+      "accept": [
+        "epicurious"
+      ],
+      "fact": "Epicurious launched in 1995 as one of the first major recipe websites, built from the archives of Condé Nast's food magazines like Gourmet and Bon Appétit.",
+      "beforeImg": "images/2026-08-10/epicurious-then.png",
+      "afterImg": "images/2026-08-10/epicurious-now.png"
+    },
+    {
+      "answer": "Kickstarter",
+      "year": 2010,
+      "accept": [
+        "kickstarter"
+      ],
+      "fact": "Kickstarter launched in 2009 and popularized the all-or-nothing crowdfunding model, where projects only get funded if they hit their goal, a rule meant to protect backers.",
+      "beforeImg": "images/2026-08-10/kickstarter-then.png",
+      "afterImg": "images/2026-08-10/kickstarter-now.png"
+    },
+    {
+      "answer": "eBaum's World",
+      "year": 2005,
+      "accept": [
+        "ebaum's world",
+        "ebaumsworld"
+      ],
+      "fact": "eBaum's World built its early traffic on hosting viral videos and flash animations, and was frequently accused of re-uploading other creators' content without credit.",
+      "beforeImg": "images/2026-08-10/ebaumsworld-then.png",
+      "afterImg": "images/2026-08-10/ebaumsworld-now.png"
+    },
+    {
+      "answer": "Firefox",
+      "year": 2005,
+      "accept": [
+        "firefox",
+        "mozilla firefox"
+      ],
+      "fact": "Firefox launched in 2004 as a leaner alternative to a bloated Netscape, and its 'Download Day' campaign set a Guinness World Record for most software downloads in 24 hours.",
+      "beforeImg": "images/2026-08-10/firefox-then.png",
+      "afterImg": "images/2026-08-10/firefox-now.png"
+    }
+  ]
+}
