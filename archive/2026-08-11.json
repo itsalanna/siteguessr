@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-11",
+  "rounds": [
+    {
+      "answer": "About.com",
+      "year": 2001,
+      "accept": [
+        "about.com",
+        "about"
+      ],
+      "fact": "About.com organized the web using human 'guides' who curated links on specific topics, a labor-intensive model for making sense of the internet before search engines got good enough to do it automatically.",
+      "beforeImg": "images/2026-08-11/about-then.png",
+      "afterImg": "images/2026-08-11/about-now.png"
+    },
+    {
+      "answer": "Blizzard Entertainment",
+      "year": 2000,
+      "accept": [
+        "blizzard",
+        "blizzard entertainment"
+      ],
+      "fact": "Blizzard's late-90s site supported both Diablo and StarCraft, two games that helped define entire genres and whose online play features were unusually ambitious for their time.",
+      "beforeImg": "images/2026-08-11/blizzard-then.png",
+      "afterImg": "images/2026-08-11/blizzard-now.png"
+    },
+    {
+      "answer": "Allrecipes",
+      "year": 2003,
+      "accept": [
+        "allrecipes"
+      ],
+      "fact": "Allrecipes built its entire catalog from user-submitted recipes rather than professional chefs, an early example of crowdsourced content outperforming edited, expert-driven sites.",
+      "beforeImg": "images/2026-08-11/allrecipes-then.png",
+      "afterImg": "images/2026-08-11/allrecipes-now.png"
+    },
+    {
+      "answer": "PayPal",
+      "year": 2000,
+      "accept": [
+        "paypal"
+      ],
+      "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+      "beforeImg": "images/2026-08-11/paypal-then.png",
+      "afterImg": "images/2026-08-11/paypal-now.png"
+    },
+    {
+      "answer": "Drudge Report",
+      "year": 2002,
+      "accept": [
+        "drudge report",
+        "drudge"
+      ],
+      "fact": "The Drudge Report has used essentially the same barebones, all-links homepage design since the late 90s, a deliberate choice that's stayed almost untouched for over two decades.",
+      "beforeImg": "images/2026-08-11/drudgereport-then.png",
+      "afterImg": "images/2026-08-11/drudgereport-now.png"
+    }
+  ]
+}
