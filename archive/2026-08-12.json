@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-12",
+  "rounds": [
+    {
+      "answer": "WordPress",
+      "year": 2006,
+      "accept": [
+        "wordpress"
+      ],
+      "fact": "WordPress launched in 2003 as a small blogging tool and eventually grew to power a huge share of all websites on the internet, blogs and full businesses alike.",
+      "beforeImg": "images/2026-08-12/wordpress-then.png",
+      "afterImg": "images/2026-08-12/wordpress-now.png"
+    },
+    {
+      "answer": "Blogger",
+      "year": 2003,
+      "accept": [
+        "blogger"
+      ],
+      "fact": "Blogger launched in 1999 and is one of the tools credited with popularizing the word 'blog' itself, before Google acquired it in 2003.",
+      "beforeImg": "images/2026-08-12/blogger-then.png",
+      "afterImg": "images/2026-08-12/blogger-now.png"
+    },
+    {
+      "answer": "Gizmodo",
+      "year": 2007,
+      "accept": [
+        "gizmodo"
+      ],
+      "fact": "Gizmodo's early scoops on unreleased Apple products, sometimes from leaked prototypes, made it one of the most closely watched (and occasionally legally threatened) tech blogs of the 2000s.",
+      "beforeImg": "images/2026-08-12/gizmodo-then.png",
+      "afterImg": "images/2026-08-12/gizmodo-now.png"
+    },
+    {
+      "answer": "Monster",
+      "year": 2000,
+      "accept": [
+        "monster",
+        "monster.com"
+      ],
+      "fact": "Monster.com ran one of the most memorable ad campaigns of the dot-com era ('When I grow up, I want to...') and became synonymous with online job searching in the late 90s.",
+      "beforeImg": "images/2026-08-12/monster-then.png",
+      "afterImg": "images/2026-08-12/monster-now.png"
+    },
+    {
+      "answer": "Circuit City",
+      "year": 2003,
+      "accept": [
+        "circuit city"
+      ],
+      "fact": "Circuit City was one of the largest electronics retailers in the US before going bankrupt in 2008, a collapse often cited alongside the rise of Best Buy and online shopping.",
+      "beforeImg": "images/2026-08-12/circuitcity-then.png",
+      "afterImg": "images/2026-08-12/circuitcity-now.png"
+    }
+  ]
+}
