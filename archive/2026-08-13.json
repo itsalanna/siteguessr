@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-13",
+  "rounds": [
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-08-13/tripod-then.png",
+      "afterImg": "images/2026-08-13/tripod-now.png"
+    },
+    {
+      "answer": "Break.com",
+      "year": 2007,
+      "accept": [
+        "break.com",
+        "break"
+      ],
+      "fact": "Break.com built its early audience around viral videos aimed specifically at young men, a more niche focus than general-purpose video sites like YouTube.",
+      "beforeImg": "images/2026-08-13/break-then.png",
+      "afterImg": "images/2026-08-13/break-now.png"
+    },
+    {
+      "answer": "RealPlayer",
+      "year": 1999,
+      "accept": [
+        "realplayer",
+        "real player"
+      ],
+      "fact": "RealPlayer's streaming format was, for years, the primary way people watched video and listened to audio online, long before YouTube or Spotify existed.",
+      "beforeImg": "images/2026-08-13/realplayer-then.png",
+      "afterImg": "images/2026-08-13/realplayer-now.png"
+    },
+    {
+      "answer": "eBaum's World",
+      "year": 2005,
+      "accept": [
+        "ebaum's world",
+        "ebaumsworld"
+      ],
+      "fact": "eBaum's World built its early traffic on hosting viral videos and flash animations, and was frequently accused of re-uploading other creators' content without credit.",
+      "beforeImg": "images/2026-08-13/ebaumsworld-then.png",
+      "afterImg": "images/2026-08-13/ebaumsworld-now.png"
+    },
+    {
+      "answer": "LAUNCH",
+      "year": 2000,
+      "accept": [
+        "launch",
+        "launch.com"
+      ],
+      "fact": "LAUNCH (later LAUNCHcast) was one of Yahoo's earliest music properties, offering personalized internet radio years before Pandora or Spotify existed.",
+      "beforeImg": "images/2026-08-13/launch-then.png",
+      "afterImg": "images/2026-08-13/launch-now.png"
+    }
+  ]
+}
