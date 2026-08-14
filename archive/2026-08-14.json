@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-14",
+  "rounds": [
+    {
+      "answer": "WordPress",
+      "year": 2006,
+      "accept": [
+        "wordpress"
+      ],
+      "fact": "WordPress launched in 2003 as a small blogging tool and eventually grew to power a huge share of all websites on the internet, blogs and full businesses alike.",
+      "beforeImg": "images/2026-08-14/wordpress-then.png",
+      "afterImg": "images/2026-08-14/wordpress-now.png"
+    },
+    {
+      "answer": "Excite",
+      "year": 1999,
+      "accept": [
+        "excite"
+      ],
+      "fact": "Excite was one of the 'big five' web portals of the late 90s, and famously turned down the chance to buy Google's search technology for under $1 million in 1999.",
+      "beforeImg": "images/2026-08-14/excite-then.png",
+      "afterImg": "images/2026-08-14/excite-now.png"
+    },
+    {
+      "answer": "Miniclip",
+      "year": 2006,
+      "accept": [
+        "miniclip"
+      ],
+      "fact": "Miniclip built its whole library around free browser-based Flash games, becoming one of the biggest casual gaming destinations before Flash was phased out industry-wide.",
+      "beforeImg": "images/2026-08-14/miniclip-then.png",
+      "afterImg": "images/2026-08-14/miniclip-now.png"
+    },
+    {
+      "answer": "Answers.com",
+      "year": 2006,
+      "accept": [
+        "answers.com",
+        "answers"
+      ],
+      "fact": "Answers.com built its early traffic by aggregating dictionary, encyclopedia, and reference content into a single searchable site, well before crowdsourced Q&A sites took over that space.",
+      "beforeImg": "images/2026-08-14/answers-then.png",
+      "afterImg": "images/2026-08-14/answers-now.png"
+    },
+    {
+      "answer": "Blogger",
+      "year": 2003,
+      "accept": [
+        "blogger"
+      ],
+      "fact": "Blogger launched in 1999 and is one of the tools credited with popularizing the word 'blog' itself, before Google acquired it in 2003.",
+      "beforeImg": "images/2026-08-14/blogger-then.png",
+      "afterImg": "images/2026-08-14/blogger-now.png"
+    }
+  ]
+}
