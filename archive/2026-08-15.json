@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-15",
+  "rounds": [
+    {
+      "answer": "AOL Instant Messenger",
+      "year": 2001,
+      "accept": [
+        "aim",
+        "aol instant messenger"
+      ],
+      "fact": "AIM's door-slam and duck-quack sound effects became so recognizable that an entire generation associates them instantly with getting online after school.",
+      "beforeImg": "images/2026-08-15/aim-then.png",
+      "afterImg": "images/2026-08-15/aim-now.png"
+    },
+    {
+      "answer": "Instagram",
+      "year": 2012,
+      "accept": [
+        "instagram",
+        "ig",
+        "insta"
+      ],
+      "fact": "Instagram launched iPhone-only in late 2010 and hit 25,000 users on day one. Its web presence stayed minimal for years while the app itself was the whole product.",
+      "beforeImg": "images/2026-08-15/instagram-then.png",
+      "afterImg": "images/2026-08-15/instagram-now.png"
+    },
+    {
+      "answer": "About.com",
+      "year": 2001,
+      "accept": [
+        "about.com",
+        "about"
+      ],
+      "fact": "About.com organized the web using human 'guides' who curated links on specific topics, a labor-intensive model for making sense of the internet before search engines got good enough to do it automatically.",
+      "beforeImg": "images/2026-08-15/about-then.png",
+      "afterImg": "images/2026-08-15/about-now.png"
+    },
+    {
+      "answer": "Reddit",
+      "year": 2006,
+      "accept": [
+        "reddit"
+      ],
+      "fact": "Reddit's original logo was a simple line drawing, and the site launched with fake accounts posting fake content just to make it look active on day one.",
+      "beforeImg": "images/2026-08-15/reddit-then.png",
+      "afterImg": "images/2026-08-15/reddit-now.png"
+    },
+    {
+      "answer": "The New York Times",
+      "year": 2000,
+      "accept": [
+        "new york times",
+        "nytimes",
+        "nyt"
+      ],
+      "fact": "The New York Times went online in 1996 and required free registration from the start, a controversial-at-the-time model that foreshadowed the paywalls most news sites use today.",
+      "beforeImg": "images/2026-08-15/nytimes-then.png",
+      "afterImg": "images/2026-08-15/nytimes-now.png"
+    }
+  ]
+}
