@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-16",
+  "rounds": [
+    {
+      "answer": "LimeWire",
+      "year": 2005,
+      "accept": [
+        "limewire"
+      ],
+      "fact": "LimeWire became one of the most popular peer-to-peer file-sharing programs after Napster's shutdown, before being forced offline itself by a 2010 court injunction.",
+      "beforeImg": "images/2026-08-16/limewire-then.png",
+      "afterImg": "images/2026-08-16/limewire-now.png"
+    },
+    {
+      "answer": "Digg",
+      "year": 2006,
+      "accept": [
+        "digg"
+      ],
+      "fact": "Digg pioneered the user-voted news-aggregation format years before Reddit took over that space, and a single controversial 2010 redesign is often cited as the reason it lost most of its audience.",
+      "beforeImg": "images/2026-08-16/digg-then.png",
+      "afterImg": "images/2026-08-16/digg-now.png"
+    },
+    {
+      "answer": "Blockbuster",
+      "year": 2004,
+      "accept": [
+        "blockbuster"
+      ],
+      "fact": "Blockbuster launched an online DVD-by-mail service in 2004 specifically to compete with Netflix, only a few years before streaming made the entire rental model obsolete.",
+      "beforeImg": "images/2026-08-16/blockbuster-then.png",
+      "afterImg": "images/2026-08-16/blockbuster-now.png"
+    },
+    {
+      "answer": "Download.com",
+      "year": 2001,
+      "accept": [
+        "download.com"
+      ],
+      "fact": "Download.com (run by CNET) was one of the main places people got shareware and freeware software in the pre-app-store era, complete with user ratings and virus scanning.",
+      "beforeImg": "images/2026-08-16/downloadcom-then.png",
+      "afterImg": "images/2026-08-16/downloadcom-now.png"
+    },
+    {
+      "answer": "Webshots",
+      "year": 2004,
+      "accept": [
+        "webshots"
+      ],
+      "fact": "Webshots was one of the most popular photo-sharing communities of the early 2000s, and was also widely used as a source for desktop wallpaper downloads.",
+      "beforeImg": "images/2026-08-16/webshots-then.png",
+      "afterImg": "images/2026-08-16/webshots-now.png"
+    }
+  ]
+}
