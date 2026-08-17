@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-17",
+  "rounds": [
+    {
+      "answer": "WebMD",
+      "year": 2001,
+      "accept": [
+        "webmd"
+      ],
+      "fact": "WebMD launched in 1996 and became so widely used for self-diagnosis that 'don't WebMD your symptoms' turned into a common joke about people convincing themselves they had rare diseases.",
+      "beforeImg": "images/2026-08-17/webmd-then.png",
+      "afterImg": "images/2026-08-17/webmd-now.png"
+    },
+    {
+      "answer": "eBaum's World",
+      "year": 2005,
+      "accept": [
+        "ebaum's world",
+        "ebaumsworld"
+      ],
+      "fact": "eBaum's World built its early traffic on hosting viral videos and flash animations, and was frequently accused of re-uploading other creators' content without credit.",
+      "beforeImg": "images/2026-08-17/ebaumsworld-then.png",
+      "afterImg": "images/2026-08-17/ebaumsworld-now.png"
+    },
+    {
+      "answer": "Woot",
+      "year": 2006,
+      "accept": [
+        "woot"
+      ],
+      "fact": "Woot's entire business model was selling exactly one product per day until it sold out, a simple gimmick that built a cult following before Amazon eventually bought the company.",
+      "beforeImg": "images/2026-08-17/woot-then.png",
+      "afterImg": "images/2026-08-17/woot-now.png"
+    },
+    {
+      "answer": "LimeWire",
+      "year": 2005,
+      "accept": [
+        "limewire"
+      ],
+      "fact": "LimeWire became one of the most popular peer-to-peer file-sharing programs after Napster's shutdown, before being forced offline itself by a 2010 court injunction.",
+      "beforeImg": "images/2026-08-17/limewire-then.png",
+      "afterImg": "images/2026-08-17/limewire-now.png"
+    },
+    {
+      "answer": "Addicting Games",
+      "year": 2005,
+      "accept": [
+        "addicting games",
+        "addictinggames"
+      ],
+      "fact": "Addicting Games grew rapidly during the mid-2000s Flash gaming boom, hosting thousands of free browser games at a time when installing a game usually still meant buying a physical disc.",
+      "beforeImg": "images/2026-08-17/addictinggames-then.png",
+      "afterImg": "images/2026-08-17/addictinggames-now.png"
+    }
+  ]
+}
