@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-18",
+  "rounds": [
+    {
+      "answer": "Digital Trends",
+      "year": 2008,
+      "accept": [
+        "digital trends"
+      ],
+      "fact": "Digital Trends grew as a general consumer-electronics review site during the mid-2000s, competing for readers alongside CNET and Engadget in a crowded gadget-blog era.",
+      "beforeImg": "images/2026-08-18/digitaltrends-then.png",
+      "afterImg": "images/2026-08-18/digitaltrends-now.png"
+    },
+    {
+      "answer": "MSN",
+      "year": 2000,
+      "accept": [
+        "msn",
+        "microsoft network"
+      ],
+      "fact": "MSN launched alongside Windows 95 as Microsoft's answer to AOL, bundling a dial-up service with a portal homepage that shipped as the default for millions of new PCs.",
+      "beforeImg": "images/2026-08-18/msn-then.png",
+      "afterImg": "images/2026-08-18/msn-now.png"
+    },
+    {
+      "answer": "Opera",
+      "year": 2003,
+      "accept": [
+        "opera browser",
+        "opera"
+      ],
+      "fact": "Opera was one of the first browsers to introduce tabbed browsing and built-in mouse gestures, features that later became standard across every major browser.",
+      "beforeImg": "images/2026-08-18/opera-then.png",
+      "afterImg": "images/2026-08-18/opera-now.png"
+    },
+    {
+      "answer": "BuzzFeed",
+      "year": 2009,
+      "accept": [
+        "buzzfeed"
+      ],
+      "fact": "BuzzFeed started in 2006 as an experiment in tracking what content spreads virally online, well before its listicle format became one of the most imitated web formats of the 2010s.",
+      "beforeImg": "images/2026-08-18/buzzfeed-then.png",
+      "afterImg": "images/2026-08-18/buzzfeed-now.png"
+    },
+    {
+      "answer": "TMZ",
+      "year": 2007,
+      "accept": [
+        "tmz"
+      ],
+      "fact": "TMZ launched in 2005 and dramatically sped up the celebrity news cycle, frequently breaking major stories hours or days before traditional entertainment outlets.",
+      "beforeImg": "images/2026-08-18/tmz-then.png",
+      "afterImg": "images/2026-08-18/tmz-now.png"
+    }
+  ]
+}
