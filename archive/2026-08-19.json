@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-19",
+  "rounds": [
+    {
+      "answer": "Facebook",
+      "year": 2007,
+      "accept": [
+        "facebook",
+        "fb",
+        "thefacebook",
+        "the facebook"
+      ],
+      "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
+      "beforeImg": "images/2026-08-19/facebook-then.png",
+      "afterImg": "images/2026-08-19/facebook-now.png"
+    },
+    {
+      "answer": "Digital Trends",
+      "year": 2008,
+      "accept": [
+        "digital trends"
+      ],
+      "fact": "Digital Trends grew as a general consumer-electronics review site during the mid-2000s, competing for readers alongside CNET and Engadget in a crowded gadget-blog era.",
+      "beforeImg": "images/2026-08-19/digitaltrends-then.png",
+      "afterImg": "images/2026-08-19/digitaltrends-now.png"
+    },
+    {
+      "answer": "Napster",
+      "year": 2000,
+      "accept": [
+        "napster"
+      ],
+      "fact": "Napster's original file-sharing service was sued into shutting down in 2001, but the brand survived and was later relaunched as a legal paid streaming service.",
+      "beforeImg": "images/2026-08-19/napster-then.png",
+      "afterImg": "images/2026-08-19/napster-now.png"
+    },
+    {
+      "answer": "Excite",
+      "year": 1999,
+      "accept": [
+        "excite"
+      ],
+      "fact": "Excite was one of the 'big five' web portals of the late 90s, and famously turned down the chance to buy Google's search technology for under $1 million in 1999.",
+      "beforeImg": "images/2026-08-19/excite-then.png",
+      "afterImg": "images/2026-08-19/excite-now.png"
+    },
+    {
+      "answer": "Walmart",
+      "year": 2000,
+      "accept": [
+        "walmart",
+        "wal-mart"
+      ],
+      "fact": "Walmart's first e-commerce attempt in 2000 struggled so badly with web traffic that the company briefly shut the site down and rebuilt it before relaunching.",
+      "beforeImg": "images/2026-08-19/walmart-then.png",
+      "afterImg": "images/2026-08-19/walmart-now.png"
+    }
+  ]
+}
