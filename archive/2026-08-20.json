@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-20",
+  "rounds": [
+    {
+      "answer": "Charles Schwab",
+      "year": 2000,
+      "accept": [
+        "charles schwab",
+        "schwab"
+      ],
+      "fact": "Charles Schwab was one of the first traditional brokerages to fully embrace online trading, helping legitimize the idea for investors who didn't trust newer online-only upstarts.",
+      "beforeImg": "images/2026-08-20/schwab-then.png",
+      "afterImg": "images/2026-08-20/schwab-now.png"
+    },
+    {
+      "answer": "Photobucket",
+      "year": 2007,
+      "accept": [
+        "photobucket"
+      ],
+      "fact": "Photobucket became the default way millions of MySpace users hosted images for their profiles, since MySpace itself didn't offer easy photo uploading in its early years.",
+      "beforeImg": "images/2026-08-20/photobucket-then.png",
+      "afterImg": "images/2026-08-20/photobucket-now.png"
+    },
+    {
+      "answer": "Edmunds",
+      "year": 2001,
+      "accept": [
+        "edmunds"
+      ],
+      "fact": "Edmunds built its reputation on detailed car reviews and true-cost-to-own data, becoming a trusted resource for buyers trying to negotiate against dealerships.",
+      "beforeImg": "images/2026-08-20/edmunds-then.png",
+      "afterImg": "images/2026-08-20/edmunds-now.png"
+    },
+    {
+      "answer": "Juno",
+      "year": 1999,
+      "accept": [
+        "juno"
+      ],
+      "fact": "Juno offered free dial-up internet paid for entirely by advertising, and later merged with rival NetZero to survive the end of the free-ISP era.",
+      "beforeImg": "images/2026-08-20/juno-then.png",
+      "afterImg": "images/2026-08-20/juno-now.png"
+    },
+    {
+      "answer": "Newegg",
+      "year": 2005,
+      "accept": [
+        "newegg"
+      ],
+      "fact": "Newegg built a loyal following among PC builders by focusing almost entirely on computer parts, with a reputation for detailed listings and fast shipping that rivaled Amazon in that niche.",
+      "beforeImg": "images/2026-08-20/newegg-then.png",
+      "afterImg": "images/2026-08-20/newegg-now.png"
+    }
+  ]
+}
