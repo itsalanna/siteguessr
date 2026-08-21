@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-21",
+  "rounds": [
+    {
+      "answer": "Microsoft",
+      "year": 1998,
+      "accept": [
+        "microsoft",
+        "msft"
+      ],
+      "fact": "Microsoft's homepage in the late 90s was essentially a portal to its own products, years before it settled into the cleaner corporate design language it uses today.",
+      "beforeImg": "images/2026-08-21/microsoft-then.png",
+      "afterImg": "images/2026-08-21/microsoft-now.png"
+    },
+    {
+      "answer": "Orbitz",
+      "year": 2002,
+      "accept": [
+        "orbitz"
+      ],
+      "fact": "Orbitz was launched in 2001 by a group of major airlines banding together to compete directly with Expedia and Travelocity for online bookings.",
+      "beforeImg": "images/2026-08-21/orbitz-then.png",
+      "afterImg": "images/2026-08-21/orbitz-now.png"
+    },
+    {
+      "answer": "YouTube",
+      "year": 2008,
+      "accept": [
+        "youtube",
+        "you tube",
+        "yt"
+      ],
+      "fact": "Star ratings lasted until 2010. They were retired because almost everyone rated either 5 stars or 1, so the site switched to thumbs up/down.",
+      "beforeImg": "images/2026-08-21/youtube-then.png",
+      "afterImg": "images/2026-08-21/youtube-now.png"
+    },
+    {
+      "answer": "RadioShack",
+      "year": 2003,
+      "accept": [
+        "radioshack",
+        "radio shack"
+      ],
+      "fact": "RadioShack's website in the early 2000s tried to combine its parts-and-electronics heritage with early attempts at cell phone retail, a business mix that never quite gelled online.",
+      "beforeImg": "images/2026-08-21/radioshack-then.png",
+      "afterImg": "images/2026-08-21/radioshack-now.png"
+    },
+    {
+      "answer": "Kickstarter",
+      "year": 2010,
+      "accept": [
+        "kickstarter"
+      ],
+      "fact": "Kickstarter launched in 2009 and popularized the all-or-nothing crowdfunding model, where projects only get funded if they hit their goal, a rule meant to protect backers.",
+      "beforeImg": "images/2026-08-21/kickstarter-then.png",
+      "afterImg": "images/2026-08-21/kickstarter-now.png"
+    }
+  ]
+}
