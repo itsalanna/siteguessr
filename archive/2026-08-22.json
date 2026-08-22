@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-22",
+  "rounds": [
+    {
+      "answer": "LAUNCH",
+      "year": 2000,
+      "accept": [
+        "launch",
+        "launch.com"
+      ],
+      "fact": "LAUNCH (later LAUNCHcast) was one of Yahoo's earliest music properties, offering personalized internet radio years before Pandora or Spotify existed.",
+      "beforeImg": "images/2026-08-22/launch-then.png",
+      "afterImg": "images/2026-08-22/launch-now.png"
+    },
+    {
+      "answer": "Expedia",
+      "year": 2000,
+      "accept": [
+        "expedia"
+      ],
+      "fact": "Expedia started in 1996 as a project inside Microsoft before spinning off into its own company, part of the first wave of travel booking moving from agents onto the web.",
+      "beforeImg": "images/2026-08-22/expedia-then.png",
+      "afterImg": "images/2026-08-22/expedia-now.png"
+    },
+    {
+      "answer": "Ask Jeeves",
+      "year": 2000,
+      "accept": [
+        "ask jeeves",
+        "ask.com",
+        "ask"
+      ],
+      "fact": "Ask Jeeves branded itself around a friendly butler mascot and the pitch of asking questions in plain English, a contrast to the keyword-heavy search engines of the era.",
+      "beforeImg": "images/2026-08-22/ask-then.png",
+      "afterImg": "images/2026-08-22/ask-now.png"
+    },
+    {
+      "answer": "CNET",
+      "year": 2000,
+      "accept": [
+        "cnet"
+      ],
+      "fact": "CNET launched in 1994 as one of the first tech-focused media companies built for the web, eventually growing to include Download.com and several other well-known tech properties.",
+      "beforeImg": "images/2026-08-22/cnet-then.png",
+      "afterImg": "images/2026-08-22/cnet-now.png"
+    },
+    {
+      "answer": "Bebo",
+      "year": 2007,
+      "accept": [
+        "bebo"
+      ],
+      "fact": "Bebo was massively popular in the UK and Ireland during the mid-2000s, at one point ranking as the third-most-visited social network in the US before AOL bought it for $850 million in 2008.",
+      "beforeImg": "images/2026-08-22/bebo-then.png",
+      "afterImg": "images/2026-08-22/bebo-now.png"
+    }
+  ]
+}
