@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-23",
+  "rounds": [
+    {
+      "answer": "Funny or Die",
+      "year": 2008,
+      "accept": [
+        "funny or die"
+      ],
+      "fact": "Funny or Die launched in 2007 co-founded by Will Ferrell, and its debut video 'The Landlord' became one of the most-watched comedy videos of the early web-video era.",
+      "beforeImg": "images/2026-08-23/funnyordie-then.png",
+      "afterImg": "images/2026-08-23/funnyordie-now.png"
+    },
+    {
+      "answer": "Wired",
+      "year": 2000,
+      "accept": [
+        "wired"
+      ],
+      "fact": "Wired magazine's website carried over its distinctive, colorful print design into the browser, standing out at a time when most news sites still looked like plain digital newspapers.",
+      "beforeImg": "images/2026-08-23/wired-then.png",
+      "afterImg": "images/2026-08-23/wired-now.png"
+    },
+    {
+      "answer": "ICQ",
+      "year": 1999,
+      "accept": [
+        "icq"
+      ],
+      "fact": "ICQ (a pun on 'I seek you') launched in 1996 and is widely credited as the first mass-market instant messaging program, complete with its now-iconic 'uh-oh' message sound.",
+      "beforeImg": "images/2026-08-23/icq-then.png",
+      "afterImg": "images/2026-08-23/icq-now.png"
+    },
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-08-23/tripod-then.png",
+      "afterImg": "images/2026-08-23/tripod-now.png"
+    },
+    {
+      "answer": "Match.com",
+      "year": 2000,
+      "accept": [
+        "match.com",
+        "match"
+      ],
+      "fact": "Match.com launched in 1995 and is one of the very first online dating sites, predating the smartphone-app dating era by almost two decades.",
+      "beforeImg": "images/2026-08-23/match-then.png",
+      "afterImg": "images/2026-08-23/match-now.png"
+    }
+  ]
+}
