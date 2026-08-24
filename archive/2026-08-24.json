@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-24",
+  "rounds": [
+    {
+      "answer": "USA Today",
+      "year": 2000,
+      "accept": [
+        "usa today",
+        "usatoday"
+      ],
+      "fact": "USA Today's website carried over the newspaper's signature colorful infographics and short-story format, designed for readers scanning quickly rather than reading in depth.",
+      "beforeImg": "images/2026-08-24/usatoday-then.png",
+      "afterImg": "images/2026-08-24/usatoday-now.png"
+    },
+    {
+      "answer": "Hotmail",
+      "year": 1999,
+      "accept": [
+        "hotmail"
+      ],
+      "fact": "Hotmail was one of the first free webmail services, launched in 1996, and grew largely because every outgoing email carried a tagline advertising the service itself.",
+      "beforeImg": "images/2026-08-24/hotmail-then.png",
+      "afterImg": "images/2026-08-24/hotmail-now.png"
+    },
+    {
+      "answer": "Charles Schwab",
+      "year": 2000,
+      "accept": [
+        "charles schwab",
+        "schwab"
+      ],
+      "fact": "Charles Schwab was one of the first traditional brokerages to fully embrace online trading, helping legitimize the idea for investors who didn't trust newer online-only upstarts.",
+      "beforeImg": "images/2026-08-24/schwab-then.png",
+      "afterImg": "images/2026-08-24/schwab-now.png"
+    },
+    {
+      "answer": "PayPal",
+      "year": 2000,
+      "accept": [
+        "paypal"
+      ],
+      "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+      "beforeImg": "images/2026-08-24/paypal-then.png",
+      "afterImg": "images/2026-08-24/paypal-now.png"
+    },
+    {
+      "answer": "Engadget",
+      "year": 2007,
+      "accept": [
+        "engadget"
+      ],
+      "fact": "Engadget launched in 2004 and quickly became one of the most-read gadget blogs, known for live-blogging tech keynotes years before that became a standard practice across tech media.",
+      "beforeImg": "images/2026-08-24/engadget-then.png",
+      "afterImg": "images/2026-08-24/engadget-now.png"
+    }
+  ]
+}
