@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-26",
+  "rounds": [
+    {
+      "answer": "Zillow",
+      "year": 2007,
+      "accept": [
+        "zillow"
+      ],
+      "fact": "Zillow launched in 2006 and was one of the first sites to give the public free access to home value estimates, a feature ('Zestimate') that unsettled a lot of real estate agents at the time.",
+      "beforeImg": "images/2026-08-26/zillow-then.png",
+      "afterImg": "images/2026-08-26/zillow-now.png"
+    },
+    {
+      "answer": "Delicious",
+      "year": 2006,
+      "accept": [
+        "delicious",
+        "del.icio.us"
+      ],
+      "fact": "Delicious (originally styled del.icio.us) popularized social bookmarking and the very concept of a 'tag,' letting users save and label links for themselves and everyone else to browse.",
+      "beforeImg": "images/2026-08-26/delicious-then.png",
+      "afterImg": "images/2026-08-26/delicious-now.png"
+    },
+    {
+      "answer": "Yelp",
+      "year": 2008,
+      "accept": [
+        "yelp"
+      ],
+      "fact": "Yelp started in 2004 as an email-based referral service before pivoting to the review-website format it's known for today, after users kept asking for a public place to post reviews.",
+      "beforeImg": "images/2026-08-26/yelp-then.png",
+      "afterImg": "images/2026-08-26/yelp-now.png"
+    },
+    {
+      "answer": "YouTube",
+      "year": 2008,
+      "accept": [
+        "youtube",
+        "you tube",
+        "yt"
+      ],
+      "fact": "Star ratings lasted until 2010. They were retired because almost everyone rated either 5 stars or 1, so the site switched to thumbs up/down.",
+      "beforeImg": "images/2026-08-26/youtube-then.png",
+      "afterImg": "images/2026-08-26/youtube-now.png"
+    },
+    {
+      "answer": "StumbleUpon",
+      "year": 2008,
+      "accept": [
+        "stumbleupon"
+      ],
+      "fact": "StumbleUpon's whole concept was a browser button that took you to a random, algorithm-picked website matching your interests, a discovery model that faded as social feeds took over that role.",
+      "beforeImg": "images/2026-08-26/stumbleupon-then.png",
+      "afterImg": "images/2026-08-26/stumbleupon-now.png"
+    }
+  ]
+}
