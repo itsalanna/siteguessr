@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-28",
+  "rounds": [
+    {
+      "answer": "YouTube",
+      "year": 2008,
+      "accept": [
+        "youtube",
+        "you tube",
+        "yt"
+      ],
+      "fact": "Star ratings lasted until 2010. They were retired because almost everyone rated either 5 stars or 1, so the site switched to thumbs up/down.",
+      "beforeImg": "images/2026-08-28/youtube-then.png",
+      "afterImg": "images/2026-08-28/youtube-now.png"
+    },
+    {
+      "answer": "Overstock",
+      "year": 2002,
+      "accept": [
+        "overstock",
+        "overstock.com"
+      ],
+      "fact": "Overstock.com built its business selling excess and returned inventory at discount prices, essentially running an online liquidation warehouse.",
+      "beforeImg": "images/2026-08-28/overstock-then.png",
+      "afterImg": "images/2026-08-28/overstock-now.png"
+    },
+    {
+      "answer": "MSN",
+      "year": 2000,
+      "accept": [
+        "msn",
+        "microsoft network"
+      ],
+      "fact": "MSN launched alongside Windows 95 as Microsoft's answer to AOL, bundling a dial-up service with a portal homepage that shipped as the default for millions of new PCs.",
+      "beforeImg": "images/2026-08-28/msn-then.png",
+      "afterImg": "images/2026-08-28/msn-now.png"
+    },
+    {
+      "answer": "Opera",
+      "year": 2003,
+      "accept": [
+        "opera browser",
+        "opera"
+      ],
+      "fact": "Opera was one of the first browsers to introduce tabbed browsing and built-in mouse gestures, features that later became standard across every major browser.",
+      "beforeImg": "images/2026-08-28/opera-then.png",
+      "afterImg": "images/2026-08-28/opera-now.png"
+    },
+    {
+      "answer": "PayPal",
+      "year": 2000,
+      "accept": [
+        "paypal"
+      ],
+      "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+      "beforeImg": "images/2026-08-28/paypal-then.png",
+      "afterImg": "images/2026-08-28/paypal-now.png"
+    }
+  ]
+}
