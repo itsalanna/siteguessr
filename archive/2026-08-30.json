@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-30",
+  "rounds": [
+    {
+      "answer": "eBay",
+      "year": 1999,
+      "accept": [
+        "ebay"
+      ],
+      "fact": "eBay started in 1995 as AuctionWeb, reportedly built to help the founder's fiancee trade Pez dispensers. By 1999 it was already a sprawling grid of category links and live auctions.",
+      "beforeImg": "images/2026-08-30/ebay-then.png",
+      "afterImg": "images/2026-08-30/ebay-now.png"
+    },
+    {
+      "answer": "Addicting Games",
+      "year": 2005,
+      "accept": [
+        "addicting games",
+        "addictinggames"
+      ],
+      "fact": "Addicting Games grew rapidly during the mid-2000s Flash gaming boom, hosting thousands of free browser games at a time when installing a game usually still meant buying a physical disc.",
+      "beforeImg": "images/2026-08-30/addictinggames-then.png",
+      "afterImg": "images/2026-08-30/addictinggames-now.png"
+    },
+    {
+      "answer": "NBA",
+      "year": 2000,
+      "accept": [
+        "nba"
+      ],
+      "fact": "NBA.com launched in 1995 and was notable for how quickly it embraced streaming highlight clips, even though most fans at the time were still on connections far too slow to watch them smoothly.",
+      "beforeImg": "images/2026-08-30/nba-then.png",
+      "afterImg": "images/2026-08-30/nba-now.png"
+    },
+    {
+      "answer": "LAUNCH",
+      "year": 2000,
+      "accept": [
+        "launch",
+        "launch.com"
+      ],
+      "fact": "LAUNCH (later LAUNCHcast) was one of Yahoo's earliest music properties, offering personalized internet radio years before Pandora or Spotify existed.",
+      "beforeImg": "images/2026-08-30/launch-then.png",
+      "afterImg": "images/2026-08-30/launch-now.png"
+    },
+    {
+      "answer": "StumbleUpon",
+      "year": 2008,
+      "accept": [
+        "stumbleupon"
+      ],
+      "fact": "StumbleUpon's whole concept was a browser button that took you to a random, algorithm-picked website matching your interests, a discovery model that faded as social feeds took over that role.",
+      "beforeImg": "images/2026-08-30/stumbleupon-then.png",
+      "afterImg": "images/2026-08-30/stumbleupon-now.png"
+    }
+  ]
+}
