@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-31",
+  "rounds": [
+    {
+      "answer": "Twitter",
+      "year": 2007,
+      "accept": [
+        "twitter",
+        "twttr"
+      ],
+      "fact": "Twitter launched in 2006 and the 140-character limit came directly from SMS constraints, since early tweets were literally sent and received as text messages.",
+      "beforeImg": "images/2026-08-31/twitter-then.png",
+      "afterImg": "images/2026-08-31/twitter-now.png"
+    },
+    {
+      "answer": "Facebook",
+      "year": 2007,
+      "accept": [
+        "facebook",
+        "fb",
+        "thefacebook",
+        "the facebook"
+      ],
+      "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
+      "beforeImg": "images/2026-08-31/facebook-then.png",
+      "afterImg": "images/2026-08-31/facebook-now.png"
+    },
+    {
+      "answer": "Dogpile",
+      "year": 2000,
+      "accept": [
+        "dogpile"
+      ],
+      "fact": "Dogpile was a 'metasearch' engine that combined results from multiple search engines at once, a workaround from an era when no single search engine indexed the whole web well.",
+      "beforeImg": "images/2026-08-31/dogpile-then.png",
+      "afterImg": "images/2026-08-31/dogpile-now.png"
+    },
+    {
+      "answer": "Metacafe",
+      "year": 2007,
+      "accept": [
+        "metacafe"
+      ],
+      "fact": "Metacafe was a serious early rival to YouTube, at one point drawing tens of millions of monthly viewers by paying creators for popular videos.",
+      "beforeImg": "images/2026-08-31/metacafe-then.png",
+      "afterImg": "images/2026-08-31/metacafe-now.png"
+    },
+    {
+      "answer": "Edmunds",
+      "year": 2001,
+      "accept": [
+        "edmunds"
+      ],
+      "fact": "Edmunds built its reputation on detailed car reviews and true-cost-to-own data, becoming a trusted resource for buyers trying to negotiate against dealerships.",
+      "beforeImg": "images/2026-08-31/edmunds-then.png",
+      "afterImg": "images/2026-08-31/edmunds-now.png"
+    }
+  ]
+}
