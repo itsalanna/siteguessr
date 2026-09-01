@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-01",
+  "rounds": [
+    {
+      "answer": "Woot",
+      "year": 2006,
+      "accept": [
+        "woot"
+      ],
+      "fact": "Woot's entire business model was selling exactly one product per day until it sold out, a simple gimmick that built a cult following before Amazon eventually bought the company.",
+      "beforeImg": "images/2026-09-01/woot-then.png",
+      "afterImg": "images/2026-09-01/woot-now.png"
+    },
+    {
+      "answer": "IMDb",
+      "year": 2000,
+      "accept": [
+        "imdb"
+      ],
+      "fact": "IMDb started in 1990 as a hobbyist mailing list of movie trivia before becoming a website, and is still one of the oldest continuously running sites on the entire internet.",
+      "beforeImg": "images/2026-09-01/imdb-then.png",
+      "afterImg": "images/2026-09-01/imdb-now.png"
+    },
+    {
+      "answer": "GameSpot",
+      "year": 2000,
+      "accept": [
+        "gamespot"
+      ],
+      "fact": "GameSpot launched in 1996 and became known for its numerical review scores becoming a genuine influence on game sales, sometimes controversially so.",
+      "beforeImg": "images/2026-09-01/gamespot-then.png",
+      "afterImg": "images/2026-09-01/gamespot-now.png"
+    },
+    {
+      "answer": "Break.com",
+      "year": 2007,
+      "accept": [
+        "break.com",
+        "break"
+      ],
+      "fact": "Break.com built its early audience around viral videos aimed specifically at young men, a more niche focus than general-purpose video sites like YouTube.",
+      "beforeImg": "images/2026-09-01/break-then.png",
+      "afterImg": "images/2026-09-01/break-now.png"
+    },
+    {
+      "answer": "Edmunds",
+      "year": 2001,
+      "accept": [
+        "edmunds"
+      ],
+      "fact": "Edmunds built its reputation on detailed car reviews and true-cost-to-own data, becoming a trusted resource for buyers trying to negotiate against dealerships.",
+      "beforeImg": "images/2026-09-01/edmunds-then.png",
+      "afterImg": "images/2026-09-01/edmunds-now.png"
+    }
+  ]
+}
