@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-02",
+  "rounds": [
+    {
+      "answer": "Gawker",
+      "year": 2007,
+      "accept": [
+        "gawker"
+      ],
+      "fact": "Gawker built its identity on gossipy, irreverent media and tech coverage, and its comment sections were an early influential experiment in giving readers real visibility on a media site.",
+      "beforeImg": "images/2026-09-02/gawker-then.png",
+      "afterImg": "images/2026-09-02/gawker-now.png"
+    },
+    {
+      "answer": "Kickstarter",
+      "year": 2010,
+      "accept": [
+        "kickstarter"
+      ],
+      "fact": "Kickstarter launched in 2009 and popularized the all-or-nothing crowdfunding model, where projects only get funded if they hit their goal, a rule meant to protect backers.",
+      "beforeImg": "images/2026-09-02/kickstarter-then.png",
+      "afterImg": "images/2026-09-02/kickstarter-now.png"
+    },
+    {
+      "answer": "eBaum's World",
+      "year": 2005,
+      "accept": [
+        "ebaum's world",
+        "ebaumsworld"
+      ],
+      "fact": "eBaum's World built its early traffic on hosting viral videos and flash animations, and was frequently accused of re-uploading other creators' content without credit.",
+      "beforeImg": "images/2026-09-02/ebaumsworld-then.png",
+      "afterImg": "images/2026-09-02/ebaumsworld-now.png"
+    },
+    {
+      "answer": "LiveJournal",
+      "year": 2004,
+      "accept": [
+        "livejournal",
+        "lj"
+      ],
+      "fact": "LiveJournal was one of the first blogging platforms to build in a real social layer, with friends lists and privacy settings, making it feel more like an early social network than a simple blog host.",
+      "beforeImg": "images/2026-09-02/livejournal-then.png",
+      "afterImg": "images/2026-09-02/livejournal-now.png"
+    },
+    {
+      "answer": "Napster",
+      "year": 2000,
+      "accept": [
+        "napster"
+      ],
+      "fact": "Napster's original file-sharing service was sued into shutting down in 2001, but the brand survived and was later relaunched as a legal paid streaming service.",
+      "beforeImg": "images/2026-09-02/napster-then.png",
+      "afterImg": "images/2026-09-02/napster-now.png"
+    }
+  ]
+}
