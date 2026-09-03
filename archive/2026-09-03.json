@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-03",
+  "rounds": [
+    {
+      "answer": "Engadget",
+      "year": 2007,
+      "accept": [
+        "engadget"
+      ],
+      "fact": "Engadget launched in 2004 and quickly became one of the most-read gadget blogs, known for live-blogging tech keynotes years before that became a standard practice across tech media.",
+      "beforeImg": "images/2026-09-03/engadget-then.png",
+      "afterImg": "images/2026-09-03/engadget-now.png"
+    },
+    {
+      "answer": "Photobucket",
+      "year": 2007,
+      "accept": [
+        "photobucket"
+      ],
+      "fact": "Photobucket became the default way millions of MySpace users hosted images for their profiles, since MySpace itself didn't offer easy photo uploading in its early years.",
+      "beforeImg": "images/2026-09-03/photobucket-then.png",
+      "afterImg": "images/2026-09-03/photobucket-now.png"
+    },
+    {
+      "answer": "Metacafe",
+      "year": 2007,
+      "accept": [
+        "metacafe"
+      ],
+      "fact": "Metacafe was a serious early rival to YouTube, at one point drawing tens of millions of monthly viewers by paying creators for popular videos.",
+      "beforeImg": "images/2026-09-03/metacafe-then.png",
+      "afterImg": "images/2026-09-03/metacafe-now.png"
+    },
+    {
+      "answer": "Instagram",
+      "year": 2012,
+      "accept": [
+        "instagram",
+        "ig",
+        "insta"
+      ],
+      "fact": "Instagram launched iPhone-only in late 2010 and hit 25,000 users on day one. Its web presence stayed minimal for years while the app itself was the whole product.",
+      "beforeImg": "images/2026-09-03/instagram-then.png",
+      "afterImg": "images/2026-09-03/instagram-now.png"
+    },
+    {
+      "answer": "Xbox",
+      "year": 2002,
+      "accept": [
+        "xbox"
+      ],
+      "fact": "Xbox.com launched alongside Microsoft's first console in 2001, marking the company's first serious entry into a gaming hardware market long dominated by Sony and Nintendo.",
+      "beforeImg": "images/2026-09-03/xbox-then.png",
+      "afterImg": "images/2026-09-03/xbox-now.png"
+    }
+  ]
+}
