@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-04",
+  "rounds": [
+    {
+      "answer": "Salon",
+      "year": 2000,
+      "accept": [
+        "salon",
+        "salon.com"
+      ],
+      "fact": "Salon launched in 1995 as one of the first online-only magazines with no print edition at all, betting entirely on the web as a legitimate home for serious journalism.",
+      "beforeImg": "images/2026-09-04/salon-then.png",
+      "afterImg": "images/2026-09-04/salon-now.png"
+    },
+    {
+      "answer": "Miniclip",
+      "year": 2006,
+      "accept": [
+        "miniclip"
+      ],
+      "fact": "Miniclip built its whole library around free browser-based Flash games, becoming one of the biggest casual gaming destinations before Flash was phased out industry-wide.",
+      "beforeImg": "images/2026-09-04/miniclip-then.png",
+      "afterImg": "images/2026-09-04/miniclip-now.png"
+    },
+    {
+      "answer": "TypePad",
+      "year": 2005,
+      "accept": [
+        "typepad"
+      ],
+      "fact": "TypePad positioned itself as a more polished, professional blogging platform than free competitors, aimed at users willing to pay for more design control.",
+      "beforeImg": "images/2026-09-04/typepad-then.png",
+      "afterImg": "images/2026-09-04/typepad-now.png"
+    },
+    {
+      "answer": "Bebo",
+      "year": 2007,
+      "accept": [
+        "bebo"
+      ],
+      "fact": "Bebo was massively popular in the UK and Ireland during the mid-2000s, at one point ranking as the third-most-visited social network in the US before AOL bought it for $850 million in 2008.",
+      "beforeImg": "images/2026-09-04/bebo-then.png",
+      "afterImg": "images/2026-09-04/bebo-now.png"
+    },
+    {
+      "answer": "RadioShack",
+      "year": 2003,
+      "accept": [
+        "radioshack",
+        "radio shack"
+      ],
+      "fact": "RadioShack's website in the early 2000s tried to combine its parts-and-electronics heritage with early attempts at cell phone retail, a business mix that never quite gelled online.",
+      "beforeImg": "images/2026-09-04/radioshack-then.png",
+      "afterImg": "images/2026-09-04/radioshack-now.png"
+    }
+  ]
+}
