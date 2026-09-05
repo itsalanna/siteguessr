@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-05",
+  "rounds": [
+    {
+      "answer": "WebMD",
+      "year": 2001,
+      "accept": [
+        "webmd"
+      ],
+      "fact": "WebMD launched in 1996 and became so widely used for self-diagnosis that 'don't WebMD your symptoms' turned into a common joke about people convincing themselves they had rare diseases.",
+      "beforeImg": "images/2026-09-05/webmd-then.png",
+      "afterImg": "images/2026-09-05/webmd-now.png"
+    },
+    {
+      "answer": "About.com",
+      "year": 2001,
+      "accept": [
+        "about.com",
+        "about"
+      ],
+      "fact": "About.com organized the web using human 'guides' who curated links on specific topics, a labor-intensive model for making sense of the internet before search engines got good enough to do it automatically.",
+      "beforeImg": "images/2026-09-05/about-then.png",
+      "afterImg": "images/2026-09-05/about-now.png"
+    },
+    {
+      "answer": "Photobucket",
+      "year": 2007,
+      "accept": [
+        "photobucket"
+      ],
+      "fact": "Photobucket became the default way millions of MySpace users hosted images for their profiles, since MySpace itself didn't offer easy photo uploading in its early years.",
+      "beforeImg": "images/2026-09-05/photobucket-then.png",
+      "afterImg": "images/2026-09-05/photobucket-now.png"
+    },
+    {
+      "answer": "Match.com",
+      "year": 2000,
+      "accept": [
+        "match.com",
+        "match"
+      ],
+      "fact": "Match.com launched in 1995 and is one of the very first online dating sites, predating the smartphone-app dating era by almost two decades.",
+      "beforeImg": "images/2026-09-05/match-then.png",
+      "afterImg": "images/2026-09-05/match-now.png"
+    },
+    {
+      "answer": "Epinions",
+      "year": 2001,
+      "accept": [
+        "epinions"
+      ],
+      "fact": "Epinions paid ordinary users for writing product reviews, an early attempt to build trust in user opinions before that became a standard feature on almost every shopping site.",
+      "beforeImg": "images/2026-09-05/epinions-then.png",
+      "afterImg": "images/2026-09-05/epinions-now.png"
+    }
+  ]
+}
