@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-06",
+  "rounds": [
+    {
+      "answer": "Digg",
+      "year": 2006,
+      "accept": [
+        "digg"
+      ],
+      "fact": "Digg pioneered the user-voted news-aggregation format years before Reddit took over that space, and a single controversial 2010 redesign is often cited as the reason it lost most of its audience.",
+      "beforeImg": "images/2026-09-06/digg-then.png",
+      "afterImg": "images/2026-09-06/digg-now.png"
+    },
+    {
+      "answer": "RadioShack",
+      "year": 2003,
+      "accept": [
+        "radioshack",
+        "radio shack"
+      ],
+      "fact": "RadioShack's website in the early 2000s tried to combine its parts-and-electronics heritage with early attempts at cell phone retail, a business mix that never quite gelled online.",
+      "beforeImg": "images/2026-09-06/radioshack-then.png",
+      "afterImg": "images/2026-09-06/radioshack-now.png"
+    },
+    {
+      "answer": "Gizmodo",
+      "year": 2007,
+      "accept": [
+        "gizmodo"
+      ],
+      "fact": "Gizmodo's early scoops on unreleased Apple products, sometimes from leaked prototypes, made it one of the most closely watched (and occasionally legally threatened) tech blogs of the 2000s.",
+      "beforeImg": "images/2026-09-06/gizmodo-then.png",
+      "afterImg": "images/2026-09-06/gizmodo-now.png"
+    },
+    {
+      "answer": "eBay",
+      "year": 1999,
+      "accept": [
+        "ebay"
+      ],
+      "fact": "eBay started in 1995 as AuctionWeb, reportedly built to help the founder's fiancee trade Pez dispensers. By 1999 it was already a sprawling grid of category links and live auctions.",
+      "beforeImg": "images/2026-09-06/ebay-then.png",
+      "afterImg": "images/2026-09-06/ebay-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/2026-09-06/airbnb-then.png",
+      "afterImg": "images/2026-09-06/airbnb-now.png"
+    }
+  ]
+}
