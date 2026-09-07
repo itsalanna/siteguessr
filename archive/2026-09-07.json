@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-07",
+  "rounds": [
+    {
+      "answer": "Snopes",
+      "year": 2004,
+      "accept": [
+        "snopes"
+      ],
+      "fact": "Snopes started in 1994 as a husband-and-wife hobby project cataloging urban legends, long before 'fact-checking' became a major, sometimes controversial, category of website.",
+      "beforeImg": "images/2026-09-07/snopes-then.png",
+      "afterImg": "images/2026-09-07/snopes-now.png"
+    },
+    {
+      "answer": "NFL",
+      "year": 2000,
+      "accept": [
+        "nfl"
+      ],
+      "fact": "NFL.com's early design centered heavily on the fantasy football tools that were just starting to become a mainstream hobby, well before fantasy sports turned into a billion-dollar industry.",
+      "beforeImg": "images/2026-09-07/nfl-then.png",
+      "afterImg": "images/2026-09-07/nfl-now.png"
+    },
+    {
+      "answer": "Miniclip",
+      "year": 2006,
+      "accept": [
+        "miniclip"
+      ],
+      "fact": "Miniclip built its whole library around free browser-based Flash games, becoming one of the biggest casual gaming destinations before Flash was phased out industry-wide.",
+      "beforeImg": "images/2026-09-07/miniclip-then.png",
+      "afterImg": "images/2026-09-07/miniclip-now.png"
+    },
+    {
+      "answer": "WebCrawler",
+      "year": 1998,
+      "accept": [
+        "webcrawler",
+        "web crawler"
+      ],
+      "fact": "WebCrawler, launched in 1994, was the first search engine to provide full-text search of the web, a basic feature that wasn't yet standard among its competitors.",
+      "beforeImg": "images/2026-09-07/webcrawler-then.png",
+      "afterImg": "images/2026-09-07/webcrawler-now.png"
+    },
+    {
+      "answer": "Opera",
+      "year": 2003,
+      "accept": [
+        "opera browser",
+        "opera"
+      ],
+      "fact": "Opera was one of the first browsers to introduce tabbed browsing and built-in mouse gestures, features that later became standard across every major browser.",
+      "beforeImg": "images/2026-09-07/opera-then.png",
+      "afterImg": "images/2026-09-07/opera-now.png"
+    }
+  ]
+}
