@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-08",
+  "rounds": [
+    {
+      "answer": "Answers.com",
+      "year": 2006,
+      "accept": [
+        "answers.com",
+        "answers"
+      ],
+      "fact": "Answers.com built its early traffic by aggregating dictionary, encyclopedia, and reference content into a single searchable site, well before crowdsourced Q&A sites took over that space.",
+      "beforeImg": "images/2026-09-08/answers-then.png",
+      "afterImg": "images/2026-09-08/answers-now.png"
+    },
+    {
+      "answer": "Newgrounds",
+      "year": 2003,
+      "accept": [
+        "newgrounds"
+      ],
+      "fact": "Newgrounds became the central hub for Flash animation and games in the early 2000s, launching the careers of several animators years before YouTube existed.",
+      "beforeImg": "images/2026-09-08/newgrounds-then.png",
+      "afterImg": "images/2026-09-08/newgrounds-now.png"
+    },
+    {
+      "answer": "MSN",
+      "year": 2000,
+      "accept": [
+        "msn",
+        "microsoft network"
+      ],
+      "fact": "MSN launched alongside Windows 95 as Microsoft's answer to AOL, bundling a dial-up service with a portal homepage that shipped as the default for millions of new PCs.",
+      "beforeImg": "images/2026-09-08/msn-then.png",
+      "afterImg": "images/2026-09-08/msn-now.png"
+    },
+    {
+      "answer": "IMDb",
+      "year": 2000,
+      "accept": [
+        "imdb"
+      ],
+      "fact": "IMDb started in 1990 as a hobbyist mailing list of movie trivia before becoming a website, and is still one of the oldest continuously running sites on the entire internet.",
+      "beforeImg": "images/2026-09-08/imdb-then.png",
+      "afterImg": "images/2026-09-08/imdb-now.png"
+    },
+    {
+      "answer": "GameSpot",
+      "year": 2000,
+      "accept": [
+        "gamespot"
+      ],
+      "fact": "GameSpot launched in 1996 and became known for its numerical review scores becoming a genuine influence on game sales, sometimes controversially so.",
+      "beforeImg": "images/2026-09-08/gamespot-then.png",
+      "afterImg": "images/2026-09-08/gamespot-now.png"
+    }
+  ]
+}
