@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-09",
+  "rounds": [
+    {
+      "answer": "Yelp",
+      "year": 2008,
+      "accept": [
+        "yelp"
+      ],
+      "fact": "Yelp started in 2004 as an email-based referral service before pivoting to the review-website format it's known for today, after users kept asking for a public place to post reviews.",
+      "beforeImg": "images/2026-09-09/yelp-then.png",
+      "afterImg": "images/2026-09-09/yelp-now.png"
+    },
+    {
+      "answer": "Orbitz",
+      "year": 2002,
+      "accept": [
+        "orbitz"
+      ],
+      "fact": "Orbitz was launched in 2001 by a group of major airlines banding together to compete directly with Expedia and Travelocity for online bookings.",
+      "beforeImg": "images/2026-09-09/orbitz-then.png",
+      "afterImg": "images/2026-09-09/orbitz-now.png"
+    },
+    {
+      "answer": "GameSpot",
+      "year": 2000,
+      "accept": [
+        "gamespot"
+      ],
+      "fact": "GameSpot launched in 1996 and became known for its numerical review scores becoming a genuine influence on game sales, sometimes controversially so.",
+      "beforeImg": "images/2026-09-09/gamespot-then.png",
+      "afterImg": "images/2026-09-09/gamespot-now.png"
+    },
+    {
+      "answer": "Slack",
+      "year": 2015,
+      "accept": [
+        "slack"
+      ],
+      "fact": "Slack was built from the internal chat tool of Glitch, a whimsical MMO that shut down in 2012. The aubergine sidebar became so iconic that its 2019 rebrand made headlines.",
+      "beforeImg": "images/2026-09-09/slack-then.png",
+      "afterImg": "images/2026-09-09/slack-now.png"
+    },
+    {
+      "answer": "Digg",
+      "year": 2006,
+      "accept": [
+        "digg"
+      ],
+      "fact": "Digg pioneered the user-voted news-aggregation format years before Reddit took over that space, and a single controversial 2010 redesign is often cited as the reason it lost most of its audience.",
+      "beforeImg": "images/2026-09-09/digg-then.png",
+      "afterImg": "images/2026-09-09/digg-now.png"
+    }
+  ]
+}
