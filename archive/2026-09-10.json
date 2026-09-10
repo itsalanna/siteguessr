@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-10",
+  "rounds": [
+    {
+      "answer": "Miniclip",
+      "year": 2006,
+      "accept": [
+        "miniclip"
+      ],
+      "fact": "Miniclip built its whole library around free browser-based Flash games, becoming one of the biggest casual gaming destinations before Flash was phased out industry-wide.",
+      "beforeImg": "images/2026-09-10/miniclip-then.png",
+      "afterImg": "images/2026-09-10/miniclip-now.png"
+    },
+    {
+      "answer": "GameSpot",
+      "year": 2000,
+      "accept": [
+        "gamespot"
+      ],
+      "fact": "GameSpot launched in 1996 and became known for its numerical review scores becoming a genuine influence on game sales, sometimes controversially so.",
+      "beforeImg": "images/2026-09-10/gamespot-then.png",
+      "afterImg": "images/2026-09-10/gamespot-now.png"
+    },
+    {
+      "answer": "CNET",
+      "year": 2000,
+      "accept": [
+        "cnet"
+      ],
+      "fact": "CNET launched in 1994 as one of the first tech-focused media companies built for the web, eventually growing to include Download.com and several other well-known tech properties.",
+      "beforeImg": "images/2026-09-10/cnet-then.png",
+      "afterImg": "images/2026-09-10/cnet-now.png"
+    },
+    {
+      "answer": "Plenty of Fish",
+      "year": 2007,
+      "accept": [
+        "plenty of fish",
+        "pof"
+      ],
+      "fact": "Plenty of Fish was famously built and run by a single person for years, supported entirely by ads, before eventually being sold for hundreds of millions of dollars.",
+      "beforeImg": "images/2026-09-10/pof-then.png",
+      "afterImg": "images/2026-09-10/pof-now.png"
+    },
+    {
+      "answer": "Kickstarter",
+      "year": 2010,
+      "accept": [
+        "kickstarter"
+      ],
+      "fact": "Kickstarter launched in 2009 and popularized the all-or-nothing crowdfunding model, where projects only get funded if they hit their goal, a rule meant to protect backers.",
+      "beforeImg": "images/2026-09-10/kickstarter-then.png",
+      "afterImg": "images/2026-09-10/kickstarter-now.png"
+    }
+  ]
+}
