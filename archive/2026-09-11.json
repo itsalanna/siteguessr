@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-11",
+  "rounds": [
+    {
+      "answer": "IMDb",
+      "year": 2000,
+      "accept": [
+        "imdb"
+      ],
+      "fact": "IMDb started in 1990 as a hobbyist mailing list of movie trivia before becoming a website, and is still one of the oldest continuously running sites on the entire internet.",
+      "beforeImg": "images/2026-09-11/imdb-then.png",
+      "afterImg": "images/2026-09-11/imdb-now.png"
+    },
+    {
+      "answer": "Zillow",
+      "year": 2007,
+      "accept": [
+        "zillow"
+      ],
+      "fact": "Zillow launched in 2006 and was one of the first sites to give the public free access to home value estimates, a feature ('Zestimate') that unsettled a lot of real estate agents at the time.",
+      "beforeImg": "images/2026-09-11/zillow-then.png",
+      "afterImg": "images/2026-09-11/zillow-now.png"
+    },
+    {
+      "answer": "Yelp",
+      "year": 2008,
+      "accept": [
+        "yelp"
+      ],
+      "fact": "Yelp started in 2004 as an email-based referral service before pivoting to the review-website format it's known for today, after users kept asking for a public place to post reviews.",
+      "beforeImg": "images/2026-09-11/yelp-then.png",
+      "afterImg": "images/2026-09-11/yelp-now.png"
+    },
+    {
+      "answer": "Webshots",
+      "year": 2004,
+      "accept": [
+        "webshots"
+      ],
+      "fact": "Webshots was one of the most popular photo-sharing communities of the early 2000s, and was also widely used as a source for desktop wallpaper downloads.",
+      "beforeImg": "images/2026-09-11/webshots-then.png",
+      "afterImg": "images/2026-09-11/webshots-now.png"
+    },
+    {
+      "answer": "Break.com",
+      "year": 2007,
+      "accept": [
+        "break.com",
+        "break"
+      ],
+      "fact": "Break.com built its early audience around viral videos aimed specifically at young men, a more niche focus than general-purpose video sites like YouTube.",
+      "beforeImg": "images/2026-09-11/break-then.png",
+      "afterImg": "images/2026-09-11/break-now.png"
+    }
+  ]
+}
