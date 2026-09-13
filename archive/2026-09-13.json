@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-13",
+  "rounds": [
+    {
+      "answer": "Ticketmaster",
+      "year": 2000,
+      "accept": [
+        "ticketmaster"
+      ],
+      "fact": "Ticketmaster moved a huge chunk of its ticket sales online in the late 90s, a shift that eventually made its service fees a much more visible (and criticized) part of buying tickets.",
+      "beforeImg": "images/2026-09-13/ticketmaster-then.png",
+      "afterImg": "images/2026-09-13/ticketmaster-now.png"
+    },
+    {
+      "answer": "Suck.com",
+      "year": 1998,
+      "accept": [
+        "suck.com",
+        "suck"
+      ],
+      "fact": "Suck.com pioneered a sarcastic, link-heavy, first-person writing style that influenced blog voice for years, despite the site itself shutting down back in 2001.",
+      "beforeImg": "images/2026-09-13/suck-then.png",
+      "afterImg": "images/2026-09-13/suck-now.png"
+    },
+    {
+      "answer": "Facebook",
+      "year": 2007,
+      "accept": [
+        "facebook",
+        "fb",
+        "thefacebook",
+        "the facebook"
+      ],
+      "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
+      "beforeImg": "images/2026-09-13/facebook-then.png",
+      "afterImg": "images/2026-09-13/facebook-now.png"
+    },
+    {
+      "answer": "LinkedIn",
+      "year": 2005,
+      "accept": [
+        "linkedin"
+      ],
+      "fact": "LinkedIn launched in 2003 out of a founder's living room. By 2005 it was already leaning into the dense, spreadsheet-like profile layout that professional networking sites still use.",
+      "beforeImg": "images/2026-09-13/linkedin-then.png",
+      "afterImg": "images/2026-09-13/linkedin-now.png"
+    },
+    {
+      "answer": "Barnes & Noble",
+      "year": 2000,
+      "accept": [
+        "barnes & noble",
+        "barnesandnoble",
+        "bn.com"
+      ],
+      "fact": "Barnes & Noble launched bn.com in 1997 specifically to compete with Amazon, one of the first major traditional retailers to take online bookselling seriously.",
+      "beforeImg": "images/2026-09-13/barnesandnoble-then.png",
+      "afterImg": "images/2026-09-13/barnesandnoble-now.png"
+    }
+  ]
+}
