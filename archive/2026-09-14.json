@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-14",
+  "rounds": [
+    {
+      "answer": "Nintendo",
+      "year": 2001,
+      "accept": [
+        "nintendo"
+      ],
+      "fact": "Nintendo's site in the early 2000s was promoting both the GameCube and Game Boy Advance simultaneously, an unusually broad two-console push even by Nintendo's standards.",
+      "beforeImg": "images/2026-09-14/nintendo-then.png",
+      "afterImg": "images/2026-09-14/nintendo-now.png"
+    },
+    {
+      "answer": "Firefox",
+      "year": 2005,
+      "accept": [
+        "firefox",
+        "mozilla firefox"
+      ],
+      "fact": "Firefox launched in 2004 as a leaner alternative to a bloated Netscape, and its 'Download Day' campaign set a Guinness World Record for most software downloads in 24 hours.",
+      "beforeImg": "images/2026-09-14/firefox-then.png",
+      "afterImg": "images/2026-09-14/firefox-now.png"
+    },
+    {
+      "answer": "IMDb",
+      "year": 2000,
+      "accept": [
+        "imdb"
+      ],
+      "fact": "IMDb started in 1990 as a hobbyist mailing list of movie trivia before becoming a website, and is still one of the oldest continuously running sites on the entire internet.",
+      "beforeImg": "images/2026-09-14/imdb-then.png",
+      "afterImg": "images/2026-09-14/imdb-now.png"
+    },
+    {
+      "answer": "Xanga",
+      "year": 2005,
+      "accept": [
+        "xanga"
+      ],
+      "fact": "Xanga combined blogging with heavy profile customization and briefly rivaled MySpace in popularity among teens before losing ground in the mid-2000s.",
+      "beforeImg": "images/2026-09-14/xanga-then.png",
+      "afterImg": "images/2026-09-14/xanga-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/2026-09-14/airbnb-then.png",
+      "afterImg": "images/2026-09-14/airbnb-now.png"
+    }
+  ]
+}
