@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-15",
+  "rounds": [
+    {
+      "answer": "Google",
+      "year": 1998,
+      "accept": [
+        "google",
+        "googl",
+        "googlecom"
+      ],
+      "fact": "The famously sparse homepage was reportedly a side effect of the founders not knowing HTML well enough to make anything more complex. An early advantage the world mistook for minimalist genius.",
+      "beforeImg": "images/2026-09-15/google-then.png",
+      "afterImg": "images/2026-09-15/google-now.png"
+    },
+    {
+      "answer": "Engadget",
+      "year": 2007,
+      "accept": [
+        "engadget"
+      ],
+      "fact": "Engadget launched in 2004 and quickly became one of the most-read gadget blogs, known for live-blogging tech keynotes years before that became a standard practice across tech media.",
+      "beforeImg": "images/2026-09-15/engadget-then.png",
+      "afterImg": "images/2026-09-15/engadget-now.png"
+    },
+    {
+      "answer": "Epinions",
+      "year": 2001,
+      "accept": [
+        "epinions"
+      ],
+      "fact": "Epinions paid ordinary users for writing product reviews, an early attempt to build trust in user opinions before that became a standard feature on almost every shopping site.",
+      "beforeImg": "images/2026-09-15/epinions-then.png",
+      "afterImg": "images/2026-09-15/epinions-now.png"
+    },
+    {
+      "answer": "CitySearch",
+      "year": 2000,
+      "accept": [
+        "citysearch"
+      ],
+      "fact": "CitySearch was one of the first sites to organize local business listings and reviews by city, years before Yelp or Google Maps made that kind of local search completely routine.",
+      "beforeImg": "images/2026-09-15/citysearch-then.png",
+      "afterImg": "images/2026-09-15/citysearch-now.png"
+    },
+    {
+      "answer": "TMZ",
+      "year": 2007,
+      "accept": [
+        "tmz"
+      ],
+      "fact": "TMZ launched in 2005 and dramatically sped up the celebrity news cycle, frequently breaking major stories hours or days before traditional entertainment outlets.",
+      "beforeImg": "images/2026-09-15/tmz-then.png",
+      "afterImg": "images/2026-09-15/tmz-now.png"
+    }
+  ]
+}
