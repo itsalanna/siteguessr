@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-16",
+  "rounds": [
+    {
+      "answer": "WordPress",
+      "year": 2006,
+      "accept": [
+        "wordpress"
+      ],
+      "fact": "WordPress launched in 2003 as a small blogging tool and eventually grew to power a huge share of all websites on the internet, blogs and full businesses alike.",
+      "beforeImg": "images/2026-09-16/wordpress-then.png",
+      "afterImg": "images/2026-09-16/wordpress-now.png"
+    },
+    {
+      "answer": "Hotmail",
+      "year": 1999,
+      "accept": [
+        "hotmail"
+      ],
+      "fact": "Hotmail was one of the first free webmail services, launched in 1996, and grew largely because every outgoing email carried a tagline advertising the service itself.",
+      "beforeImg": "images/2026-09-16/hotmail-then.png",
+      "afterImg": "images/2026-09-16/hotmail-now.png"
+    },
+    {
+      "answer": "Ticketmaster",
+      "year": 2000,
+      "accept": [
+        "ticketmaster"
+      ],
+      "fact": "Ticketmaster moved a huge chunk of its ticket sales online in the late 90s, a shift that eventually made its service fees a much more visible (and criticized) part of buying tickets.",
+      "beforeImg": "images/2026-09-16/ticketmaster-then.png",
+      "afterImg": "images/2026-09-16/ticketmaster-now.png"
+    },
+    {
+      "answer": "Gizmodo",
+      "year": 2007,
+      "accept": [
+        "gizmodo"
+      ],
+      "fact": "Gizmodo's early scoops on unreleased Apple products, sometimes from leaked prototypes, made it one of the most closely watched (and occasionally legally threatened) tech blogs of the 2000s.",
+      "beforeImg": "images/2026-09-16/gizmodo-then.png",
+      "afterImg": "images/2026-09-16/gizmodo-now.png"
+    },
+    {
+      "answer": "ICQ",
+      "year": 1999,
+      "accept": [
+        "icq"
+      ],
+      "fact": "ICQ (a pun on 'I seek you') launched in 1996 and is widely credited as the first mass-market instant messaging program, complete with its now-iconic 'uh-oh' message sound.",
+      "beforeImg": "images/2026-09-16/icq-then.png",
+      "afterImg": "images/2026-09-16/icq-now.png"
+    }
+  ]
+}
