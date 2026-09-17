@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-17",
+  "rounds": [
+    {
+      "answer": "Bebo",
+      "year": 2007,
+      "accept": [
+        "bebo"
+      ],
+      "fact": "Bebo was massively popular in the UK and Ireland during the mid-2000s, at one point ranking as the third-most-visited social network in the US before AOL bought it for $850 million in 2008.",
+      "beforeImg": "images/2026-09-17/bebo-then.png",
+      "afterImg": "images/2026-09-17/bebo-now.png"
+    },
+    {
+      "answer": "YouTube",
+      "year": 2008,
+      "accept": [
+        "youtube",
+        "you tube",
+        "yt"
+      ],
+      "fact": "Star ratings lasted until 2010. They were retired because almost everyone rated either 5 stars or 1, so the site switched to thumbs up/down.",
+      "beforeImg": "images/2026-09-17/youtube-then.png",
+      "afterImg": "images/2026-09-17/youtube-now.png"
+    },
+    {
+      "answer": "Encyclopedia Britannica",
+      "year": 2000,
+      "accept": [
+        "britannica",
+        "encyclopedia britannica"
+      ],
+      "fact": "Encyclopedia Britannica put its entire encyclopedia online for free in 1999, a bold bet that ad revenue could replace its centuries-old subscription business, before pulling back a year later.",
+      "beforeImg": "images/2026-09-17/britannica-then.png",
+      "afterImg": "images/2026-09-17/britannica-now.png"
+    },
+    {
+      "answer": "Rolling Stone",
+      "year": 2000,
+      "accept": [
+        "rolling stone"
+      ],
+      "fact": "Rolling Stone's website launched years after the print magazine's decades-long run, and its early design mostly mirrored the print issue's contents online.",
+      "beforeImg": "images/2026-09-17/rollingstone-then.png",
+      "afterImg": "images/2026-09-17/rollingstone-now.png"
+    },
+    {
+      "answer": "AltaVista",
+      "year": 1998,
+      "accept": [
+        "altavista",
+        "alta vista"
+      ],
+      "fact": "AltaVista was one of the dominant search engines before Google, and was actually first to offer a translation tool (Babel Fish) that became hugely popular in its own right.",
+      "beforeImg": "images/2026-09-17/altavista-then.png",
+      "afterImg": "images/2026-09-17/altavista-now.png"
+    }
+  ]
+}
