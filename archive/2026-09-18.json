@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-18",
+  "rounds": [
+    {
+      "answer": "AOL",
+      "year": 2000,
+      "accept": [
+        "aol",
+        "america online"
+      ],
+      "fact": "AOL mailed out so many free trial CDs in the late 90s that they briefly became one of the most common physical objects in American households, all to get people onto its dial-up service.",
+      "beforeImg": "images/2026-09-18/aol-then.png",
+      "afterImg": "images/2026-09-18/aol-now.png"
+    },
+    {
+      "answer": "iTunes",
+      "year": 2004,
+      "accept": [
+        "itunes"
+      ],
+      "fact": "The iTunes Store launched in 2003 selling songs for 99 cents each, a pricing model credited with convincing the music industry that people would actually pay for legal downloads.",
+      "beforeImg": "images/2026-09-18/itunes-then.png",
+      "afterImg": "images/2026-09-18/itunes-now.png"
+    },
+    {
+      "answer": "Plenty of Fish",
+      "year": 2007,
+      "accept": [
+        "plenty of fish",
+        "pof"
+      ],
+      "fact": "Plenty of Fish was famously built and run by a single person for years, supported entirely by ads, before eventually being sold for hundreds of millions of dollars.",
+      "beforeImg": "images/2026-09-18/pof-then.png",
+      "afterImg": "images/2026-09-18/pof-now.png"
+    },
+    {
+      "answer": "Miniclip",
+      "year": 2006,
+      "accept": [
+        "miniclip"
+      ],
+      "fact": "Miniclip built its whole library around free browser-based Flash games, becoming one of the biggest casual gaming destinations before Flash was phased out industry-wide.",
+      "beforeImg": "images/2026-09-18/miniclip-then.png",
+      "afterImg": "images/2026-09-18/miniclip-now.png"
+    },
+    {
+      "answer": "Delicious",
+      "year": 2006,
+      "accept": [
+        "delicious",
+        "del.icio.us"
+      ],
+      "fact": "Delicious (originally styled del.icio.us) popularized social bookmarking and the very concept of a 'tag,' letting users save and label links for themselves and everyone else to browse.",
+      "beforeImg": "images/2026-09-18/delicious-then.png",
+      "afterImg": "images/2026-09-18/delicious-now.png"
+    }
+  ]
+}
