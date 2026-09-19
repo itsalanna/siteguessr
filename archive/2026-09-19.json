@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-19",
+  "rounds": [
+    {
+      "answer": "Juno",
+      "year": 1999,
+      "accept": [
+        "juno"
+      ],
+      "fact": "Juno offered free dial-up internet paid for entirely by advertising, and later merged with rival NetZero to survive the end of the free-ISP era.",
+      "beforeImg": "images/2026-09-19/juno-then.png",
+      "afterImg": "images/2026-09-19/juno-now.png"
+    },
+    {
+      "answer": "Snopes",
+      "year": 2004,
+      "accept": [
+        "snopes"
+      ],
+      "fact": "Snopes started in 1994 as a husband-and-wife hobby project cataloging urban legends, long before 'fact-checking' became a major, sometimes controversial, category of website.",
+      "beforeImg": "images/2026-09-19/snopes-then.png",
+      "afterImg": "images/2026-09-19/snopes-now.png"
+    },
+    {
+      "answer": "Addicting Games",
+      "year": 2005,
+      "accept": [
+        "addicting games",
+        "addictinggames"
+      ],
+      "fact": "Addicting Games grew rapidly during the mid-2000s Flash gaming boom, hosting thousands of free browser games at a time when installing a game usually still meant buying a physical disc.",
+      "beforeImg": "images/2026-09-19/addictinggames-then.png",
+      "afterImg": "images/2026-09-19/addictinggames-now.png"
+    },
+    {
+      "answer": "Slashdot",
+      "year": 2000,
+      "accept": [
+        "slashdot"
+      ],
+      "fact": "Slashdot popularized threaded, community-moderated comment sections years before that became standard, and getting linked from its front page could crash smaller sites entirely - a phenomenon known as 'the Slashdot effect.'",
+      "beforeImg": "images/2026-09-19/slashdot-then.png",
+      "afterImg": "images/2026-09-19/slashdot-now.png"
+    },
+    {
+      "answer": "Tom's Hardware",
+      "year": 2001,
+      "accept": [
+        "tom's hardware",
+        "toms hardware"
+      ],
+      "fact": "Tom's Hardware built its reputation on exhaustive PC component benchmarks, becoming one of the go-to sites for hardware enthusiasts well before mainstream tech blogs existed.",
+      "beforeImg": "images/2026-09-19/tomshardware-then.png",
+      "afterImg": "images/2026-09-19/tomshardware-now.png"
+    }
+  ]
+}
