@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-20",
+  "rounds": [
+    {
+      "answer": "Slashdot",
+      "year": 2000,
+      "accept": [
+        "slashdot"
+      ],
+      "fact": "Slashdot popularized threaded, community-moderated comment sections years before that became standard, and getting linked from its front page could crash smaller sites entirely - a phenomenon known as 'the Slashdot effect.'",
+      "beforeImg": "images/2026-09-20/slashdot-then.png",
+      "afterImg": "images/2026-09-20/slashdot-now.png"
+    },
+    {
+      "answer": "Blogger",
+      "year": 2003,
+      "accept": [
+        "blogger"
+      ],
+      "fact": "Blogger launched in 1999 and is one of the tools credited with popularizing the word 'blog' itself, before Google acquired it in 2003.",
+      "beforeImg": "images/2026-09-20/blogger-then.png",
+      "afterImg": "images/2026-09-20/blogger-now.png"
+    },
+    {
+      "answer": "PayPal",
+      "year": 2000,
+      "accept": [
+        "paypal"
+      ],
+      "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+      "beforeImg": "images/2026-09-20/paypal-then.png",
+      "afterImg": "images/2026-09-20/paypal-now.png"
+    },
+    {
+      "answer": "NBA",
+      "year": 2000,
+      "accept": [
+        "nba"
+      ],
+      "fact": "NBA.com launched in 1995 and was notable for how quickly it embraced streaming highlight clips, even though most fans at the time were still on connections far too slow to watch them smoothly.",
+      "beforeImg": "images/2026-09-20/nba-then.png",
+      "afterImg": "images/2026-09-20/nba-now.png"
+    },
+    {
+      "answer": "Neopets",
+      "year": 2003,
+      "accept": [
+        "neopets"
+      ],
+      "fact": "Neopets combined virtual pet care with a whole in-game economy, and its blending of ads directly into games and content drew scrutiny as advertising to kids became a bigger issue.",
+      "beforeImg": "images/2026-09-20/neopets-then.png",
+      "afterImg": "images/2026-09-20/neopets-now.png"
+    }
+  ]
+}
