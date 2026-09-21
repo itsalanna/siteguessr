@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-21",
+  "rounds": [
+    {
+      "answer": "ABC News",
+      "year": 2000,
+      "accept": [
+        "abc news"
+      ],
+      "fact": "ABC News's early website tried to translate its broadcast anchors' star power onto the web, with a design that prioritized video clips even when most users were still on dial-up.",
+      "beforeImg": "images/2026-09-21/abcnews-then.png",
+      "afterImg": "images/2026-09-21/abcnews-now.png"
+    },
+    {
+      "answer": "CNN",
+      "year": 2000,
+      "accept": [
+        "cnn",
+        "cable news network"
+      ],
+      "fact": "CNN.com's early design crammed dozens of headlines onto one dense page, a layout style that dominated news sites for years before cleaner, story-focused redesigns took over.",
+      "beforeImg": "images/2026-09-21/cnn-then.png",
+      "afterImg": "images/2026-09-21/cnn-now.png"
+    },
+    {
+      "answer": "NBA",
+      "year": 2000,
+      "accept": [
+        "nba"
+      ],
+      "fact": "NBA.com launched in 1995 and was notable for how quickly it embraced streaming highlight clips, even though most fans at the time were still on connections far too slow to watch them smoothly.",
+      "beforeImg": "images/2026-09-21/nba-then.png",
+      "afterImg": "images/2026-09-21/nba-now.png"
+    },
+    {
+      "answer": "Juno",
+      "year": 1999,
+      "accept": [
+        "juno"
+      ],
+      "fact": "Juno offered free dial-up internet paid for entirely by advertising, and later merged with rival NetZero to survive the end of the free-ISP era.",
+      "beforeImg": "images/2026-09-21/juno-then.png",
+      "afterImg": "images/2026-09-21/juno-now.png"
+    },
+    {
+      "answer": "Craigslist",
+      "year": 2004,
+      "accept": [
+        "craigslist"
+      ],
+      "fact": "Craigslist's design has barely changed since the 1990s, on purpose. The founder has said repeatedly that plain text links serve the function better than a redesign would.",
+      "beforeImg": "images/2026-09-21/craigslist-then.png",
+      "afterImg": "images/2026-09-21/craigslist-now.png"
+    }
+  ]
+}
