@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-22",
+  "rounds": [
+    {
+      "answer": "Blizzard Entertainment",
+      "year": 2000,
+      "accept": [
+        "blizzard",
+        "blizzard entertainment"
+      ],
+      "fact": "Blizzard's late-90s site supported both Diablo and StarCraft, two games that helped define entire genres and whose online play features were unusually ambitious for their time.",
+      "beforeImg": "images/2026-09-22/blizzard-then.png",
+      "afterImg": "images/2026-09-22/blizzard-now.png"
+    },
+    {
+      "answer": "Xanga",
+      "year": 2005,
+      "accept": [
+        "xanga"
+      ],
+      "fact": "Xanga combined blogging with heavy profile customization and briefly rivaled MySpace in popularity among teens before losing ground in the mid-2000s.",
+      "beforeImg": "images/2026-09-22/xanga-then.png",
+      "afterImg": "images/2026-09-22/xanga-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/2026-09-22/airbnb-then.png",
+      "afterImg": "images/2026-09-22/airbnb-now.png"
+    },
+    {
+      "answer": "Addicting Games",
+      "year": 2005,
+      "accept": [
+        "addicting games",
+        "addictinggames"
+      ],
+      "fact": "Addicting Games grew rapidly during the mid-2000s Flash gaming boom, hosting thousands of free browser games at a time when installing a game usually still meant buying a physical disc.",
+      "beforeImg": "images/2026-09-22/addictinggames-then.png",
+      "afterImg": "images/2026-09-22/addictinggames-now.png"
+    },
+    {
+      "answer": "Digital Trends",
+      "year": 2008,
+      "accept": [
+        "digital trends"
+      ],
+      "fact": "Digital Trends grew as a general consumer-electronics review site during the mid-2000s, competing for readers alongside CNET and Engadget in a crowded gadget-blog era.",
+      "beforeImg": "images/2026-09-22/digitaltrends-then.png",
+      "afterImg": "images/2026-09-22/digitaltrends-now.png"
+    }
+  ]
+}
