@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-23",
+  "rounds": [
+    {
+      "answer": "Answers.com",
+      "year": 2006,
+      "accept": [
+        "answers.com",
+        "answers"
+      ],
+      "fact": "Answers.com built its early traffic by aggregating dictionary, encyclopedia, and reference content into a single searchable site, well before crowdsourced Q&A sites took over that space.",
+      "beforeImg": "images/2026-09-23/answers-then.png",
+      "afterImg": "images/2026-09-23/answers-now.png"
+    },
+    {
+      "answer": "Netscape",
+      "year": 1999,
+      "accept": [
+        "netscape"
+      ],
+      "fact": "Netscape's browser dominated the early web so completely that Microsoft bundling Internet Explorer with Windows to compete became the center of a landmark antitrust case.",
+      "beforeImg": "images/2026-09-23/netscape-then.png",
+      "afterImg": "images/2026-09-23/netscape-now.png"
+    },
+    {
+      "answer": "Plenty of Fish",
+      "year": 2007,
+      "accept": [
+        "plenty of fish",
+        "pof"
+      ],
+      "fact": "Plenty of Fish was famously built and run by a single person for years, supported entirely by ads, before eventually being sold for hundreds of millions of dollars.",
+      "beforeImg": "images/2026-09-23/pof-then.png",
+      "afterImg": "images/2026-09-23/pof-now.png"
+    },
+    {
+      "answer": "Tumblr",
+      "year": 2010,
+      "accept": [
+        "tumblr"
+      ],
+      "fact": "Tumblr popularized the short-form 'microblogging' format, and grew so fast in its early years that it regularly had to fight off downtime from its own success.",
+      "beforeImg": "images/2026-09-23/tumblr-then.png",
+      "afterImg": "images/2026-09-23/tumblr-now.png"
+    },
+    {
+      "answer": "Snopes",
+      "year": 2004,
+      "accept": [
+        "snopes"
+      ],
+      "fact": "Snopes started in 1994 as a husband-and-wife hobby project cataloging urban legends, long before 'fact-checking' became a major, sometimes controversial, category of website.",
+      "beforeImg": "images/2026-09-23/snopes-then.png",
+      "afterImg": "images/2026-09-23/snopes-now.png"
+    }
+  ]
+}
