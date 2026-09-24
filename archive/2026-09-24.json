@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-24",
+  "rounds": [
+    {
+      "answer": "Pinterest",
+      "year": 2011,
+      "accept": [
+        "pinterest"
+      ],
+      "fact": "Pinterest launched by invite-only in 2010, and its signature masonry grid of pins was one of the first mainstream uses of that layout style on the web.",
+      "beforeImg": "images/2026-09-24/pinterest-then.png",
+      "afterImg": "images/2026-09-24/pinterest-now.png"
+    },
+    {
+      "answer": "Juno",
+      "year": 1999,
+      "accept": [
+        "juno"
+      ],
+      "fact": "Juno offered free dial-up internet paid for entirely by advertising, and later merged with rival NetZero to survive the end of the free-ISP era.",
+      "beforeImg": "images/2026-09-24/juno-then.png",
+      "afterImg": "images/2026-09-24/juno-now.png"
+    },
+    {
+      "answer": "Addicting Games",
+      "year": 2005,
+      "accept": [
+        "addicting games",
+        "addictinggames"
+      ],
+      "fact": "Addicting Games grew rapidly during the mid-2000s Flash gaming boom, hosting thousands of free browser games at a time when installing a game usually still meant buying a physical disc.",
+      "beforeImg": "images/2026-09-24/addictinggames-then.png",
+      "afterImg": "images/2026-09-24/addictinggames-now.png"
+    },
+    {
+      "answer": "HotBot",
+      "year": 1999,
+      "accept": [
+        "hotbot"
+      ],
+      "fact": "HotBot launched in 1996 with a distinctly loud, colorful interface, and was one of the first search engines to index the full text of pages rather than just titles and keywords.",
+      "beforeImg": "images/2026-09-24/hotbot-then.png",
+      "afterImg": "images/2026-09-24/hotbot-now.png"
+    },
+    {
+      "answer": "Gawker",
+      "year": 2007,
+      "accept": [
+        "gawker"
+      ],
+      "fact": "Gawker built its identity on gossipy, irreverent media and tech coverage, and its comment sections were an early influential experiment in giving readers real visibility on a media site.",
+      "beforeImg": "images/2026-09-24/gawker-then.png",
+      "afterImg": "images/2026-09-24/gawker-now.png"
+    }
+  ]
+}
