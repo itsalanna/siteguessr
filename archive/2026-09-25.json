@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-25",
+  "rounds": [
+    {
+      "answer": "TypePad",
+      "year": 2005,
+      "accept": [
+        "typepad"
+      ],
+      "fact": "TypePad positioned itself as a more polished, professional blogging platform than free competitors, aimed at users willing to pay for more design control.",
+      "beforeImg": "images/2026-09-25/typepad-then.png",
+      "afterImg": "images/2026-09-25/typepad-now.png"
+    },
+    {
+      "answer": "Facebook",
+      "year": 2007,
+      "accept": [
+        "facebook",
+        "fb",
+        "thefacebook",
+        "the facebook"
+      ],
+      "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
+      "beforeImg": "images/2026-09-25/facebook-then.png",
+      "afterImg": "images/2026-09-25/facebook-now.png"
+    },
+    {
+      "answer": "Tom's Hardware",
+      "year": 2001,
+      "accept": [
+        "tom's hardware",
+        "toms hardware"
+      ],
+      "fact": "Tom's Hardware built its reputation on exhaustive PC component benchmarks, becoming one of the go-to sites for hardware enthusiasts well before mainstream tech blogs existed.",
+      "beforeImg": "images/2026-09-25/tomshardware-then.png",
+      "afterImg": "images/2026-09-25/tomshardware-now.png"
+    },
+    {
+      "answer": "Addicting Games",
+      "year": 2005,
+      "accept": [
+        "addicting games",
+        "addictinggames"
+      ],
+      "fact": "Addicting Games grew rapidly during the mid-2000s Flash gaming boom, hosting thousands of free browser games at a time when installing a game usually still meant buying a physical disc.",
+      "beforeImg": "images/2026-09-25/addictinggames-then.png",
+      "afterImg": "images/2026-09-25/addictinggames-now.png"
+    },
+    {
+      "answer": "Tumblr",
+      "year": 2010,
+      "accept": [
+        "tumblr"
+      ],
+      "fact": "Tumblr popularized the short-form 'microblogging' format, and grew so fast in its early years that it regularly had to fight off downtime from its own success.",
+      "beforeImg": "images/2026-09-25/tumblr-then.png",
+      "afterImg": "images/2026-09-25/tumblr-now.png"
+    }
+  ]
+}
