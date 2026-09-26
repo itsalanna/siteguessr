@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-26",
+  "rounds": [
+    {
+      "answer": "Ticketmaster",
+      "year": 2000,
+      "accept": [
+        "ticketmaster"
+      ],
+      "fact": "Ticketmaster moved a huge chunk of its ticket sales online in the late 90s, a shift that eventually made its service fees a much more visible (and criticized) part of buying tickets.",
+      "beforeImg": "images/2026-09-26/ticketmaster-then.png",
+      "afterImg": "images/2026-09-26/ticketmaster-now.png"
+    },
+    {
+      "answer": "StumbleUpon",
+      "year": 2008,
+      "accept": [
+        "stumbleupon"
+      ],
+      "fact": "StumbleUpon's whole concept was a browser button that took you to a random, algorithm-picked website matching your interests, a discovery model that faded as social feeds took over that role.",
+      "beforeImg": "images/2026-09-26/stumbleupon-then.png",
+      "afterImg": "images/2026-09-26/stumbleupon-now.png"
+    },
+    {
+      "answer": "Facebook",
+      "year": 2007,
+      "accept": [
+        "facebook",
+        "fb",
+        "thefacebook",
+        "the facebook"
+      ],
+      "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
+      "beforeImg": "images/2026-09-26/facebook-then.png",
+      "afterImg": "images/2026-09-26/facebook-now.png"
+    },
+    {
+      "answer": "Lycos",
+      "year": 1999,
+      "accept": [
+        "lycos"
+      ],
+      "fact": "Lycos was briefly the most-visited website on the internet in 1999, its search engine and portal combo making it a serious early rival to Yahoo.",
+      "beforeImg": "images/2026-09-26/lycos-then.png",
+      "afterImg": "images/2026-09-26/lycos-now.png"
+    },
+    {
+      "answer": "Allrecipes",
+      "year": 2003,
+      "accept": [
+        "allrecipes"
+      ],
+      "fact": "Allrecipes built its entire catalog from user-submitted recipes rather than professional chefs, an early example of crowdsourced content outperforming edited, expert-driven sites.",
+      "beforeImg": "images/2026-09-26/allrecipes-then.png",
+      "afterImg": "images/2026-09-26/allrecipes-now.png"
+    }
+  ]
+}
