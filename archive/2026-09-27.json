@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-27",
+  "rounds": [
+    {
+      "answer": "WebCrawler",
+      "year": 1998,
+      "accept": [
+        "webcrawler",
+        "web crawler"
+      ],
+      "fact": "WebCrawler, launched in 1994, was the first search engine to provide full-text search of the web, a basic feature that wasn't yet standard among its competitors.",
+      "beforeImg": "images/2026-09-27/webcrawler-then.png",
+      "afterImg": "images/2026-09-27/webcrawler-now.png"
+    },
+    {
+      "answer": "Blogger",
+      "year": 2003,
+      "accept": [
+        "blogger"
+      ],
+      "fact": "Blogger launched in 1999 and is one of the tools credited with popularizing the word 'blog' itself, before Google acquired it in 2003.",
+      "beforeImg": "images/2026-09-27/blogger-then.png",
+      "afterImg": "images/2026-09-27/blogger-now.png"
+    },
+    {
+      "answer": "Flickr",
+      "year": 2006,
+      "accept": [
+        "flickr"
+      ],
+      "fact": "Flickr started in 2004 as a side feature of an online game before its photo-sharing tools became popular enough that the game was scrapped entirely.",
+      "beforeImg": "images/2026-09-27/flickr-then.png",
+      "afterImg": "images/2026-09-27/flickr-now.png"
+    },
+    {
+      "answer": "Tucows",
+      "year": 1999,
+      "accept": [
+        "tucows"
+      ],
+      "fact": "Tucows started in 1993 as a curated shareware download library (the name stood for 'The Ultimate Collection of Winsock Software') before evolving into an internet services company.",
+      "beforeImg": "images/2026-09-27/tucows-then.png",
+      "afterImg": "images/2026-09-27/tucows-now.png"
+    },
+    {
+      "answer": "LAUNCH",
+      "year": 2000,
+      "accept": [
+        "launch",
+        "launch.com"
+      ],
+      "fact": "LAUNCH (later LAUNCHcast) was one of Yahoo's earliest music properties, offering personalized internet radio years before Pandora or Spotify existed.",
+      "beforeImg": "images/2026-09-27/launch-then.png",
+      "afterImg": "images/2026-09-27/launch-now.png"
+    }
+  ]
+}
