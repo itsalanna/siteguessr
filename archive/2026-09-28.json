@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-28",
+  "rounds": [
+    {
+      "answer": "Juno",
+      "year": 1999,
+      "accept": [
+        "juno"
+      ],
+      "fact": "Juno offered free dial-up internet paid for entirely by advertising, and later merged with rival NetZero to survive the end of the free-ISP era.",
+      "beforeImg": "images/2026-09-28/juno-then.png",
+      "afterImg": "images/2026-09-28/juno-now.png"
+    },
+    {
+      "answer": "USA Today",
+      "year": 2000,
+      "accept": [
+        "usa today",
+        "usatoday"
+      ],
+      "fact": "USA Today's website carried over the newspaper's signature colorful infographics and short-story format, designed for readers scanning quickly rather than reading in depth.",
+      "beforeImg": "images/2026-09-28/usatoday-then.png",
+      "afterImg": "images/2026-09-28/usatoday-now.png"
+    },
+    {
+      "answer": "LimeWire",
+      "year": 2005,
+      "accept": [
+        "limewire"
+      ],
+      "fact": "LimeWire became one of the most popular peer-to-peer file-sharing programs after Napster's shutdown, before being forced offline itself by a 2010 court injunction.",
+      "beforeImg": "images/2026-09-28/limewire-then.png",
+      "afterImg": "images/2026-09-28/limewire-now.png"
+    },
+    {
+      "answer": "The New York Times",
+      "year": 2000,
+      "accept": [
+        "new york times",
+        "nytimes",
+        "nyt"
+      ],
+      "fact": "The New York Times went online in 1996 and required free registration from the start, a controversial-at-the-time model that foreshadowed the paywalls most news sites use today.",
+      "beforeImg": "images/2026-09-28/nytimes-then.png",
+      "afterImg": "images/2026-09-28/nytimes-now.png"
+    },
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-09-28/tripod-then.png",
+      "afterImg": "images/2026-09-28/tripod-now.png"
+    }
+  ]
+}
