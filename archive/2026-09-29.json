@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-29",
+  "rounds": [
+    {
+      "answer": "Yelp",
+      "year": 2008,
+      "accept": [
+        "yelp"
+      ],
+      "fact": "Yelp started in 2004 as an email-based referral service before pivoting to the review-website format it's known for today, after users kept asking for a public place to post reviews.",
+      "beforeImg": "images/2026-09-29/yelp-then.png",
+      "afterImg": "images/2026-09-29/yelp-now.png"
+    },
+    {
+      "answer": "Yahoo Finance",
+      "year": 2000,
+      "accept": [
+        "yahoo finance"
+      ],
+      "fact": "Yahoo Finance became one of the most-used sources for free stock quotes on the early web, at a time when real-time market data elsewhere often required a paid subscription.",
+      "beforeImg": "images/2026-09-29/yahoofinance-then.png",
+      "afterImg": "images/2026-09-29/yahoofinance-now.png"
+    },
+    {
+      "answer": "Firefox",
+      "year": 2005,
+      "accept": [
+        "firefox",
+        "mozilla firefox"
+      ],
+      "fact": "Firefox launched in 2004 as a leaner alternative to a bloated Netscape, and its 'Download Day' campaign set a Guinness World Record for most software downloads in 24 hours.",
+      "beforeImg": "images/2026-09-29/firefox-then.png",
+      "afterImg": "images/2026-09-29/firefox-now.png"
+    },
+    {
+      "answer": "Encyclopedia Britannica",
+      "year": 2000,
+      "accept": [
+        "britannica",
+        "encyclopedia britannica"
+      ],
+      "fact": "Encyclopedia Britannica put its entire encyclopedia online for free in 1999, a bold bet that ad revenue could replace its centuries-old subscription business, before pulling back a year later.",
+      "beforeImg": "images/2026-09-29/britannica-then.png",
+      "afterImg": "images/2026-09-29/britannica-now.png"
+    },
+    {
+      "answer": "CNN",
+      "year": 2000,
+      "accept": [
+        "cnn",
+        "cable news network"
+      ],
+      "fact": "CNN.com's early design crammed dozens of headlines onto one dense page, a layout style that dominated news sites for years before cleaner, story-focused redesigns took over.",
+      "beforeImg": "images/2026-09-29/cnn-then.png",
+      "afterImg": "images/2026-09-29/cnn-now.png"
+    }
+  ]
+}
