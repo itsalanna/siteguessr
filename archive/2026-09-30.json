@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-30",
+  "rounds": [
+    {
+      "answer": "PayPal",
+      "year": 2000,
+      "accept": [
+        "paypal"
+      ],
+      "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+      "beforeImg": "images/2026-09-30/paypal-then.png",
+      "afterImg": "images/2026-09-30/paypal-now.png"
+    },
+    {
+      "answer": "GameSpot",
+      "year": 2000,
+      "accept": [
+        "gamespot"
+      ],
+      "fact": "GameSpot launched in 1996 and became known for its numerical review scores becoming a genuine influence on game sales, sometimes controversially so.",
+      "beforeImg": "images/2026-09-30/gamespot-then.png",
+      "afterImg": "images/2026-09-30/gamespot-now.png"
+    },
+    {
+      "answer": "Fark",
+      "year": 2003,
+      "accept": [
+        "fark"
+      ],
+      "fact": "Fark built its entire identity around submitting and voting on weird, funny news links, a simple format that predated Reddit's rise by several years.",
+      "beforeImg": "images/2026-09-30/fark-then.png",
+      "afterImg": "images/2026-09-30/fark-now.png"
+    },
+    {
+      "answer": "Plenty of Fish",
+      "year": 2007,
+      "accept": [
+        "plenty of fish",
+        "pof"
+      ],
+      "fact": "Plenty of Fish was famously built and run by a single person for years, supported entirely by ads, before eventually being sold for hundreds of millions of dollars.",
+      "beforeImg": "images/2026-09-30/pof-then.png",
+      "afterImg": "images/2026-09-30/pof-now.png"
+    },
+    {
+      "answer": "Netflix",
+      "year": 2007,
+      "accept": [
+        "netflix"
+      ],
+      "fact": "2007 was the year Netflix quietly added streaming as a bonus feature for DVD subscribers. Almost nobody noticed at the time that it would eventually replace the DVDs entirely.",
+      "beforeImg": "images/2026-09-30/netflix-then.png",
+      "afterImg": "images/2026-09-30/netflix-now.png"
+    }
+  ]
+}
