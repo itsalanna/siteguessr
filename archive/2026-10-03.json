@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-03",
+  "rounds": [
+    {
+      "answer": "Suck.com",
+      "year": 1998,
+      "accept": [
+        "suck.com",
+        "suck"
+      ],
+      "fact": "Suck.com pioneered a sarcastic, link-heavy, first-person writing style that influenced blog voice for years, despite the site itself shutting down back in 2001.",
+      "beforeImg": "images/2026-10-03/suck-then.png",
+      "afterImg": "images/2026-10-03/suck-now.png"
+    },
+    {
+      "answer": "Friendster",
+      "year": 2004,
+      "accept": [
+        "friendster"
+      ],
+      "fact": "Friendster launched in 2002 and is widely credited as one of the first mainstream social networks, predating both MySpace and Facebook, before its own popularity overwhelmed its servers.",
+      "beforeImg": "images/2026-10-03/friendster-then.png",
+      "afterImg": "images/2026-10-03/friendster-now.png"
+    },
+    {
+      "answer": "LAUNCH",
+      "year": 2000,
+      "accept": [
+        "launch",
+        "launch.com"
+      ],
+      "fact": "LAUNCH (later LAUNCHcast) was one of Yahoo's earliest music properties, offering personalized internet radio years before Pandora or Spotify existed.",
+      "beforeImg": "images/2026-10-03/launch-then.png",
+      "afterImg": "images/2026-10-03/launch-now.png"
+    },
+    {
+      "answer": "The New York Times",
+      "year": 2000,
+      "accept": [
+        "new york times",
+        "nytimes",
+        "nyt"
+      ],
+      "fact": "The New York Times went online in 1996 and required free registration from the start, a controversial-at-the-time model that foreshadowed the paywalls most news sites use today.",
+      "beforeImg": "images/2026-10-03/nytimes-then.png",
+      "afterImg": "images/2026-10-03/nytimes-now.png"
+    },
+    {
+      "answer": "Digg",
+      "year": 2006,
+      "accept": [
+        "digg"
+      ],
+      "fact": "Digg pioneered the user-voted news-aggregation format years before Reddit took over that space, and a single controversial 2010 redesign is often cited as the reason it lost most of its audience.",
+      "beforeImg": "images/2026-10-03/digg-then.png",
+      "afterImg": "images/2026-10-03/digg-now.png"
+    }
+  ]
+}
