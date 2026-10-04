@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-04",
+  "rounds": [
+    {
+      "answer": "Bebo",
+      "year": 2007,
+      "accept": [
+        "bebo"
+      ],
+      "fact": "Bebo was massively popular in the UK and Ireland during the mid-2000s, at one point ranking as the third-most-visited social network in the US before AOL bought it for $850 million in 2008.",
+      "beforeImg": "images/2026-10-04/bebo-then.png",
+      "afterImg": "images/2026-10-04/bebo-now.png"
+    },
+    {
+      "answer": "Kickstarter",
+      "year": 2010,
+      "accept": [
+        "kickstarter"
+      ],
+      "fact": "Kickstarter launched in 2009 and popularized the all-or-nothing crowdfunding model, where projects only get funded if they hit their goal, a rule meant to protect backers.",
+      "beforeImg": "images/2026-10-04/kickstarter-then.png",
+      "afterImg": "images/2026-10-04/kickstarter-now.png"
+    },
+    {
+      "answer": "HotBot",
+      "year": 1999,
+      "accept": [
+        "hotbot"
+      ],
+      "fact": "HotBot launched in 1996 with a distinctly loud, colorful interface, and was one of the first search engines to index the full text of pages rather than just titles and keywords.",
+      "beforeImg": "images/2026-10-04/hotbot-then.png",
+      "afterImg": "images/2026-10-04/hotbot-now.png"
+    },
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-10-04/tripod-then.png",
+      "afterImg": "images/2026-10-04/tripod-now.png"
+    },
+    {
+      "answer": "Yahoo Finance",
+      "year": 2000,
+      "accept": [
+        "yahoo finance"
+      ],
+      "fact": "Yahoo Finance became one of the most-used sources for free stock quotes on the early web, at a time when real-time market data elsewhere often required a paid subscription.",
+      "beforeImg": "images/2026-10-04/yahoofinance-then.png",
+      "afterImg": "images/2026-10-04/yahoofinance-now.png"
+    }
+  ]
+}
