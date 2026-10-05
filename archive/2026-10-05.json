@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-05",
+  "rounds": [
+    {
+      "answer": "Fark",
+      "year": 2003,
+      "accept": [
+        "fark"
+      ],
+      "fact": "Fark built its entire identity around submitting and voting on weird, funny news links, a simple format that predated Reddit's rise by several years.",
+      "beforeImg": "images/2026-10-05/fark-then.png",
+      "afterImg": "images/2026-10-05/fark-now.png"
+    },
+    {
+      "answer": "Circuit City",
+      "year": 2003,
+      "accept": [
+        "circuit city"
+      ],
+      "fact": "Circuit City was one of the largest electronics retailers in the US before going bankrupt in 2008, a collapse often cited alongside the rise of Best Buy and online shopping.",
+      "beforeImg": "images/2026-10-05/circuitcity-then.png",
+      "afterImg": "images/2026-10-05/circuitcity-now.png"
+    },
+    {
+      "answer": "Gizmodo",
+      "year": 2007,
+      "accept": [
+        "gizmodo"
+      ],
+      "fact": "Gizmodo's early scoops on unreleased Apple products, sometimes from leaked prototypes, made it one of the most closely watched (and occasionally legally threatened) tech blogs of the 2000s.",
+      "beforeImg": "images/2026-10-05/gizmodo-then.png",
+      "afterImg": "images/2026-10-05/gizmodo-now.png"
+    },
+    {
+      "answer": "Instagram",
+      "year": 2012,
+      "accept": [
+        "instagram",
+        "ig",
+        "insta"
+      ],
+      "fact": "Instagram launched iPhone-only in late 2010 and hit 25,000 users on day one. Its web presence stayed minimal for years while the app itself was the whole product.",
+      "beforeImg": "images/2026-10-05/instagram-then.png",
+      "afterImg": "images/2026-10-05/instagram-now.png"
+    },
+    {
+      "answer": "Shutterfly",
+      "year": 2005,
+      "accept": [
+        "shutterfly"
+      ],
+      "fact": "Shutterfly built its business on printing physical photo books from digital pictures, a bridge business between film photography and today's all-digital photo storage.",
+      "beforeImg": "images/2026-10-05/shutterfly-then.png",
+      "afterImg": "images/2026-10-05/shutterfly-now.png"
+    }
+  ]
+}
