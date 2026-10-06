@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-06",
+  "rounds": [
+    {
+      "answer": "Answers.com",
+      "year": 2006,
+      "accept": [
+        "answers.com",
+        "answers"
+      ],
+      "fact": "Answers.com built its early traffic by aggregating dictionary, encyclopedia, and reference content into a single searchable site, well before crowdsourced Q&A sites took over that space.",
+      "beforeImg": "images/2026-10-06/answers-then.png",
+      "afterImg": "images/2026-10-06/answers-now.png"
+    },
+    {
+      "answer": "Funny or Die",
+      "year": 2008,
+      "accept": [
+        "funny or die"
+      ],
+      "fact": "Funny or Die launched in 2007 co-founded by Will Ferrell, and its debut video 'The Landlord' became one of the most-watched comedy videos of the early web-video era.",
+      "beforeImg": "images/2026-10-06/funnyordie-then.png",
+      "afterImg": "images/2026-10-06/funnyordie-now.png"
+    },
+    {
+      "answer": "Photobucket",
+      "year": 2007,
+      "accept": [
+        "photobucket"
+      ],
+      "fact": "Photobucket became the default way millions of MySpace users hosted images for their profiles, since MySpace itself didn't offer easy photo uploading in its early years.",
+      "beforeImg": "images/2026-10-06/photobucket-then.png",
+      "afterImg": "images/2026-10-06/photobucket-now.png"
+    },
+    {
+      "answer": "Dogpile",
+      "year": 2000,
+      "accept": [
+        "dogpile"
+      ],
+      "fact": "Dogpile was a 'metasearch' engine that combined results from multiple search engines at once, a workaround from an era when no single search engine indexed the whole web well.",
+      "beforeImg": "images/2026-10-06/dogpile-then.png",
+      "afterImg": "images/2026-10-06/dogpile-now.png"
+    },
+    {
+      "answer": "RealPlayer",
+      "year": 1999,
+      "accept": [
+        "realplayer",
+        "real player"
+      ],
+      "fact": "RealPlayer's streaming format was, for years, the primary way people watched video and listened to audio online, long before YouTube or Spotify existed.",
+      "beforeImg": "images/2026-10-06/realplayer-then.png",
+      "afterImg": "images/2026-10-06/realplayer-now.png"
+    }
+  ]
+}
