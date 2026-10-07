@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-07",
+  "rounds": [
+    {
+      "answer": "BBC",
+      "year": 2000,
+      "accept": [
+        "bbc"
+      ],
+      "fact": "BBC Online launched in 1997 and was one of the first major broadcasters to build a genuinely large-scale news website, well ahead of most American networks doing the same.",
+      "beforeImg": "images/2026-10-07/bbc-then.png",
+      "afterImg": "images/2026-10-07/bbc-now.png"
+    },
+    {
+      "answer": "Tumblr",
+      "year": 2010,
+      "accept": [
+        "tumblr"
+      ],
+      "fact": "Tumblr popularized the short-form 'microblogging' format, and grew so fast in its early years that it regularly had to fight off downtime from its own success.",
+      "beforeImg": "images/2026-10-07/tumblr-then.png",
+      "afterImg": "images/2026-10-07/tumblr-now.png"
+    },
+    {
+      "answer": "Download.com",
+      "year": 2001,
+      "accept": [
+        "download.com"
+      ],
+      "fact": "Download.com (run by CNET) was one of the main places people got shareware and freeware software in the pre-app-store era, complete with user ratings and virus scanning.",
+      "beforeImg": "images/2026-10-07/downloadcom-then.png",
+      "afterImg": "images/2026-10-07/downloadcom-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/2026-10-07/airbnb-then.png",
+      "afterImg": "images/2026-10-07/airbnb-now.png"
+    },
+    {
+      "answer": "Barnes & Noble",
+      "year": 2000,
+      "accept": [
+        "barnes & noble",
+        "barnesandnoble",
+        "bn.com"
+      ],
+      "fact": "Barnes & Noble launched bn.com in 1997 specifically to compete with Amazon, one of the first major traditional retailers to take online bookselling seriously.",
+      "beforeImg": "images/2026-10-07/barnesandnoble-then.png",
+      "afterImg": "images/2026-10-07/barnesandnoble-now.png"
+    }
+  ]
+}
