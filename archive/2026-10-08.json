@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-08",
+  "rounds": [
+    {
+      "answer": "IMDb",
+      "year": 2000,
+      "accept": [
+        "imdb"
+      ],
+      "fact": "IMDb started in 1990 as a hobbyist mailing list of movie trivia before becoming a website, and is still one of the oldest continuously running sites on the entire internet.",
+      "beforeImg": "images/2026-10-08/imdb-then.png",
+      "afterImg": "images/2026-10-08/imdb-now.png"
+    },
+    {
+      "answer": "BuzzFeed",
+      "year": 2009,
+      "accept": [
+        "buzzfeed"
+      ],
+      "fact": "BuzzFeed started in 2006 as an experiment in tracking what content spreads virally online, well before its listicle format became one of the most imitated web formats of the 2010s.",
+      "beforeImg": "images/2026-10-08/buzzfeed-then.png",
+      "afterImg": "images/2026-10-08/buzzfeed-now.png"
+    },
+    {
+      "answer": "Woot",
+      "year": 2006,
+      "accept": [
+        "woot"
+      ],
+      "fact": "Woot's entire business model was selling exactly one product per day until it sold out, a simple gimmick that built a cult following before Amazon eventually bought the company.",
+      "beforeImg": "images/2026-10-08/woot-then.png",
+      "afterImg": "images/2026-10-08/woot-now.png"
+    },
+    {
+      "answer": "Suck.com",
+      "year": 1998,
+      "accept": [
+        "suck.com",
+        "suck"
+      ],
+      "fact": "Suck.com pioneered a sarcastic, link-heavy, first-person writing style that influenced blog voice for years, despite the site itself shutting down back in 2001.",
+      "beforeImg": "images/2026-10-08/suck-then.png",
+      "afterImg": "images/2026-10-08/suck-now.png"
+    },
+    {
+      "answer": "Gawker",
+      "year": 2007,
+      "accept": [
+        "gawker"
+      ],
+      "fact": "Gawker built its identity on gossipy, irreverent media and tech coverage, and its comment sections were an early influential experiment in giving readers real visibility on a media site.",
+      "beforeImg": "images/2026-10-08/gawker-then.png",
+      "afterImg": "images/2026-10-08/gawker-now.png"
+    }
+  ]
+}
