@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-09",
+  "rounds": [
+    {
+      "answer": "Suck.com",
+      "year": 1998,
+      "accept": [
+        "suck.com",
+        "suck"
+      ],
+      "fact": "Suck.com pioneered a sarcastic, link-heavy, first-person writing style that influenced blog voice for years, despite the site itself shutting down back in 2001.",
+      "beforeImg": "images/2026-10-09/suck-then.png",
+      "afterImg": "images/2026-10-09/suck-now.png"
+    },
+    {
+      "answer": "Nintendo",
+      "year": 2001,
+      "accept": [
+        "nintendo"
+      ],
+      "fact": "Nintendo's site in the early 2000s was promoting both the GameCube and Game Boy Advance simultaneously, an unusually broad two-console push even by Nintendo's standards.",
+      "beforeImg": "images/2026-10-09/nintendo-then.png",
+      "afterImg": "images/2026-10-09/nintendo-now.png"
+    },
+    {
+      "answer": "Epicurious",
+      "year": 2002,
+      "accept": [
+        "epicurious"
+      ],
+      "fact": "Epicurious launched in 1995 as one of the first major recipe websites, built from the archives of Condé Nast's food magazines like Gourmet and Bon Appétit.",
+      "beforeImg": "images/2026-10-09/epicurious-then.png",
+      "afterImg": "images/2026-10-09/epicurious-now.png"
+    },
+    {
+      "answer": "Salon",
+      "year": 2000,
+      "accept": [
+        "salon",
+        "salon.com"
+      ],
+      "fact": "Salon launched in 1995 as one of the first online-only magazines with no print edition at all, betting entirely on the web as a legitimate home for serious journalism.",
+      "beforeImg": "images/2026-10-09/salon-then.png",
+      "afterImg": "images/2026-10-09/salon-now.png"
+    },
+    {
+      "answer": "PayPal",
+      "year": 2000,
+      "accept": [
+        "paypal"
+      ],
+      "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+      "beforeImg": "images/2026-10-09/paypal-then.png",
+      "afterImg": "images/2026-10-09/paypal-now.png"
+    }
+  ]
+}
