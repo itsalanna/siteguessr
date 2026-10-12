@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-12",
+  "rounds": [
+    {
+      "answer": "Yahoo Finance",
+      "year": 2000,
+      "accept": [
+        "yahoo finance"
+      ],
+      "fact": "Yahoo Finance became one of the most-used sources for free stock quotes on the early web, at a time when real-time market data elsewhere often required a paid subscription.",
+      "beforeImg": "images/2026-10-12/yahoofinance-then.png",
+      "afterImg": "images/2026-10-12/yahoofinance-now.png"
+    },
+    {
+      "answer": "Woot",
+      "year": 2006,
+      "accept": [
+        "woot"
+      ],
+      "fact": "Woot's entire business model was selling exactly one product per day until it sold out, a simple gimmick that built a cult following before Amazon eventually bought the company.",
+      "beforeImg": "images/2026-10-12/woot-then.png",
+      "afterImg": "images/2026-10-12/woot-now.png"
+    },
+    {
+      "answer": "Snopes",
+      "year": 2004,
+      "accept": [
+        "snopes"
+      ],
+      "fact": "Snopes started in 1994 as a husband-and-wife hobby project cataloging urban legends, long before 'fact-checking' became a major, sometimes controversial, category of website.",
+      "beforeImg": "images/2026-10-12/snopes-then.png",
+      "afterImg": "images/2026-10-12/snopes-now.png"
+    },
+    {
+      "answer": "Twitter",
+      "year": 2007,
+      "accept": [
+        "twitter",
+        "twttr"
+      ],
+      "fact": "Twitter launched in 2006 and the 140-character limit came directly from SMS constraints, since early tweets were literally sent and received as text messages.",
+      "beforeImg": "images/2026-10-12/twitter-then.png",
+      "afterImg": "images/2026-10-12/twitter-now.png"
+    },
+    {
+      "answer": "Answers.com",
+      "year": 2006,
+      "accept": [
+        "answers.com",
+        "answers"
+      ],
+      "fact": "Answers.com built its early traffic by aggregating dictionary, encyclopedia, and reference content into a single searchable site, well before crowdsourced Q&A sites took over that space.",
+      "beforeImg": "images/2026-10-12/answers-then.png",
+      "afterImg": "images/2026-10-12/answers-now.png"
+    }
+  ]
+}
