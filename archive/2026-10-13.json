@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-13",
+  "rounds": [
+    {
+      "answer": "Netflix",
+      "year": 2007,
+      "accept": [
+        "netflix"
+      ],
+      "fact": "2007 was the year Netflix quietly added streaming as a bonus feature for DVD subscribers. Almost nobody noticed at the time that it would eventually replace the DVDs entirely.",
+      "beforeImg": "images/2026-10-13/netflix-then.png",
+      "afterImg": "images/2026-10-13/netflix-now.png"
+    },
+    {
+      "answer": "Epinions",
+      "year": 2001,
+      "accept": [
+        "epinions"
+      ],
+      "fact": "Epinions paid ordinary users for writing product reviews, an early attempt to build trust in user opinions before that became a standard feature on almost every shopping site.",
+      "beforeImg": "images/2026-10-13/epinions-then.png",
+      "afterImg": "images/2026-10-13/epinions-now.png"
+    },
+    {
+      "answer": "Travelocity",
+      "year": 2000,
+      "accept": [
+        "travelocity"
+      ],
+      "fact": "Travelocity launched in 1996 and was one of the first travel sites to let people book flights directly online, years before that became the default way to travel-plan.",
+      "beforeImg": "images/2026-10-13/travelocity-then.png",
+      "afterImg": "images/2026-10-13/travelocity-now.png"
+    },
+    {
+      "answer": "Lycos",
+      "year": 1999,
+      "accept": [
+        "lycos"
+      ],
+      "fact": "Lycos was briefly the most-visited website on the internet in 1999, its search engine and portal combo making it a serious early rival to Yahoo.",
+      "beforeImg": "images/2026-10-13/lycos-then.png",
+      "afterImg": "images/2026-10-13/lycos-now.png"
+    },
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-10-13/tripod-then.png",
+      "afterImg": "images/2026-10-13/tripod-now.png"
+    }
+  ]
+}
