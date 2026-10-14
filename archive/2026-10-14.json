@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-14",
+  "rounds": [
+    {
+      "answer": "Encyclopedia Britannica",
+      "year": 2000,
+      "accept": [
+        "britannica",
+        "encyclopedia britannica"
+      ],
+      "fact": "Encyclopedia Britannica put its entire encyclopedia online for free in 1999, a bold bet that ad revenue could replace its centuries-old subscription business, before pulling back a year later.",
+      "beforeImg": "images/2026-10-14/britannica-then.png",
+      "afterImg": "images/2026-10-14/britannica-now.png"
+    },
+    {
+      "answer": "BuzzFeed",
+      "year": 2009,
+      "accept": [
+        "buzzfeed"
+      ],
+      "fact": "BuzzFeed started in 2006 as an experiment in tracking what content spreads virally online, well before its listicle format became one of the most imitated web formats of the 2010s.",
+      "beforeImg": "images/2026-10-14/buzzfeed-then.png",
+      "afterImg": "images/2026-10-14/buzzfeed-now.png"
+    },
+    {
+      "answer": "Blizzard Entertainment",
+      "year": 2000,
+      "accept": [
+        "blizzard",
+        "blizzard entertainment"
+      ],
+      "fact": "Blizzard's late-90s site supported both Diablo and StarCraft, two games that helped define entire genres and whose online play features were unusually ambitious for their time.",
+      "beforeImg": "images/2026-10-14/blizzard-then.png",
+      "afterImg": "images/2026-10-14/blizzard-now.png"
+    },
+    {
+      "answer": "Instagram",
+      "year": 2012,
+      "accept": [
+        "instagram",
+        "ig",
+        "insta"
+      ],
+      "fact": "Instagram launched iPhone-only in late 2010 and hit 25,000 users on day one. Its web presence stayed minimal for years while the app itself was the whole product.",
+      "beforeImg": "images/2026-10-14/instagram-then.png",
+      "afterImg": "images/2026-10-14/instagram-now.png"
+    },
+    {
+      "answer": "Delicious",
+      "year": 2006,
+      "accept": [
+        "delicious",
+        "del.icio.us"
+      ],
+      "fact": "Delicious (originally styled del.icio.us) popularized social bookmarking and the very concept of a 'tag,' letting users save and label links for themselves and everyone else to browse.",
+      "beforeImg": "images/2026-10-14/delicious-then.png",
+      "afterImg": "images/2026-10-14/delicious-now.png"
+    }
+  ]
+}
