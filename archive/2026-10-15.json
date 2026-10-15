@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-15",
+  "rounds": [
+    {
+      "answer": "MSN",
+      "year": 2000,
+      "accept": [
+        "msn",
+        "microsoft network"
+      ],
+      "fact": "MSN launched alongside Windows 95 as Microsoft's answer to AOL, bundling a dial-up service with a portal homepage that shipped as the default for millions of new PCs.",
+      "beforeImg": "images/2026-10-15/msn-then.png",
+      "afterImg": "images/2026-10-15/msn-now.png"
+    },
+    {
+      "answer": "Technorati",
+      "year": 2006,
+      "accept": [
+        "technorati"
+      ],
+      "fact": "Technorati was built specifically to search and rank blogs during the mid-2000s blogging boom, back when blogs were treated as a distinct category from the rest of the web.",
+      "beforeImg": "images/2026-10-15/technorati-then.png",
+      "afterImg": "images/2026-10-15/technorati-now.png"
+    },
+    {
+      "answer": "Bebo",
+      "year": 2007,
+      "accept": [
+        "bebo"
+      ],
+      "fact": "Bebo was massively popular in the UK and Ireland during the mid-2000s, at one point ranking as the third-most-visited social network in the US before AOL bought it for $850 million in 2008.",
+      "beforeImg": "images/2026-10-15/bebo-then.png",
+      "afterImg": "images/2026-10-15/bebo-now.png"
+    },
+    {
+      "answer": "Slashdot",
+      "year": 2000,
+      "accept": [
+        "slashdot"
+      ],
+      "fact": "Slashdot popularized threaded, community-moderated comment sections years before that became standard, and getting linked from its front page could crash smaller sites entirely - a phenomenon known as 'the Slashdot effect.'",
+      "beforeImg": "images/2026-10-15/slashdot-then.png",
+      "afterImg": "images/2026-10-15/slashdot-now.png"
+    },
+    {
+      "answer": "Woot",
+      "year": 2006,
+      "accept": [
+        "woot"
+      ],
+      "fact": "Woot's entire business model was selling exactly one product per day until it sold out, a simple gimmick that built a cult following before Amazon eventually bought the company.",
+      "beforeImg": "images/2026-10-15/woot-then.png",
+      "afterImg": "images/2026-10-15/woot-now.png"
+    }
+  ]
+}
