@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-16",
+  "rounds": [
+    {
+      "answer": "Friendster",
+      "year": 2004,
+      "accept": [
+        "friendster"
+      ],
+      "fact": "Friendster launched in 2002 and is widely credited as one of the first mainstream social networks, predating both MySpace and Facebook, before its own popularity overwhelmed its servers.",
+      "beforeImg": "images/2026-10-16/friendster-then.png",
+      "afterImg": "images/2026-10-16/friendster-now.png"
+    },
+    {
+      "answer": "Flickr",
+      "year": 2006,
+      "accept": [
+        "flickr"
+      ],
+      "fact": "Flickr started in 2004 as a side feature of an online game before its photo-sharing tools became popular enough that the game was scrapped entirely.",
+      "beforeImg": "images/2026-10-16/flickr-then.png",
+      "afterImg": "images/2026-10-16/flickr-now.png"
+    },
+    {
+      "answer": "Yahoo!",
+      "year": 1998,
+      "accept": [
+        "yahoo",
+        "yahoocom"
+      ],
+      "fact": "Yahoo started as a hand-curated web directory. By 1998 its homepage was one of the busiest link farms on the internet, a portal trying to be everyone's front door to the web.",
+      "beforeImg": "images/2026-10-16/yahoo-then.png",
+      "afterImg": "images/2026-10-16/yahoo-now.png"
+    },
+    {
+      "answer": "Wired",
+      "year": 2000,
+      "accept": [
+        "wired"
+      ],
+      "fact": "Wired magazine's website carried over its distinctive, colorful print design into the browser, standing out at a time when most news sites still looked like plain digital newspapers.",
+      "beforeImg": "images/2026-10-16/wired-then.png",
+      "afterImg": "images/2026-10-16/wired-now.png"
+    },
+    {
+      "answer": "Cracked.com",
+      "year": 2008,
+      "accept": [
+        "cracked",
+        "cracked.com"
+      ],
+      "fact": "Cracked was originally a print magazine positioned as Mad Magazine's competitor, before relaunching purely as a website built around list-style comedy articles in 2007.",
+      "beforeImg": "images/2026-10-16/cracked-then.png",
+      "afterImg": "images/2026-10-16/cracked-now.png"
+    }
+  ]
+}
