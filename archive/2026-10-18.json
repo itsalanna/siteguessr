@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-18",
+  "rounds": [
+    {
+      "answer": "Ancestry.com",
+      "year": 2002,
+      "accept": [
+        "ancestry.com",
+        "ancestry"
+      ],
+      "fact": "Ancestry.com digitized enormous volumes of census and historical records, turning genealogy from a hobby that required physical archive visits into something searchable from home.",
+      "beforeImg": "images/2026-10-18/ancestry-then.png",
+      "afterImg": "images/2026-10-18/ancestry-now.png"
+    },
+    {
+      "answer": "Xbox",
+      "year": 2002,
+      "accept": [
+        "xbox"
+      ],
+      "fact": "Xbox.com launched alongside Microsoft's first console in 2001, marking the company's first serious entry into a gaming hardware market long dominated by Sony and Nintendo.",
+      "beforeImg": "images/2026-10-18/xbox-then.png",
+      "afterImg": "images/2026-10-18/xbox-now.png"
+    },
+    {
+      "answer": "Ticketmaster",
+      "year": 2000,
+      "accept": [
+        "ticketmaster"
+      ],
+      "fact": "Ticketmaster moved a huge chunk of its ticket sales online in the late 90s, a shift that eventually made its service fees a much more visible (and criticized) part of buying tickets.",
+      "beforeImg": "images/2026-10-18/ticketmaster-then.png",
+      "afterImg": "images/2026-10-18/ticketmaster-now.png"
+    },
+    {
+      "answer": "Digital Trends",
+      "year": 2008,
+      "accept": [
+        "digital trends"
+      ],
+      "fact": "Digital Trends grew as a general consumer-electronics review site during the mid-2000s, competing for readers alongside CNET and Engadget in a crowded gadget-blog era.",
+      "beforeImg": "images/2026-10-18/digitaltrends-then.png",
+      "afterImg": "images/2026-10-18/digitaltrends-now.png"
+    },
+    {
+      "answer": "About.com",
+      "year": 2001,
+      "accept": [
+        "about.com",
+        "about"
+      ],
+      "fact": "About.com organized the web using human 'guides' who curated links on specific topics, a labor-intensive model for making sense of the internet before search engines got good enough to do it automatically.",
+      "beforeImg": "images/2026-10-18/about-then.png",
+      "afterImg": "images/2026-10-18/about-now.png"
+    }
+  ]
+}
