@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-19",
+  "rounds": [
+    {
+      "answer": "Vine",
+      "year": 2014,
+      "accept": [
+        "vine"
+      ],
+      "fact": "Vine's entire format was built around exactly 6-second looping videos, a constraint that produced its own distinct style of comedy before Twitter shut the app down in 2017.",
+      "beforeImg": "images/2026-10-19/vine-then.png",
+      "afterImg": "images/2026-10-19/vine-now.png"
+    },
+    {
+      "answer": "Newegg",
+      "year": 2005,
+      "accept": [
+        "newegg"
+      ],
+      "fact": "Newegg built a loyal following among PC builders by focusing almost entirely on computer parts, with a reputation for detailed listings and fast shipping that rivaled Amazon in that niche.",
+      "beforeImg": "images/2026-10-19/newegg-then.png",
+      "afterImg": "images/2026-10-19/newegg-now.png"
+    },
+    {
+      "answer": "Epinions",
+      "year": 2001,
+      "accept": [
+        "epinions"
+      ],
+      "fact": "Epinions paid ordinary users for writing product reviews, an early attempt to build trust in user opinions before that became a standard feature on almost every shopping site.",
+      "beforeImg": "images/2026-10-19/epinions-then.png",
+      "afterImg": "images/2026-10-19/epinions-now.png"
+    },
+    {
+      "answer": "CNN",
+      "year": 2000,
+      "accept": [
+        "cnn",
+        "cable news network"
+      ],
+      "fact": "CNN.com's early design crammed dozens of headlines onto one dense page, a layout style that dominated news sites for years before cleaner, story-focused redesigns took over.",
+      "beforeImg": "images/2026-10-19/cnn-then.png",
+      "afterImg": "images/2026-10-19/cnn-now.png"
+    },
+    {
+      "answer": "Facebook",
+      "year": 2007,
+      "accept": [
+        "facebook",
+        "fb",
+        "thefacebook",
+        "the facebook"
+      ],
+      "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
+      "beforeImg": "images/2026-10-19/facebook-then.png",
+      "afterImg": "images/2026-10-19/facebook-now.png"
+    }
+  ]
+}
