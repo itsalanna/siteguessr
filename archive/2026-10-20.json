@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-20",
+  "rounds": [
+    {
+      "answer": "Winamp",
+      "year": 2000,
+      "accept": [
+        "winamp"
+      ],
+      "fact": "Winamp's slogan 'It really whips the llama's ass' became one of the most recognizable taglines of the early MP3 era, and its skinnable interface inspired an entire community of custom designs.",
+      "beforeImg": "images/2026-10-20/winamp-then.png",
+      "afterImg": "images/2026-10-20/winamp-now.png"
+    },
+    {
+      "answer": "Answers.com",
+      "year": 2006,
+      "accept": [
+        "answers.com",
+        "answers"
+      ],
+      "fact": "Answers.com built its early traffic by aggregating dictionary, encyclopedia, and reference content into a single searchable site, well before crowdsourced Q&A sites took over that space.",
+      "beforeImg": "images/2026-10-20/answers-then.png",
+      "afterImg": "images/2026-10-20/answers-now.png"
+    },
+    {
+      "answer": "Netscape",
+      "year": 1999,
+      "accept": [
+        "netscape"
+      ],
+      "fact": "Netscape's browser dominated the early web so completely that Microsoft bundling Internet Explorer with Windows to compete became the center of a landmark antitrust case.",
+      "beforeImg": "images/2026-10-20/netscape-then.png",
+      "afterImg": "images/2026-10-20/netscape-now.png"
+    },
+    {
+      "answer": "Twitter",
+      "year": 2007,
+      "accept": [
+        "twitter",
+        "twttr"
+      ],
+      "fact": "Twitter launched in 2006 and the 140-character limit came directly from SMS constraints, since early tweets were literally sent and received as text messages.",
+      "beforeImg": "images/2026-10-20/twitter-then.png",
+      "afterImg": "images/2026-10-20/twitter-now.png"
+    },
+    {
+      "answer": "Yahoo!",
+      "year": 1998,
+      "accept": [
+        "yahoo",
+        "yahoocom"
+      ],
+      "fact": "Yahoo started as a hand-curated web directory. By 1998 its homepage was one of the busiest link farms on the internet, a portal trying to be everyone's front door to the web.",
+      "beforeImg": "images/2026-10-20/yahoo-then.png",
+      "afterImg": "images/2026-10-20/yahoo-now.png"
+    }
+  ]
+}
