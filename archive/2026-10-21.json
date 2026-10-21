@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-21",
+  "rounds": [
+    {
+      "answer": "Pinterest",
+      "year": 2011,
+      "accept": [
+        "pinterest"
+      ],
+      "fact": "Pinterest launched by invite-only in 2010, and its signature masonry grid of pins was one of the first mainstream uses of that layout style on the web.",
+      "beforeImg": "images/2026-10-21/pinterest-then.png",
+      "afterImg": "images/2026-10-21/pinterest-now.png"
+    },
+    {
+      "answer": "HotBot",
+      "year": 1999,
+      "accept": [
+        "hotbot"
+      ],
+      "fact": "HotBot launched in 1996 with a distinctly loud, colorful interface, and was one of the first search engines to index the full text of pages rather than just titles and keywords.",
+      "beforeImg": "images/2026-10-21/hotbot-then.png",
+      "afterImg": "images/2026-10-21/hotbot-now.png"
+    },
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-10-21/tripod-then.png",
+      "afterImg": "images/2026-10-21/tripod-now.png"
+    },
+    {
+      "answer": "Barnes & Noble",
+      "year": 2000,
+      "accept": [
+        "barnes & noble",
+        "barnesandnoble",
+        "bn.com"
+      ],
+      "fact": "Barnes & Noble launched bn.com in 1997 specifically to compete with Amazon, one of the first major traditional retailers to take online bookselling seriously.",
+      "beforeImg": "images/2026-10-21/barnesandnoble-then.png",
+      "afterImg": "images/2026-10-21/barnesandnoble-now.png"
+    },
+    {
+      "answer": "Wired",
+      "year": 2000,
+      "accept": [
+        "wired"
+      ],
+      "fact": "Wired magazine's website carried over its distinctive, colorful print design into the browser, standing out at a time when most news sites still looked like plain digital newspapers.",
+      "beforeImg": "images/2026-10-21/wired-then.png",
+      "afterImg": "images/2026-10-21/wired-now.png"
+    }
+  ]
+}
