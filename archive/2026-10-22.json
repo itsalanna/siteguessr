@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-22",
+  "rounds": [
+    {
+      "answer": "LinkedIn",
+      "year": 2005,
+      "accept": [
+        "linkedin"
+      ],
+      "fact": "LinkedIn launched in 2003 out of a founder's living room. By 2005 it was already leaning into the dense, spreadsheet-like profile layout that professional networking sites still use.",
+      "beforeImg": "images/2026-10-22/linkedin-then.png",
+      "afterImg": "images/2026-10-22/linkedin-now.png"
+    },
+    {
+      "answer": "Vine",
+      "year": 2014,
+      "accept": [
+        "vine"
+      ],
+      "fact": "Vine's entire format was built around exactly 6-second looping videos, a constraint that produced its own distinct style of comedy before Twitter shut the app down in 2017.",
+      "beforeImg": "images/2026-10-22/vine-then.png",
+      "afterImg": "images/2026-10-22/vine-now.png"
+    },
+    {
+      "answer": "Encyclopedia Britannica",
+      "year": 2000,
+      "accept": [
+        "britannica",
+        "encyclopedia britannica"
+      ],
+      "fact": "Encyclopedia Britannica put its entire encyclopedia online for free in 1999, a bold bet that ad revenue could replace its centuries-old subscription business, before pulling back a year later.",
+      "beforeImg": "images/2026-10-22/britannica-then.png",
+      "afterImg": "images/2026-10-22/britannica-now.png"
+    },
+    {
+      "answer": "StumbleUpon",
+      "year": 2008,
+      "accept": [
+        "stumbleupon"
+      ],
+      "fact": "StumbleUpon's whole concept was a browser button that took you to a random, algorithm-picked website matching your interests, a discovery model that faded as social feeds took over that role.",
+      "beforeImg": "images/2026-10-22/stumbleupon-then.png",
+      "afterImg": "images/2026-10-22/stumbleupon-now.png"
+    },
+    {
+      "answer": "Addicting Games",
+      "year": 2005,
+      "accept": [
+        "addicting games",
+        "addictinggames"
+      ],
+      "fact": "Addicting Games grew rapidly during the mid-2000s Flash gaming boom, hosting thousands of free browser games at a time when installing a game usually still meant buying a physical disc.",
+      "beforeImg": "images/2026-10-22/addictinggames-then.png",
+      "afterImg": "images/2026-10-22/addictinggames-now.png"
+    }
+  ]
+}
