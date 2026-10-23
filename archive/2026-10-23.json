@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-23",
+  "rounds": [
+    {
+      "answer": "Answers.com",
+      "year": 2006,
+      "accept": [
+        "answers.com",
+        "answers"
+      ],
+      "fact": "Answers.com built its early traffic by aggregating dictionary, encyclopedia, and reference content into a single searchable site, well before crowdsourced Q&A sites took over that space.",
+      "beforeImg": "images/2026-10-23/answers-then.png",
+      "afterImg": "images/2026-10-23/answers-now.png"
+    },
+    {
+      "answer": "Priceline",
+      "year": 2000,
+      "accept": [
+        "priceline"
+      ],
+      "fact": "Priceline's original pitch was a 'name your own price' auction system for flights and hotels, an unusual model that made it one of the most talked-about dot-com startups of its era.",
+      "beforeImg": "images/2026-10-23/priceline-then.png",
+      "afterImg": "images/2026-10-23/priceline-now.png"
+    },
+    {
+      "answer": "Photobucket",
+      "year": 2007,
+      "accept": [
+        "photobucket"
+      ],
+      "fact": "Photobucket became the default way millions of MySpace users hosted images for their profiles, since MySpace itself didn't offer easy photo uploading in its early years.",
+      "beforeImg": "images/2026-10-23/photobucket-then.png",
+      "afterImg": "images/2026-10-23/photobucket-now.png"
+    },
+    {
+      "answer": "Wikipedia",
+      "year": 2005,
+      "accept": [
+        "wikipedia",
+        "wiki"
+      ],
+      "fact": "Wikipedia's interface has stayed remarkably close to its original look for two decades. The visual restraint was intentional, to keep the focus on editing and content rather than design.",
+      "beforeImg": "images/2026-10-23/wikipedia-then.png",
+      "afterImg": "images/2026-10-23/wikipedia-now.png"
+    },
+    {
+      "answer": "LimeWire",
+      "year": 2005,
+      "accept": [
+        "limewire"
+      ],
+      "fact": "LimeWire became one of the most popular peer-to-peer file-sharing programs after Napster's shutdown, before being forced offline itself by a 2010 court injunction.",
+      "beforeImg": "images/2026-10-23/limewire-then.png",
+      "afterImg": "images/2026-10-23/limewire-now.png"
+    }
+  ]
+}
