@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-24",
+  "rounds": [
+    {
+      "answer": "Ask Jeeves",
+      "year": 2000,
+      "accept": [
+        "ask jeeves",
+        "ask.com",
+        "ask"
+      ],
+      "fact": "Ask Jeeves branded itself around a friendly butler mascot and the pitch of asking questions in plain English, a contrast to the keyword-heavy search engines of the era.",
+      "beforeImg": "images/2026-10-24/ask-then.png",
+      "afterImg": "images/2026-10-24/ask-now.png"
+    },
+    {
+      "answer": "Amazon",
+      "year": 1999,
+      "accept": [
+        "amazon",
+        "amazoncom"
+      ],
+      "fact": "Amazon started as an online bookstore in 1994. By 1999 the homepage was already a dense grid of categories and personalized recommendations, a layout philosophy it never really abandoned.",
+      "beforeImg": "images/2026-10-24/amazon-then.png",
+      "afterImg": "images/2026-10-24/amazon-now.png"
+    },
+    {
+      "answer": "Webshots",
+      "year": 2004,
+      "accept": [
+        "webshots"
+      ],
+      "fact": "Webshots was one of the most popular photo-sharing communities of the early 2000s, and was also widely used as a source for desktop wallpaper downloads.",
+      "beforeImg": "images/2026-10-24/webshots-then.png",
+      "afterImg": "images/2026-10-24/webshots-now.png"
+    },
+    {
+      "answer": "Engadget",
+      "year": 2007,
+      "accept": [
+        "engadget"
+      ],
+      "fact": "Engadget launched in 2004 and quickly became one of the most-read gadget blogs, known for live-blogging tech keynotes years before that became a standard practice across tech media.",
+      "beforeImg": "images/2026-10-24/engadget-then.png",
+      "afterImg": "images/2026-10-24/engadget-now.png"
+    },
+    {
+      "answer": "Tucows",
+      "year": 1999,
+      "accept": [
+        "tucows"
+      ],
+      "fact": "Tucows started in 1993 as a curated shareware download library (the name stood for 'The Ultimate Collection of Winsock Software') before evolving into an internet services company.",
+      "beforeImg": "images/2026-10-24/tucows-then.png",
+      "afterImg": "images/2026-10-24/tucows-now.png"
+    }
+  ]
+}
