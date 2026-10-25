@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-25",
+  "rounds": [
+    {
+      "answer": "Yelp",
+      "year": 2008,
+      "accept": [
+        "yelp"
+      ],
+      "fact": "Yelp started in 2004 as an email-based referral service before pivoting to the review-website format it's known for today, after users kept asking for a public place to post reviews.",
+      "beforeImg": "images/2026-10-25/yelp-then.png",
+      "afterImg": "images/2026-10-25/yelp-now.png"
+    },
+    {
+      "answer": "Tom's Hardware",
+      "year": 2001,
+      "accept": [
+        "tom's hardware",
+        "toms hardware"
+      ],
+      "fact": "Tom's Hardware built its reputation on exhaustive PC component benchmarks, becoming one of the go-to sites for hardware enthusiasts well before mainstream tech blogs existed.",
+      "beforeImg": "images/2026-10-25/tomshardware-then.png",
+      "afterImg": "images/2026-10-25/tomshardware-now.png"
+    },
+    {
+      "answer": "Webshots",
+      "year": 2004,
+      "accept": [
+        "webshots"
+      ],
+      "fact": "Webshots was one of the most popular photo-sharing communities of the early 2000s, and was also widely used as a source for desktop wallpaper downloads.",
+      "beforeImg": "images/2026-10-25/webshots-then.png",
+      "afterImg": "images/2026-10-25/webshots-now.png"
+    },
+    {
+      "answer": "Gizmodo",
+      "year": 2007,
+      "accept": [
+        "gizmodo"
+      ],
+      "fact": "Gizmodo's early scoops on unreleased Apple products, sometimes from leaked prototypes, made it one of the most closely watched (and occasionally legally threatened) tech blogs of the 2000s.",
+      "beforeImg": "images/2026-10-25/gizmodo-then.png",
+      "afterImg": "images/2026-10-25/gizmodo-now.png"
+    },
+    {
+      "answer": "Newgrounds",
+      "year": 2003,
+      "accept": [
+        "newgrounds"
+      ],
+      "fact": "Newgrounds became the central hub for Flash animation and games in the early 2000s, launching the careers of several animators years before YouTube existed.",
+      "beforeImg": "images/2026-10-25/newgrounds-then.png",
+      "afterImg": "images/2026-10-25/newgrounds-now.png"
+    }
+  ]
+}
