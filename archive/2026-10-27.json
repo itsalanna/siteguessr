@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-27",
+  "rounds": [
+    {
+      "answer": "Plenty of Fish",
+      "year": 2007,
+      "accept": [
+        "plenty of fish",
+        "pof"
+      ],
+      "fact": "Plenty of Fish was famously built and run by a single person for years, supported entirely by ads, before eventually being sold for hundreds of millions of dollars.",
+      "beforeImg": "images/2026-10-27/pof-then.png",
+      "afterImg": "images/2026-10-27/pof-now.png"
+    },
+    {
+      "answer": "WebMD",
+      "year": 2001,
+      "accept": [
+        "webmd"
+      ],
+      "fact": "WebMD launched in 1996 and became so widely used for self-diagnosis that 'don't WebMD your symptoms' turned into a common joke about people convincing themselves they had rare diseases.",
+      "beforeImg": "images/2026-10-27/webmd-then.png",
+      "afterImg": "images/2026-10-27/webmd-now.png"
+    },
+    {
+      "answer": "Facebook",
+      "year": 2007,
+      "accept": [
+        "facebook",
+        "fb",
+        "thefacebook",
+        "the facebook"
+      ],
+      "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
+      "beforeImg": "images/2026-10-27/facebook-then.png",
+      "afterImg": "images/2026-10-27/facebook-now.png"
+    },
+    {
+      "answer": "The Weather Channel",
+      "year": 2000,
+      "accept": [
+        "weather channel",
+        "weather.com"
+      ],
+      "fact": "Weather.com was one of the earliest sites to make hyper-local content practical on the web, letting visitors punch in a zip code long before that felt like a standard web feature.",
+      "beforeImg": "images/2026-10-27/weather-then.png",
+      "afterImg": "images/2026-10-27/weather-now.png"
+    },
+    {
+      "answer": "Blizzard Entertainment",
+      "year": 2000,
+      "accept": [
+        "blizzard",
+        "blizzard entertainment"
+      ],
+      "fact": "Blizzard's late-90s site supported both Diablo and StarCraft, two games that helped define entire genres and whose online play features were unusually ambitious for their time.",
+      "beforeImg": "images/2026-10-27/blizzard-then.png",
+      "afterImg": "images/2026-10-27/blizzard-now.png"
+    }
+  ]
+}
