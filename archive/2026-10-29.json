@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-29",
+  "rounds": [
+    {
+      "answer": "TechCrunch",
+      "year": 2008,
+      "accept": [
+        "techcrunch"
+      ],
+      "fact": "TechCrunch launched in 2005 covering Silicon Valley startups specifically, and became so influential that a positive TechCrunch writeup could meaningfully affect a young company's funding prospects.",
+      "beforeImg": "images/2026-10-29/techcrunch-then.png",
+      "afterImg": "images/2026-10-29/techcrunch-now.png"
+    },
+    {
+      "answer": "Barnes & Noble",
+      "year": 2000,
+      "accept": [
+        "barnes & noble",
+        "barnesandnoble",
+        "bn.com"
+      ],
+      "fact": "Barnes & Noble launched bn.com in 1997 specifically to compete with Amazon, one of the first major traditional retailers to take online bookselling seriously.",
+      "beforeImg": "images/2026-10-29/barnesandnoble-then.png",
+      "afterImg": "images/2026-10-29/barnesandnoble-now.png"
+    },
+    {
+      "answer": "EarthLink",
+      "year": 2000,
+      "accept": [
+        "earthlink"
+      ],
+      "fact": "EarthLink grew into one of the largest ISPs of the dial-up era by positioning itself as friendlier and more customer-focused than AOL, its biggest rival.",
+      "beforeImg": "images/2026-10-29/earthlink-then.png",
+      "afterImg": "images/2026-10-29/earthlink-now.png"
+    },
+    {
+      "answer": "Plenty of Fish",
+      "year": 2007,
+      "accept": [
+        "plenty of fish",
+        "pof"
+      ],
+      "fact": "Plenty of Fish was famously built and run by a single person for years, supported entirely by ads, before eventually being sold for hundreds of millions of dollars.",
+      "beforeImg": "images/2026-10-29/pof-then.png",
+      "afterImg": "images/2026-10-29/pof-now.png"
+    },
+    {
+      "answer": "ABC News",
+      "year": 2000,
+      "accept": [
+        "abc news"
+      ],
+      "fact": "ABC News's early website tried to translate its broadcast anchors' star power onto the web, with a design that prioritized video clips even when most users were still on dial-up.",
+      "beforeImg": "images/2026-10-29/abcnews-then.png",
+      "afterImg": "images/2026-10-29/abcnews-now.png"
+    }
+  ]
+}
