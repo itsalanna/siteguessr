@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-30",
+  "rounds": [
+    {
+      "answer": "Vine",
+      "year": 2014,
+      "accept": [
+        "vine"
+      ],
+      "fact": "Vine's entire format was built around exactly 6-second looping videos, a constraint that produced its own distinct style of comedy before Twitter shut the app down in 2017.",
+      "beforeImg": "images/2026-10-30/vine-then.png",
+      "afterImg": "images/2026-10-30/vine-now.png"
+    },
+    {
+      "answer": "Epicurious",
+      "year": 2002,
+      "accept": [
+        "epicurious"
+      ],
+      "fact": "Epicurious launched in 1995 as one of the first major recipe websites, built from the archives of Condé Nast's food magazines like Gourmet and Bon Appétit.",
+      "beforeImg": "images/2026-10-30/epicurious-then.png",
+      "afterImg": "images/2026-10-30/epicurious-now.png"
+    },
+    {
+      "answer": "Ticketmaster",
+      "year": 2000,
+      "accept": [
+        "ticketmaster"
+      ],
+      "fact": "Ticketmaster moved a huge chunk of its ticket sales online in the late 90s, a shift that eventually made its service fees a much more visible (and criticized) part of buying tickets.",
+      "beforeImg": "images/2026-10-30/ticketmaster-then.png",
+      "afterImg": "images/2026-10-30/ticketmaster-now.png"
+    },
+    {
+      "answer": "Miniclip",
+      "year": 2006,
+      "accept": [
+        "miniclip"
+      ],
+      "fact": "Miniclip built its whole library around free browser-based Flash games, becoming one of the biggest casual gaming destinations before Flash was phased out industry-wide.",
+      "beforeImg": "images/2026-10-30/miniclip-then.png",
+      "afterImg": "images/2026-10-30/miniclip-now.png"
+    },
+    {
+      "answer": "StumbleUpon",
+      "year": 2008,
+      "accept": [
+        "stumbleupon"
+      ],
+      "fact": "StumbleUpon's whole concept was a browser button that took you to a random, algorithm-picked website matching your interests, a discovery model that faded as social feeds took over that role.",
+      "beforeImg": "images/2026-10-30/stumbleupon-then.png",
+      "afterImg": "images/2026-10-30/stumbleupon-now.png"
+    }
+  ]
+}
