@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-31",
+  "rounds": [
+    {
+      "answer": "CNET",
+      "year": 2000,
+      "accept": [
+        "cnet"
+      ],
+      "fact": "CNET launched in 1994 as one of the first tech-focused media companies built for the web, eventually growing to include Download.com and several other well-known tech properties.",
+      "beforeImg": "images/2026-10-31/cnet-then.png",
+      "afterImg": "images/2026-10-31/cnet-now.png"
+    },
+    {
+      "answer": "Xanga",
+      "year": 2005,
+      "accept": [
+        "xanga"
+      ],
+      "fact": "Xanga combined blogging with heavy profile customization and briefly rivaled MySpace in popularity among teens before losing ground in the mid-2000s.",
+      "beforeImg": "images/2026-10-31/xanga-then.png",
+      "afterImg": "images/2026-10-31/xanga-now.png"
+    },
+    {
+      "answer": "Apple",
+      "year": 1999,
+      "accept": [
+        "apple",
+        "applecom"
+      ],
+      "fact": "This was the candy-colored iMac era. Apple's site leaned hard into translucent plastic and drop shadows, years before the brushed-aluminum minimalism it's known for today.",
+      "beforeImg": "images/2026-10-31/apple-then.png",
+      "afterImg": "images/2026-10-31/apple-now.png"
+    },
+    {
+      "answer": "MSN",
+      "year": 2000,
+      "accept": [
+        "msn",
+        "microsoft network"
+      ],
+      "fact": "MSN launched alongside Windows 95 as Microsoft's answer to AOL, bundling a dial-up service with a portal homepage that shipped as the default for millions of new PCs.",
+      "beforeImg": "images/2026-10-31/msn-then.png",
+      "afterImg": "images/2026-10-31/msn-now.png"
+    },
+    {
+      "answer": "LinkedIn",
+      "year": 2005,
+      "accept": [
+        "linkedin"
+      ],
+      "fact": "LinkedIn launched in 2003 out of a founder's living room. By 2005 it was already leaning into the dense, spreadsheet-like profile layout that professional networking sites still use.",
+      "beforeImg": "images/2026-10-31/linkedin-then.png",
+      "afterImg": "images/2026-10-31/linkedin-now.png"
+    }
+  ]
+}
