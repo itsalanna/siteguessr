@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-01",
+  "rounds": [
+    {
+      "answer": "Zillow",
+      "year": 2007,
+      "accept": [
+        "zillow"
+      ],
+      "fact": "Zillow launched in 2006 and was one of the first sites to give the public free access to home value estimates, a feature ('Zestimate') that unsettled a lot of real estate agents at the time.",
+      "beforeImg": "images/2026-11-01/zillow-then.png",
+      "afterImg": "images/2026-11-01/zillow-now.png"
+    },
+    {
+      "answer": "USA Today",
+      "year": 2000,
+      "accept": [
+        "usa today",
+        "usatoday"
+      ],
+      "fact": "USA Today's website carried over the newspaper's signature colorful infographics and short-story format, designed for readers scanning quickly rather than reading in depth.",
+      "beforeImg": "images/2026-11-01/usatoday-then.png",
+      "afterImg": "images/2026-11-01/usatoday-now.png"
+    },
+    {
+      "answer": "PayPal",
+      "year": 2000,
+      "accept": [
+        "paypal"
+      ],
+      "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+      "beforeImg": "images/2026-11-01/paypal-then.png",
+      "afterImg": "images/2026-11-01/paypal-now.png"
+    },
+    {
+      "answer": "Technorati",
+      "year": 2006,
+      "accept": [
+        "technorati"
+      ],
+      "fact": "Technorati was built specifically to search and rank blogs during the mid-2000s blogging boom, back when blogs were treated as a distinct category from the rest of the web.",
+      "beforeImg": "images/2026-11-01/technorati-then.png",
+      "afterImg": "images/2026-11-01/technorati-now.png"
+    },
+    {
+      "answer": "Foursquare",
+      "year": 2011,
+      "accept": [
+        "foursquare",
+        "4square"
+      ],
+      "fact": "Foursquare's whole early identity was built around competitive check-ins and 'mayorships' of physical locations, a gamified feature that mostly disappeared as the app pivoted toward recommendations.",
+      "beforeImg": "images/2026-11-01/foursquare-then.png",
+      "afterImg": "images/2026-11-01/foursquare-now.png"
+    }
+  ]
+}
