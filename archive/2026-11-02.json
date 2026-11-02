@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-02",
+  "rounds": [
+    {
+      "answer": "Google",
+      "year": 1998,
+      "accept": [
+        "google",
+        "googl",
+        "googlecom"
+      ],
+      "fact": "The famously sparse homepage was reportedly a side effect of the founders not knowing HTML well enough to make anything more complex. An early advantage the world mistook for minimalist genius.",
+      "beforeImg": "images/2026-11-02/google-then.png",
+      "afterImg": "images/2026-11-02/google-now.png"
+    },
+    {
+      "answer": "EarthLink",
+      "year": 2000,
+      "accept": [
+        "earthlink"
+      ],
+      "fact": "EarthLink grew into one of the largest ISPs of the dial-up era by positioning itself as friendlier and more customer-focused than AOL, its biggest rival.",
+      "beforeImg": "images/2026-11-02/earthlink-then.png",
+      "afterImg": "images/2026-11-02/earthlink-now.png"
+    },
+    {
+      "answer": "Vimeo",
+      "year": 2008,
+      "accept": [
+        "vimeo"
+      ],
+      "fact": "Vimeo launched in 2004 and deliberately positioned itself as the artsier, higher-quality alternative to YouTube, banning gaming and vlog content in its early years to keep that focus.",
+      "beforeImg": "images/2026-11-02/vimeo-then.png",
+      "afterImg": "images/2026-11-02/vimeo-now.png"
+    },
+    {
+      "answer": "Match.com",
+      "year": 2000,
+      "accept": [
+        "match.com",
+        "match"
+      ],
+      "fact": "Match.com launched in 1995 and is one of the very first online dating sites, predating the smartphone-app dating era by almost two decades.",
+      "beforeImg": "images/2026-11-02/match-then.png",
+      "afterImg": "images/2026-11-02/match-now.png"
+    },
+    {
+      "answer": "Foursquare",
+      "year": 2011,
+      "accept": [
+        "foursquare",
+        "4square"
+      ],
+      "fact": "Foursquare's whole early identity was built around competitive check-ins and 'mayorships' of physical locations, a gamified feature that mostly disappeared as the app pivoted toward recommendations.",
+      "beforeImg": "images/2026-11-02/foursquare-then.png",
+      "afterImg": "images/2026-11-02/foursquare-now.png"
+    }
+  ]
+}
