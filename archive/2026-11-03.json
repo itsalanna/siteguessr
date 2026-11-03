@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-03",
+  "rounds": [
+    {
+      "answer": "Photobucket",
+      "year": 2007,
+      "accept": [
+        "photobucket"
+      ],
+      "fact": "Photobucket became the default way millions of MySpace users hosted images for their profiles, since MySpace itself didn't offer easy photo uploading in its early years.",
+      "beforeImg": "images/2026-11-03/photobucket-then.png",
+      "afterImg": "images/2026-11-03/photobucket-now.png"
+    },
+    {
+      "answer": "Winamp",
+      "year": 2000,
+      "accept": [
+        "winamp"
+      ],
+      "fact": "Winamp's slogan 'It really whips the llama's ass' became one of the most recognizable taglines of the early MP3 era, and its skinnable interface inspired an entire community of custom designs.",
+      "beforeImg": "images/2026-11-03/winamp-then.png",
+      "afterImg": "images/2026-11-03/winamp-now.png"
+    },
+    {
+      "answer": "StumbleUpon",
+      "year": 2008,
+      "accept": [
+        "stumbleupon"
+      ],
+      "fact": "StumbleUpon's whole concept was a browser button that took you to a random, algorithm-picked website matching your interests, a discovery model that faded as social feeds took over that role.",
+      "beforeImg": "images/2026-11-03/stumbleupon-then.png",
+      "afterImg": "images/2026-11-03/stumbleupon-now.png"
+    },
+    {
+      "answer": "Tucows",
+      "year": 1999,
+      "accept": [
+        "tucows"
+      ],
+      "fact": "Tucows started in 1993 as a curated shareware download library (the name stood for 'The Ultimate Collection of Winsock Software') before evolving into an internet services company.",
+      "beforeImg": "images/2026-11-03/tucows-then.png",
+      "afterImg": "images/2026-11-03/tucows-now.png"
+    },
+    {
+      "answer": "Tom's Hardware",
+      "year": 2001,
+      "accept": [
+        "tom's hardware",
+        "toms hardware"
+      ],
+      "fact": "Tom's Hardware built its reputation on exhaustive PC component benchmarks, becoming one of the go-to sites for hardware enthusiasts well before mainstream tech blogs existed.",
+      "beforeImg": "images/2026-11-03/tomshardware-then.png",
+      "afterImg": "images/2026-11-03/tomshardware-now.png"
+    }
+  ]
+}
