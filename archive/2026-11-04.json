@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-04",
+  "rounds": [
+    {
+      "answer": "TechCrunch",
+      "year": 2008,
+      "accept": [
+        "techcrunch"
+      ],
+      "fact": "TechCrunch launched in 2005 covering Silicon Valley startups specifically, and became so influential that a positive TechCrunch writeup could meaningfully affect a young company's funding prospects.",
+      "beforeImg": "images/2026-11-04/techcrunch-then.png",
+      "afterImg": "images/2026-11-04/techcrunch-now.png"
+    },
+    {
+      "answer": "USA Today",
+      "year": 2000,
+      "accept": [
+        "usa today",
+        "usatoday"
+      ],
+      "fact": "USA Today's website carried over the newspaper's signature colorful infographics and short-story format, designed for readers scanning quickly rather than reading in depth.",
+      "beforeImg": "images/2026-11-04/usatoday-then.png",
+      "afterImg": "images/2026-11-04/usatoday-now.png"
+    },
+    {
+      "answer": "Blockbuster",
+      "year": 2004,
+      "accept": [
+        "blockbuster"
+      ],
+      "fact": "Blockbuster launched an online DVD-by-mail service in 2004 specifically to compete with Netflix, only a few years before streaming made the entire rental model obsolete.",
+      "beforeImg": "images/2026-11-04/blockbuster-then.png",
+      "afterImg": "images/2026-11-04/blockbuster-now.png"
+    },
+    {
+      "answer": "Sun Microsystems",
+      "year": 1999,
+      "accept": [
+        "sun microsystems",
+        "sun"
+      ],
+      "fact": "Sun Microsystems coined the slogan 'The Network is the Computer' years before cloud computing existed, and its Java platform still underpins huge amounts of software today.",
+      "beforeImg": "images/2026-11-04/sun-then.png",
+      "afterImg": "images/2026-11-04/sun-now.png"
+    },
+    {
+      "answer": "LiveJournal",
+      "year": 2004,
+      "accept": [
+        "livejournal",
+        "lj"
+      ],
+      "fact": "LiveJournal was one of the first blogging platforms to build in a real social layer, with friends lists and privacy settings, making it feel more like an early social network than a simple blog host.",
+      "beforeImg": "images/2026-11-04/livejournal-then.png",
+      "afterImg": "images/2026-11-04/livejournal-now.png"
+    }
+  ]
+}
