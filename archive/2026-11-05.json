@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-05",
+  "rounds": [
+    {
+      "answer": "Slashdot",
+      "year": 2000,
+      "accept": [
+        "slashdot"
+      ],
+      "fact": "Slashdot popularized threaded, community-moderated comment sections years before that became standard, and getting linked from its front page could crash smaller sites entirely - a phenomenon known as 'the Slashdot effect.'",
+      "beforeImg": "images/2026-11-05/slashdot-then.png",
+      "afterImg": "images/2026-11-05/slashdot-now.png"
+    },
+    {
+      "answer": "Groupon",
+      "year": 2010,
+      "accept": [
+        "groupon"
+      ],
+      "fact": "Groupon grew explosively fast off its daily-deal email format and turned down a reported $6 billion buyout offer from Google in 2010, a decision still debated years later.",
+      "beforeImg": "images/2026-11-05/groupon-then.png",
+      "afterImg": "images/2026-11-05/groupon-now.png"
+    },
+    {
+      "answer": "Neopets",
+      "year": 2003,
+      "accept": [
+        "neopets"
+      ],
+      "fact": "Neopets combined virtual pet care with a whole in-game economy, and its blending of ads directly into games and content drew scrutiny as advertising to kids became a bigger issue.",
+      "beforeImg": "images/2026-11-05/neopets-then.png",
+      "afterImg": "images/2026-11-05/neopets-now.png"
+    },
+    {
+      "answer": "WordPress",
+      "year": 2006,
+      "accept": [
+        "wordpress"
+      ],
+      "fact": "WordPress launched in 2003 as a small blogging tool and eventually grew to power a huge share of all websites on the internet, blogs and full businesses alike.",
+      "beforeImg": "images/2026-11-05/wordpress-then.png",
+      "afterImg": "images/2026-11-05/wordpress-now.png"
+    },
+    {
+      "answer": "WebCrawler",
+      "year": 1998,
+      "accept": [
+        "webcrawler",
+        "web crawler"
+      ],
+      "fact": "WebCrawler, launched in 1994, was the first search engine to provide full-text search of the web, a basic feature that wasn't yet standard among its competitors.",
+      "beforeImg": "images/2026-11-05/webcrawler-then.png",
+      "afterImg": "images/2026-11-05/webcrawler-now.png"
+    }
+  ]
+}
