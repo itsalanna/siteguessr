@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-06",
+  "rounds": [
+    {
+      "answer": "Charles Schwab",
+      "year": 2000,
+      "accept": [
+        "charles schwab",
+        "schwab"
+      ],
+      "fact": "Charles Schwab was one of the first traditional brokerages to fully embrace online trading, helping legitimize the idea for investors who didn't trust newer online-only upstarts.",
+      "beforeImg": "images/2026-11-06/schwab-then.png",
+      "afterImg": "images/2026-11-06/schwab-now.png"
+    },
+    {
+      "answer": "MSN",
+      "year": 2000,
+      "accept": [
+        "msn",
+        "microsoft network"
+      ],
+      "fact": "MSN launched alongside Windows 95 as Microsoft's answer to AOL, bundling a dial-up service with a portal homepage that shipped as the default for millions of new PCs.",
+      "beforeImg": "images/2026-11-06/msn-then.png",
+      "afterImg": "images/2026-11-06/msn-now.png"
+    },
+    {
+      "answer": "Fox News",
+      "year": 2001,
+      "accept": [
+        "fox news"
+      ],
+      "fact": "Fox News launched its website alongside the cable channel in the mid-90s, and its early design leaned heavily on the bold red-white-and-blue branding that still defines the network today.",
+      "beforeImg": "images/2026-11-06/foxnews-then.png",
+      "afterImg": "images/2026-11-06/foxnews-now.png"
+    },
+    {
+      "answer": "Encyclopedia Britannica",
+      "year": 2000,
+      "accept": [
+        "britannica",
+        "encyclopedia britannica"
+      ],
+      "fact": "Encyclopedia Britannica put its entire encyclopedia online for free in 1999, a bold bet that ad revenue could replace its centuries-old subscription business, before pulling back a year later.",
+      "beforeImg": "images/2026-11-06/britannica-then.png",
+      "afterImg": "images/2026-11-06/britannica-now.png"
+    },
+    {
+      "answer": "Newgrounds",
+      "year": 2003,
+      "accept": [
+        "newgrounds"
+      ],
+      "fact": "Newgrounds became the central hub for Flash animation and games in the early 2000s, launching the careers of several animators years before YouTube existed.",
+      "beforeImg": "images/2026-11-06/newgrounds-then.png",
+      "afterImg": "images/2026-11-06/newgrounds-now.png"
+    }
+  ]
+}
