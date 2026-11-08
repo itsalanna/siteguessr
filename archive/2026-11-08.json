@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-08",
+  "rounds": [
+    {
+      "answer": "Break.com",
+      "year": 2007,
+      "accept": [
+        "break.com",
+        "break"
+      ],
+      "fact": "Break.com built its early audience around viral videos aimed specifically at young men, a more niche focus than general-purpose video sites like YouTube.",
+      "beforeImg": "images/2026-11-08/break-then.png",
+      "afterImg": "images/2026-11-08/break-now.png"
+    },
+    {
+      "answer": "CNN",
+      "year": 2000,
+      "accept": [
+        "cnn",
+        "cable news network"
+      ],
+      "fact": "CNN.com's early design crammed dozens of headlines onto one dense page, a layout style that dominated news sites for years before cleaner, story-focused redesigns took over.",
+      "beforeImg": "images/2026-11-08/cnn-then.png",
+      "afterImg": "images/2026-11-08/cnn-now.png"
+    },
+    {
+      "answer": "Cracked.com",
+      "year": 2008,
+      "accept": [
+        "cracked",
+        "cracked.com"
+      ],
+      "fact": "Cracked was originally a print magazine positioned as Mad Magazine's competitor, before relaunching purely as a website built around list-style comedy articles in 2007.",
+      "beforeImg": "images/2026-11-08/cracked-then.png",
+      "afterImg": "images/2026-11-08/cracked-now.png"
+    },
+    {
+      "answer": "Instagram",
+      "year": 2012,
+      "accept": [
+        "instagram",
+        "ig",
+        "insta"
+      ],
+      "fact": "Instagram launched iPhone-only in late 2010 and hit 25,000 users on day one. Its web presence stayed minimal for years while the app itself was the whole product.",
+      "beforeImg": "images/2026-11-08/instagram-then.png",
+      "afterImg": "images/2026-11-08/instagram-now.png"
+    },
+    {
+      "answer": "Miniclip",
+      "year": 2006,
+      "accept": [
+        "miniclip"
+      ],
+      "fact": "Miniclip built its whole library around free browser-based Flash games, becoming one of the biggest casual gaming destinations before Flash was phased out industry-wide.",
+      "beforeImg": "images/2026-11-08/miniclip-then.png",
+      "afterImg": "images/2026-11-08/miniclip-now.png"
+    }
+  ]
+}
