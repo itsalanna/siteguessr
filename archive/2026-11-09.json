@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-09",
+  "rounds": [
+    {
+      "answer": "Digital Trends",
+      "year": 2008,
+      "accept": [
+        "digital trends"
+      ],
+      "fact": "Digital Trends grew as a general consumer-electronics review site during the mid-2000s, competing for readers alongside CNET and Engadget in a crowded gadget-blog era.",
+      "beforeImg": "images/2026-11-09/digitaltrends-then.png",
+      "afterImg": "images/2026-11-09/digitaltrends-now.png"
+    },
+    {
+      "answer": "BBC",
+      "year": 2000,
+      "accept": [
+        "bbc"
+      ],
+      "fact": "BBC Online launched in 1997 and was one of the first major broadcasters to build a genuinely large-scale news website, well ahead of most American networks doing the same.",
+      "beforeImg": "images/2026-11-09/bbc-then.png",
+      "afterImg": "images/2026-11-09/bbc-now.png"
+    },
+    {
+      "answer": "Orbitz",
+      "year": 2002,
+      "accept": [
+        "orbitz"
+      ],
+      "fact": "Orbitz was launched in 2001 by a group of major airlines banding together to compete directly with Expedia and Travelocity for online bookings.",
+      "beforeImg": "images/2026-11-09/orbitz-then.png",
+      "afterImg": "images/2026-11-09/orbitz-now.png"
+    },
+    {
+      "answer": "Neopets",
+      "year": 2003,
+      "accept": [
+        "neopets"
+      ],
+      "fact": "Neopets combined virtual pet care with a whole in-game economy, and its blending of ads directly into games and content drew scrutiny as advertising to kids became a bigger issue.",
+      "beforeImg": "images/2026-11-09/neopets-then.png",
+      "afterImg": "images/2026-11-09/neopets-now.png"
+    },
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-11-09/tripod-then.png",
+      "afterImg": "images/2026-11-09/tripod-now.png"
+    }
+  ]
+}
