@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-10",
+  "rounds": [
+    {
+      "answer": "About.com",
+      "year": 2001,
+      "accept": [
+        "about.com",
+        "about"
+      ],
+      "fact": "About.com organized the web using human 'guides' who curated links on specific topics, a labor-intensive model for making sense of the internet before search engines got good enough to do it automatically.",
+      "beforeImg": "images/2026-11-10/about-then.png",
+      "afterImg": "images/2026-11-10/about-now.png"
+    },
+    {
+      "answer": "Fox News",
+      "year": 2001,
+      "accept": [
+        "fox news"
+      ],
+      "fact": "Fox News launched its website alongside the cable channel in the mid-90s, and its early design leaned heavily on the bold red-white-and-blue branding that still defines the network today.",
+      "beforeImg": "images/2026-11-10/foxnews-then.png",
+      "afterImg": "images/2026-11-10/foxnews-now.png"
+    },
+    {
+      "answer": "Plenty of Fish",
+      "year": 2007,
+      "accept": [
+        "plenty of fish",
+        "pof"
+      ],
+      "fact": "Plenty of Fish was famously built and run by a single person for years, supported entirely by ads, before eventually being sold for hundreds of millions of dollars.",
+      "beforeImg": "images/2026-11-10/pof-then.png",
+      "afterImg": "images/2026-11-10/pof-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/2026-11-10/airbnb-then.png",
+      "afterImg": "images/2026-11-10/airbnb-now.png"
+    },
+    {
+      "answer": "LinkedIn",
+      "year": 2005,
+      "accept": [
+        "linkedin"
+      ],
+      "fact": "LinkedIn launched in 2003 out of a founder's living room. By 2005 it was already leaning into the dense, spreadsheet-like profile layout that professional networking sites still use.",
+      "beforeImg": "images/2026-11-10/linkedin-then.png",
+      "afterImg": "images/2026-11-10/linkedin-now.png"
+    }
+  ]
+}
