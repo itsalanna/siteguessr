@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-11",
+  "rounds": [
+    {
+      "answer": "AOL Instant Messenger",
+      "year": 2001,
+      "accept": [
+        "aim",
+        "aol instant messenger"
+      ],
+      "fact": "AIM's door-slam and duck-quack sound effects became so recognizable that an entire generation associates them instantly with getting online after school.",
+      "beforeImg": "images/2026-11-11/aim-then.png",
+      "afterImg": "images/2026-11-11/aim-now.png"
+    },
+    {
+      "answer": "Blogger",
+      "year": 2003,
+      "accept": [
+        "blogger"
+      ],
+      "fact": "Blogger launched in 1999 and is one of the tools credited with popularizing the word 'blog' itself, before Google acquired it in 2003.",
+      "beforeImg": "images/2026-11-11/blogger-then.png",
+      "afterImg": "images/2026-11-11/blogger-now.png"
+    },
+    {
+      "answer": "Groupon",
+      "year": 2010,
+      "accept": [
+        "groupon"
+      ],
+      "fact": "Groupon grew explosively fast off its daily-deal email format and turned down a reported $6 billion buyout offer from Google in 2010, a decision still debated years later.",
+      "beforeImg": "images/2026-11-11/groupon-then.png",
+      "afterImg": "images/2026-11-11/groupon-now.png"
+    },
+    {
+      "answer": "Break.com",
+      "year": 2007,
+      "accept": [
+        "break.com",
+        "break"
+      ],
+      "fact": "Break.com built its early audience around viral videos aimed specifically at young men, a more niche focus than general-purpose video sites like YouTube.",
+      "beforeImg": "images/2026-11-11/break-then.png",
+      "afterImg": "images/2026-11-11/break-now.png"
+    },
+    {
+      "answer": "Edmunds",
+      "year": 2001,
+      "accept": [
+        "edmunds"
+      ],
+      "fact": "Edmunds built its reputation on detailed car reviews and true-cost-to-own data, becoming a trusted resource for buyers trying to negotiate against dealerships.",
+      "beforeImg": "images/2026-11-11/edmunds-then.png",
+      "afterImg": "images/2026-11-11/edmunds-now.png"
+    }
+  ]
+}
