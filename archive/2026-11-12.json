@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-12",
+  "rounds": [
+    {
+      "answer": "Nintendo",
+      "year": 2001,
+      "accept": [
+        "nintendo"
+      ],
+      "fact": "Nintendo's site in the early 2000s was promoting both the GameCube and Game Boy Advance simultaneously, an unusually broad two-console push even by Nintendo's standards.",
+      "beforeImg": "images/2026-11-12/nintendo-then.png",
+      "afterImg": "images/2026-11-12/nintendo-now.png"
+    },
+    {
+      "answer": "PerezHilton.com",
+      "year": 2008,
+      "accept": [
+        "perez hilton",
+        "perezhilton"
+      ],
+      "fact": "PerezHilton.com became one of the first hugely popular celebrity gossip blogs, known for its crude photo scribbles added directly on top of paparazzi pictures.",
+      "beforeImg": "images/2026-11-12/perezhilton-then.png",
+      "afterImg": "images/2026-11-12/perezhilton-now.png"
+    },
+    {
+      "answer": "Netscape",
+      "year": 1999,
+      "accept": [
+        "netscape"
+      ],
+      "fact": "Netscape's browser dominated the early web so completely that Microsoft bundling Internet Explorer with Windows to compete became the center of a landmark antitrust case.",
+      "beforeImg": "images/2026-11-12/netscape-then.png",
+      "afterImg": "images/2026-11-12/netscape-now.png"
+    },
+    {
+      "answer": "Bebo",
+      "year": 2007,
+      "accept": [
+        "bebo"
+      ],
+      "fact": "Bebo was massively popular in the UK and Ireland during the mid-2000s, at one point ranking as the third-most-visited social network in the US before AOL bought it for $850 million in 2008.",
+      "beforeImg": "images/2026-11-12/bebo-then.png",
+      "afterImg": "images/2026-11-12/bebo-now.png"
+    },
+    {
+      "answer": "GameSpot",
+      "year": 2000,
+      "accept": [
+        "gamespot"
+      ],
+      "fact": "GameSpot launched in 1996 and became known for its numerical review scores becoming a genuine influence on game sales, sometimes controversially so.",
+      "beforeImg": "images/2026-11-12/gamespot-then.png",
+      "afterImg": "images/2026-11-12/gamespot-now.png"
+    }
+  ]
+}
