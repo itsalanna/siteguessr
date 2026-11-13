@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-13",
+  "rounds": [
+    {
+      "answer": "Juno",
+      "year": 1999,
+      "accept": [
+        "juno"
+      ],
+      "fact": "Juno offered free dial-up internet paid for entirely by advertising, and later merged with rival NetZero to survive the end of the free-ISP era.",
+      "beforeImg": "images/2026-11-13/juno-then.png",
+      "afterImg": "images/2026-11-13/juno-now.png"
+    },
+    {
+      "answer": "Palm",
+      "year": 2000,
+      "accept": [
+        "palm",
+        "palmone"
+      ],
+      "fact": "Palm's PDAs were the dominant handheld computers of the late 90s, and its site sold both the devices and a marketplace of tiny downloadable apps years before smartphones existed.",
+      "beforeImg": "images/2026-11-13/palm-then.png",
+      "afterImg": "images/2026-11-13/palm-now.png"
+    },
+    {
+      "answer": "Xanga",
+      "year": 2005,
+      "accept": [
+        "xanga"
+      ],
+      "fact": "Xanga combined blogging with heavy profile customization and briefly rivaled MySpace in popularity among teens before losing ground in the mid-2000s.",
+      "beforeImg": "images/2026-11-13/xanga-then.png",
+      "afterImg": "images/2026-11-13/xanga-now.png"
+    },
+    {
+      "answer": "Circuit City",
+      "year": 2003,
+      "accept": [
+        "circuit city"
+      ],
+      "fact": "Circuit City was one of the largest electronics retailers in the US before going bankrupt in 2008, a collapse often cited alongside the rise of Best Buy and online shopping.",
+      "beforeImg": "images/2026-11-13/circuitcity-then.png",
+      "afterImg": "images/2026-11-13/circuitcity-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/2026-11-13/airbnb-then.png",
+      "afterImg": "images/2026-11-13/airbnb-now.png"
+    }
+  ]
+}
