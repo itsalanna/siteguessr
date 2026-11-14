@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-14",
+  "rounds": [
+    {
+      "answer": "Metacafe",
+      "year": 2007,
+      "accept": [
+        "metacafe"
+      ],
+      "fact": "Metacafe was a serious early rival to YouTube, at one point drawing tens of millions of monthly viewers by paying creators for popular videos.",
+      "beforeImg": "images/2026-11-14/metacafe-then.png",
+      "afterImg": "images/2026-11-14/metacafe-now.png"
+    },
+    {
+      "answer": "Gizmodo",
+      "year": 2007,
+      "accept": [
+        "gizmodo"
+      ],
+      "fact": "Gizmodo's early scoops on unreleased Apple products, sometimes from leaked prototypes, made it one of the most closely watched (and occasionally legally threatened) tech blogs of the 2000s.",
+      "beforeImg": "images/2026-11-14/gizmodo-then.png",
+      "afterImg": "images/2026-11-14/gizmodo-now.png"
+    },
+    {
+      "answer": "AutoTrader",
+      "year": 2001,
+      "accept": [
+        "autotrader",
+        "auto trader"
+      ],
+      "fact": "AutoTrader started as a print magazine of classified car ads in 1975 before moving online, eventually shutting down the print edition entirely as the website took over.",
+      "beforeImg": "images/2026-11-14/autotrader-then.png",
+      "afterImg": "images/2026-11-14/autotrader-now.png"
+    },
+    {
+      "answer": "PayPal",
+      "year": 2000,
+      "accept": [
+        "paypal"
+      ],
+      "fact": "PayPal originally grew by paying users real money just to sign up and refer friends, an aggressive growth tactic that helped it become the dominant way to pay on eBay.",
+      "beforeImg": "images/2026-11-14/paypal-then.png",
+      "afterImg": "images/2026-11-14/paypal-now.png"
+    },
+    {
+      "answer": "Salon",
+      "year": 2000,
+      "accept": [
+        "salon",
+        "salon.com"
+      ],
+      "fact": "Salon launched in 1995 as one of the first online-only magazines with no print edition at all, betting entirely on the web as a legitimate home for serious journalism.",
+      "beforeImg": "images/2026-11-14/salon-then.png",
+      "afterImg": "images/2026-11-14/salon-now.png"
+    }
+  ]
+}
