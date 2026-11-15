@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-15",
+  "rounds": [
+    {
+      "answer": "USA Today",
+      "year": 2000,
+      "accept": [
+        "usa today",
+        "usatoday"
+      ],
+      "fact": "USA Today's website carried over the newspaper's signature colorful infographics and short-story format, designed for readers scanning quickly rather than reading in depth.",
+      "beforeImg": "images/2026-11-15/usatoday-then.png",
+      "afterImg": "images/2026-11-15/usatoday-now.png"
+    },
+    {
+      "answer": "Palm",
+      "year": 2000,
+      "accept": [
+        "palm",
+        "palmone"
+      ],
+      "fact": "Palm's PDAs were the dominant handheld computers of the late 90s, and its site sold both the devices and a marketplace of tiny downloadable apps years before smartphones existed.",
+      "beforeImg": "images/2026-11-15/palm-then.png",
+      "afterImg": "images/2026-11-15/palm-now.png"
+    },
+    {
+      "answer": "Realtor.com",
+      "year": 2000,
+      "accept": [
+        "realtor.com",
+        "realtor"
+      ],
+      "fact": "Realtor.com launched in 1996 as the official listing site backed by the National Association of Realtors, giving it access to a huge database of listings its early competitors lacked.",
+      "beforeImg": "images/2026-11-15/realtor-then.png",
+      "afterImg": "images/2026-11-15/realtor-now.png"
+    },
+    {
+      "answer": "Reuters",
+      "year": 2000,
+      "accept": [
+        "reuters"
+      ],
+      "fact": "Reuters built its reputation over more than a century as a wire service supplying news to other outlets, and its website was one of the first to make that raw wire content available directly to the public.",
+      "beforeImg": "images/2026-11-15/reuters-then.png",
+      "afterImg": "images/2026-11-15/reuters-now.png"
+    },
+    {
+      "answer": "eBay",
+      "year": 1999,
+      "accept": [
+        "ebay"
+      ],
+      "fact": "eBay started in 1995 as AuctionWeb, reportedly built to help the founder's fiancee trade Pez dispensers. By 1999 it was already a sprawling grid of category links and live auctions.",
+      "beforeImg": "images/2026-11-15/ebay-then.png",
+      "afterImg": "images/2026-11-15/ebay-now.png"
+    }
+  ]
+}
