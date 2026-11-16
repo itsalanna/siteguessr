@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-16",
+  "rounds": [
+    {
+      "answer": "Tom's Hardware",
+      "year": 2001,
+      "accept": [
+        "tom's hardware",
+        "toms hardware"
+      ],
+      "fact": "Tom's Hardware built its reputation on exhaustive PC component benchmarks, becoming one of the go-to sites for hardware enthusiasts well before mainstream tech blogs existed.",
+      "beforeImg": "images/2026-11-16/tomshardware-then.png",
+      "afterImg": "images/2026-11-16/tomshardware-now.png"
+    },
+    {
+      "answer": "Suck.com",
+      "year": 1998,
+      "accept": [
+        "suck.com",
+        "suck"
+      ],
+      "fact": "Suck.com pioneered a sarcastic, link-heavy, first-person writing style that influenced blog voice for years, despite the site itself shutting down back in 2001.",
+      "beforeImg": "images/2026-11-16/suck-then.png",
+      "afterImg": "images/2026-11-16/suck-now.png"
+    },
+    {
+      "answer": "Vimeo",
+      "year": 2008,
+      "accept": [
+        "vimeo"
+      ],
+      "fact": "Vimeo launched in 2004 and deliberately positioned itself as the artsier, higher-quality alternative to YouTube, banning gaming and vlog content in its early years to keep that focus.",
+      "beforeImg": "images/2026-11-16/vimeo-then.png",
+      "afterImg": "images/2026-11-16/vimeo-now.png"
+    },
+    {
+      "answer": "Tumblr",
+      "year": 2010,
+      "accept": [
+        "tumblr"
+      ],
+      "fact": "Tumblr popularized the short-form 'microblogging' format, and grew so fast in its early years that it regularly had to fight off downtime from its own success.",
+      "beforeImg": "images/2026-11-16/tumblr-then.png",
+      "afterImg": "images/2026-11-16/tumblr-now.png"
+    },
+    {
+      "answer": "Blogger",
+      "year": 2003,
+      "accept": [
+        "blogger"
+      ],
+      "fact": "Blogger launched in 1999 and is one of the tools credited with popularizing the word 'blog' itself, before Google acquired it in 2003.",
+      "beforeImg": "images/2026-11-16/blogger-then.png",
+      "afterImg": "images/2026-11-16/blogger-now.png"
+    }
+  ]
+}
