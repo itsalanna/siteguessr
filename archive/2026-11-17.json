@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-17",
+  "rounds": [
+    {
+      "answer": "Friendster",
+      "year": 2004,
+      "accept": [
+        "friendster"
+      ],
+      "fact": "Friendster launched in 2002 and is widely credited as one of the first mainstream social networks, predating both MySpace and Facebook, before its own popularity overwhelmed its servers.",
+      "beforeImg": "images/2026-11-17/friendster-then.png",
+      "afterImg": "images/2026-11-17/friendster-now.png"
+    },
+    {
+      "answer": "Kickstarter",
+      "year": 2010,
+      "accept": [
+        "kickstarter"
+      ],
+      "fact": "Kickstarter launched in 2009 and popularized the all-or-nothing crowdfunding model, where projects only get funded if they hit their goal, a rule meant to protect backers.",
+      "beforeImg": "images/2026-11-17/kickstarter-then.png",
+      "afterImg": "images/2026-11-17/kickstarter-now.png"
+    },
+    {
+      "answer": "Airbnb",
+      "year": 2011,
+      "accept": [
+        "airbnb",
+        "air bnb"
+      ],
+      "fact": "Airbnb started in 2008 with the founders renting out air mattresses in their own apartment during a design conference, which is where the original name came from.",
+      "beforeImg": "images/2026-11-17/airbnb-then.png",
+      "afterImg": "images/2026-11-17/airbnb-now.png"
+    },
+    {
+      "answer": "GeoCities",
+      "year": 1999,
+      "accept": [
+        "geocities"
+      ],
+      "fact": "GeoCities organized user pages into themed 'neighborhoods' like Hollywood and SiliconValley, and at its peak was one of the most-visited sites on the entire web before Yahoo shut it down in 2009.",
+      "beforeImg": "images/2026-11-17/geocities-then.png",
+      "afterImg": "images/2026-11-17/geocities-now.png"
+    },
+    {
+      "answer": "Zillow",
+      "year": 2007,
+      "accept": [
+        "zillow"
+      ],
+      "fact": "Zillow launched in 2006 and was one of the first sites to give the public free access to home value estimates, a feature ('Zestimate') that unsettled a lot of real estate agents at the time.",
+      "beforeImg": "images/2026-11-17/zillow-then.png",
+      "afterImg": "images/2026-11-17/zillow-now.png"
+    }
+  ]
+}
