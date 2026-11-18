@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-18",
+  "rounds": [
+    {
+      "answer": "Dogpile",
+      "year": 2000,
+      "accept": [
+        "dogpile"
+      ],
+      "fact": "Dogpile was a 'metasearch' engine that combined results from multiple search engines at once, a workaround from an era when no single search engine indexed the whole web well.",
+      "beforeImg": "images/2026-11-18/dogpile-then.png",
+      "afterImg": "images/2026-11-18/dogpile-now.png"
+    },
+    {
+      "answer": "Epinions",
+      "year": 2001,
+      "accept": [
+        "epinions"
+      ],
+      "fact": "Epinions paid ordinary users for writing product reviews, an early attempt to build trust in user opinions before that became a standard feature on almost every shopping site.",
+      "beforeImg": "images/2026-11-18/epinions-then.png",
+      "afterImg": "images/2026-11-18/epinions-now.png"
+    },
+    {
+      "answer": "eHarmony",
+      "year": 2005,
+      "accept": [
+        "eharmony"
+      ],
+      "fact": "eHarmony launched in 2000 built entirely around a long compatibility questionnaire and matching algorithm, a more curated approach than the open-browsing model most dating sites used.",
+      "beforeImg": "images/2026-11-18/eharmony-then.png",
+      "afterImg": "images/2026-11-18/eharmony-now.png"
+    },
+    {
+      "answer": "Rotten Tomatoes",
+      "year": 2002,
+      "accept": [
+        "rotten tomatoes"
+      ],
+      "fact": "Rotten Tomatoes launched in 1998 with its now-famous Tomatometer, distilling dozens of critic reviews into a single percentage score that became shorthand for a movie's quality.",
+      "beforeImg": "images/2026-11-18/rottentomatoes-then.png",
+      "afterImg": "images/2026-11-18/rottentomatoes-now.png"
+    },
+    {
+      "answer": "Technorati",
+      "year": 2006,
+      "accept": [
+        "technorati"
+      ],
+      "fact": "Technorati was built specifically to search and rank blogs during the mid-2000s blogging boom, back when blogs were treated as a distinct category from the rest of the web.",
+      "beforeImg": "images/2026-11-18/technorati-then.png",
+      "afterImg": "images/2026-11-18/technorati-now.png"
+    }
+  ]
+}
