@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-19",
+  "rounds": [
+    {
+      "answer": "CNN",
+      "year": 2000,
+      "accept": [
+        "cnn",
+        "cable news network"
+      ],
+      "fact": "CNN.com's early design crammed dozens of headlines onto one dense page, a layout style that dominated news sites for years before cleaner, story-focused redesigns took over.",
+      "beforeImg": "images/2026-11-19/cnn-then.png",
+      "afterImg": "images/2026-11-19/cnn-now.png"
+    },
+    {
+      "answer": "Fox News",
+      "year": 2001,
+      "accept": [
+        "fox news"
+      ],
+      "fact": "Fox News launched its website alongside the cable channel in the mid-90s, and its early design leaned heavily on the bold red-white-and-blue branding that still defines the network today.",
+      "beforeImg": "images/2026-11-19/foxnews-then.png",
+      "afterImg": "images/2026-11-19/foxnews-now.png"
+    },
+    {
+      "answer": "YouTube",
+      "year": 2008,
+      "accept": [
+        "youtube",
+        "you tube",
+        "yt"
+      ],
+      "fact": "Star ratings lasted until 2010. They were retired because almost everyone rated either 5 stars or 1, so the site switched to thumbs up/down.",
+      "beforeImg": "images/2026-11-19/youtube-then.png",
+      "afterImg": "images/2026-11-19/youtube-now.png"
+    },
+    {
+      "answer": "LimeWire",
+      "year": 2005,
+      "accept": [
+        "limewire"
+      ],
+      "fact": "LimeWire became one of the most popular peer-to-peer file-sharing programs after Napster's shutdown, before being forced offline itself by a 2010 court injunction.",
+      "beforeImg": "images/2026-11-19/limewire-then.png",
+      "afterImg": "images/2026-11-19/limewire-now.png"
+    },
+    {
+      "answer": "Tom's Hardware",
+      "year": 2001,
+      "accept": [
+        "tom's hardware",
+        "toms hardware"
+      ],
+      "fact": "Tom's Hardware built its reputation on exhaustive PC component benchmarks, becoming one of the go-to sites for hardware enthusiasts well before mainstream tech blogs existed.",
+      "beforeImg": "images/2026-11-19/tomshardware-then.png",
+      "afterImg": "images/2026-11-19/tomshardware-now.png"
+    }
+  ]
+}
