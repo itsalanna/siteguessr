@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-20",
+  "rounds": [
+    {
+      "answer": "Webshots",
+      "year": 2004,
+      "accept": [
+        "webshots"
+      ],
+      "fact": "Webshots was one of the most popular photo-sharing communities of the early 2000s, and was also widely used as a source for desktop wallpaper downloads.",
+      "beforeImg": "images/2026-11-20/webshots-then.png",
+      "afterImg": "images/2026-11-20/webshots-now.png"
+    },
+    {
+      "answer": "Winamp",
+      "year": 2000,
+      "accept": [
+        "winamp"
+      ],
+      "fact": "Winamp's slogan 'It really whips the llama's ass' became one of the most recognizable taglines of the early MP3 era, and its skinnable interface inspired an entire community of custom designs.",
+      "beforeImg": "images/2026-11-20/winamp-then.png",
+      "afterImg": "images/2026-11-20/winamp-now.png"
+    },
+    {
+      "answer": "Lycos",
+      "year": 1999,
+      "accept": [
+        "lycos"
+      ],
+      "fact": "Lycos was briefly the most-visited website on the internet in 1999, its search engine and portal combo making it a serious early rival to Yahoo.",
+      "beforeImg": "images/2026-11-20/lycos-then.png",
+      "afterImg": "images/2026-11-20/lycos-now.png"
+    },
+    {
+      "answer": "Drudge Report",
+      "year": 2002,
+      "accept": [
+        "drudge report",
+        "drudge"
+      ],
+      "fact": "The Drudge Report has used essentially the same barebones, all-links homepage design since the late 90s, a deliberate choice that's stayed almost untouched for over two decades.",
+      "beforeImg": "images/2026-11-20/drudgereport-then.png",
+      "afterImg": "images/2026-11-20/drudgereport-now.png"
+    },
+    {
+      "answer": "Metacafe",
+      "year": 2007,
+      "accept": [
+        "metacafe"
+      ],
+      "fact": "Metacafe was a serious early rival to YouTube, at one point drawing tens of millions of monthly viewers by paying creators for popular videos.",
+      "beforeImg": "images/2026-11-20/metacafe-then.png",
+      "afterImg": "images/2026-11-20/metacafe-now.png"
+    }
+  ]
+}
