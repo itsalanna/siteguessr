@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-21",
+  "rounds": [
+    {
+      "answer": "Funny or Die",
+      "year": 2008,
+      "accept": [
+        "funny or die"
+      ],
+      "fact": "Funny or Die launched in 2007 co-founded by Will Ferrell, and its debut video 'The Landlord' became one of the most-watched comedy videos of the early web-video era.",
+      "beforeImg": "images/2026-11-21/funnyordie-then.png",
+      "afterImg": "images/2026-11-21/funnyordie-now.png"
+    },
+    {
+      "answer": "iTunes",
+      "year": 2004,
+      "accept": [
+        "itunes"
+      ],
+      "fact": "The iTunes Store launched in 2003 selling songs for 99 cents each, a pricing model credited with convincing the music industry that people would actually pay for legal downloads.",
+      "beforeImg": "images/2026-11-21/itunes-then.png",
+      "afterImg": "images/2026-11-21/itunes-now.png"
+    },
+    {
+      "answer": "Kazaa",
+      "year": 2003,
+      "accept": [
+        "kazaa"
+      ],
+      "fact": "Kazaa became the most-downloaded software in the world at its peak in 2003, filling much of the file-sharing gap left after Napster was shut down.",
+      "beforeImg": "images/2026-11-21/kazaa-then.png",
+      "afterImg": "images/2026-11-21/kazaa-now.png"
+    },
+    {
+      "answer": "GeoCities",
+      "year": 1999,
+      "accept": [
+        "geocities"
+      ],
+      "fact": "GeoCities organized user pages into themed 'neighborhoods' like Hollywood and SiliconValley, and at its peak was one of the most-visited sites on the entire web before Yahoo shut it down in 2009.",
+      "beforeImg": "images/2026-11-21/geocities-then.png",
+      "afterImg": "images/2026-11-21/geocities-now.png"
+    },
+    {
+      "answer": "Download.com",
+      "year": 2001,
+      "accept": [
+        "download.com"
+      ],
+      "fact": "Download.com (run by CNET) was one of the main places people got shareware and freeware software in the pre-app-store era, complete with user ratings and virus scanning.",
+      "beforeImg": "images/2026-11-21/downloadcom-then.png",
+      "afterImg": "images/2026-11-21/downloadcom-now.png"
+    }
+  ]
+}
