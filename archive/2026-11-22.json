@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-22",
+  "rounds": [
+    {
+      "answer": "Facebook",
+      "year": 2007,
+      "accept": [
+        "facebook",
+        "fb",
+        "thefacebook",
+        "the facebook"
+      ],
+      "fact": "The Wall was a single editable text field in the earliest versions. 2007's platform launch brought app chaos, sheep-throwing included, before the News Feed took over the world.",
+      "beforeImg": "images/2026-11-22/facebook-then.png",
+      "afterImg": "images/2026-11-22/facebook-now.png"
+    },
+    {
+      "answer": "Dogpile",
+      "year": 2000,
+      "accept": [
+        "dogpile"
+      ],
+      "fact": "Dogpile was a 'metasearch' engine that combined results from multiple search engines at once, a workaround from an era when no single search engine indexed the whole web well.",
+      "beforeImg": "images/2026-11-22/dogpile-then.png",
+      "afterImg": "images/2026-11-22/dogpile-now.png"
+    },
+    {
+      "answer": "Digg",
+      "year": 2006,
+      "accept": [
+        "digg"
+      ],
+      "fact": "Digg pioneered the user-voted news-aggregation format years before Reddit took over that space, and a single controversial 2010 redesign is often cited as the reason it lost most of its audience.",
+      "beforeImg": "images/2026-11-22/digg-then.png",
+      "afterImg": "images/2026-11-22/digg-now.png"
+    },
+    {
+      "answer": "Tripod",
+      "year": 1999,
+      "accept": [
+        "tripod"
+      ],
+      "fact": "Tripod was a major free website-builder alongside GeoCities and Angelfire, and was eventually bought by Lycos as part of its portal strategy in the late 90s.",
+      "beforeImg": "images/2026-11-22/tripod-then.png",
+      "afterImg": "images/2026-11-22/tripod-now.png"
+    },
+    {
+      "answer": "Bebo",
+      "year": 2007,
+      "accept": [
+        "bebo"
+      ],
+      "fact": "Bebo was massively popular in the UK and Ireland during the mid-2000s, at one point ranking as the third-most-visited social network in the US before AOL bought it for $850 million in 2008.",
+      "beforeImg": "images/2026-11-22/bebo-then.png",
+      "afterImg": "images/2026-11-22/bebo-now.png"
+    }
+  ]
+}
