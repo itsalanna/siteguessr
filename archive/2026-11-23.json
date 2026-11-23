@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-23",
+  "rounds": [
+    {
+      "answer": "Circuit City",
+      "year": 2003,
+      "accept": [
+        "circuit city"
+      ],
+      "fact": "Circuit City was one of the largest electronics retailers in the US before going bankrupt in 2008, a collapse often cited alongside the rise of Best Buy and online shopping.",
+      "beforeImg": "images/2026-11-23/circuitcity-then.png",
+      "afterImg": "images/2026-11-23/circuitcity-now.png"
+    },
+    {
+      "answer": "MSN",
+      "year": 2000,
+      "accept": [
+        "msn",
+        "microsoft network"
+      ],
+      "fact": "MSN launched alongside Windows 95 as Microsoft's answer to AOL, bundling a dial-up service with a portal homepage that shipped as the default for millions of new PCs.",
+      "beforeImg": "images/2026-11-23/msn-then.png",
+      "afterImg": "images/2026-11-23/msn-now.png"
+    },
+    {
+      "answer": "Webshots",
+      "year": 2004,
+      "accept": [
+        "webshots"
+      ],
+      "fact": "Webshots was one of the most popular photo-sharing communities of the early 2000s, and was also widely used as a source for desktop wallpaper downloads.",
+      "beforeImg": "images/2026-11-23/webshots-then.png",
+      "afterImg": "images/2026-11-23/webshots-now.png"
+    },
+    {
+      "answer": "Encyclopedia Britannica",
+      "year": 2000,
+      "accept": [
+        "britannica",
+        "encyclopedia britannica"
+      ],
+      "fact": "Encyclopedia Britannica put its entire encyclopedia online for free in 1999, a bold bet that ad revenue could replace its centuries-old subscription business, before pulling back a year later.",
+      "beforeImg": "images/2026-11-23/britannica-then.png",
+      "afterImg": "images/2026-11-23/britannica-now.png"
+    },
+    {
+      "answer": "Delicious",
+      "year": 2006,
+      "accept": [
+        "delicious",
+        "del.icio.us"
+      ],
+      "fact": "Delicious (originally styled del.icio.us) popularized social bookmarking and the very concept of a 'tag,' letting users save and label links for themselves and everyone else to browse.",
+      "beforeImg": "images/2026-11-23/delicious-then.png",
+      "afterImg": "images/2026-11-23/delicious-now.png"
+    }
+  ]
+}
