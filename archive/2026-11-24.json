@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-24",
+  "rounds": [
+    {
+      "answer": "LiveJournal",
+      "year": 2004,
+      "accept": [
+        "livejournal",
+        "lj"
+      ],
+      "fact": "LiveJournal was one of the first blogging platforms to build in a real social layer, with friends lists and privacy settings, making it feel more like an early social network than a simple blog host.",
+      "beforeImg": "images/2026-11-24/livejournal-then.png",
+      "afterImg": "images/2026-11-24/livejournal-now.png"
+    },
+    {
+      "answer": "RadioShack",
+      "year": 2003,
+      "accept": [
+        "radioshack",
+        "radio shack"
+      ],
+      "fact": "RadioShack's website in the early 2000s tried to combine its parts-and-electronics heritage with early attempts at cell phone retail, a business mix that never quite gelled online.",
+      "beforeImg": "images/2026-11-24/radioshack-then.png",
+      "afterImg": "images/2026-11-24/radioshack-now.png"
+    },
+    {
+      "answer": "Gizmodo",
+      "year": 2007,
+      "accept": [
+        "gizmodo"
+      ],
+      "fact": "Gizmodo's early scoops on unreleased Apple products, sometimes from leaked prototypes, made it one of the most closely watched (and occasionally legally threatened) tech blogs of the 2000s.",
+      "beforeImg": "images/2026-11-24/gizmodo-then.png",
+      "afterImg": "images/2026-11-24/gizmodo-now.png"
+    },
+    {
+      "answer": "Charles Schwab",
+      "year": 2000,
+      "accept": [
+        "charles schwab",
+        "schwab"
+      ],
+      "fact": "Charles Schwab was one of the first traditional brokerages to fully embrace online trading, helping legitimize the idea for investors who didn't trust newer online-only upstarts.",
+      "beforeImg": "images/2026-11-24/schwab-then.png",
+      "afterImg": "images/2026-11-24/schwab-now.png"
+    },
+    {
+      "answer": "Apple",
+      "year": 1999,
+      "accept": [
+        "apple",
+        "applecom"
+      ],
+      "fact": "This was the candy-colored iMac era. Apple's site leaned hard into translucent plastic and drop shadows, years before the brushed-aluminum minimalism it's known for today.",
+      "beforeImg": "images/2026-11-24/apple-then.png",
+      "afterImg": "images/2026-11-24/apple-now.png"
+    }
+  ]
+}
