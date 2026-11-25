@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-25",
+  "rounds": [
+    {
+      "answer": "Friendster",
+      "year": 2004,
+      "accept": [
+        "friendster"
+      ],
+      "fact": "Friendster launched in 2002 and is widely credited as one of the first mainstream social networks, predating both MySpace and Facebook, before its own popularity overwhelmed its servers.",
+      "beforeImg": "images/2026-11-25/friendster-then.png",
+      "afterImg": "images/2026-11-25/friendster-now.png"
+    },
+    {
+      "answer": "Edmunds",
+      "year": 2001,
+      "accept": [
+        "edmunds"
+      ],
+      "fact": "Edmunds built its reputation on detailed car reviews and true-cost-to-own data, becoming a trusted resource for buyers trying to negotiate against dealerships.",
+      "beforeImg": "images/2026-11-25/edmunds-then.png",
+      "afterImg": "images/2026-11-25/edmunds-now.png"
+    },
+    {
+      "answer": "EarthLink",
+      "year": 2000,
+      "accept": [
+        "earthlink"
+      ],
+      "fact": "EarthLink grew into one of the largest ISPs of the dial-up era by positioning itself as friendlier and more customer-focused than AOL, its biggest rival.",
+      "beforeImg": "images/2026-11-25/earthlink-then.png",
+      "afterImg": "images/2026-11-25/earthlink-now.png"
+    },
+    {
+      "answer": "Monster",
+      "year": 2000,
+      "accept": [
+        "monster",
+        "monster.com"
+      ],
+      "fact": "Monster.com ran one of the most memorable ad campaigns of the dot-com era ('When I grow up, I want to...') and became synonymous with online job searching in the late 90s.",
+      "beforeImg": "images/2026-11-25/monster-then.png",
+      "afterImg": "images/2026-11-25/monster-now.png"
+    },
+    {
+      "answer": "Xbox",
+      "year": 2002,
+      "accept": [
+        "xbox"
+      ],
+      "fact": "Xbox.com launched alongside Microsoft's first console in 2001, marking the company's first serious entry into a gaming hardware market long dominated by Sony and Nintendo.",
+      "beforeImg": "images/2026-11-25/xbox-then.png",
+      "afterImg": "images/2026-11-25/xbox-now.png"
+    }
+  ]
+}
