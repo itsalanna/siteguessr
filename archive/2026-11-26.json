@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-26",
+  "rounds": [
+    {
+      "answer": "Newegg",
+      "year": 2005,
+      "accept": [
+        "newegg"
+      ],
+      "fact": "Newegg built a loyal following among PC builders by focusing almost entirely on computer parts, with a reputation for detailed listings and fast shipping that rivaled Amazon in that niche.",
+      "beforeImg": "images/2026-11-26/newegg-then.png",
+      "afterImg": "images/2026-11-26/newegg-now.png"
+    },
+    {
+      "answer": "Monster",
+      "year": 2000,
+      "accept": [
+        "monster",
+        "monster.com"
+      ],
+      "fact": "Monster.com ran one of the most memorable ad campaigns of the dot-com era ('When I grow up, I want to...') and became synonymous with online job searching in the late 90s.",
+      "beforeImg": "images/2026-11-26/monster-then.png",
+      "afterImg": "images/2026-11-26/monster-now.png"
+    },
+    {
+      "answer": "AOL Instant Messenger",
+      "year": 2001,
+      "accept": [
+        "aim",
+        "aol instant messenger"
+      ],
+      "fact": "AIM's door-slam and duck-quack sound effects became so recognizable that an entire generation associates them instantly with getting online after school.",
+      "beforeImg": "images/2026-11-26/aim-then.png",
+      "afterImg": "images/2026-11-26/aim-now.png"
+    },
+    {
+      "answer": "TechCrunch",
+      "year": 2008,
+      "accept": [
+        "techcrunch"
+      ],
+      "fact": "TechCrunch launched in 2005 covering Silicon Valley startups specifically, and became so influential that a positive TechCrunch writeup could meaningfully affect a young company's funding prospects.",
+      "beforeImg": "images/2026-11-26/techcrunch-then.png",
+      "afterImg": "images/2026-11-26/techcrunch-now.png"
+    },
+    {
+      "answer": "Match.com",
+      "year": 2000,
+      "accept": [
+        "match.com",
+        "match"
+      ],
+      "fact": "Match.com launched in 1995 and is one of the very first online dating sites, predating the smartphone-app dating era by almost two decades.",
+      "beforeImg": "images/2026-11-26/match-then.png",
+      "afterImg": "images/2026-11-26/match-now.png"
+    }
+  ]
+}
