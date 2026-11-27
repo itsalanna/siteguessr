@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-27",
+  "rounds": [
+    {
+      "answer": "NFL",
+      "year": 2000,
+      "accept": [
+        "nfl"
+      ],
+      "fact": "NFL.com's early design centered heavily on the fantasy football tools that were just starting to become a mainstream hobby, well before fantasy sports turned into a billion-dollar industry.",
+      "beforeImg": "images/2026-11-27/nfl-then.png",
+      "afterImg": "images/2026-11-27/nfl-now.png"
+    },
+    {
+      "answer": "Instagram",
+      "year": 2012,
+      "accept": [
+        "instagram",
+        "ig",
+        "insta"
+      ],
+      "fact": "Instagram launched iPhone-only in late 2010 and hit 25,000 users on day one. Its web presence stayed minimal for years while the app itself was the whole product.",
+      "beforeImg": "images/2026-11-27/instagram-then.png",
+      "afterImg": "images/2026-11-27/instagram-now.png"
+    },
+    {
+      "answer": "Napster",
+      "year": 2000,
+      "accept": [
+        "napster"
+      ],
+      "fact": "Napster's original file-sharing service was sued into shutting down in 2001, but the brand survived and was later relaunched as a legal paid streaming service.",
+      "beforeImg": "images/2026-11-27/napster-then.png",
+      "afterImg": "images/2026-11-27/napster-now.png"
+    },
+    {
+      "answer": "WordPress",
+      "year": 2006,
+      "accept": [
+        "wordpress"
+      ],
+      "fact": "WordPress launched in 2003 as a small blogging tool and eventually grew to power a huge share of all websites on the internet, blogs and full businesses alike.",
+      "beforeImg": "images/2026-11-27/wordpress-then.png",
+      "afterImg": "images/2026-11-27/wordpress-now.png"
+    },
+    {
+      "answer": "LimeWire",
+      "year": 2005,
+      "accept": [
+        "limewire"
+      ],
+      "fact": "LimeWire became one of the most popular peer-to-peer file-sharing programs after Napster's shutdown, before being forced offline itself by a 2010 court injunction.",
+      "beforeImg": "images/2026-11-27/limewire-then.png",
+      "afterImg": "images/2026-11-27/limewire-now.png"
+    }
+  ]
+}
