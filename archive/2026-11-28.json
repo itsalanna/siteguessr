@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-28",
+  "rounds": [
+    {
+      "answer": "Charles Schwab",
+      "year": 2000,
+      "accept": [
+        "charles schwab",
+        "schwab"
+      ],
+      "fact": "Charles Schwab was one of the first traditional brokerages to fully embrace online trading, helping legitimize the idea for investors who didn't trust newer online-only upstarts.",
+      "beforeImg": "images/2026-11-28/schwab-then.png",
+      "afterImg": "images/2026-11-28/schwab-now.png"
+    },
+    {
+      "answer": "PerezHilton.com",
+      "year": 2008,
+      "accept": [
+        "perez hilton",
+        "perezhilton"
+      ],
+      "fact": "PerezHilton.com became one of the first hugely popular celebrity gossip blogs, known for its crude photo scribbles added directly on top of paparazzi pictures.",
+      "beforeImg": "images/2026-11-28/perezhilton-then.png",
+      "afterImg": "images/2026-11-28/perezhilton-now.png"
+    },
+    {
+      "answer": "Dogpile",
+      "year": 2000,
+      "accept": [
+        "dogpile"
+      ],
+      "fact": "Dogpile was a 'metasearch' engine that combined results from multiple search engines at once, a workaround from an era when no single search engine indexed the whole web well.",
+      "beforeImg": "images/2026-11-28/dogpile-then.png",
+      "afterImg": "images/2026-11-28/dogpile-now.png"
+    },
+    {
+      "answer": "WebMD",
+      "year": 2001,
+      "accept": [
+        "webmd"
+      ],
+      "fact": "WebMD launched in 1996 and became so widely used for self-diagnosis that 'don't WebMD your symptoms' turned into a common joke about people convincing themselves they had rare diseases.",
+      "beforeImg": "images/2026-11-28/webmd-then.png",
+      "afterImg": "images/2026-11-28/webmd-now.png"
+    },
+    {
+      "answer": "World of Warcraft",
+      "year": 2006,
+      "accept": [
+        "world of warcraft",
+        "wow"
+      ],
+      "fact": "World of Warcraft's website in 2006 supported the biggest subscription-based online game in the world at the time, with millions of players logging in monthly during its peak years.",
+      "beforeImg": "images/2026-11-28/wowwiki-then.png",
+      "afterImg": "images/2026-11-28/wowwiki-now.png"
+    }
+  ]
+}
